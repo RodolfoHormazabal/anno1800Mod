@@ -1,0 +1,29 @@
+<ModOps>
+	<ModOp Type="add" Path="/TextExport/Texts">
+		<Text>
+			<GUID>1100001</GUID>
+			<Text>Grand Trade Union</Text>
+		</Text>
+		<Text>
+			<GUID>1100005</GUID>
+			<Text>Grand Town Hall</Text>
+		</Text>
+		<Text>
+			<GUID>1100008</GUID>
+			<Text>Grand Harbourmaster's Office</Text>
+		</Text>
+		<Text>
+			<GUID>1100011</GUID>
+			<Text>Land Cannon Tower</Text>
+		</Text>
+		<Text>
+			<GUID>1100015</GUID>
+			<Text>Land Flak Emplacement</Text>
+		</Text>
+		<Text>
+			<GUID>1100019</GUID>
+			<Text>Land Big Betty</Text>
+		</Text>
+	</ModOp>
+</ModOps>
+
