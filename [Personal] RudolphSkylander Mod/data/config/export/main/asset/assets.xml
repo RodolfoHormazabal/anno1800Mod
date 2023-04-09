@@ -23,7 +23,7 @@
                 <StartProducts>
                     <Item>
                         <MetaProduct>1010017</MetaProduct>
-                        <amount>750000</amount>
+                        <amount>500000</amount>
                     </Item>
                 </StartProducts>
             </Medium>
@@ -1143,7 +1143,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -1308,7 +1308,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -1413,7 +1413,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -1481,7 +1481,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -1690,7 +1690,7 @@
         <Item>
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
         </Item>
     </ModOp>
 
@@ -1884,7 +1884,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -1909,7 +1909,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -1948,7 +1948,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2051,7 +2051,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2163,7 +2163,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2247,7 +2247,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2356,7 +2356,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2405,7 +2405,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2485,7 +2485,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2562,7 +2562,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2638,7 +2638,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
             <ReapplyEffects>CDLC10</ReapplyEffects>
         </Item>
@@ -2734,7 +2734,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2781,7 +2781,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>100</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2831,7 +2831,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -2960,7 +2960,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3043,7 +3043,7 @@
         <Item>
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
         </Item>
     </ModOp>
 
@@ -3078,7 +3078,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3165,7 +3165,7 @@
         <Item>
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
         </Item>
     </ModOp>
 
@@ -3227,7 +3227,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3245,7 +3245,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3415,7 +3415,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3439,7 +3439,7 @@
             <MaxStackSize>1</MaxStackSize>
             <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>750000</TradePrice>
+            <TradePrice>500000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3456,6 +3456,593 @@
 
     <ModOp Type = 'replace' GUID = '136649' Path = '/Values/BuildingUpgrade'>
         <BuildingUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Dr. Ali Al-Zahir, The Botanical Director -->
+    <ModOp Type = 'replace' GUID = '190693' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010198</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010195</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>120014</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010192</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010194</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190693' Path = '/Values/CultureUpgrade'>
+        <CultureUpgrade>
+            <AttractivenessUpgrade>
+                <Value>10</Value>
+            </AttractivenessUpgrade>
+        </CultureUpgrade>
+    </ModOp>
+
+    <!-- Horticulturalist Hermann -->
+    <ModOp Type = 'replace' GUID = '190692' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010198</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010195</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>120014</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190692' Path = '/Values/ModuleOwnerUpgrade/ModuleLimitPercent'>
+        <ModuleLimitPercent>-25</ModuleLimitPercent>
+    </ModOp>
+
+    <!-- Arborist -->
+    <ModOp Type = 'replace' GUID = '190690' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190690' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010252</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190690' Path = '/Values/ModuleOwnerUpgrade/ModuleLimitPercent'>
+        <ModuleLimitPercent>-25</ModuleLimitPercent>
+    </ModOp>
+
+    <!-- Mrs. Brown the Cultivator -->
+    <ModOp Type = 'replace' GUID = '190691' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010254</Product>
+                    <AdditionalOutputCycle>7</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010255</Product>
+                    <AdditionalOutputCycle>7</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010253</Product>
+                    <AdditionalOutputCycle>7</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Pedologist -->
+    <ModOp Type = 'replace' GUID = '190689' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190689' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010254</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190689' Path = '/Values/ModuleOwnerUpgrade/ModuleLimitPercent'>
+        <ModuleLimitPercent>-25</ModuleLimitPercent>
+    </ModOp>
+
+    <!-- Dr. Iñigo Flores -->
+    <ModOp Type = 'replace' GUID = '8347' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8347' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8347' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Gennaro Garibaldi, Chocolatier by Royal Appointment -->
+    <ModOp Type = 'replace' GUID = '191334' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010239</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010257</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191334' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Charlotte the Chocoholic -->
+    <ModOp Type = 'replace' GUID = '191333' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010239</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Master Confectioner -->
+    <ModOp Type = 'replace' GUID = '191356' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191356' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010258</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+            <ReplaceInputs>
+                <Item>
+                    <OldInput>120042</OldInput>
+                    <NewInput>1010254</NewInput>
+                </Item>
+            </ReplaceInputs>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Cristobal Taffeta, The Trendsetter -->
+    <ModOp Type = 'replace' GUID = '191347' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010237</Product>
+                    <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010247</Product>
+                    <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191347' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Mariana the Master Stylist -->
+    <ModOp Type = 'replace' GUID = '191346' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Modiste -->
+    <ModOp Type = 'replace' GUID = '191345' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191345' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010210</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191345' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Tlayolotl Savor, King of the Corn -->
+    <ModOp Type = 'replace' GUID = '191402' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Kantyi of the Quinoa -->
+    <ModOp Type = 'replace' GUID = '191387' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191387' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Mole Master -->
+    <ModOp Type = 'replace' GUID = '191386' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191386' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Marco de la Mocha, Crisher of Beans -->
+    <ModOp Type = 'replace' GUID = '191371' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Cecilia the Coffeessieur -->
+    <ModOp Type = 'replace' GUID = '191370' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010258</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Milliner -->
+    <ModOp Type = 'replace' GUID = '191349' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191349' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <ReplaceInputs>
+                <Item>
+                    <OldInput>120044</OldInput>
+                    <NewInput>120036</NewInput>
+                </Item>
+            </ReplaceInputs>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Victor Perfecto, Cigar Daddy -->
+    <ModOp Type = 'replace' GUID = '190643' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190643' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190643' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-50</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Salvador, The Stalwart  -->
+    <ModOp Type = 'replace' GUID = '8355' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8355' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+            <ReplacingWorkforce>5406</ReplacingWorkforce>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Torcedor Lucia -->
+    <ModOp Type = 'replace' GUID = '190642' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Get Rich Quick Vol III: Pretty Polyculture -->
+    <ModOp Type = 'replace' GUID = '136819' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>120031</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010252</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010254</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '136819' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Tropical Pedologist -->
+    <ModOp Type = 'replace' GUID = '1961' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1961' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+                    <AdditionalOutputCycle>1</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+            <InputAmountUpgrade>
+                <Item>
+                    <Product>24807</Product>
+                    <Amount>1</Amount>
+                </Item>
+            </InputAmountUpgrade>
+            <ReplaceInputs>
+                <Item>
+                    <OldInput>1955</OldInput>
+                    <NewInput>24807</NewInput>
+                </Item>
+            </ReplaceInputs>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1961' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
             <WorkforceAmountUpgrade>
                 <Value>25</Value>
                 <Percental>1</Percental>
