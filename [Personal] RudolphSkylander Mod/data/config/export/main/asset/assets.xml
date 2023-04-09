@@ -1685,6 +1685,23 @@
         </FactoryUpgrade>
     </ModOp>
 
+    <!-- Golden Harvester From the Future -->
+    <ModOp Type = 'replace' GUID = '116190' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010233</Product>
+                    <AdditionalOutputCycle>10</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
     <!-- Get Rich Quick Vol II: What Shape is a Banana Anyway? -->
     <ModOp Type = 'replace' GUID = '136823' Path = '/Values/Item'>
         <Item>
@@ -4048,5 +4065,304 @@
                 <Percental>1</Percental>
             </WorkforceAmountUpgrade>
         </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Enbesan Animal Nutricionist -->
+    <ModOp Type = 'replace' GUID = '1966' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1966' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>24807</Product>
+                    <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1966' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Calla Lily, Of The Desert Bloom -->
+    <ModOp Type = 'replace' GUID = '125116' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AddedFertility>114347</AddedFertility>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125116' Path = '/Values/ModuleOwnerUpgrade/ModuleLimitPercent'>
+        <ModuleLimitPercent>-25</ModuleLimitPercent>
+    </ModOp>
+
+    <!-- Yebeba Sturdy Greenhouse -->
+    <ModOp Type = 'replace' GUID = '125060' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Berkeley Meat Sunderer -->
+    <ModOp Type = 'replace' GUID = '125050' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125050' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Fine Curing Chamber -->
+    <ModOp Type = 'replace' GUID = '125049' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125049' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Meat Guillotine -->
+    <ModOp Type = 'replace' GUID = '125048' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125048' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125048' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Tea Selector -->
+    <ModOp Type = 'replace' GUID = '125118' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125118' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Magan, The Master Craftsman -->
+    <ModOp Type = 'replace' GUID = '125128' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125128' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
+            <Item>
+                <GUID>114469</GUID>
+            </Item>
+            <Item>
+                <GUID>118725</GUID>
+            </Item>
+            <Item>
+                <GUID>114472</GUID>
+            </Item>
+        </EffectTargets>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125128' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Careful Craftsman -->
+    <ModOp Type = 'replace' GUID = '125126' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125126' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125126' Path = '/Values/IncidentInfectableUpgrade/IncidentFireIncreaseUpgrade'>
+        <IncidentFireIncreaseUpgrade>
+            <Value>-5</Value>
+        </IncidentFireIncreaseUpgrade>
+    </ModOp>
+
+    <!-- Ketema Industrial Kiln -->
+    <ModOp Type = 'replace' GUID = '125055' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125055' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Lovelyman's Grinding Machine -->
+    <ModOp Type = 'replace' GUID = '190845' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Aaden Issack, World-Famous Enbesan Chef -->
+    <ModOp Type = 'replace' GUID = '125122' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>114359</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+            <ReplaceInputs>
+                <Item>
+                    <OldInput>118728</OldInput>
+                    <NewInput>114357</NewInput>
+                </Item>
+            </ReplaceInputs>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Wahenoor, The Paper Mill Pro -->
+    <ModOp Type = 'replace' GUID = '125129' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125129' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Sluggish Surge-Wheel -->
+    <ModOp Type = 'replace' GUID = '125062' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Giorgis, The Eminent Hymnodist -->
+    <ModOp Type = 'replace' GUID = '125133' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>117698</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>117699</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Industrial Binding Machine -->
+    <ModOp Type = 'replace' GUID = '125045' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Queenby Apiary Suit -->
+    <ModOp Type = 'replace' GUID = '125047' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
     </ModOp>
 </ModOps>
