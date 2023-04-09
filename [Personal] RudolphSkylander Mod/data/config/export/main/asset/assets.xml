@@ -4365,4 +4365,517 @@
             <Percental>1</Percental>
         </ProductivityUpgrade>
     </ModOp>
+
+    <!-- Harbourmaster Office -->
+    <!-- Lady Banes, Proponent of Protectionism -->
+    <ModOp Type = 'replace' GUID = '190668' Path = '/Values/ItemEffect'>
+        <ItemEffect>
+            <EffectTargets>
+                <Item>
+                    <GUID>193480</GUID>
+                </Item>
+                <Item>
+                    <GUID>700152</GUID>
+                </Item>
+            </EffectTargets>
+        </ItemEffect>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190668' Path = '/Values/PassiveTradeGoodGenUpgrade'>
+        <PassiveTradeGoodGenUpgrade>
+            <GenProbability>100</GenProbability>
+            <GenPool>190807</GenPool>
+        </PassiveTradeGoodGenUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190668' Path = '/Values/PierUpgrade'>
+        <PierUpgrade>
+            <PierSpeedUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </PierSpeedUpgrade>
+        </PierUpgrade>
+    </ModOp>
+
+    <!-- Hogarth the Harbourmaster, Veteran Of Trelawney -->
+    <ModOp Type = 'replace' GUID = '113792' Path = '/Values/PassiveTradeGoodGenUpgrade'>
+        <PassiveTradeGoodGenUpgrade>
+            <GenProbability>100</GenProbability>
+            <GenPool>193483</GenPool>
+        </PassiveTradeGoodGenUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '113792' Path = '/Values/KontorUpgrade'>
+        <KontorUpgrade>
+            <BlockBuyShare>1</BlockBuyShare>
+        </KontorUpgrade>
+    </ModOp>
+
+    <!-- Khadija Tsegaye, Angereb's Market Master -->
+    <ModOp Type = 'replace' GUID = '121020' Path = '/Values/ItemEffect'>
+        <ItemEffect>
+            <EffectTargets>
+                <Item>
+                    <GUID>193480</GUID>
+                </Item>
+            </EffectTargets>
+        </ItemEffect>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '121020' Path = '/Values/PassiveTradeGoodGenUpgrade'>
+        <PassiveTradeGoodGenUpgrade>
+            <GenProbability>50</GenProbability>
+            <GenPool>129461</GenPool>
+        </PassiveTradeGoodGenUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '121020' Path = '/Values/PierUpgrade'>
+        <PierUpgrade>
+            <PierSpeedUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </PierSpeedUpgrade>
+        </PierUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '121020' Path = '/Values/KontorUpgrade'>
+        <KontorUpgrade>
+            <BlockBuyShare>1</BlockBuyShare>
+        </KontorUpgrade>
+    </ModOp>
+
+    <!-- Taxman Tim -->
+    <ModOp Type = 'replace' GUID = '190667' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190667' Path = '/Values/ItemEffect'>
+        <ItemEffect>
+            <EffectTargets>
+                <Item>
+                    <GUID>193480</GUID>
+                </Item>
+                <Item>
+                    <GUID>700152</GUID>
+                </Item>
+            </EffectTargets>
+        </ItemEffect>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190667' Path = '/Values/PassiveTradeGoodGenUpgrade'>
+        <PassiveTradeGoodGenUpgrade>
+            <GenProbability>100</GenProbability>
+            <GenPool>191637</GenPool>
+        </PassiveTradeGoodGenUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190667' Path = '/Values/PierUpgrade'>
+        <PierUpgrade>
+            <PierSpeedUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </PierSpeedUpgrade>
+        </PierUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190667' Path = '/Values/KontorUpgrade'>
+        <KontorUpgrade>
+            <BlockBuyShare>1</BlockBuyShare>
+        </KontorUpgrade>
+    </ModOp>
+
+    <!-- All defense turrets -->
+    <ModOp Type = 'add' GUID = '191443' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+        <Item>
+            <GUID>112671</GUID>
+        </Item>
+        <Item>
+            <GUID>1100013</GUID>
+        </Item>
+        <Item>
+            <GUID>822</GUID>
+        </Item>
+        <Item>
+            <GUID>1100017</GUID>
+        </Item>
+    </ModOp>
+
+    <!-- General Ewing Thomson, Planter of Flags -->
+    <ModOp Type = 'replace' GUID = '191442' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <AttackRangeUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </AttackRangeUpgrade>
+            <LineOfSightRangeUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </LineOfSightRangeUpgrade>
+            <HitpointDamage>
+                <Item>
+                    <MinDamageFactor>1.5</MinDamageFactor>
+                </Item>
+            </HitpointDamage>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <!-- Field Marshall Matravers, Conductor of Armies -->
+    <ModOp Type = 'replace' GUID = '191436' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <AccuracyUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </AccuracyUpgrade>
+            <MoraleDamage>
+                <Item>
+                    <MinDamageFactor>1.5</MinDamageFactor>
+                </Item>
+            </MoraleDamage>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191436' Path = '/Values/AttackableUpgrade/MaxHitpointsUpgrade'>
+        <MaxHitpointsUpgrade>
+            <Value>1000</Value>
+        </MaxHitpointsUpgrade>
+    </ModOp>
+
+    <!-- Evil ExsanguiN8r -->
+
+    <!-- Hydraulic Repair Crane -->
+    <ModOp Type = 'replace' GUID = '191886' Path = '/Values/RepairCraneUpgrade'>
+        <RepairCraneUpgrade>
+            <HealRadiusUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </HealRadiusUpgrade>
+            <HealPerMinuteUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </HealPerMinuteUpgrade>
+            <HealBuildingsPerMinuteUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </HealBuildingsPerMinuteUpgrade>
+        </RepairCraneUpgrade>
+    </ModOp>
+
+    <!-- Deke's Indispensible Dockyard Crate -->
+
+    <!-- RacioN8d Super Spinner -->
+    <ModOp Type = 'replace' GUID = '112385' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade />
+    </ModOp>
+
+    <!-- All harbour production buildings -->
+    <ModOp Type = 'add' GUID = '191443' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+        <Item>
+            <GUID>112666</GUID>
+        </Item>
+        <Item>
+            <GUID>112674</GUID>
+        </Item>
+    </ModOp>
+
+    <!-- Sticky Shinny Claws -->
+    <ModOp Type = 'replace' GUID = '112382' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Rohit Bhargava, The Naval Architect -->
+    <ModOp Type = 'replace' GUID = '190698' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190698' Path = '/Values/ShipyardUpgrade/ConstructionCostInPercent'>
+        <ConstructionCostInPercent>-25</ConstructionCostInPercent>
+        <ConstructionTimeInPercent>-25</ConstructionTimeInPercent>
+    </ModOp>
+
+    <!-- Mr. Swell, The Hydrodynamist -->
+    <ModOp Type = 'replace' GUID = '190697' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190697' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190697' Path = '/Values/ShipyardUpgrade/ConstructionCostInPercent'>
+        <ConstructionCostInPercent>-25</ConstructionCostInPercent>
+        <ConstructionTimeInPercent>-25</ConstructionTimeInPercent>
+    </ModOp>
+
+    <!-- Hydraulic Crane -->
+    <ModOp Type = 'replace' GUID = '190698' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190698' Path = '/Values/ShipyardUpgrade/ConstructionCostInPercent'>
+        <ConstructionCostInPercent>-25</ConstructionCostInPercent>
+        <ConstructionTimeInPercent>-25</ConstructionTimeInPercent>
+    </ModOp>
+
+    <!-- Thomasina Langton -->
+    <ModOp Type = 'replace' GUID = '190684' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>100</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190684' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-50</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190684' Path = '/Values/VisitorHarborUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <!-- Jaafan the Cruise Impresario -->
+    <ModOp Type = 'replace' GUID = '190683' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190683' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>50</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190683' Path = '/Values/VisitorHarborUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <!-- Madame Kahina's Executive Tourism Drive -->
+    <ModOp Type = 'replace' GUID = '191814' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191814' Path = '/Values/VisitorHarborUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <!-- Captain Moby, Old Dog of the Sea -->
+    <ModOp Type = 'replace' GUID = '190622' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010234</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010249</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Pedro, Captain of the 'Panama' -->
+    <ModOp Type = 'replace' GUID = '8356' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>5380</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010200</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>120042</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8356' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
+            <Item>
+                <GUID>190779</GUID>
+            </Item>
+            <Item>
+                <GUID>1010339</GUID>
+            </Item>
+        </EffectTargets>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8356' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Mother of Pearls -->
+    <ModOp Type = 'replace' GUID = '190621' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010234</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Long Range Bottom Trawl -->
+    <ModOp Type = 'replace' GUID = '190904' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190904' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Daring Scuba Diver -->
+    <ModOp Type = 'replace' GUID = '190620' Path = '/Values/Item'>
+        <Item>
+            <Allocation>HarborOffice</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190620' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>120042</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Seasoned Salter -->
+    <ModOp Type = 'replace' GUID = '125135' Path = '/Values/Item'>
+        <Item>
+            <Allocation>HarborOffice</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125135' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Ketema's Cousin -->
+    <ModOp Type = 'replace' GUID = '125135' Path = '/Values/Item'>
+        <Item>
+            <Allocation>HarborOffice</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '131014' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+                    <AdditionalOutputCycle>1</AdditionalOutputCycle>
+                    <Amount>2</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
 </ModOps>
