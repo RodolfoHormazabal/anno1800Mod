@@ -4878,4 +4878,588 @@
             </AdditionalOutput>
         </FactoryUpgrade>
     </ModOp>
+
+    <!-- Town Hall -->
+    <!-- Elliot 'Blitz', The Security Engineer -->
+    <ModOp Type = 'replace' GUID = '192468' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+            <TradePriceOnlineCurrency>100</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '192468' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
+            <Item>
+                <GUID>190762</GUID>
+            </Item>
+            <Item>
+                <GUID>194018</GUID>
+            </Item>
+        </EffectTargets>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '192468' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentRiotIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentRiotIncreaseUpgrade>
+            <IncidentIllnessIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentIllnessIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Millicent Manifesto Suffragette -->
+    <ModOp Type = 'replace' GUID = '192484' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ExclusiveGroup>WomenRightsAct</ExclusiveGroup>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '192484' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
+            <Item>
+                <GUID>190762</GUID>
+            </Item>
+            <Item>
+                <GUID>194018</GUID>
+            </Item>
+        </EffectTargets>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '192484' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <AdditionalHappiness>10</AdditionalHappiness>
+            <WorkforceModifierInPercent>25</WorkforceModifierInPercent>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '192484' Path = '/Values/IncidentInfectableUpgrade/IncidentRiotIncreaseUpgrade'>
+        <IncidentRiotIncreaseUpgrade>
+            <Value>-5</Value>
+        </IncidentRiotIncreaseUpgrade>
+    </ModOp>
+
+    <!-- Mssr Fontaine Street Signage Solution -->
+    <ModOp Type = 'replace' GUID = '191692' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ExclusiveGroup>AdministrationAct</ExclusiveGroup>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191692' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
+            <Item>
+                <GUID>191501</GUID>
+            </Item>
+            <Item>
+                <GUID>193864</GUID>
+            </Item>
+        </EffectTargets>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191692' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <PublicServiceFullSatisfactionDistance>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </PublicServiceFullSatisfactionDistance>
+            <PublicServiceNoSatisfactionDistance>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </PublicServiceNoSatisfactionDistance>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Chief George Doughty -->
+    <ModOp Type = 'replace' GUID = '190658' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
+            <Item>
+                <GUID>190775</GUID>
+            </Item>
+        </EffectTargets>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190658' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade />
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190658' Path = '/Values/PopulationUpgrade'>
+        <PopulationUpgrade />
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190658' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <ResolverUnitCountUpgrade>
+                <Value>1</Value>
+            </ResolverUnitCountUpgrade>
+            <ResolverUnitDecreaseUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ResolverUnitDecreaseUpgrade>
+            <ResolverUnitMovementSpeedUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ResolverUnitMovementSpeedUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190658' Path = '/Values/IncidentInfluencerUpgrade'>
+        <IncidentInfluencerUpgrade>
+            <SpecialUnitHappinessThresholdUpgrade>
+                <Value>-10</Value>
+            </SpecialUnitHappinessThresholdUpgrade>
+        </IncidentInfluencerUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190658' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade />
+    </ModOp>
+
+    <!-- Sir Charles Rafferty -->
+    <ModOp Type = 'replace' GUID = '191010' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <ResolverUnitCountUpgrade>
+                <Value>1</Value>
+            </ResolverUnitCountUpgrade>
+            <ResolverUnitDecreaseUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ResolverUnitDecreaseUpgrade>
+            <ResolverUnitMovementSpeedUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ResolverUnitMovementSpeedUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Constable Chaos -->
+    <ModOp Type = 'replace' GUID = '8417' Path = '/Values/BuildingUpgrade/PublicServiceFullSatisfactionDistance'>
+        <PublicServiceFullSatisfactionDistance>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </PublicServiceFullSatisfactionDistance>
+    </ModOp>
+
+    <!-- Dr Maurice Slim -->
+    <ModOp Type = 'replace' GUID = '190410' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <ResolverUnitCountUpgrade>
+                <Value>1</Value>
+            </ResolverUnitCountUpgrade>
+            <ResolverUnitDecreaseUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ResolverUnitDecreaseUpgrade>
+            <ResolverUnitMovementSpeedUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ResolverUnitMovementSpeedUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- New World Science Reporter -->
+    <ModOp Type = 'replace' GUID = '4270' Path = '/Values/FactoryUpgrade/AdditionalOutput'>
+        <AdditionalOutput>
+            <Item>
+                <Product>4267</Product>
+                <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                <Amount>1</Amount>
+            </Item>
+        </AdditionalOutput>
+    </ModOp>
+
+    <!-- Mr. Bertram, Hotel Manager -->
+    <ModOp Type = 'replace' GUID = '136668' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-100</Value>
+                <Percental>1</Percental>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentIllnessIncreaseUpgrade>
+                <Value>-100</Value>
+                <Percental>1</Percental>
+            </IncidentIllnessIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Madame Blanc, Maitre d'hotel -->
+    <ModOp Type = 'replace' GUID = '136697' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <Flotsam>100554</Flotsam>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '136697' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <AdditionalHappiness>10</AdditionalHappiness>
+            <GoodConsumptionUpgrade>
+                <Item>
+                    <ProvidedNeed>133183</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>133185</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>1010213</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+            </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '136697' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentIllnessIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentIllnessIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Concierge -->
+    <ModOp Type = 'replace' GUID = '136699' Path = '/Values/Item'>
+        <Item>
+            <Allocation>TownHall</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '136699' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentIllnessIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentIllnessIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Blue Skies Delivery Service -->
+    <ModOp Type = 'replace' GUID = '137797,137799,137798' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade />
+    </ModOp>
+
+    <!-- Blue Skies Janitor -->
+    <ModOp Type = 'replace' GUID = '137799' Path = '/Values/Item'>
+        <Item>
+            <Allocation>TownHall</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '137799' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentIllnessIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentIllnessIncreaseUpgrade>
+            <IncidentRiotIncreaseUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </IncidentRiotIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Blue Skies Maid -->
+    <ModOp Type = 'replace' GUID = '137798' Path = '/Values/Item'>
+        <Item>
+            <Allocation>TownHall</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '137798' Path = '/Values/ResidenceUpgrade/AdditionalHappiness'>
+        <AdditionalHappiness>25</AdditionalHappiness>
+    </ModOp>
+
+    <!-- Proclamation of Knighthood -->
+    <ModOp Type = 'replace' GUID = '111024' Path = '/Values/VisitorHarborUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '111024' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Automatic Souvenir Kiosk -->
+    <ModOp Type = 'replace' GUID = '116183' Path = '/Values/Item'>
+        <Item>
+            <Allocation>TownHall</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116183' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- The International Liberal Forum on Art and Craft -->
+    <ModOp Type = 'replace' GUID = '111048' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>100</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Major Cyclideon Exhibition: Literature -->
+    <ModOp Type = 'replace' GUID = '111047' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>50</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Major Cyclideon Exhibition: Science -->
+    <ModOp Type = 'replace' GUID = '111046' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>50</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Kaldi, Infuser of Teas -->
+    <ModOp Type = 'replace' GUID = '125114' Path = '/Values/PopulationUpgrade/InputBenefitModifier'>
+        <InputBenefitModifier>
+            <Item>
+                <Product>114390</Product>
+                <AdditionalHappiness>10</AdditionalHappiness>
+                <AdditionalResearch>10</AdditionalResearch>
+            </Item>
+        </InputBenefitModifier>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125114' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>114390</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Patriarch Matteos X -->
+    <ModOp Type = 'replace' GUID = '125125' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>117698</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>114362</ProvidedNeed>
+                <AmountInPercent>-100</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Dean, The Dean of Deansville University -->
+    <ModOp Type = 'replace' GUID = '125143' Path = '/Values/PopulationUpgrade/InputBenefitModifier'>
+        <InputBenefitModifier>
+            <Item>
+                <Product>1010353</Product>
+                <AdditionalSupply>24</AdditionalSupply>
+                <AdditionalHappiness>10</AdditionalHappiness>
+                <AdditionalResearch>10</AdditionalResearch>
+            </Item>
+        </InputBenefitModifier>
+    </ModOp>
+
+    <!-- Djimon, The Melancholic Expatriate -->
+    <ModOp Type = 'replace' GUID = '125144' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '125144' Path = '/Values/PopulationUpgrade/InputBenefitModifier'>
+        <InputBenefitModifier>
+            <Item>
+                <Product>114390</Product>
+                <AdditionalResearch>5</AdditionalResearch>
+            </Item>
+            <Item>
+                <Product>114410</Product>
+                <AdditionalResearch>5</AdditionalResearch>
+            </Item>
+            <Item>
+                <Product>114404</Product>
+                <AdditionalResearch>5</AdditionalResearch>
+            </Item>
+            <Item>
+                <Product>114414</Product>
+                <AdditionalResearch>5</AdditionalResearch>
+            </Item>
+        </InputBenefitModifier>
+    </ModOp>
+
+    <!-- Dont Leave it til L8r, EspressoN8r -->
+    <ModOp Type = 'replace' GUID = '116184' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120032</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- The Magnificone Ice Cream Maker -->
+    <ModOp Type = 'replace' GUID = '116188' Path = '/Values/PopulationUpgrade/InputBenefitModifier'>
+        <InputBenefitModifier>
+            <Item>
+                <Product>1010258</Product>
+                <AdditionalHappiness>5</AdditionalHappiness>
+            </Item>
+        </InputBenefitModifier>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116188' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>1010258</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- The 'Bish Bang Bibbly' Experimental Display -->
+    <ModOp Type = 'replace' GUID = '112394' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>5</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Sarah Bartok, The Golden Voice -->
+    <ModOp Type = 'replace' GUID = '190732' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Anne Kenyatta, Special Needs Teacher -->
+    <ModOp Type = 'replace' GUID = '191568' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Professor Razzaq -->
+    <ModOp Type = 'replace' GUID = '190678' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <PublicServiceFullSatisfactionDistance>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </PublicServiceFullSatisfactionDistance>
+            <PublicServiceNoSatisfactionDistance>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </PublicServiceNoSatisfactionDistance>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190678' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Viridescent Billiard Table -->
+    <ModOp Type = 'replace' GUID = '191716,191722' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <PublicServiceFullSatisfactionDistance>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </PublicServiceFullSatisfactionDistance>
+            <PublicServiceNoSatisfactionDistance>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </PublicServiceNoSatisfactionDistance>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Range for all public services books -->
+    <ModOp Type = 'replace' GUID = '191716,191722,191728,191734' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <PublicServiceFullSatisfactionDistance>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </PublicServiceFullSatisfactionDistance>
+            <PublicServiceNoSatisfactionDistance>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </PublicServiceNoSatisfactionDistance>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Lady Dumbedown's Colossal Class Size Charter -->
+    <ModOp Type = 'replace' GUID = '191728' Path = '/Values/CultureUpgrade'>
+        <CultureUpgrade />
+    </ModOp>
+
+    <!-- Drum of Selamawi -->
+    <ModOp Type = 'replace' GUID = '125065,125072' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <PublicServiceFullSatisfactionDistance>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </PublicServiceFullSatisfactionDistance>
+            <PublicServiceNoSatisfactionDistance>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </PublicServiceNoSatisfactionDistance>
+        </BuildingUpgrade>
+    </ModOp>
 </ModOps>
