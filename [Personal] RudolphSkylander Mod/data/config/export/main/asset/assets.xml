@@ -5462,4 +5462,635 @@
             </PublicServiceNoSatisfactionDistance>
         </BuildingUpgrade>
     </ModOp>
+
+    <!-- Arctic Lodge -->
+<<<<<<< HEAD
+    <!-- Zappy Battery #2205 -->
+=======
+    <!-- Zappy Battery -->
+>>>>>>> ccf29d4 (COMMIT-8 Add Arctic Lodge items)
+    <ModOp Type = 'replace' GUID = '116163' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116163' Path = '/Values/HeaterUpgrade/HeatRangeUpgrade'>
+        <HeatRangeUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </HeatRangeUpgrade>
+    </ModOp>
+
+    <!-- Aspirin Machine -->
+    <ModOp Type = 'replace' GUID = '116159' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116159' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <ResolverUnitCountUpgrade>
+                <Value>1</Value>
+            </ResolverUnitCountUpgrade>
+            <ResolverUnitDecreaseUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ResolverUnitDecreaseUpgrade>
+            <ResolverUnitMovementSpeedUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ResolverUnitMovementSpeedUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116159' Path = '/Values/IncidentInfectableUpgrade/IncidentArcticIllnessIncreaseUpgrade'>
+        <IncidentArcticIllnessIncreaseUpgrade>
+            <Value>-5</Value>
+        </IncidentArcticIllnessIncreaseUpgrade>
+    </ModOp>
+
+    <!-- Radiator -->
+    <ModOp Type = 'replace' GUID = '116158' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116158' Path = '/Values/IncidentInfectableUpgrade/IncidentArcticIllnessIncreaseUpgrade'>
+        <IncidentArcticIllnessIncreaseUpgrade>
+            <Value>-5</Value>
+        </IncidentArcticIllnessIncreaseUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116158' Path = '/Values/ResidenceUpgrade/WorkforceModifierInPercent'>
+        <WorkforceModifierInPercent>50</WorkforceModifierInPercent>
+    </ModOp>
+
+    <!-- Heated Jacket of Pouchiness -->
+    <ModOp Type = 'replace' GUID = '116166' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>112700</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Nate's Darling Kettle -->
+    <ModOp Type = 'replace' GUID = '116169' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120032</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Outdoorsy Grill -->
+    <ModOp Type = 'replace' GUID = '116161' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116161' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentArcticIllnessIncreaseUpgrade>
+            <Value>-5</Value>
+        </IncidentArcticIllnessIncreaseUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116161' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>112705</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Arnarunn the Seamless -->
+    <ModOp Type = 'replace' GUID = '116133' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentArcticIllnessIncreaseUpgrade>
+            <Value>-5</Value>
+        </IncidentArcticIllnessIncreaseUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116133' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>112701</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Arctic Science Reporter -->
+    <ModOp Type = 'replace' GUID = '4272' Path = '/Values/FactoryUpgrade/AdditionalOutput'>
+        <AdditionalOutput>
+            <Item>
+                <Product>4268</Product>
+                <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                <Amount>1</Amount>
+            </Item>
+        </AdditionalOutput>
+    </ModOp>
+
+    <!-- Music Box -->
+    <ModOp Type = 'replace' GUID = '116160' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116160' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116160' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentExplosionIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentExplosionIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Gritty Gas Extractor -->
+    <ModOp Type = 'replace' GUID = '116167' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010229</Product>
+                    <AdditionalOutputCycle>1</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+                <Item>
+                    <Product>1010230</Product>
+                    <AdditionalOutputCycle>1</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116167' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-50</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116160' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentExplosionIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentExplosionIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Arctic Gas Expert -->
+    <ModOp Type = 'replace' GUID = '1772' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+            <TradePriceOnlineCurrency>100</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1772' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1772' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Glogg Splurger -->
+    <ModOp Type = 'replace' GUID = '116164' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <NeededAreaPercentUpgrade>
+                <Value>-25</Value>
+            </NeededAreaPercentUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010216</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Naaqtuuq The Sled-Builder -->
+    <ModOp Type = 'replace' GUID = '116153' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Sharp Sled Builder -->
+    <ModOp Type = 'replace' GUID = '116150' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116150' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116150' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
+    </ModOp>
+
+    <!-- Bone Adze -->
+    <ModOp Type = 'replace' GUID = '116101' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- The Uncanny Pocket Cannery -->
+    <ModOp Type = 'replace' GUID = '116165' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010217</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Sandro the Nature Chef -->
+    <ModOp Type = 'replace' GUID = '116154' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>112702</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Ivory Kudlik -->
+    <ModOp Type = 'replace' GUID = '116083' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116083' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Toklo the Trapper -->
+    <ModOp Type = 'replace' GUID = '116152' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>112697</Product>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Artful Inuit Hunter -->
+    <ModOp Type = 'replace' GUID = '116149' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116149' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116149' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-50</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Bow of the Lnu -->
+    <ModOp Type = 'replace' GUID = '116080' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <NeededAreaPercentUpgrade>
+                <Value>-25</Value>
+            </NeededAreaPercentUpgrade>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116080' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-50</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Umiak -->
+    <ModOp Type = 'replace' GUID = '116043' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Sakku -->
+    <ModOp Type = 'replace' GUID = '116071' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Taliriktug the Husky-Voiced -->
+    <ModOp Type = 'replace' GUID = '116144' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>112694</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Astute Dog-Breeder -->
+    <ModOp Type = 'replace' GUID = '116143' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116143' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116143' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Ivory Iggaak -->
+    <ModOp Type = 'replace' GUID = '116098' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116098' Path = '/Values/ModuleOwnerUpgrade'>
+        <ModuleOwnerUpgrade />
+    </ModOp>
+
+    <!-- Practised Inuit Seamster -->
+    <ModOp Type = 'replace' GUID = '116132' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116132' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>112696</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Inuinnaq Case -->
+    <ModOp Type = 'replace' GUID = '116089' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116089' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Kaputak Awl -->
+    <ModOp Type = 'replace' GUID = '116088' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116088' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116088' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Fat Chunk Candle Maker -->
+    <ModOp Type = 'replace' GUID = '116162' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <TradePrice>1000000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '116088' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <ReplaceInputs>
+                <Item>
+                    <OldInput>1010204</OldInput>
+                    <NewInput>1010230</NewInput>
+                </Item>
+            </ReplaceInputs>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <!-- Airship Logistician -->
+    <ModOp Type = 'replace' GUID = '4277' Path = '/Values/Item'>
+        <Item>
+            <Allocation>Lodge</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Legendary</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>1000000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4277' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4277' Path = '/Values/PierUpgrade'>
+        <PierUpgrade>
+            <PierSpeedUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </PierSpeedUpgrade>
+        </PierUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4277' Path = '/Values/KontorUpgrade'>
+        <KontorUpgrade>
+            <BlockBuyShare>1</BlockBuyShare>
+        </KontorUpgrade>
+    </ModOp>
 </ModOps>
