@@ -5464,11 +5464,7 @@
     </ModOp>
 
     <!-- Arctic Lodge -->
-<<<<<<< HEAD
     <!-- Zappy Battery #2205 -->
-=======
-    <!-- Zappy Battery -->
->>>>>>> ccf29d4 (COMMIT-8 Add Arctic Lodge items)
     <ModOp Type = 'replace' GUID = '116163' Path = '/Values/Item'>
         <Item>
             <Allocation>Lodge</Allocation>
@@ -6092,5 +6088,956 @@
         <KontorUpgrade>
             <BlockBuyShare>1</BlockBuyShare>
         </KontorUpgrade>
+    </ModOp>
+
+    <!-- Ships & Airships -->
+    <!-- Admiral Haynes, Beholder of Far Horizons -->
+    <ModOp Type = 'replace' GUID = '191610' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <AttackRangeUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </AttackRangeUpgrade>
+            <LineOfSightRangeUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </LineOfSightRangeUpgrade>
+            <DamageFactor>
+                <Building>
+                    <Factor>1.5</Factor>
+                </Building>
+            </DamageFactor>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <!-- Captain Smith, Titan of the Sea -->
+    <ModOp Type = 'replace' GUID = '191453' Path = '/Values/AttackableUpgrade'>
+        <AttackableUpgrade>
+            <MaxHitpointsUpgrade>
+                <Value>1000</Value>
+            </MaxHitpointsUpgrade>
+            <SelfHealPausedTimeIfAttackedUpgrade>
+                <Value>-100</Value>
+                <Percental>1</Percental>
+            </SelfHealPausedTimeIfAttackedUpgrade>
+            <SelfHealUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </SelfHealUpgrade>
+        </AttackableUpgrade>
+    </ModOp>
+
+    <!-- Commmodore Stephen Drake, The Besieger -->
+    <ModOp Type = 'replace' GUID = '191611' Path = '/Values/AttackableUpgrade'>
+        <AttackableUpgrade>
+            <DamageReceiveFactor>
+                <Normal>
+                    <Factor>0.75</Factor>
+                </Normal>
+                <Torpedo>
+                    <Factor>0.25</Factor>
+                </Torpedo>
+                <Cannon>
+                    <Factor>0.25</Factor>
+                </Cannon>
+                <BigBertha>
+                    <Factor>0.25</Factor>
+                </BigBertha>
+            </DamageReceiveFactor>
+        </AttackableUpgrade>
+    </ModOp>
+
+    <!-- DomiN8r -->
+    <ModOp Type = 'replace' GUID = '112370' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <BaseDamageUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </BaseDamageUpgrade>
+            <AttackSpeedUpgrade>50</AttackSpeedUpgrade>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <!-- Ella Golden, The Anarchist Luminary -->
+    <ModOp Type = 'replace' GUID = '111130' Path = '/Values/AttackableUpgrade'>
+        <AttackableUpgrade>
+            <SelfHealPausedTimeIfAttackedUpgrade>
+                <Value>-100</Value>
+                <Percental>1</Percental>
+            </SelfHealPausedTimeIfAttackedUpgrade>
+            <SelfHealUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </SelfHealUpgrade>
+            <DamageReceiveFactor>
+                <Torpedo>
+                    <Factor>0.5</Factor>
+                </Torpedo>
+                <Cannon>
+                    <Factor>0.5</Factor>
+                </Cannon>
+                <BigBertha>
+                    <Factor>0.5</Factor>
+                </BigBertha>
+            </DamageReceiveFactor>
+        </AttackableUpgrade>
+    </ModOp>
+
+    <!-- Wild Anarchist Sacchetti -->
+    <ModOp Type = 'replace' GUID = '111131' Path = '/Values/AttackerUpgrade/AttackRangeUpgrade'>
+        <AttackRangeUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </AttackRangeUpgrade>
+    </ModOp>
+
+    <!-- Wild Anarchist Vacco -->
+
+    <!-- Hans Eichendorf, A Wholesale Success -->
+    <ModOp Type = 'replace' GUID = '191626' Path = '/Values/VehicleUpgrade'>
+        <VehicleUpgrade>
+            <IgnoreWeightFactorUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </IgnoreWeightFactorUpgrade>
+            <ForwardSpeedUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ForwardSpeedUpgrade>
+        </VehicleUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191626' Path = '/Values/TradeShipUpgrade'>
+        <TradeShipUpgrade>
+            <ActiveTradePriceInPercent>75</ActiveTradePriceInPercent>
+            <LoadingSpeedUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </LoadingSpeedUpgrade>
+        </TradeShipUpgrade>
+    </ModOp>
+
+    <!-- Lalla Mazigh, Merchant of a Free Market -->
+    <ModOp Type = 'replace' GUID = '191625' Path = '/Values/VehicleUpgrade/ForwardSpeedUpgrade'>
+        <ForwardSpeedUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ForwardSpeedUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191625' Path = '/Values/TradeShipUpgrade/ActiveTradePriceInPercent'>
+        <ActiveTradePriceInPercent>75</ActiveTradePriceInPercent>
+    </ModOp>
+
+    <!-- Ermenegilda Di Mercante, Purveyor of Tall Ships -->
+    <ModOp Type = 'replace' GUID = '191624' Path = '/Values/VehicleUpgrade/ForwardSpeedUpgrade'>
+        <ForwardSpeedUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ForwardSpeedUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191624' Path = '/Values/TradeShipUpgrade/LoadingSpeedUpgrade'>
+        <LoadingSpeedUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </LoadingSpeedUpgrade>
+    </ModOp>
+
+    <!-- Great White Flag -->
+    <ModOp Type = 'replace' GUID = '191991' Path = '/Values/TradeShipUpgrade/ActiveTradePriceInPercent'>
+        <ActiveTradePriceInPercent>75</ActiveTradePriceInPercent>
+    </ModOp>
+
+    <!-- Ocean Plotting Sheet of the Southern Hemisphere -->
+    <ModOp Type = 'replace' GUID = '121023' Path = '/Values/VehicleUpgrade/ForwardSpeedUpgrade'>
+        <ForwardSpeedUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ForwardSpeedUpgrade>
+    </ModOp>
+
+    <!-- Mai Kalan -->
+    <ModOp Type = 'replace' GUID = '113364' Path = '/Values/VehicleUpgrade'>
+        <VehicleUpgrade>
+            <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        </VehicleUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '113364' Path = '/Values/DivingBellUpgrade'>
+        <DivingBellUpgrade>
+            <ScrapAmountLevelUpgrade>
+                <Value>5</Value>
+            </ScrapAmountLevelUpgrade>
+            <RarityWeightUpgrade>
+                <Rare>
+                    <AdditionalWeight>5</AdditionalWeight>
+                </Rare>
+                <Epic>
+                    <AdditionalWeight>10</AdditionalWeight>
+                </Epic>
+                <Legendary>
+                    <AdditionalWeight>10</AdditionalWeight>
+                </Legendary>
+            </RarityWeightUpgrade>
+        </DivingBellUpgrade>
+    </ModOp>
+
+    <!-- Spoondrift -->
+    <ModOp Type = 'replace' GUID = '112550' Path = '/Values/DivingBellUpgrade/RarityWeightUpgrade'>
+        <RarityWeightUpgrade>
+            <Epic>
+                <AdditionalWeight>5</AdditionalWeight>
+            </Epic>
+            <Legendary>
+                <AdditionalWeight>5</AdditionalWeight>
+            </Legendary>
+        </RarityWeightUpgrade>
+    </ModOp>
+
+    <!-- Jet Propeller Hurricane -->
+    <ModOp Type = 'replace' GUID = '112379' Path = '/Values/VehicleUpgrade/ForwardSpeedUpgrade'>
+        <ForwardSpeedUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ForwardSpeedUpgrade>
+    </ModOp>
+
+    <!-- Particularly Pull-y Pulley -->
+    <ModOp Type = 'replace' GUID = '116174' Path = '/Values/VehicleUpgrade'>
+        <VehicleUpgrade>
+            <ForwardSpeedUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ForwardSpeedUpgrade>
+            <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        </VehicleUpgrade>
+    </ModOp>
+
+    <!-- Sports Gondola -->
+    <ModOp Type = 'replace' GUID = '117302' Path = '/Values/VehicleUpgrade/ForwardSpeedUpgrade'>
+        <ForwardSpeedUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ForwardSpeedUpgrade>
+    </ModOp>
+
+    <!-- Fjordbuster Mk.VI -->
+    <ModOp Type = 'replace' GUID = '116173' Path = '/Values/VehicleUpgrade/ForwardSpeedUpgrade'>
+        <ForwardSpeedUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ForwardSpeedUpgrade>
+    </ModOp>
+
+    <!-- Royal Airship Stamp Mimic -->
+    <ModOp Type = 'replace' GUID = '116175' Path = '/Values/TradeShipUpgrade/LoadingSpeedUpgrade'>
+        <LoadingSpeedUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </LoadingSpeedUpgrade>
+    </ModOp>
+
+    <!-- Willa Cochran -->
+    <ModOp Type = 'replace' GUID = '4135' Path = '/Values/VehicleUpgrade'>
+        <VehicleUpgrade>
+            <MaintainanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintainanceUpgrade>
+            <IgnoreDamageFactorUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </IgnoreDamageFactorUpgrade>
+        </VehicleUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4135' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <BaseDamageUpgrade>
+                <Value>25</Value>
+            </BaseDamageUpgrade>
+            <AccuracyUpgrade>
+                <Value>25</Value>
+            </AccuracyUpgrade>
+            <AttackSpeedUpgrade>25</AttackSpeedUpgrade>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <!-- Elite Airship Gunner -->
+    <ModOp Type = 'replace' GUID = '2226' Path = '/Values/VehicleUpgrade/MaintainanceUpgrade'>
+        <MaintainanceUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </MaintainanceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '2226' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <AttackRangeUpgrade>
+                <Value>25</Value>
+            </AttackRangeUpgrade>
+            <AccuracyUpgrade>
+                <Value>25</Value>
+            </AccuracyUpgrade>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <!-- Airship Engine Mechanic -->
+    <!-- Adjust rarity -->
+    <ModOp Type = 'replace' GUID = '4132' Path = '/Values/Item'>
+        <Item>
+            <Allocation>AirShip</Allocation>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>500000</TradePrice>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4132' Path = '/Values/VehicleUpgrade'>
+        <VehicleUpgrade>
+            <ForwardSpeedUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ForwardSpeedUpgrade>
+            <MaintainanceUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </MaintainanceUpgrade>
+        </VehicleUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4132' Path = '/Values/AttackableUpgrade'>
+        <AttackableUpgrade>
+            <MaxHitpointsUpgrade>
+                <Value>500</Value>
+            </MaxHitpointsUpgrade>
+            <SelfHealPausedTimeIfAttackedUpgrade>
+                <Value>-100</Value>
+                <Percental>1</Percental>
+            </SelfHealPausedTimeIfAttackedUpgrade>
+            <SelfHealUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </SelfHealUpgrade>
+        </AttackableUpgrade>
+    </ModOp>
+
+    <!-- Jack of all Trades -->
+    <ModOp Type = "addNextSibling" GUID = "191626">
+        <Asset>
+            <Template>ShipSpecialist</Template>
+            <Values>
+                <Standard>
+                    <GUID>192074</GUID>
+                    <Name>Jack of all Trades</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_craftsman_common.png</IconFilename>
+                    <InfoDescription>17225</InfoDescription>
+                </Standard>
+                <Text>
+                    <LocaText>
+                        <English>
+                            <Text>Jack of all Trades</Text>
+                            <Status>Exported</Status>
+                        </English>
+                    </LocaText>
+                    <LineID>26778</LineID>
+                </Text>
+                <Item>
+                    <MaxStackSize>1</MaxStackSize>
+                    <Rarity>Legendary</Rarity>
+                    <TradePrice>1000000</TradePrice>
+                    <TradePriceOnlineCurrency>1000</TradePriceOnlineCurrency>
+                </Item>
+                <Cost />
+                <ItemAction />
+                <VehicleUpgrade>
+                    <IgnoreWeightFactorUpgrade>
+                        <Value>100</Value>
+                        <Percental>1</Percental>
+                    </IgnoreWeightFactorUpgrade>
+                    <MaintainanceUpgrade>
+                        <Value>-50</Value>
+                        <Percental>1</Percental>
+                    </MaintainanceUpgrade>
+                    <ForwardSpeedUpgrade>
+                        <Value>50</Value>
+                        <Percental>1</Percental>
+                    </ForwardSpeedUpgrade>
+                    <ActivateWhiteFlag>1</ActivateWhiteFlag>
+                </VehicleUpgrade>
+                <ExpeditionAttribute>
+                    <BaseMorale>100</BaseMorale>
+                    <ExpeditionAttributes>
+                        <Item>
+                            <Attribute>PerkMale</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkFemale</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkAnthropologist</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkZoologist</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkHypnotist</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkFormerPirate</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkDiver</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkEntertainer</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkArcheologist</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>PerkPolyglot</Attribute>
+                            <Amount>1</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Diplomacy</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Melee</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Might</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Navigation</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Medicine</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Faith</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Crafting</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                        <Item>
+                            <Attribute>Hunting</Attribute>
+                            <Amount>100</Amount>
+                        </Item>
+                    </ExpeditionAttributes>
+                </ExpeditionAttribute>
+                <AttackerUpgrade />
+                <AttackableUpgrade />
+                <TradeShipUpgrade>
+                    <ActiveTradePriceInPercent>50</ActiveTradePriceInPercent>
+                    <LoadingSpeedUpgrade>
+                        <Value>100</Value>
+                        <Percental>1</Percental>
+                    </LoadingSpeedUpgrade>
+                </TradeShipUpgrade>
+                <Locked />
+                <SpecialAction />
+                <DivingBellUpgrade />
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <!-- Cultural Sets -->
+    <!-- All sets buff scope -->
+    <ModOp 
+        Type = 'replace' 
+        GUID = '191124,193653,193665,193773,191123,191114,191121,191120,191130,124198,193672,191116,124905,191117,124196,124908,193776,191125,191126,124906,193403,193657,193670,124200,193658,191127,191122,191129,191119,124199,191118,124907,193660,193655,193193,193662,191115,124197,193774' 
+        Path = '/Values/ItemSocketSet/BuffScope'>
+        <BuffScope>Session</BuffScope>
+    </ModOp>
+
+    <!-- Abyssal Depths -->
+    <ModOp Type = 'replace' GUID = '193402' Path = '/Values/DivingBellUpgrade'>
+        <DivingBellUpgrade>
+            <RarityWeightUpgrade>
+                <Epic>
+                    <AdditionalWeight>5</AdditionalWeight>
+                </Epic>
+                <Legendary>
+                    <AdditionalWeight>5</AdditionalWeight>
+                </Legendary>
+            </RarityWeightUpgrade>
+            <AllocationWeightUpgrade>
+                <Zoo>
+                    <AdditionalWeight>10</AdditionalWeight>
+                </Zoo>
+            </AllocationWeightUpgrade>
+        </DivingBellUpgrade>
+    </ModOp>
+
+    <!-- Aegean Cultures -->
+    <ModOp Type = 'replace' GUID = '191142' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191142' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Arctic Tundra -->
+    <ModOp Type = 'replace' GUID = '193772' Path = '/Values/CultureUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <!-- Atlantean -->
+    <ModOp Type = 'replace' GUID = '193406' Path = '/Values/DivingBellUpgrade'>
+        <DivingBellUpgrade>
+            <RarityWeightUpgrade>
+                <Epic>
+                    <AdditionalWeight>5</AdditionalWeight>
+                </Epic>
+                <Legendary>
+                    <AdditionalWeight>5</AdditionalWeight>
+                </Legendary>
+            </RarityWeightUpgrade>
+            <AllocationWeightUpgrade>
+                <Museum>
+                    <AdditionalWeight>10</AdditionalWeight>
+                </Museum>
+            </AllocationWeightUpgrade>
+        </DivingBellUpgrade>
+    </ModOp>
+
+    <!-- Battle of Trelawney -->
+    <ModOp Type = 'replace' GUID = '193407' Path = '/Values/AttackerUpgrade'>
+        <AttackerUpgrade>
+            <HitpointDamage>
+                <Item>
+                    <MinDamageFactor>1.5</MinDamageFactor>
+                </Item>
+            </HitpointDamage>
+            <BaseDamageUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </BaseDamageUpgrade>
+        </AttackerUpgrade>
+    </ModOp>
+
+    <!-- Bronze Age -->
+    <ModOp Type = 'replace' GUID = '191141' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+                    <AdditionalOutputCycle>5</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191141' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Cordillera -->
+    <ModOp Type = 'replace' GUID = '191132' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <WorkforceModifierInPercent>25</WorkforceModifierInPercent>
+            <TaxModifierInPercent>25</TaxModifierInPercent>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <!-- Domestic Animals -->
+    <ModOp Type = 'replace' GUID = '191139' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191139' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Empire of the Eagle -->
+    <ModOp Type = 'replace' GUID = '191148' Path = '/Values/ResidenceUpgrade/TaxModifierInPercent'>
+        <TaxModifierInPercent>25</TaxModifierInPercent>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191148' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentIllnessIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentIllnessIncreaseUpgrade>
+            <IncidentRiotIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentRiotIncreaseUpgrade>
+            <IncidentExplosionIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentExplosionIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
+    </ModOp>
+
+    <!-- Enbesan Highlands -->
+    <ModOp Type = 'replace' GUID = '124208' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <GoodConsumptionUpgrade>
+                <Item>
+                    <ProvidedNeed>114410</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>114390</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+            </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <!-- Extinct Species -->
+    <ModOp Type = 'replace' GUID = '191134' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Gods of the Delta -->
+    <ModOp Type = 'replace' GUID = '124913' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>50</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Great Coral Reef -->
+    <ModOp Type = 'replace' GUID = '191135' Path = '/Values/ResidenceUpgrade/AdditionalHappiness'>
+        <AdditionalHappiness>5</AdditionalHappiness>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191135' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>5</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Great Desert -->
+    <ModOp Type = 'replace' GUID = '124206' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <ResolverUnitDecreaseUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ResolverUnitDecreaseUpgrade>
+            <ResolverUnitMovementSpeedUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ResolverUnitMovementSpeedUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Heirlooms of the Gold-realm -->
+    <ModOp Type = 'replace' GUID = '193777' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
+    <!-- Jurassic -->
+    <ModOp Type = 'replace' GUID = '191143' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <AdditionalHappiness>10</AdditionalHappiness>
+            <TaxModifierInPercent>25</TaxModifierInPercent>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <!-- Lost Tribes -->
+    <ModOp Type = 'replace' GUID = '124914' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <GoodConsumptionUpgrade>
+                <Item>
+                    <ProvidedNeed>1010206</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>1010217</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>120032</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+            </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <!-- Luminaries -->
+    <ModOp Type = 'replace' GUID = '193404' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Marshland -->
+    <ModOp Type = 'replace' GUID = '193656' Path = '/Values/ResidenceUpgrade/AdditionalHappiness'>
+        <AdditionalHappiness>5</AdditionalHappiness>
+    </ModOp>
+
+    <!-- Medicinal -->
+    <ModOp Type = 'replace' GUID = '193669' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <ResolverUnitCountUpgrade>
+                <Value>2</Value>
+            </ResolverUnitCountUpgrade>
+            <ResolverUnitMovementSpeedUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ResolverUnitMovementSpeedUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Miombo Woodlands -->
+    <ModOp Type = 'replace' GUID = '124210' Path = '/Values/FactoryUpgrade/NeededAreaPercentUpgrade'>
+        <NeededAreaPercentUpgrade>
+            <Value>-25</Value>
+        </NeededAreaPercentUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '124210' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>10</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- New World Huaca -->
+    <ModOp Type = 'replace' GUID = '191145' Path = '/Values/VisitorHarborUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <!-- Northern Sagas -->
+    <ModOp Type = 'replace' GUID = '191149' Path = '/Values/AttackerUpgrade/BaseDamageUpgrade'>
+        <BaseDamageUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </BaseDamageUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191149' Path = '/Values/AttackableUpgrade/MaxHitpointsUpgrade'>
+        <MaxHitpointsUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </MaxHitpointsUpgrade>
+    </ModOp>
+
+    <!-- Ocean Predators -->
+    <ModOp Type = 'replace' GUID = '191140' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191140' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Origin of Mankind -->
+    <ModOp Type = 'replace' GUID = '191147' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191147' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
+    <!-- Rainforest -->
+    <ModOp Type = 'replace' GUID = '191136' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>50</Value>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Roots of Enbesa -->
+    <ModOp Type = 'replace' GUID = '124915' Path = '/Values/ResidenceUpgrade/AdditionalResearch'>
+        <AdditionalResearch>5</AdditionalResearch>
+    </ModOp>
+
+    <!-- Sargasso Sea -->
+    <ModOp Type = 'replace' GUID = '193654' Path = '/Values/VisitorHarborUpgrade/SpawnProbabilityFactor'>
+        <SpawnProbabilityFactor>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </SpawnProbabilityFactor>
+    </ModOp>
+
+    <!-- Skull and Bones -->
+    <ModOp Type = 'replace' GUID = '191146' Path = '/Values/VehicleUpgrade'>
+        <VehicleUpgrade>
+            <ForwardSpeedUpgrade>
+                <Value>25</Value>
+                <Percental>1</Percental>
+            </ForwardSpeedUpgrade>
+            <MaintainanceUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </MaintainanceUpgrade>
+            <IgnoreDamageFactorUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </IgnoreDamageFactorUpgrade>
+        </VehicleUpgrade>
+    </ModOp>
+
+    <!-- Snowflakes -->
+    <ModOp Type = 'replace' GUID = '193194' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+        <AttractivenessUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </AttractivenessUpgrade>
+    </ModOp>
+
+    <!-- Taiga Forest -->
+    <ModOp Type = 'replace' GUID = '191133' Path = '/Values/ResidenceUpgrade'>
+        <ResidenceUpgrade>
+            <GoodConsumptionUpgrade>
+                <Item>
+                    <ProvidedNeed>1010200</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>1010213</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>1010217</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>1010238</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>1010258</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>120033</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>120035</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+                <Item>
+                    <ProvidedNeed>114410</ProvidedNeed>
+                    <AmountInPercent>-25</AmountInPercent>
+                </Item>
+            </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+    </ModOp>
+
+    <!-- Teeming Lakes -->
+    <ModOp Type = 'replace' GUID = '124207' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Thule Relics -->
+    <ModOp Type = 'replace' GUID = '193775' Path = '/Values/CultureUpgrade'>
+        <CultureUpgrade>
+            <ItemSetUpgrade>
+                <Item>
+                    <ItemSet>191115</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>191119</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>193773</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>191131</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>191123</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>193774</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>193776</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+                <Item>
+                    <ItemSet>193662</ItemSet>
+                    <AttractivenessUpgradePercent>25</AttractivenessUpgradePercent>
+                </Item>
+            </ItemSetUpgrade>
+        </CultureUpgrade>
     </ModOp>
 </ModOps>
