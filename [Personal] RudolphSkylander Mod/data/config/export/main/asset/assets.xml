@@ -7148,6 +7148,373 @@
         </Asset>
     </ModOp>
 
+    <!-- Expedition rewards -->
+    <!-- The Fugitive -->
+    <ModOp Type = 'replace' GUID = '190637' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192979</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192980</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- The Inspector -->
+    <ModOp Type = 'replace' GUID = '190348' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192969</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192970</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190638' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>190348</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- The Predator -->
+    <ModOp Type = 'replace' GUID = '190637' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>190004</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190452</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>191110</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Sunken Depths -->
+    <ModOp Type = 'replace' GUID = '191150' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192969</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192970</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- The Trial -->
+    <ModOp Type = 'replace' GUID = '191151' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192969</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192970</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- The Deeper you go -->
+    <ModOp Type = 'replace' GUID = '192037' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>190500</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190474</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190501</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Songs of the Sea -->
+    <ModOp Type = 'replace' GUID = '192038' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>191095</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>191096</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>191097</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>191108</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>191109</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Cities of Gold -->
+    <ModOp Type = 'replace' GUID = '192041' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>190497</ItemLink>
+                <Weight>100</Weight>
+            </Item>
+            <Item>
+                <ItemLink>190500</ItemLink>
+                <Weight>100</Weight>
+            </Item>
+            <Item>
+                <ItemLink>190474</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190501</ItemLink>
+                <Weight>100</Weight>
+            </Item>
+            <Item>
+                <ItemLink>190498</ItemLink>
+                <Weight>100</Weight>
+            </Item>
+            <Item>
+                <ItemLink>190499</ItemLink>
+                <Weight>100</Weight>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Call of the Devil -->
+    <ModOp Type = 'replace' GUID = '192044' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>191092</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>191103</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- The Treasure of Hassan Ben Sahid -->
+    <ModOp Type = 'replace' GUID = '192045' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>190546</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190547</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190550</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>190551</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Too Good to be True? -->
+    <ModOp Type = 'replace' GUID = '192046' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>190474</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Archeological Reward -->
+    <ModOp Type = 'replace' GUID = '190417' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192969</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192970</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Zoological Reward -->
+    <ModOp Type = 'replace' GUID = '190421' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192964</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192965</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Botanical Reward -->
+    <ModOp Type = 'replace' GUID = '190421' Path = '/Values/RewardPool/ItemsPool'>
+        <ItemsPool>
+            <Item>
+                <ItemLink>192964</ItemLink>
+            </Item>
+            <Item>
+                <ItemLink>192965</ItemLink>
+            </Item>
+        </ItemsPool>
+    </ModOp>
+
+    <!-- Worlds Fair -->
+    <!-- Architectural rewards -->
+    <ModOp Type = "replace" GUID = '17015' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102464</Reward>
+                <Amount>10</Amount>
+            </Item>
+            <Item>
+                <Reward>102465</Reward>
+                <Amount>10</Amount>
+            </Item>
+            <Item>
+                <Reward>102467</Reward>
+                <Amount>20</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17700' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102466</Reward>
+                <Amount>100</Amount>
+            </Item>
+            <Item>
+                <Reward>192141</Reward>
+                <Amount>25</Amount>
+            </Item>
+            <Item>
+                <Reward>102464</Reward>
+                <Amount>25</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17703' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102466</Reward>
+                <Amount>100</Amount>
+            </Item>
+            <Item>
+                <Reward>102461</Reward>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Reward>192141</Reward>
+                <Amount>25</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17704' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102466</Reward>
+                <Amount>100</Amount>
+            </Item>
+            <Item>
+                <Reward>102461</Reward>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Reward>102463</Reward>
+                <Amount>50</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17705' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102472</Reward>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Reward>102468</Reward>
+                <Amount>25</Amount>
+            </Item>
+            <Item>
+                <Reward>102470</Reward>
+                <Amount>25</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17706' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102461</Reward>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Reward>102472</Reward>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Reward>102470</Reward>
+                <Amount>25</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17707' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102466</Reward>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Reward>102475</Reward>
+                <Amount>10</Amount>
+            </Item>
+            <Item>
+                <Reward>102473</Reward>
+                <Amount>10</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17708' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102468</Reward>
+                <Amount>25</Amount>
+            </Item>
+            <Item>
+                <Reward>102469</Reward>
+                <Amount>25</Amount>
+            </Item>
+            <Item>
+                <Reward>102471</Reward>
+                <Amount>50</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '17709' Path = '/Values/Reward/RewardAssets'>
+        <RewardAssets>
+            <Item>
+                <Reward>102473</Reward>
+                <Amount>10</Amount>
+            </Item>
+            <Item>
+                <Reward>102474</Reward>
+                <Amount>10</Amount>
+            </Item>
+            <Item>
+                <Reward>102475</Reward>
+                <Amount>10</Amount>
+            </Item>
+        </RewardAssets>
+    </ModOp>
+
     <!-- Cultural Sets -->
     <!-- All sets buff scope -->
     <ModOp 
