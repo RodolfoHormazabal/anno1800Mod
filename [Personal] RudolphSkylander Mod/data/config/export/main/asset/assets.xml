@@ -880,6 +880,171 @@
         Path = "/Values/RandomIsland/*[self::IslandRegion or self::IslandDifficulty or self::IslandType]">
     </ModOp>
 
+    <!-- Ship changes -->
+    <!-- Flagship -->
+    <ModOp Type = 'replace' GUID = '101121' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SlotCount>8</SlotCount>
+            <StackLimit>100</StackLimit>
+            <InitSocketItems>
+                <Item>
+                    <Item>192074</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+                <Item>
+                    <Item>112370</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+                <Item>
+                    <Item>112379</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+            </InitSocketItems>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Salvager -->
+    <ModOp Type = 'replace' GUID = '112084' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SocketAllocation>Ship;SteamShip;Tradeship;DivingVessel</SocketAllocation>
+            <StackLimit>250</StackLimit>
+            <SlotCount>8</SlotCount>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Monitor -->
+    <ModOp Type = 'replace' GUID = '100443,720' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SlotCount>2</SlotCount>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Cargo Ship -->
+    <ModOp Type = 'replace' GUID = '1010062' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>4</SocketCount>
+            <SlotCount>6</SlotCount>
+            <StackLimit>100</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Oil Tanker -->
+    <ModOp Type = 'replace' GUID = '100853' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>4</SocketCount>
+            <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+            <SlotCount>1</SlotCount>
+            <StackLimit>1000</StackLimit>
+            <FixedSlotContent>1010566</FixedSlotContent>
+            <InitSocketItems>
+                <Item>
+                    <Item>191626</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+                <Item>
+                    <Item>191625</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+                <Item>
+                    <Item>191624</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+                <Item>
+                    <Item>191991</Item>
+                    <StackSize>1</StackSize>
+                </Item>
+            </InitSocketItems>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Extravaganza Steamer -->
+    <ModOp Type = 'replace' GUID = '102455' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>4</SocketCount>
+            <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+            <SlotCount>6</SlotCount>
+            <StackLimit>250</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Great Eastern -->
+    <ModOp Type = 'replace' GUID = '118718' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>4</SocketCount>
+            <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+            <SlotCount>8</SlotCount>
+            <StackLimit>500</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- World-Class Reefer -->
+    <ModOp Type = 'replace' GUID = '132404' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>4</SocketCount>
+            <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+            <SlotCount>8</SlotCount>
+            <StackLimit>500</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Airships stats -->
+    <!-- Harpy -->
+    <ModOp Type="replace" GUID='1654,1733' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketCount>2</SocketCount>
+            <SlotCount>2</SlotCount>
+            <StackLimit>100</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Manticore -->
+    <ModOp Type="replace" GUID='1655,1734' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketCount>2</SocketCount>
+            <SlotCount>3</SlotCount>
+            <StackLimit>100</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Hermes -->
+    <ModOp Type="replace" GUID='1058,1735' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SlotCount>3</SlotCount>
+            <StackLimit>250</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Pegasus -->
+    <ModOp Type="replace" GUID='1059,1736' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SlotCount>6</SlotCount>
+            <StackLimit>250</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Zephyr -->
+    <ModOp Type="replace" GUID='1060,1737' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketCount>4</SocketCount>
+            <SlotCount>8</SlotCount>
+            <StackLimit>500</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Boreas -->
+    <ModOp Type="replace" GUID='1755,114166' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SlotCount>6</SlotCount>
+            <StackLimit>100</StackLimit>
+        </ItemContainer>
+    </ModOp>
+
     <!-- Items -->
     <!-- Trade Union -->
     <!-- All production list -->
