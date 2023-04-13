@@ -990,6 +990,102 @@
         </ItemContainer>
     </ModOp>
 
+    <!-- Charter ship -->
+    <ModOp Type="replace" GUID='100660'>
+        <Asset>
+            <BaseAssetGUID>1010062</BaseAssetGUID>
+            <Values>
+                <Standard>
+                    <GUID>100660</GUID>
+                    <Name>Rented Ship - Schooner (Trade)</Name>
+                </Standard>
+                <Object />
+                <Mesh />
+                <Selection>
+                    <OnSelection>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList />
+                        </Values>
+                    </OnSelection>
+                </Selection>
+                <Walking />
+                <Text>
+                    <LineID>14873</LineID>
+                </Text>
+                <CommandQueue />
+                <Drifting />
+                <Collector />
+                <Attackable />
+                <MinimapToken />
+                <SoundEmitter />
+                <UpgradeList />
+                <QuestObject />
+                <Infolayer />
+                <ItemContainer>
+                    <SocketCount>4</SocketCount>
+                    <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+                    <SlotCount>1</SlotCount>
+                    <StackLimit>100</StackLimit>
+                    <InitSocketItems>
+                        <Item>
+                            <Item>191626</Item>
+                            <StackSize>1</StackSize>
+                        </Item>
+                        <Item>
+                            <Item>191625</Item>
+                            <StackSize>1</StackSize>
+                        </Item>
+                        <Item>
+                            <Item>191624</Item>
+                            <StackSize>1</StackSize>
+                        </Item>
+                        <Item>
+                            <Item>191991</Item>
+                            <StackSize>1</StackSize>
+                        </Item>
+                    </InitSocketItems>
+                </ItemContainer>
+                <FeedbackController />
+                <Draggable>
+                    <DraggableOnDrag>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList />
+                        </Values>
+                    </DraggableOnDrag>
+                    <DraggableOnDrop>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList />
+                        </Values>
+                    </DraggableOnDrop>
+                </Draggable>
+                <Cost>
+                    <Costs />
+                    <InfluenceCostType>CharterRoutes</InfluenceCostType>
+                    <InfluenceCostPoints>1</InfluenceCostPoints>
+                </Cost>
+                <Craftable />
+                <TradeRouteVehicle />
+                <Locked />
+                <Nameable />
+                <MetaPersistent />
+                <ExpeditionAttribute />
+                <ShipMaintenance>
+                    <Maintenance>100</Maintenance>
+                </ShipMaintenance>
+                <Sellable />
+                <Stance />
+                <Rentable />
+                <WorldMapSound />
+                <Pausable />
+                <ShipIncident />
+                <SoundEmitterCommandBarks />
+            </Values>
+        </Asset>
+    </ModOp>
+
     <!-- Airships stats -->
     <!-- Harpy -->
     <ModOp Type="replace" GUID='1654,1733' Path="/Values/ItemContainer">
@@ -1043,6 +1139,122 @@
             <SlotCount>6</SlotCount>
             <StackLimit>100</StackLimit>
         </ItemContainer>
+    </ModOp>
+
+    <!-- Trade Route good amounts -->
+    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Normal'>
+        <Normal>
+            <ExcludingGoods>
+                <Item>
+                    <Good>120021</Good>
+                </Item>
+                <Item>
+                    <Good>1010566</Good>
+                </Item>
+            </ExcludingGoods>
+            <MinGoodTransferAmount>1</MinGoodTransferAmount>
+            <MaxGoodTransferAmount>500</MaxGoodTransferAmount>
+            <DefaultGoodTransferAmount>100</DefaultGoodTransferAmount>
+            <MaxTradeActionsPerStation>8</MaxTradeActionsPerStation>
+        </Normal>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Charter'>
+        <Charter>
+            <ExcludingGoods>
+                <Item>
+                    <Good>120021</Good>
+                </Item>
+                <Item>
+                    <Good>1010566</Good>
+                </Item>
+            </ExcludingGoods>
+            <MinGoodTransferAmount>1</MinGoodTransferAmount>
+            <MaxGoodTransferAmount>100</MaxGoodTransferAmount>
+            <DefaultGoodTransferAmount>100</DefaultGoodTransferAmount>
+            <MaxTradeActionsPerStation>1</MaxTradeActionsPerStation>
+            <Unlock>141414</Unlock>
+        </Charter>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Oil'>
+        <Oil>
+            <RestrictedGood>
+                <Item>
+                    <Good>1010566</Good>
+                </Item>
+            </RestrictedGood>
+            <MinGoodTransferAmount>1</MinGoodTransferAmount>
+            <MaxGoodTransferAmount>1000</MaxGoodTransferAmount>
+            <DefaultGoodTransferAmount>1000</DefaultGoodTransferAmount>
+            <MaxTradeActionsPerStation>1</MaxTradeActionsPerStation>
+            <Unlock>141416</Unlock>
+        </Oil>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Mail'>
+        <Mail>
+            <RestrictedGood>
+                <Item>
+                    <Good>535</Good>
+                </Item>
+                <Item>
+                    <Good>4267</Good>
+                </Item>
+                <Item>
+                    <Good>4268</Good>
+                </Item>
+            </RestrictedGood>
+            <MinGoodTransferAmount>1</MinGoodTransferAmount>
+            <MaxGoodTransferAmount>100</MaxGoodTransferAmount>
+            <DefaultGoodTransferAmount>100</DefaultGoodTransferAmount>
+            <MaxTradeActionsPerStation>8</MaxTradeActionsPerStation>
+            <Unlock>962</Unlock>
+            <DumpEverythingAtStation>0</DumpEverythingAtStation>
+            <RouteAlchemy>
+                <DeliverGood>
+                    <Item>
+                        <LoadedGood>535</LoadedGood>
+                        <UnloadedGood>536</UnloadedGood>
+                    </Item>
+                </DeliverGood>
+                <SessionSwitch>
+                    <Item>
+                        <LeavingSession>110934</LeavingSession>
+                        <LoadedGood>535</LoadedGood>
+                        <UpgradedGood>2524</UpgradedGood>
+                    </Item>
+                    <Item>
+                        <LeavingSession>180023</LeavingSession>
+                        <LoadedGood>535</LoadedGood>
+                        <UpgradedGood>2524</UpgradedGood>
+                    </Item>
+                    <Item>
+                        <LeavingSession>180025</LeavingSession>
+                        <LoadedGood>535</LoadedGood>
+                        <UpgradedGood>2524</UpgradedGood>
+                    </Item>
+                    <Item>
+                        <LeavingSession>180045</LeavingSession>
+                        <LoadedGood>535</LoadedGood>
+                        <UpgradedGood>2524</UpgradedGood>
+                    </Item>
+                </SessionSwitch>
+                <RouteChange>
+                    <Item>
+                        <LoadedGood>535</LoadedGood>
+                    </Item>
+                    <Item>
+                        <LoadedGood>4267</LoadedGood>
+                    </Item>
+                    <Item>
+                        <LoadedGood>4268</LoadedGood>
+                    </Item>
+                </RouteChange>
+            </RouteAlchemy>
+            <IgnoreMinimumLoadingTimes>1</IgnoreMinimumLoadingTimes>
+            <LoadingTimeGoodFactor>0.1</LoadingTimeGoodFactor>
+        </Mail>
     </ModOp>
 
     <!-- Items -->
@@ -8161,6 +8373,519 @@
         </CultureUpgrade>
     </ModOp>
 
+    <!-- Building changes -->
+    <!-- Coast Buildings Placement -->
+    <ModOp Type = "add" GUID = '101642' Path = '/Values/Building'>
+        <TerrainType>Water_Including_Coast</TerrainType>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '100429,102284' Path = '/Values/Building/TerrainType'>
+        <TerrainType>Water_Including_Coast</TerrainType>
+    </ModOp>
+
+    <ModOp Type = "remove" GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
+
+    <!-- Big Betty building placement -->
+    <ModOp Type = "replace" GUID = '1010524' Path = '/Values/Building'>
+        <Building>
+            <BuildingCategoryName>11150</BuildingCategoryName>
+            <TerrainType>Water_Including_Coast</TerrainType>
+            <BuildModeRandomRotation>90</BuildModeRandomRotation>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+    </ModOp>
+
+    <!-- Turrets Firing Angle -->
+    <ModOp Type = "replace" GUID = '3700,625,1010523,1010522' Path = '/Values/Attacker/Turrets/Item/TurnSpan'>
+        <TurnSpan>240</TurnSpan>
+    </ModOp>
+
+    <!-- Docklands Main Wharf influence area -->
+    <ModOp Type = "replace" GUID = '601470' Path = '/Values/ItemContainer'>
+        <ItemContainer>
+            <SocketCount>3</SocketCount>
+            <SocketAllocation>RadiusBuilding;HarborOffice;Dockland</SocketAllocation>
+            <SocketScope>Area</SocketScope>
+            <SocketScopeRadiusOverlapCategory>HarborOffice</SocketScopeRadiusOverlapCategory>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Trading Posts -->
+    <!-- Small -->
+    <ModOp Type = "replace" GUID = '1010517,1010540,1010519,24775' Path = '/Values/Warehouse/WarehouseStorage'>
+        <WarehouseStorage>
+            <StorageMax>100</StorageMax>
+        </WarehouseStorage>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '1010517,1010540,1010519,24775' Path = '/Values/LoadingPier'>
+        <LoadingPier>
+            <NumOfPiers>2</NumOfPiers>
+            <LoadingSpeed>3</LoadingSpeed>
+            <MinLoadingTime>3</MinLoadingTime>
+        </LoadingPier>
+    </ModOp>
+
+    <!-- Medium -->
+    <ModOp Type = "replace" GUID = '100510,100514' Path = '/Values/Warehouse/WarehouseStorage'>
+        <WarehouseStorage>
+            <StorageMax>250</StorageMax>
+        </WarehouseStorage>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '100510,100514' Path = '/Values/LoadingPier'>
+        <LoadingPier>
+            <NumOfPiers>2</NumOfPiers>
+            <LoadingSpeed>5</LoadingSpeed>
+            <MinLoadingTime>3</MinLoadingTime>
+        </LoadingPier>
+    </ModOp>
+
+    <!-- Large -->
+    <ModOp Type = "replace" GUID = '100511,100515' Path = '/Values/Warehouse/WarehouseStorage'>
+        <WarehouseStorage>
+            <StorageMax>500</StorageMax>
+        </WarehouseStorage>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '100511,100515' Path = '/Values/LoadingPier'>
+        <LoadingPier>
+            <NumOfPiers>2</NumOfPiers>
+            <LoadingSpeed>7</LoadingSpeed>
+            <MinLoadingTime>3</MinLoadingTime>
+        </LoadingPier>
+    </ModOp>
+
+    <!-- Grand -->
+    <ModOp Type = "replace" GUID = '269879,269867' Path = '/Values/Warehouse/WarehouseStorage'>
+        <WarehouseStorage>
+            <StorageMax>1000</StorageMax>
+        </WarehouseStorage>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '269879,269867' Path = '/Values/LoadingPier'>
+        <LoadingPier>
+            <NumOfPiers>2</NumOfPiers>
+            <LoadingSpeed>10</LoadingSpeed>
+            <MinLoadingTime>3</MinLoadingTime>
+        </LoadingPier>
+    </ModOp>
+
+    <!-- Pier -->
+    <ModOp Type = "replace" GUID = '100519' Path = '/Values/LoadingPier'>
+        <LoadingPier>
+            <NumOfPiers>1</NumOfPiers>
+            <LoadingSpeed>10</LoadingSpeed>
+            <MinLoadingTime>3</MinLoadingTime>
+        </LoadingPier>
+    </ModOp>
+
+    <!-- Palace Late Drink Act -->
+    <!-- Farmers -->
+    <ModOp Type="replace" GUID='269232' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>1010216</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Workers -->
+    <ModOp Type="replace" GUID='269448' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>1010216</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>1010214</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Artisans -->
+    <ModOp Type="replace" GUID='269235' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>1010214</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>1010257</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Engineers normal -->
+    <ModOp Type="replace" GUID='269447' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>1010257</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>120032</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Investor normal > lvl 2 + tower -->
+    <ModOp Type="replace" GUID='269233' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120032</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>120016</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Scholars -->
+    <ModOp Type="replace" GUID='273692' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>114390</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>1010257</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Investors lvl 3 -->
+    <ModOp Type="replace" GUID='280082' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120032</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>120016</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>135234</ProvidedNeed>
+                <AmountInPercent>-25</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Modules Range -->
+    <ModOp Type = "replace" GUID = '1010267,1010263,1010269,101331,101272,112676,112682,114439,114456,24836,24844,24658' Path = '/Values/ModuleOwner/ModuleBuildRadius'>
+        <ModuleBuildRadius>25</ModuleBuildRadius>
+    </ModOp>
+
+    <ModOp Type = "add" GUID = '5457,101269' Path = '/Values/ModuleOwner'>
+        <ModuleBuildRadius>25</ModuleBuildRadius>
+    </ModOp>
+
+    <ModOp Type = "add" GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner'>
+        <ModuleBuildRadius>250</ModuleBuildRadius>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner/ModuleLimits/Connector/Limit'>
+        <Limit>1000</Limit>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '24805' Path = '/Values/BuffFactory/BaseBuffDistance'>
+        <BaseBuffDistance>50</BaseBuffDistance>
+    </ModOp>
+
+    <!-- Hacienda building radius -->
+    <ModOp Type = "replace" GUID = '24768' Path = '/Values/Hacienda/AdditionalRadiusThresholds'>
+        <AdditionalRadiusThresholds>
+            <Item>
+                <ResidentThreshold>0</ResidentThreshold>
+                <AdditionalHaciendaRadius>285</AdditionalHaciendaRadius>
+            </Item>
+            <Item>
+                <ResidentThreshold>200</ResidentThreshold>
+                <AdditionalHaciendaRadius>25</AdditionalHaciendaRadius>
+            </Item>
+            <Item>
+                <ResidentThreshold>400</ResidentThreshold>
+                <AdditionalHaciendaRadius>25</AdditionalHaciendaRadius>
+            </Item>
+            <Item>
+                <ResidentThreshold>600</ResidentThreshold>
+                <AdditionalHaciendaRadius>25</AdditionalHaciendaRadius>
+            </Item>
+            <Item>
+                <ResidentThreshold>800</ResidentThreshold>
+                <AdditionalHaciendaRadius>25</AdditionalHaciendaRadius>
+            </Item>
+            <Item>
+                <ResidentThreshold>1000</ResidentThreshold>
+                <AdditionalHaciendaRadius>100</AdditionalHaciendaRadius>
+            </Item>
+        </AdditionalRadiusThresholds>
+    </ModOp>
+
+    <!-- Hacienda satisfaction -->
+    <ModOp Type = "add" GUID = '24768' Path = '/Values/PublicService'>
+        <PublicService>
+            <FullSatisfactionDistance>100</FullSatisfactionDistance>
+            <NoSatisfactionDistance>100</NoSatisfactionDistance>
+        </PublicService>
+    </ModOp>
+
+    <!-- Hacienda Decree 1 -->
+    <ModOp Type = "replace" GUID = '25623' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120033</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '25624' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120033</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>120035</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '7728' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>5381</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>5382</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '25634' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+        <GoodConsumptionUpgrade>
+            <Item>
+                <ProvidedNeed>120033</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+            <Item>
+                <ProvidedNeed>120035</ProvidedNeed>
+                <AmountInPercent>-50</AmountInPercent>
+            </Item>
+        </GoodConsumptionUpgrade>
+    </ModOp>
+
+    <!-- Hacienda Decree 3 -->
+    <ModOp Type = "replace" GUID = '25687' Path = '/Values/WarehouseUpgrade'>
+        <WarehouseUpgrade>
+            <StorageCapacityModifier>100</StorageCapacityModifier>
+        </WarehouseUpgrade>
+    </ModOp>
+
+    <!-- Hacienda Decree 4 -->
+    <ModOp Type = "replace" GUID = '25661' Path = '/Values/InfluenceSourceUpgrade/InfluenceAmounUpgrade'>
+        <InfluenceAmounUpgrade>
+            <Value>10</Value>
+        </InfluenceAmounUpgrade>
+    </ModOp>
+
+    <!-- Irrigation -->
+    <ModOp Type = "replace" GUID = '24829' Path = '/Values/IrrigationSource'>
+        <IrrigationSource>
+            <AutoWaterBaseTile>Source_Canal</AutoWaterBaseTile>
+            <PipeFillCapacity>25</PipeFillCapacity>
+            <TooManyPipesInfolayerIcon>125037</TooManyPipesInfolayerIcon>
+            <CanBeFilledDynamically>1</CanBeFilledDynamically>
+            <MaxDynamicFillCapacity>250</MaxDynamicFillCapacity>
+        </IrrigationSource>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = "114759" Path = "/Values/IrrigationConfig/IrrigationTiles/IrrigationTileDefinitions">
+        <IrrigationTileDefinitions>
+            <Source_River>
+                <SourceSpreadMin>8</SourceSpreadMin>
+                <SourceSpreadMax>10</SourceSpreadMax>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_River>
+            <Source_Canal>
+                <SourceSpreadMin>8</SourceSpreadMin>
+                <SourceSpreadMax>8</SourceSpreadMax>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Canal>
+            <Source_Lake_Small>
+                <SourceSpreadMin>7</SourceSpreadMin>
+                <SourceSpreadMax>9</SourceSpreadMax>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Lake_Small>
+            <Source_Lake_Medium>
+                <SourceSpreadMin>9</SourceSpreadMin>
+                <SourceSpreadMax>11</SourceSpreadMax>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Lake_Medium>
+            <Source_Lake_Large>
+                <SourceSpreadMin>11</SourceSpreadMin>
+                <SourceSpreadMax>13</SourceSpreadMax>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Lake_Large>
+            <Source_LevelArt>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_LevelArt>
+            <Source_Condition1>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Condition1>
+            <Source_Condition2>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Condition2>
+            <Source_Condition3>
+                <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
+            </Source_Condition3>
+        </IrrigationTileDefinitions>
+    </ModOp>
+
+    <!-- Electricity buff -->
+    <ModOp Type = "replace" GUID = '1010318,24800,24801,25064,25126,25350,25508,132771,132777,132786,133533,135295,135418,135397,135407,135669,135221,135185,135134,135224,5828,135133,1010317,101415,923,924,934,935,936,937,1010341,101264,1010340,101266,101271,101252,101273,1010342,6630,1353' Path = '/Values/Industrializable'>
+        <Industrializable>
+            <BoostedByIndustrialization>1</BoostedByIndustrialization>
+        </Industrializable>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '6629,6631,5462' Path = '/Values/Industrializable'>
+        <Industrializable>
+            <TransporterIndustrializationFactory>8943</TransporterIndustrializationFactory>
+            <BoostedByIndustrialization>1</BoostedByIndustrialization>
+        </Industrializable>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '114441,1010278,1010269,1010267,1010263,101262,5463,7919,1418,114466,114440,114444,114468,114467,118725,114469,114459,118729,114471,114472,117744,114470,114461,114464' Path = '/Values/Industrializable/BoostedByIndustrialization'>
+        <BoostedByIndustrialization>1</BoostedByIndustrialization>
+    </ModOp>
+
+    <!-- More local storage for farms -->
+    <ModOp Type="merge" GUID='1010262,1010264,1010265,100654,100655,101270,101251,101263,1010329,1010330,1010331,1010332,1010333' Path="/Values/FactoryBase/FactoryOutputs/Item/StorageAmount">
+        <StorageAmount>25</StorageAmount>
+    </ModOp>
+
+    <!-- Loading times -->
+    <!-- Base Wagon -->
+    <ModOp Type="add" GUID='1010104' Path="/Values/Transporter7">
+        <TransporterCapacity>100</TransporterCapacity>
+        <ProcessingTimes>
+            <LoadingTime>3</LoadingTime>
+            <UnloadingTime>3</UnloadingTime>
+        </ProcessingTimes>
+    </ModOp>
+
+    <!-- Electric version -->
+    <ModOp Type="add" GUID='120028' Path="/Values/Transporter7">
+        <TransporterCapacity>100</TransporterCapacity>
+    </ModOp>
+
+    <ModOp Type="merge" GUID='120028' Path="/Values/Transporter7/ProcessingTimes">
+        <ProcessingTimes>
+            <LoadingTime>2</LoadingTime>
+            <UnloadingTime>2</UnloadingTime>
+        </ProcessingTimes>
+    </ModOp>
+
+    <!-- Base Warehouse Wagon -->
+    <ModOp Type="add" GUID='1010105,8943' Path="/Values/Transporter7">
+        <TransporterCapacity>100</TransporterCapacity>
+        <ProcessingTimes>
+            <LoadingTime>3</LoadingTime>
+            <UnloadingTime>3</UnloadingTime>
+        </ProcessingTimes>
+    </ModOp>
+
+    <!-- Electric Warehouse version -->
+    <ModOp Type="add" GUID='120027' Path="/Values/Transporter7">
+        <TransporterCapacity>100</TransporterCapacity>
+    </ModOp>
+
+    <ModOp Type="merge" GUID='120027' Path="/Values/Transporter7/ProcessingTimes">
+        <ProcessingTimes>
+            <LoadingTime>2</LoadingTime>
+            <UnloadingTime>2</UnloadingTime>
+        </ProcessingTimes>
+    </ModOp>
+
+    <!-- Post Office Overlap -->
+    <ModOp Type="replace" GUID='3741,3761,4260' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketScopeRadius>50</SocketScopeRadius>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Mailbox Overlap -->
+    <ModOp Type="replace" GUID='538,3661' Path="/Values/ItemContainer">
+        <ItemContainer>
+            <SocketScopeRadius>12</SocketScopeRadius>
+        </ItemContainer>
+    </ModOp>
+
+    <!-- Canteen -->
+    <ModOp Type="replace" GUID='114889' Path="/Values/PublicService">
+        <PublicService>
+            <FullSatisfactionDistance>50</FullSatisfactionDistance>
+            <NoSatisfactionDistance>50</NoSatisfactionDistance>
+            <PublicServiceOutputs>
+                <Item>
+                    <Product>114890</Product>
+                </Item>
+            </PublicServiceOutputs>
+            <FunctionDescription>100364</FunctionDescription>
+        </PublicService>
+    </ModOp>
+
+    <!-- Post Office -->
+    <ModOp Type="replace" GUID='112684' Path="/Values/PublicService">
+        <PublicService>
+            <FullSatisfactionDistance>75</FullSatisfactionDistance>
+            <NoSatisfactionDistance>75</NoSatisfactionDistance>
+            <PublicServiceOutputs>
+                <Item>
+                    <Product>112693</Product>
+                </Item>
+            </PublicServiceOutputs>
+        </PublicService>
+    </ModOp>
+
+    <!-- Palace Range -->
+    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/BaseStreetRange">
+        <BaseStreetRange>100</BaseStreetRange>
+    </ModOp>
+
+    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/AdditionalStreetRangePerModule">
+        <AdditionalStreetRangePerModule>10</AdditionalStreetRangePerModule>
+    </ModOp>
+
+    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/AdditionalModulesForEachAdditionalCompanyLevelHigherMax">
+        <AdditionalModulesForEachAdditionalCompanyLevelHigherMax>5</AdditionalModulesForEachAdditionalCompanyLevelHigherMax>
+    </ModOp>
+
+    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/ModulesForCompanyLevelSetup">
+        <ModulesForCompanyLevelSetup>
+            <Item>
+                <AdditionalModuleCountForThisCompanyLevel>10</AdditionalModuleCountForThisCompanyLevel>
+            </Item>
+            <Item>
+                <CompanyLevel>35</CompanyLevel>
+                <AdditionalModuleCountForThisCompanyLevel>5</AdditionalModuleCountForThisCompanyLevel>
+            </Item>
+        </ModulesForCompanyLevelSetup>
+    </ModOp>
+
     <!-- NPCs -->
     <!-- Sir Archibald Blake -->
     <ModOp Type = 'replace' GUID = '45' Path = '/Values/Trader/Progression'>
@@ -13509,6 +14234,250 @@
             </ItemsPool>
             <IgnoreUnlocks>1</IgnoreUnlocks>
         </RewardPool>
+    </ModOp>
+
+    <!-- Pirate Diplomacy -->
+    <ModOp Type = "replace" GUID = '73' Path = '/Values/Diplomacy/DiplomacyActionBalancing'>
+        <DiplomacyActionBalancing>
+            <ThreatWar>
+                <AgreementThreshold>25</AgreementThreshold>
+            </ThreatWar>
+            <RequestPeace>
+                <AgreementThreshold>50</AgreementThreshold>
+                <PartialAgreementThreshold>25</PartialAgreementThreshold>
+            </RequestPeace>
+            <RequestTraderights>
+                <AgreementThreshold>75</AgreementThreshold>
+                <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            </RequestTraderights>
+            <RequestAlliance>
+                <AgreementThreshold>90</AgreementThreshold>
+                <PartialAgreementThreshold>75</PartialAgreementThreshold>
+            </RequestAlliance>
+            <RequestCeaseFire>
+                <ActionWeight>120</ActionWeight>
+                <AgreementThreshold>25</AgreementThreshold>
+                <PartialAgreementThreshold>-100</PartialAgreementThreshold>
+            </RequestCeaseFire>
+            <ThreatCancelTrade>
+                <AgreementThreshold>10</AgreementThreshold>
+            </ThreatCancelTrade>
+            <ThreatCancelAlliance>
+                <AgreementThreshold>16</AgreementThreshold>
+            </ThreatCancelAlliance>
+            <RequestNonAttack>
+                <AgreementThreshold>120</AgreementThreshold>
+                <PartialAgreementThreshold>80</PartialAgreementThreshold>
+            </RequestNonAttack>
+        </DiplomacyActionBalancing>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '73' Path = '/Values/Diplomacy/RepeatableActionBalancing/Actions'>
+        <Actions>
+            <Flatter>
+                <Subdivisions>
+                    <Item>
+                        <VectorElement>
+                            <InheritanceMapV2>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                            </InheritanceMapV2>
+                        </VectorElement>
+                        <SuccessChance>70</SuccessChance>
+                        <ReputationGain>3</ReputationGain>
+                        <ReputationLoss>0</ReputationLoss>
+                    </Item>
+                    <Item>
+                        <SuccessChance>30</SuccessChance>
+                        <ReputationGain>1</ReputationGain>
+                        <ReputationLoss>-2</ReputationLoss>
+                    </Item>
+                    <Item />
+                </Subdivisions>
+                <ForgettingTime>1500000</ForgettingTime>
+            </Flatter>
+            <Insult>
+                <Subdivisions>
+                    <Item>
+                        <VectorElement>
+                            <InheritanceMapV2>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                            </InheritanceMapV2>
+                        </VectorElement>
+                        <SuccessChance>90</SuccessChance>
+                        <ReputationGain>-5</ReputationGain>
+                    </Item>
+                    <Item />
+                </Subdivisions>
+                <ForgettingTime>1800000</ForgettingTime>
+            </Insult>
+            <Gift>
+                <Subdivisions>
+                    <Item>
+                        <VectorElement>
+                            <InheritanceMapV2>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                            </InheritanceMapV2>
+                        </VectorElement>
+                        <SuccessChance>90</SuccessChance>
+                        <ReputationGain>3</ReputationGain>
+                    </Item>
+                    <Item>
+                        <SuccessChance>25</SuccessChance>
+                        <ReputationGain>2</ReputationGain>
+                    </Item>
+                    <Item />
+                </Subdivisions>
+                <ForgettingTime>1500000</ForgettingTime>
+            </Gift>
+        </Actions>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '76' Path = '/Values/Diplomacy/DiplomacyActionBalancing'>
+        <DiplomacyActionBalancing>
+            <ThreatWar>
+                <AgreementThreshold>25</AgreementThreshold>
+            </ThreatWar>
+            <RequestPeace>
+                <AgreementThreshold>60</AgreementThreshold>
+                <PartialAgreementThreshold>30</PartialAgreementThreshold>
+            </RequestPeace>
+            <RequestTraderights>
+                <AgreementThreshold>80</AgreementThreshold>
+                <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            </RequestTraderights>
+            <RequestAlliance>
+                <AgreementThreshold>90</AgreementThreshold>
+                <PartialAgreementThreshold>70</PartialAgreementThreshold>
+            </RequestAlliance>
+            <RequestCeaseFire>
+                <ActionWeight>120</ActionWeight>
+                <AgreementThreshold>50</AgreementThreshold>
+                <PartialAgreementThreshold>-100</PartialAgreementThreshold>
+            </RequestCeaseFire>
+            <ThreatCancelTrade>
+                <AgreementThreshold>10</AgreementThreshold>
+            </ThreatCancelTrade>
+            <ThreatCancelAlliance>
+                <AgreementThreshold>16</AgreementThreshold>
+            </ThreatCancelAlliance>
+            <RequestNonAttack>
+                <AgreementThreshold>120</AgreementThreshold>
+                <PartialAgreementThreshold>80</PartialAgreementThreshold>
+            </RequestNonAttack>
+        </DiplomacyActionBalancing>
+    </ModOp>
+
+    <ModOp Type = "replace" GUID = '76' Path = '/Values/Diplomacy/RepeatableActionBalancing/Actions'>
+        <Actions>
+            <Flatter>
+                <Subdivisions>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                            <InheritanceMapV2>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                                <Entry>
+                                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                            </InheritanceMapV2>
+                        </VectorElement>
+                        <SuccessChance>80</SuccessChance>
+                        <ReputationGain>3</ReputationGain>
+                        <ReputationLoss>0</ReputationLoss>
+                    </Item>
+                    <Item>
+                        <SuccessChance>30</SuccessChance>
+                        <ReputationGain>2</ReputationGain>
+                        <ReputationLoss>-1</ReputationLoss>
+                    </Item>
+                    <Item>
+                        <SuccessChance>5</SuccessChance>
+                        <ReputationGain>1</ReputationGain>
+                        <ReputationLoss>-2</ReputationLoss>
+                    </Item>
+                    <Item />
+                </Subdivisions>
+                <ForgettingTime>1500000</ForgettingTime>
+            </Flatter>
+            <Insult>
+                <Subdivisions>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                            <InheritanceMapV2>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                                <Entry>
+                                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                            </InheritanceMapV2>
+                        </VectorElement>
+                        <SuccessChance>100</SuccessChance>
+                    </Item>
+                    <Item>
+                        <SuccessChance>90</SuccessChance>
+                        <ReputationGain>-3</ReputationGain>
+                    </Item>
+                    <Item />
+                </Subdivisions>
+                <ForgettingTime>1800000</ForgettingTime>
+            </Insult>
+            <Gift>
+                <Subdivisions>
+                    <Item>
+                        <VectorElement>
+                            <InheritedIndex>0</InheritedIndex>
+                            <InheritanceMapV2>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                                <Entry>
+                                    <TemplateName>3rdParty_Pirate</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                                <Entry>
+                                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                                    <Index>0</Index>
+                                </Entry>
+                            </InheritanceMapV2>
+                        </VectorElement>
+                        <SuccessChance>90</SuccessChance>
+                        <ReputationGain>4</ReputationGain>
+                    </Item>
+                    <Item>
+                        <SuccessChance>70</SuccessChance>
+                        <ReputationGain>3</ReputationGain>
+                    </Item>
+                    <Item />
+                </Subdivisions>
+                <ForgettingTime>1500000</ForgettingTime>
+            </Gift>
+        </Actions>
     </ModOp>
 
     <!-- New Buildings -->
