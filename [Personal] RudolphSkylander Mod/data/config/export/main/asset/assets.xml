@@ -875,7 +875,7 @@
 
     <!-- Remove River Islands -->
     <ModOp 
-        Type = "remove" 
+        Type = 'remove' 
         GUID = '141652,141643,141651,141619,141620,141621,141626,141622,141645,141644,141616,141646,141654,141617,141804,141618,142520,141653,141649,141805,141648,141650,141679,141623,142078,142000,142001,142002,142003,142004,142005,142006,142007,142158,142130,6077,6078,6079,6070,6071,6072,6073' 
         Path = "/Values/RandomIsland/*[self::IslandRegion or self::IslandDifficulty or self::IslandType]">
     </ModOp>
@@ -991,7 +991,7 @@
     </ModOp>
 
     <!-- Charter ship -->
-    <ModOp Type="replace" GUID='100660'>
+    <ModOp Type = 'replace' GUID = '100660'>
         <Asset>
             <BaseAssetGUID>1010062</BaseAssetGUID>
             <Values>
@@ -1088,7 +1088,7 @@
 
     <!-- Airships stats -->
     <!-- Harpy -->
-    <ModOp Type="replace" GUID='1654,1733' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1654,1733' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketCount>2</SocketCount>
             <SlotCount>2</SlotCount>
@@ -1097,7 +1097,7 @@
     </ModOp>
 
     <!-- Manticore -->
-    <ModOp Type="replace" GUID='1655,1734' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1655,1734' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketCount>2</SocketCount>
             <SlotCount>3</SlotCount>
@@ -1106,7 +1106,7 @@
     </ModOp>
 
     <!-- Hermes -->
-    <ModOp Type="replace" GUID='1058,1735' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1058,1735' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SlotCount>3</SlotCount>
@@ -1115,7 +1115,7 @@
     </ModOp>
 
     <!-- Pegasus -->
-    <ModOp Type="replace" GUID='1059,1736' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1059,1736' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SlotCount>6</SlotCount>
@@ -1124,7 +1124,7 @@
     </ModOp>
 
     <!-- Zephyr -->
-    <ModOp Type="replace" GUID='1060,1737' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1060,1737' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketCount>4</SocketCount>
             <SlotCount>8</SlotCount>
@@ -1133,7 +1133,7 @@
     </ModOp>
 
     <!-- Boreas -->
-    <ModOp Type="replace" GUID='1755,114166' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1755,114166' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SlotCount>6</SlotCount>
@@ -5083,10 +5083,10 @@
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '116176' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-            <ProductivityUpgrade>
-                <Value>50</Value>
-                <Percental>1</Percental>
-            </ProductivityUpgrade>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
     </ModOp>
 
     <!-- Harbourmaster Office -->
@@ -6441,7 +6441,7 @@
 
     <ModOp Type = 'replace' GUID = '116163' Path = '/Values/HeaterUpgrade/HeatRangeUpgrade'>
         <HeatRangeUpgrade>
-            <Value>50</Value>
+            <Value>100</Value>
             <Percental>1</Percental>
         </HeatRangeUpgrade>
     </ModOp>
@@ -8383,7 +8383,7 @@
         <TerrainType>Water_Including_Coast</TerrainType>
     </ModOp>
 
-    <ModOp Type = "remove" GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
+    <ModOp Type = 'remove' GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
 
     <!-- Big Betty building placement -->
     <ModOp Type = "replace" GUID = '1010524' Path = '/Values/Building'>
@@ -8482,7 +8482,7 @@
 
     <!-- Palace Late Drink Act -->
     <!-- Farmers -->
-    <ModOp Type="replace" GUID='269232' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269232' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010216</ProvidedNeed>
@@ -8492,7 +8492,7 @@
     </ModOp>
 
     <!-- Workers -->
-    <ModOp Type="replace" GUID='269448' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269448' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010216</ProvidedNeed>
@@ -8506,7 +8506,7 @@
     </ModOp>
 
     <!-- Artisans -->
-    <ModOp Type="replace" GUID='269235' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269235' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010214</ProvidedNeed>
@@ -8520,7 +8520,7 @@
     </ModOp>
 
     <!-- Engineers normal -->
-    <ModOp Type="replace" GUID='269447' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269447' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010257</ProvidedNeed>
@@ -8534,7 +8534,7 @@
     </ModOp>
 
     <!-- Investor normal > lvl 2 + tower -->
-    <ModOp Type="replace" GUID='269233' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269233' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120032</ProvidedNeed>
@@ -8548,7 +8548,7 @@
     </ModOp>
 
     <!-- Scholars -->
-    <ModOp Type="replace" GUID='273692' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '273692' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>114390</ProvidedNeed>
@@ -8562,7 +8562,7 @@
     </ModOp>
 
     <!-- Investors lvl 3 -->
-    <ModOp Type="replace" GUID='280082' Path="/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '280082' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120032</ProvidedNeed>
@@ -8773,13 +8773,13 @@
     </ModOp>
 
     <!-- More local storage for farms -->
-    <ModOp Type="merge" GUID='1010262,1010264,1010265,100654,100655,101270,101251,101263,1010329,1010330,1010331,1010332,1010333' Path="/Values/FactoryBase/FactoryOutputs/Item/StorageAmount">
+    <ModOp Type="merge" GUID = '1010262,1010264,1010265,100654,100655,101270,101251,101263,1010329,1010330,1010331,1010332,1010333' Path = "/Values/FactoryBase/FactoryOutputs/Item/StorageAmount">
         <StorageAmount>25</StorageAmount>
     </ModOp>
 
     <!-- Loading times -->
     <!-- Base Wagon -->
-    <ModOp Type="add" GUID='1010104' Path="/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '1010104' Path = "/Values/Transporter7">
         <TransporterCapacity>100</TransporterCapacity>
         <ProcessingTimes>
             <LoadingTime>3</LoadingTime>
@@ -8788,11 +8788,11 @@
     </ModOp>
 
     <!-- Electric version -->
-    <ModOp Type="add" GUID='120028' Path="/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '120028' Path = "/Values/Transporter7">
         <TransporterCapacity>100</TransporterCapacity>
     </ModOp>
 
-    <ModOp Type="merge" GUID='120028' Path="/Values/Transporter7/ProcessingTimes">
+    <ModOp Type="merge" GUID = '120028' Path = "/Values/Transporter7/ProcessingTimes">
         <ProcessingTimes>
             <LoadingTime>2</LoadingTime>
             <UnloadingTime>2</UnloadingTime>
@@ -8800,7 +8800,7 @@
     </ModOp>
 
     <!-- Base Warehouse Wagon -->
-    <ModOp Type="add" GUID='1010105,8943' Path="/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '1010105,8943' Path = "/Values/Transporter7">
         <TransporterCapacity>100</TransporterCapacity>
         <ProcessingTimes>
             <LoadingTime>3</LoadingTime>
@@ -8809,11 +8809,11 @@
     </ModOp>
 
     <!-- Electric Warehouse version -->
-    <ModOp Type="add" GUID='120027' Path="/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '120027' Path = "/Values/Transporter7">
         <TransporterCapacity>100</TransporterCapacity>
     </ModOp>
 
-    <ModOp Type="merge" GUID='120027' Path="/Values/Transporter7/ProcessingTimes">
+    <ModOp Type="merge" GUID = '120027' Path = "/Values/Transporter7/ProcessingTimes">
         <ProcessingTimes>
             <LoadingTime>2</LoadingTime>
             <UnloadingTime>2</UnloadingTime>
@@ -8821,21 +8821,21 @@
     </ModOp>
 
     <!-- Post Office Overlap -->
-    <ModOp Type="replace" GUID='3741,3761,4260' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '3741,3761,4260' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketScopeRadius>50</SocketScopeRadius>
         </ItemContainer>
     </ModOp>
 
     <!-- Mailbox Overlap -->
-    <ModOp Type="replace" GUID='538,3661' Path="/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '538,3661' Path = "/Values/ItemContainer">
         <ItemContainer>
             <SocketScopeRadius>12</SocketScopeRadius>
         </ItemContainer>
     </ModOp>
 
     <!-- Canteen -->
-    <ModOp Type="replace" GUID='114889' Path="/Values/PublicService">
+    <ModOp Type = 'replace' GUID = '114889' Path = "/Values/PublicService">
         <PublicService>
             <FullSatisfactionDistance>50</FullSatisfactionDistance>
             <NoSatisfactionDistance>50</NoSatisfactionDistance>
@@ -8849,7 +8849,7 @@
     </ModOp>
 
     <!-- Post Office -->
-    <ModOp Type="replace" GUID='112684' Path="/Values/PublicService">
+    <ModOp Type = 'replace' GUID = '112684' Path = "/Values/PublicService">
         <PublicService>
             <FullSatisfactionDistance>75</FullSatisfactionDistance>
             <NoSatisfactionDistance>75</NoSatisfactionDistance>
@@ -8862,19 +8862,19 @@
     </ModOp>
 
     <!-- Palace Range -->
-    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/BaseStreetRange">
+    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/BaseStreetRange">
         <BaseStreetRange>100</BaseStreetRange>
     </ModOp>
 
-    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/AdditionalStreetRangePerModule">
+    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/AdditionalStreetRangePerModule">
         <AdditionalStreetRangePerModule>10</AdditionalStreetRangePerModule>
     </ModOp>
 
-    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/AdditionalModulesForEachAdditionalCompanyLevelHigherMax">
+    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/AdditionalModulesForEachAdditionalCompanyLevelHigherMax">
         <AdditionalModulesForEachAdditionalCompanyLevelHigherMax>5</AdditionalModulesForEachAdditionalCompanyLevelHigherMax>
     </ModOp>
 
-    <ModOp Type="replace" GUID='249947' Path="/Values/Palace/ModulesForCompanyLevelSetup">
+    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/ModulesForCompanyLevelSetup">
         <ModulesForCompanyLevelSetup>
             <Item>
                 <AdditionalModuleCountForThisCompanyLevel>10</AdditionalModuleCountForThisCompanyLevel>
@@ -8884,6 +8884,92 @@
                 <AdditionalModuleCountForThisCompanyLevel>5</AdditionalModuleCountForThisCompanyLevel>
             </Item>
         </ModulesForCompanyLevelSetup>
+    </ModOp>
+
+    <!-- Harbour blocking space mod -->
+    <ModOp Type = 'remove' GUID = '1010520,1010521,100783,101403,101404,119259' Path = "Values/Blocking/HarbourAreaExpand"/>
+
+    <ModOp Type = 'remove' GUID = '100429,102284,100519,125028,125191,125192,125193' Path = "Values/Blocking/HarbourAreaExpand"/>
+
+    <ModOp Type = 'remove' GUID = '1010517,100510,100511,1010540,100514,100515,269867,269879' Path = "Values/Blocking/HarbourAreaExpand"/>
+
+    <ModOp Type = 'replace' GUID = '601460,601470' Path = "Values/Blocking/HarbourAreaExpand">
+        <HarbourAreaExpand>0</HarbourAreaExpand>
+    </ModOp>
+
+    <!-- Commuter Pier unlocked at artisans mod -->
+    <ModOp Type = 'addNextSibling' GUID = '130218'>
+        <Asset>
+            <Template>Trigger</Template>
+            <Values>
+                <Standard>
+                    <GUID>976090</GUID>
+                    <Name>intermediate 2.0</Name>
+                    <IconFilename>data/ui/2kimages/main/profiles/resident_tier02.png</IconFilename>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionPlayerCounter</Template>
+                        <Values>
+                            <Condition />
+                            <ConditionPlayerCounter>
+                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                <Context>15000002</Context>
+                                <CounterAmount>1</CounterAmount>
+                            </ConditionPlayerCounter>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionUnlockAsset</Template>
+                                <Values>
+                                    <Action />
+                                    <ActionUnlockAsset>
+                                        <UnlockAssets>
+                                            <Item>
+                                                <Asset>101642</Asset>
+                                            </Item>
+                                        </UnlockAssets>
+                                        <AdditionalParticipants>Third_party_02_Blake;Third_party_03_Pirate_Harlow;Third_party_04_Pirate_LaFortune;Third_party_05_Sarmento;Third_party_07_Jailor_Bleakworth;Third_party_08_Kahina</AdditionalParticipants>
+                                    </ActionUnlockAsset>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                </Trigger>
+                <TriggerSetup />
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'remove' GUID = '500954' Path = "/Values/ConstructionCategory/BuildingList/Item[Building='101642']"/>
+
+    <ModOp Type= 'add' GUID = '500952' Path = "/Values/ConstructionCategory/BuildingList">
+        <Item>
+            <Building>101642</Building>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '101642' Path = "/Values/Cost/Costs">
+        <Costs>
+            <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>10000</Amount>
+            </Item>
+            <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>50</Amount>
+            </Item>
+            <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>25</Amount>
+            </Item>
+            <Item>
+                <Ingredient>1010218</Ingredient>
+                <Amount>25</Amount>
+            </Item>
+        </Costs>
     </ModOp>
 
     <!-- NPCs -->
@@ -16046,9 +16132,1105 @@
         </Item>
     </ModOp>
 
+    <!-- Arctic Grand Harbourmaster Office -->
+    <ModOp Type = 'addnextSibling' GUID = '101286'>
+        <Asset>
+            <Template>HarborOffice</Template>
+            <Values>
+                <Standard>
+                    <GUID>1100020</GUID>
+                    <Name>harbor_office_colony01</Name>
+                    <IconFilename>data/modgraphics/icons/icon_harbourmasters_office.png</IconFilename>
+                    <InfoDescription>11422</InfoDescription>
+                </Standard>
+                <Building>
+                    <BuildingCategoryName>11152</BuildingCategoryName>
+                    <BuildModeRandomRotation>90</BuildModeRandomRotation>
+                    <AllowChangeDirection>1</AllowChangeDirection>
+                    <TerrainType>Water_Including_Coast</TerrainType>
+                    <AssociatedRegions>Arctic</AssociatedRegions>
+                </Building>
+                <Object>
+                    <Variations>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>HarborOffice</TemplateName>
+                                        <Index>0</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                            <Filename>data\graphics\buildings\special\harbor_office_colony01\harbor_office_colony01.cfg</Filename>
+                        </Item>
+                    </Variations>
+                </Object>
+                <Mesh/>
+                <Selection>
+                    <OnSelection>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList/>
+                        </Values>
+                    </OnSelection>
+                    <Colors>
+                        <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                    </Colors>
+                </Selection>
+                <Text>
+                    <LocaText>
+                        <English>
+                            <Text>Harbourmaster's Office</Text>
+                            <Status>Exported</Status>
+                            <ExportCount>2</ExportCount>
+                        </English>
+                    </LocaText>
+                    <LineID>8505</LineID>
+                </Text>
+                <Constructable/>
+                <Locked/>
+                <SoundEmitter>
+                    <ConstructionSounds>
+                        <BuildSuccessful>
+                            <Item>
+                                <Sound>206544</Sound>
+                            </Item>
+                        </BuildSuccessful>
+                    </ConstructionSounds>
+                    <IncidentSounds>
+                        <InfectedFire>
+                            <Item>
+                                <Sound>214659</Sound>
+                            </Item>
+                        </InfectedFire>
+                    </IncidentSounds>
+                    <BuildingRuined>
+                        <Item>
+                            <Sound>203848</Sound>
+                        </Item>
+                    </BuildingRuined>
+                    <BuildingRepaired>
+                        <Item>
+                            <Sound>203866</Sound>
+                        </Item>
+                    </BuildingRepaired>
+                </SoundEmitter>
+                <FeedbackController/>
+                <Infolayer/>
+                <ItemContainer>
+                    <SocketCount>3</SocketCount>
+                    <SocketScope>Area</SocketScope>
+                    <UnsocketSound>247106</UnsocketSound>
+                </ItemContainer>
+                <UpgradeList/>
+                <Attackable>
+                    <MaximumHitPoints>5000</MaximumHitPoints>
+                    <PausedTimeIfAttacked>0</PausedTimeIfAttacked>
+                    <SelfHealPerHealTick>5</SelfHealPerHealTick>
+                    <DefenseByAIFactor>333</DefenseByAIFactor>
+                    <TakeOverEffect>OnDeath</TakeOverEffect>
+                    <MoralePower>100</MoralePower>
+                    <IslandWarFlag>102303</IslandWarFlag>
+                    <RuinSmokeParticles>
+                        <Item>
+                            <SmokeParticleFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</SmokeParticleFilePath>
+                        </Item>
+                        <Item>
+                            <SmokeParticleFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</SmokeParticleFilePath>
+                        </Item>
+                    </RuinSmokeParticles>
+                    <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
+                    <RuinSmokeParticlesMax>4</RuinSmokeParticlesMax>
+                    <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+                    <ExplosionEffects>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>HarborOffice</TemplateName>
+                                        <Index>0</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                            <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+                        </Item>
+                    </ExplosionEffects>
+                    <ExplosionEffectsMin>2</ExplosionEffectsMin>
+                    <ExplosionEffectsMax>2</ExplosionEffectsMax>
+                </Attackable>
+                <Pausable/>
+                <Maintenance>
+                    <Maintenances>
+                        <Item>
+                            <Product>1010017</Product>
+                            <Amount>50</Amount>
+                            <InactiveAmount>25</InactiveAmount>
+                        </Item>
+                    </Maintenances>
+                </Maintenance>
+                <Culture/>
+                <Warehouse/>
+                <LogisticNode>
+                    <PathLayers>Street</PathLayers>
+                    <TransporterCountMax>1</TransporterCountMax>
+                </LogisticNode>
+                <StorageBase>
+                    <ProductStorageList>120055</ProductStorageList>
+                </StorageBase>
+                <Distribution/>
+                <Blocking>
+                    <GroundDecalAsset>114826</GroundDecalAsset>
+                    <GroundDecalInvisible>113478</GroundDecalInvisible>
+                    <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+                </Blocking>
+                <Cost>
+                    <Costs>
+                        <Item>
+                            <Ingredient>1010017</Ingredient>
+                            <Amount>2500</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010196</Ingredient>
+                            <Amount>20</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010205</Ingredient>
+                            <Amount>10</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient/>
+                            <Amount/>
+                        </Item>
+                        <Item>
+                            <Amount/>
+                            <Ingredient/>
+                        </Item>
+                        <Item>
+                            <Amount/>
+                            <Ingredient/>
+                        </Item>
+                    </Costs>
+                </Cost>
+            </Values>
+            <ModTool>
+                <ModToolMenu>next;112791;112792</ModToolMenu>
+                <ModToolTrigger>2;;;;;112642;1;112642;1</ModToolTrigger>
+                <ModToolRegions>Arctic</ModToolRegions>
+            </ModTool>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'addNextSibling' GUID = '112791' Path = '/Values/ConstructionCategory/BuildingList/Item[2]'>
+        <Item>
+            <Building>1100020</Building>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'addnextSibling' GUID = '130248'>
+        <Asset>
+            <Template>Trigger</Template>
+            <Values>
+                <Standard>
+                    <GUID>1400000068</GUID>
+                    <Name>MOD Trigger</Name>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionPlayerCounter</Template>
+                        <Values>
+                            <Condition/>
+                            <ConditionPlayerCounter>
+                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                <Context>112642</Context>
+                                <CounterAmount>1</CounterAmount>
+                            </ConditionPlayerCounter>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionUnlockAsset</Template>
+                                <Values>
+                                    <Action/>
+                                    <ActionUnlockAsset>
+                                        <UnhideAssets>
+                                            <Item>
+                                                <Asset>1100020</Asset>
+                                            </Item>
+                                        </UnhideAssets>
+                                    </ActionUnlockAsset>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                </Trigger>
+                <TriggerSetup/>
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'addnextSibling' GUID = '130248'>
+        <Asset>
+            <Template>Trigger</Template>
+            <Values>
+                <Standard>
+                    <GUID>1400000069</GUID>
+                    <Name>MOD Trigger</Name>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionPlayerCounter</Template>
+                        <Values>
+                            <Condition/>
+                            <ConditionPlayerCounter>
+                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                <Context>112642</Context>
+                                <CounterAmount>1</CounterAmount>
+                            </ConditionPlayerCounter>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionUnlockAsset</Template>
+                                <Values>
+                                    <Action/>
+                                    <ActionUnlockAsset>
+                                        <UnlockAssets>
+                                            <Item>
+                                                <Asset>1100020</Asset>
+                                            </Item>
+                                        </UnlockAssets>
+                                    </ActionUnlockAsset>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                </Trigger>
+                <TriggerSetup/>
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = '368,193879,191508' Path = "/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+        <Item>
+            <GUID>1100020</GUID>
+        </Item>
+    </ModOp>
+
+    <!-- Arctic modules mod -->
+    <ModOp Type = 'addNextSibling' GUID = '4532'>
+        <Asset>
+            <Template>FeatureUnlock</Template>
+            <Values>
+                <Standard>
+                    <GUID>103692005</GUID>
+                    <Name>Arctic commuter station</Name>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionPlayerCounter</Template>
+                        <Values>
+                            <Condition />
+                            <ConditionPlayerCounter>
+                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                <Context>112643</Context>
+                                <CounterAmount>1</CounterAmount>
+                            </ConditionPlayerCounter>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionUnlockAsset</Template>
+                                <Values>
+                                    <Action />
+                                    <ActionUnlockAsset>
+                                        <UnlockAssets>
+                                            <Item>
+                                                <Asset>103692001</Asset>
+                                            </Item>
+                                            <Item>
+                                                <Asset>103692002</Asset>
+                                            </Item>
+                                        </UnlockAssets>
+                                    </ActionUnlockAsset>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                </Trigger>
+                <TriggerSetup>
+                    <UsedBySecondParties>0</UsedBySecondParties>
+                </TriggerSetup>
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = "4532" Path = "/Values/AssetPool/AssetList">
+        <Item>
+            <Asset>103692001</Asset>
+        </Item>
+        <Item>
+            <Asset>103692002</Asset>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = '501065' Path = "/Values/ObjectmenuCommuterHarbourScene/WorkforceToRegion">
+        <Arctic>
+            <WorkforceList>
+                <Item>
+                    <Workforce>112653</Workforce>
+                </Item>
+                <Item>
+                    <Workforce>112654</Workforce>
+                </Item>
+            </WorkforceList>
+        </Arctic>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = '501065' Path = "/Values/ObjectmenuCommuterHarbourScene/BuildingSpecificData">
+        <Item>
+            <Building>103692001</Building>
+            <PortraitParticipant>Paloma</PortraitParticipant>
+            <PauseText>1577</PauseText>
+            <NoOtherHarborText>1576</NoOtherHarborText>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = '8528' Path = "/Values/ConstructionCategory/BuildingList/">
+        <Item>
+            <Building>103692001</Building>
+        </Item>
+        <Item>
+            <Building>103692002</Building>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = "4258" Path = "/Values/ModuleOwner/ConstructionOptions">
+        <Item>
+            <ModuleGUID>103692001</ModuleGUID>
+        </Item>
+        <Item>
+            <ModuleGUID>103692002</ModuleGUID>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4258' Path = "/Values/ModuleOwner/ModuleLimits">
+        <ModuleLimits>
+            <PlatformItem>
+                <Limit>1</Limit>
+            </PlatformItem>
+            <PlatformPassenger>
+                <Limit>1</Limit>
+            </PlatformPassenger>
+            <PlatformPost>
+                <Limit>1</Limit>
+            </PlatformPost>
+            <PlatformWorkforceTransfer>
+                <Limit>1</Limit>
+            </PlatformWorkforceTransfer>
+        </ModuleLimits>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4258' Path = "/Values/Cost">
+        <Cost>
+            <Costs>
+                <Item>
+                    <Ingredient>1010017</Ingredient>
+                    <Amount>30000</Amount>
+                </Item>
+                <Item>
+                    <Ingredient>1010196</Ingredient>
+                    <Amount>50</Amount>
+                </Item>
+                <Item>
+                    <Ingredient>1010205</Ingredient>
+                </Item>
+                <Item>
+                    <Ingredient>1010218</Ingredient>
+                    <Amount>15</Amount>
+                </Item>
+                <Item>
+                    <Ingredient>1010207</Ingredient>
+                </Item>
+                <Item>
+                    <Ingredient>1010202</Ingredient>
+                </Item>
+            </Costs>
+        </Cost>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '4259,4513,112684,4260' Path = "/Values/Cost">
+        <Cost>
+            <Costs>
+                <Item>
+                    <Ingredient>1010017</Ingredient>
+                    <Amount>15000</Amount>
+                </Item>
+                <Item>
+                    <Ingredient>1010196</Ingredient>
+                    <Amount>20</Amount>
+                </Item>
+                <Item>
+                    <Ingredient>1010205</Ingredient>
+                </Item>
+                <Item>
+                    <Ingredient>1010218</Ingredient>
+                    <Amount>5</Amount>
+                </Item>
+                <Item>
+                    <Ingredient>1010207</Ingredient>
+                </Item>
+                <Item>
+                    <Ingredient>1010202</Ingredient>
+                </Item>
+            </Costs>
+        </Cost>
+    </ModOp>
+
+    <ModOp Type = 'addNextSibling' GUID = "4259">
+        <Asset>
+            <Template>AirshipWorkforceFreeModule</Template>
+            <Values>
+                <Standard>
+                    <GUID>103692001</GUID>
+                    <Name>Commuter Station</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_workforce.png</IconFilename>
+                    <InfoDescription>1576</InfoDescription>
+                </Standard>
+                <Building>
+                    <BuildingCategoryName>11151</BuildingCategoryName>
+                    <AssociatedRegions>Arctic</AssociatedRegions>
+                    <SecondPartyRelevant>0</SecondPartyRelevant>
+                </Building>
+                <Blocking />
+                <Cost>
+                    <Costs>
+                        <Item>
+                            <Ingredient>1010017</Ingredient>
+                            <Amount>15000</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010196</Ingredient>
+                            <Amount>20</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010205</Ingredient>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010218</Ingredient>
+                            <Amount>5</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010207</Ingredient>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010202</Ingredient>
+                        </Item>
+                    </Costs>
+                </Cost>
+                <Object>
+                    <Variations>
+                        <Item>
+                            <Filename>data/modgraphics/buildings/Arctic_Transfer_Module/platform_module_transfer_arctic.cfg</Filename>
+                        </Item>
+                    </Variations>
+                </Object>
+                <Mesh />
+                <Selection>
+                    <GUIType>WorkforceConnector</GUIType>
+                    <OnSelection>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList />
+                        </Values>
+                    </OnSelection>
+                    <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+                    <Colors>
+                        <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                    </Colors>
+                </Selection>
+                <Text>
+                    <LocaText>
+                        <English>
+                            <Text>Commuter Station</Text>
+                            <Status>Exported</Status>
+                        </English>
+                    </LocaText>
+                    <LineID>56068</LineID>
+                </Text>
+                <Constructable />
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <DLCDependency>24962</DLCDependency>
+                </Locked>
+                <SoundEmitter>
+                    <ProductionSounds>
+                        <UI>
+                            <Item />
+                        </UI>
+                    </ProductionSounds>
+                </SoundEmitter>
+                <BuildingModule>
+                    <ModuleMoodImage>data/ui/2kimages/main/assets/cultural_building_mood_bg/bg_castle.png</ModuleMoodImage>
+                </BuildingModule>
+                <Attackable>
+                    <HasRuinState>1</HasRuinState>
+                    <SelfHealPerHealTick>4</SelfHealPerHealTick>
+                </Attackable>
+                <Maintenance />
+                <WorkforceConnector />
+                <FeedbackController />
+                <Pausable>
+                    <CanPauseManually>1</CanPauseManually>
+                </Pausable>
+                <Infolayer />
+                <UpgradeList />
+                <BuildingUnique>
+                    <Uniques>
+                        <Item>
+                            <UniqueType>AirshipPlatformWorkforceTransferModule</UniqueType>
+                            <UniqueScope>Area</UniqueScope>
+                        </Item>
+                    </Uniques>
+                </BuildingUnique>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>AirshipPlatformfreeModuleItemTransfer</Template>
+            <Values>
+                <Standard>
+                    <GUID>103692002</GUID>
+                    <Name>platform module item storage colony01</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/airship_platform/icon_airship_platform_items.png</IconFilename>
+                    <InfoDescription>1272</InfoDescription>
+                </Standard>
+                <Building>
+                    <BuildingCategoryName>11151</BuildingCategoryName>
+                    <AssociatedRegions>Arctic</AssociatedRegions>
+                    <SecondPartyRelevant>0</SecondPartyRelevant>
+                </Building>
+                <Blocking />
+                <Cost>
+                    <Costs>
+                        <Item>
+                            <Ingredient>1010017</Ingredient>
+                            <Amount>5000</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010196</Ingredient>
+                            <Amount>30</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010205</Ingredient>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010218</Ingredient>
+                            <Amount>5</Amount>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010207</Ingredient>
+                        </Item>
+                        <Item>
+                            <Ingredient>1010202</Ingredient>
+                        </Item>
+                    </Costs>
+                </Cost>
+                <Object>
+                    <Variations>
+                        <Item>
+                            <Filename>data/modgraphics/buildings/Arctic_Item_Module/platform_module_item_arctic.cfg</Filename>
+                        </Item>
+                    </Variations>
+                </Object>
+                <Mesh />
+                <Selection>
+                    <GUIType>ItemTransfer</GUIType>
+                    <StaticHelpEntryPoint>EmpireOfTheSkies_ItemTransfer</StaticHelpEntryPoint>
+                    <OnSelection>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList />
+                        </Values>
+                    </OnSelection>
+                    <Colors>
+                        <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+                    </Colors>
+                </Selection>
+                <Text>
+                    <LocaText>
+                        <English>
+                            <Text>Item Transfer Depot</Text>
+                            <Status>Exported</Status>
+                        </English>
+                    </LocaText>
+                    <LineID>56065</LineID>
+                </Text>
+                <Constructable />
+                <Locked>
+                    <DefaultLockedState>0</DefaultLockedState>
+                    <DLCDependency>24962</DLCDependency>
+                </Locked>
+                <SoundEmitter>
+                    <ProductionSounds>
+                        <UI>
+                            <Item />
+                        </UI>
+                    </ProductionSounds>
+                </SoundEmitter>
+                <BuildingModule>
+                    <ModuleMoodImage>data/ui/2kimages/main/assets/cultural_building_mood_bg/bg_castle.png</ModuleMoodImage>
+                </BuildingModule>
+                <Attackable>
+                    <HasRuinState>1</HasRuinState>
+                    <SelfHealPerHealTick>4</SelfHealPerHealTick>
+                </Attackable>
+                <Maintenance />
+                <MetaItemStorageAccess>
+                    <ProvidedStorageAmount>2</ProvidedStorageAmount>
+                </MetaItemStorageAccess>
+                <Pausable />
+                <UpgradeList />
+                <FeedbackController />
+                <BuildingUnique>
+                    <Uniques>
+                        <Item>
+                            <UniqueType>AirshipPlatformItemTransferModule</UniqueType>
+                            <UniqueScope>Area</UniqueScope>
+                        </Item>
+                    </Uniques>
+                </BuildingUnique>
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <!-- Arctic charter mod -->
+    <ModOp Type = 'addNextSibling' GUID = '130248'>
+        <Asset>
+            <Template>Trigger</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134801</GUID>
+                    <Name>Unhide the entire Arctic on Session Enter</Name>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionActiveSession</Template>
+                        <Values>
+                            <Condition />
+                            <ConditionActiveSession>
+                                <ActiveSession>180045</ActiveSession>
+                            </ConditionActiveSession>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionExecuteScript</Template>
+                                <Values>
+                                    <Action />
+                                    <ActionExecuteScript>
+                                        <ScriptFileName>mods/[Gameplay] Passage Charts/data/script/session_charts/discover_current_session.lua</ScriptFileName>
+                                    </ActionExecuteScript>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                </Trigger>
+                <TriggerSetup>
+                    <AutoRegisterTrigger>0</AutoRegisterTrigger>
+                </TriggerSetup>
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>Trigger</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134807</GUID>
+                    <Name>Unhide the entire Arctic on Game Reload</Name>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionEvent</Template>
+                        <Values>
+                            <Condition />
+                            <ConditionEvent>
+                                <ConditionEvent>SessionEnter</ConditionEvent>
+                            </ConditionEvent>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionExecuteScript</Template>
+                                <Values>
+                                    <Action />
+                                    <ActionExecuteScript>
+                                        <ScriptFileName>mods/[Gameplay] Passage Charts/data/script/session_charts/discover_current_session.lua</ScriptFileName>
+                                    </ActionExecuteScript>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionResetTrigger</Template>
+                                <Values>
+                                    <Action />
+                                    <ActionResetTrigger />
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                    <SubTriggers>
+                        <Item>
+                            <SubTrigger>
+                                <Template>AutoCreateTrigger</Template>
+                                <Values>
+                                    <Trigger>
+                                        <TriggerCondition>
+                                            <Template>ConditionActiveSession</Template>
+                                            <Values>
+                                                <Condition />
+                                                <ConditionActiveSession>
+                                                    <ActiveSession>180045</ActiveSession>
+                                                </ConditionActiveSession>
+                                            </Values>
+                                        </TriggerCondition>
+                                    </Trigger>
+                                </Values>
+                            </SubTrigger>
+                        </Item>
+                    </SubTriggers>
+                </Trigger>
+                <TriggerSetup>
+                    <AutoRegisterTrigger>0</AutoRegisterTrigger>
+                </TriggerSetup>
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'addNextSibling' GUID = '129251'>
+        <Asset>
+            <Template>ItemWithUI</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134800</GUID>
+                    <Name>COMPLETE_SESSION_DISCOVERY</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_sir_john_stacked_notes.png</IconFilename>
+                    <InfoDescription>1440134803</InfoDescription>
+                </Standard>
+                <Text />
+                <Item>
+                    <Rarity>Legendary</Rarity>
+                    <TradePrice>69420</TradePrice>
+                </Item>
+                <ItemWithUI>
+                    <ItemActions>
+                        <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                        <Values>
+                            <ActionList>
+                                <Actions>
+                                    <Item>
+                                        <Action>
+                                            <Template>ActionNotification</Template>
+                                            <Values>
+                                                <Action />
+                                                <ActionNotification>
+                                                    <Notification>
+                                                        <Template>CharacterNotification</Template>
+                                                        <Values>
+                                                            <CharacterNotification>
+                                                                <Profile>237</Profile>
+                                                            </CharacterNotification>
+                                                            <BaseNotification>
+                                                                <NotificationText>1440134802</NotificationText>
+                                                                <IsUnique>1</IsUnique>
+                                                            </BaseNotification>
+                                                            <NotificationSubtitle>
+                                                                <Subtitle>116363</Subtitle>
+                                                            </NotificationSubtitle>
+                                                        </Values>
+                                                    </Notification>
+                                                </ActionNotification>
+                                            </Values>
+                                        </Action>
+                                    </Item>
+                                    <Item>
+                                        <Action>
+                                            <Template>ActionRegisterTrigger</Template>
+                                            <Values>
+                                                <Action />
+                                                <ActionRegisterTrigger>
+                                                    <TriggerAsset>1440134801</TriggerAsset>
+                                                </ActionRegisterTrigger>
+                                            </Values>
+                                        </Action>
+                                    </Item>
+                                    <Item>
+                                        <Action>
+                                            <Template>ActionRegisterTrigger</Template>
+                                            <Values>
+                                                <Action />
+                                                <ActionRegisterTrigger>
+                                                    <TriggerAsset>1440134807</TriggerAsset>
+                                                </ActionRegisterTrigger>
+                                            </Values>
+                                        </Action>
+                                    </Item>
+                                </Actions>
+                            </ActionList>
+                        </Values>
+                    </ItemActions>
+                    <DestroyOnClick>1</DestroyOnClick>
+                </ItemWithUI>
+                <Locked />
+                <ItemAction>
+                    <ActiveBuff>1440134804</ActiveBuff>
+                    <ActionDescription>1440134806</ActionDescription>
+                </ItemAction>
+                <ExpeditionAttribute />
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>VehicleBuff</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134804</GUID>
+                    <Name>AfricaTreasureMapBuffMachine</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/icon_worldmap_3d.png</IconFilename>
+                    <InfoDescription>1440134805</InfoDescription>
+                </Standard>
+                <Text />
+                <VehicleUpgrade />
+                <Buff>
+                    <PossibleFluffTexts>
+                        <Item>
+                            <FluffText>1440134805</FluffText>
+                        </Item>
+                    </PossibleFluffTexts>
+                </Buff>
+                <AttackerUpgrade>
+                    <UseProjectile>1440134808</UseProjectile>
+                </AttackerUpgrade>
+                <AttackableUpgrade />
+                <ProjectileUpgrade />
+                <TradeShipUpgrade />
+                <UpgradeList />
+                <ItemEffect />
+                <DivingBellUpgrade />
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>ExplodingProjectile</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134808</GUID>
+                    <Name>TreasureMapProjectile_FakeInfo</Name>
+                    <InfoDescription>1440134806</InfoDescription>
+                </Standard>
+                <Projectile>
+                    <ShotHeight>0.5</ShotHeight>
+                </Projectile>
+                <Mesh />
+                <Object />
+                <Exploder />
+                <SoundEmitter />
+                <UpgradeList />
+                <ProjectileIncident />
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>Text</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134806</GUID>
+                    <Name>item fluff Reeds</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/icon_worldmap_3d.png</IconFilename>
+                    <InfoDescription>1440134809</InfoDescription>
+                </Standard>
+                <Text />
+            </Values>
+        </Asset>
+        <Asset>
+            <Template>Text</Template>
+            <Values>
+                <Standard>
+                    <GUID>1440134809</GUID>
+                    <Name>item fluff Reeds</Name>
+                    <IconFilename>data/ui/2kimages/main/3dicons/icon_worldmap_3d.png</IconFilename>
+                </Standard>
+                <Text />
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'add' GUID = '117398,193835' Path = "/Values/RewardPool/ItemsPool">
+        <Item>
+            <ItemLink>1440134800</ItemLink>
+            <Weight>3</Weight>
+        </Item>
+    </ModOp>
+
+    <!-- Arctic Quay mod -->
+    <ModOp Type = 'addNextSibling' GUID = "102114">
+        <Asset>
+            <BaseAssetGUID>1010567</BaseAssetGUID>
+            <Values>
+                <Standard>
+                    <GUID>8857106</GUID>
+                    <Name>Quay System Arctic</Name>
+                </Standard>
+                <Cost>
+                    <Costs>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>0</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>Street</TemplateName>
+                                        <Index>0</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                            <Amount>20</Amount>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>1</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>Street</TemplateName>
+                                        <Index>1</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>2</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>Street</TemplateName>
+                                        <Index>2</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                            <Amount>0</Amount>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>3</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>Street</TemplateName>
+                                        <Index>3</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>4</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>Street</TemplateName>
+                                        <Index>4</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                        </Item>
+                        <Item>
+                            <VectorElement>
+                                <InheritedIndex>5</InheritedIndex>
+                                <InheritanceMapV2>
+                                    <Entry>
+                                        <TemplateName>Street</TemplateName>
+                                        <Index>5</Index>
+                                    </Entry>
+                                </InheritanceMapV2>
+                            </VectorElement>
+                        </Item>
+                    </Costs>
+                </Cost>
+                <Street>
+                    <CfgFileName>data/graphics/buildings/special/quay_system_arctic/quay_system_colony03_01.cfg</CfgFileName>
+                    <InternalID>123</InternalID>
+                </Street>
+                <Constructable />
+                <Locked />
+                <SoundEmitter />
+                <Text>
+                    <LineID>11037</LineID>
+                </Text>
+                <Building>
+                    <PickingAsset>8857106</PickingAsset>
+                </Building>
+            </Values>
+        </Asset>
+    </ModOp>
+
+    <ModOp Type = 'addPrevSibling' GUID = '116345' Path = "/Values/ConstructionCategory/BuildingList/Item[Building = '112666']">
+        <Item>
+            <Building>8857106</Building>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'addPrevSibling' GUID = '112792' Path = "/Values/ConstructionCategory/BuildingList/Item[Building = '112670']">
+        <Item>
+            <Building>8857106</Building>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'addNextSibling' GUID = '130248'>
+        <Asset>
+            <Template>Trigger</Template>
+            <Values>
+                <Standard>
+                    <GUID>8857107</GUID>
+                    <Name>intermediate arctic 2.0</Name>
+                    <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
+                </Standard>
+                <Trigger>
+                    <TriggerCondition>
+                        <Template>ConditionPlayerCounter</Template>
+                        <Values>
+                            <Condition />
+                            <ConditionPlayerCounter>
+                                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                                <Context>112643</Context>
+                                <CounterAmount>1</CounterAmount>
+                            </ConditionPlayerCounter>
+                        </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                        <Item>
+                            <TriggerAction>
+                                <Template>ActionUnlockAsset</Template>
+                                <Values>
+                                    <Action />
+                                    <ActionUnlockAsset>
+                                        <UnlockAssets>
+                                            <Item>
+                                                <Asset>8857106</Asset>
+                                            </Item>
+                                        </UnlockAssets>
+                                    </ActionUnlockAsset>
+                                </Values>
+                            </TriggerAction>
+                        </Item>
+                    </TriggerActions>
+                </Trigger>
+                <TriggerSetup />
+            </Values>
+        </Asset>
+    </ModOp>
+
     <!-- Land Defenses -->
     <!-- Old World Land Cannon Tower -->
-    <ModOp Type = "addNextSibling" GUID = '1010523'>
+    <ModOp Type = 'addNextSibling' GUID = '1010523'>
         <Asset>
             <Template>HarborBuildingAttacker</Template>
             <Values>
