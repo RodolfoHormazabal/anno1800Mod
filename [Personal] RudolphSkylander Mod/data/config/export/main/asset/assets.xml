@@ -118,7 +118,7 @@
     </ModOp>
 
     <!-- Influence costs -->
-    <ModOp Type = "replace" GUID = '140797' Path = '/Values/InfluenceFeature/InfluenceConfig'>
+    <ModOp Type = 'replace' GUID = '140797' Path = '/Values/InfluenceFeature/InfluenceConfig'>
         <InfluenceConfig>
             <GuildHouse>
                 <FreeAmount>25</FreeAmount>
@@ -217,21 +217,21 @@
     </ModOp>
 
     <!-- Optimization buff -->
-    <ModOp Type = "replace" GUID = '369' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+    <ModOp Type = 'replace' GUID = '369' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
         <MaintenanceUpgrade>
             <Value>-7</Value>
             <Percental>1</Percental>
         </MaintenanceUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '372' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+    <ModOp Type = 'replace' GUID = '372' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
         <MaintenanceUpgrade>
             <Value>-15</Value>
             <Percental>1</Percental>
         </MaintenanceUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '374' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+    <ModOp Type = 'replace' GUID = '374' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
         <MaintenanceUpgrade>
             <Value>-25</Value>
             <Percental>1</Percental>
@@ -239,21 +239,21 @@
     </ModOp>
 
     <!-- Culture buff -->
-    <ModOp Type = "replace" GUID = '190607' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+    <ModOp Type = 'replace' GUID = '190607' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
         <AttractivenessUpgrade>
             <Value>10</Value>
             <Percental>1</Percental>
         </AttractivenessUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191363' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+    <ModOp Type = 'replace' GUID = '191363' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
         <AttractivenessUpgrade>
             <Value>25</Value>
             <Percental>1</Percental>
         </AttractivenessUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191364' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
+    <ModOp Type = 'replace' GUID = '191364' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
         <AttractivenessUpgrade>
             <Value>50</Value>
             <Percental>1</Percental>
@@ -261,7 +261,7 @@
     </ModOp>
 
     <!-- Expansion buff -->
-    <ModOp Type = "add" GUID = '140797' Path = '/Values/InfluenceFeature/InfluenceCategories/Expansion/CategoryBuffs'>
+    <ModOp Type = 'add' GUID = '140797' Path = '/Values/InfluenceFeature/InfluenceCategories/Expansion/CategoryBuffs'>
         <Item>
             <Buff>1100021</Buff>
             <MinSpentInfluence>50</MinSpentInfluence>
@@ -292,7 +292,7 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '192933' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '192933' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>21985</Product>
@@ -301,7 +301,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191296' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '191296' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>1010052</Product>
@@ -322,7 +322,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191299' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '191299' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>1010366</Product>
@@ -339,7 +339,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "addNextSibling" GUID = '191299'>
+    <ModOp Type = 'addNextSibling' GUID = '191299'>
         <Asset>
             <Template>InfluenceTitleBuff</Template>
             <Values>
@@ -389,7 +389,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "addNextSibling" GUID = '191299'>
+    <ModOp Type = 'addNextSibling' GUID = '191299'>
         <Asset>
             <Template>InfluenceTitleBuff</Template>
             <Values>
@@ -439,7 +439,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '192934' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '192934' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>21985</Product>
@@ -448,7 +448,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191301' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '191301' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>1010052</Product>
@@ -469,7 +469,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191300' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '191300' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>1010366</Product>
@@ -486,7 +486,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "addNextSibling" GUID = '191300'>
+    <ModOp Type = 'addNextSibling' GUID = '191300'>
         <Asset>
             <Template>InfluenceTitleBuff</Template>
             <Values>
@@ -536,7 +536,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "addNextSibling" GUID = '191300'>
+    <ModOp Type = 'addNextSibling' GUID = '191300'>
         <Asset>
             <Template>InfluenceTitleBuff</Template>
             <Values>
@@ -586,7 +586,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '192935' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '192935' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>21985</Product>
@@ -595,7 +595,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191302' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '191302' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>1010052</Product>
@@ -616,7 +616,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '191303' Path = '/Values/DistributionUpgrade/AddDeltas'>
+    <ModOp Type = 'replace' GUID = '191303' Path = '/Values/DistributionUpgrade/AddDeltas'>
         <AddDeltas>
             <Item>
                 <Product>1010366</Product>
@@ -633,7 +633,7 @@
         </AddDeltas>
     </ModOp>
 
-    <ModOp Type = "addNextSibling" GUID = '191303'>
+    <ModOp Type = 'addNextSibling' GUID = '191303'>
         <Asset>
             <Template>InfluenceTitleBuff</Template>
             <Values>
@@ -683,7 +683,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "addNextSibling" GUID = '191303'>
+    <ModOp Type = 'addNextSibling' GUID = '191303'>
         <Asset>
             <Template>InfluenceTitleBuff</Template>
             <Values>
@@ -734,7 +734,7 @@
     </ModOp>
 
     <!-- Investor Influence -->
-    <ModOp Type = "replace" GUID = '1010347' Path = '/Values/InfluenceSource'>
+    <ModOp Type = 'replace' GUID = '1010347' Path = '/Values/InfluenceSource'>
         <InfluenceSource>
             <InfluenceSource>Investors</InfluenceSource>
             <ProvidesDifficultyInfluence>5</ProvidesDifficultyInfluence>
@@ -877,7 +877,7 @@
     <ModOp 
         Type = 'remove' 
         GUID = '141652,141643,141651,141619,141620,141621,141626,141622,141645,141644,141616,141646,141654,141617,141804,141618,142520,141653,141649,141805,141648,141650,141679,141623,142078,142000,142001,142002,142003,142004,142005,142006,142007,142158,142130,6077,6078,6079,6070,6071,6072,6073' 
-        Path = "/Values/RandomIsland/*[self::IslandRegion or self::IslandDifficulty or self::IslandType]">
+        Path = '/Values/RandomIsland/*[self::IslandRegion or self::IslandDifficulty or self::IslandType]'>
     </ModOp>
 
     <!-- Ship changes -->
@@ -1088,7 +1088,7 @@
 
     <!-- Airships stats -->
     <!-- Harpy -->
-    <ModOp Type = 'replace' GUID = '1654,1733' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1654,1733' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>2</SocketCount>
             <SlotCount>2</SlotCount>
@@ -1097,7 +1097,7 @@
     </ModOp>
 
     <!-- Manticore -->
-    <ModOp Type = 'replace' GUID = '1655,1734' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1655,1734' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>2</SocketCount>
             <SlotCount>3</SlotCount>
@@ -1106,7 +1106,7 @@
     </ModOp>
 
     <!-- Hermes -->
-    <ModOp Type = 'replace' GUID = '1058,1735' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1058,1735' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SlotCount>3</SlotCount>
@@ -1115,7 +1115,7 @@
     </ModOp>
 
     <!-- Pegasus -->
-    <ModOp Type = 'replace' GUID = '1059,1736' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1059,1736' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SlotCount>6</SlotCount>
@@ -1124,7 +1124,7 @@
     </ModOp>
 
     <!-- Zephyr -->
-    <ModOp Type = 'replace' GUID = '1060,1737' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1060,1737' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>4</SocketCount>
             <SlotCount>8</SlotCount>
@@ -1133,7 +1133,7 @@
     </ModOp>
 
     <!-- Boreas -->
-    <ModOp Type = 'replace' GUID = '1755,114166' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '1755,114166' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SlotCount>6</SlotCount>
@@ -1142,7 +1142,7 @@
     </ModOp>
 
     <!-- Trade Route good amounts -->
-    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Normal'>
+    <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Normal'>
         <Normal>
             <ExcludingGoods>
                 <Item>
@@ -1159,7 +1159,7 @@
         </Normal>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Charter'>
+    <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Charter'>
         <Charter>
             <ExcludingGoods>
                 <Item>
@@ -1177,7 +1177,7 @@
         </Charter>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Oil'>
+    <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Oil'>
         <Oil>
             <RestrictedGood>
                 <Item>
@@ -1192,7 +1192,7 @@
         </Oil>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Mail'>
+    <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Mail'>
         <Mail>
             <RestrictedGood>
                 <Item>
@@ -1260,69 +1260,78 @@
     <!-- Items -->
     <!-- Trade Union -->
     <!-- All production list -->
-    <ModOp Type = 'merge' GUID = '6000018' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
-        <EffectTargetGUIDs>
+    <ModOp Type = 'add' GUID = '193856' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+        <Item>
+            <GUID>133496</GUID>
+        </Item>
+        <Item>
+            <GUID>132777</GUID>
+        </Item>
+        <Item>
+            <GUID>132786</GUID>
+        </Item>
+        <Item>
+            <GUID>133533</GUID>
+        </Item>
+        <Item>
+            <GUID>134622</GUID>
+        </Item>
+        <Item>
+            <GUID>135361</GUID>
+        </Item>
+        <Item>
+            <GUID>135088</GUID>
+        </Item>
+        <Item>
+            <GUID>135418</GUID>
+        </Item>
+        <Item>
+            <GUID>135085</GUID>
+        </Item>
+        <Item>
+            <GUID>135133</GUID>
+        </Item>
+        <Item>
+            <GUID>135148</GUID>
+        </Item>
+        <Item>
+            <GUID>135407</GUID>
+        </Item>
+        <Item>
+            <GUID>135397</GUID>
+        </Item>
+        <Item>
+            <GUID>135669</GUID>
+        </Item>
+        <Item>
+            <GUID>135134</GUID>
+        </Item>
+        <Item>
+            <GUID>134614</GUID>
+        </Item>
+        <Item>
+            <GUID>135224</GUID>
+        </Item>
+        <Item>
+            <GUID>133004</GUID>
+        </Item>
+        <Item>
+            <GUID>133030</GUID>
+        </Item>
+        <Item>
+            <GUID>133031</GUID>
+        </Item>
+        <Item>
+            <GUID>135185</GUID>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190237,111179,110938,110944,192450,190820,116177' Path = '/Values/ItemEffect/EffectTargets'>
+        <EffectTargets>
             <Item>
-                <GUID>835</GUID>
+                <GUID>193856</GUID>
             </Item>
-            <Item>
-                <GUID>133004</GUID>
-            </Item>
-            <Item>
-                <GUID>133030</GUID>
-            </Item>
-            <Item>
-                <GUID>133031</GUID>
-            </Item>
-            <Item>
-                <GUID>134614</GUID>
-            </Item>
-            <Item>
-                <GUID>132771</GUID>
-            </Item>
-            <Item>
-                <GUID>132777</GUID>
-            </Item>
-            <Item>
-                <GUID>132786</GUID>
-            </Item>
-            <Item>
-                <GUID>133533</GUID>
-            </Item>
-            <Item>
-                <GUID>135221</GUID>
-            </Item>
-            <Item>
-                <GUID>135185</GUID>
-            </Item>
-            <Item>
-                <GUID>135134</GUID>
-            </Item>
-            <Item>
-                <GUID>135224</GUID>
-            </Item>
-            <Item>
-                <GUID>5828</GUID>
-            </Item>
-            <Item>
-                <GUID>135295</GUID>
-            </Item>
-            <Item>
-                <GUID>135418</GUID>
-            </Item>
-            <Item>
-                <GUID>135397</GUID>
-            </Item>
-            <Item>
-                <GUID>135407</GUID>
-            </Item>
-            <Item>
-                <GUID>135669</GUID>
-            </Item>
-            <Item>
-                <GUID>1418</GUID>
-            </Item>
-        </EffectTargetGUIDs>
+        </EffectTargets>
     </ModOp>
 
     <!-- Bekonin, Spirit of Liberty -->
@@ -1337,18 +1346,24 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '111179' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-        <ProductivityUpgrade>
-            <Value>100</Value>
-            <Percental>1</Percental>
-        </ProductivityUpgrade>
+    <ModOp Type = 'replace' GUID = '111179' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>100</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '111179' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
-        <MaintenanceUpgrade>
-            <Value>-25</Value>
-            <Percental>1</Percental>
-        </MaintenanceUpgrade>
+    <ModOp Type = 'replace' GUID = '111179' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade />
     </ModOp>
 
     <!-- Printing Press -->
@@ -1535,7 +1550,7 @@
                 <Item>
                     <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
                     <AdditionalOutputCycle>1</AdditionalOutputCycle>
-                    <Amount>10</Amount>
+                    <Amount>5</Amount>
                 </Item>
             </AdditionalOutput>
             <InputAmountUpgrade>
@@ -1564,6 +1579,10 @@
                 <Percental>1</Percental>
             </WorkforceAmountUpgrade>
         </BuildingUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '1948' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade />
     </ModOp>
 
     <!-- The Bizarro-Balloono-Magn8 -->
@@ -1675,6 +1694,12 @@
         </FactoryUpgrade>
     </ModOp>
 
+    <ModOp Type = 'add' GUID = '191590' Path = '/Values/ItemEffect/EffectTargets'>
+        <Item>
+            <GUID>117743</GUID>
+        </Item>
+    </ModOp>
+
     <ModOp Type = 'replace' GUID = '191590' Path = '/Values/IndustrializableUpgrade'>
         <IndustrializableUpgrade />
     </ModOp>
@@ -1695,6 +1720,21 @@
             <Value>50</Value>
             <Percental>1</Percental>
         </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- Fine Handheld Power Auger -->
+    <ModOp Type = 'replace' GUID = '190881' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '190881' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
+        <WorkforceAmountUpgrade>
+            <Value>-25</Value>
+            <Percental>1</Percental>
+        </WorkforceAmountUpgrade>
     </ModOp>
 
     <!-- Ursula Green, Guardian of the Forests -->
@@ -1795,11 +1835,20 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '191429' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-        <ProductivityUpgrade>
-            <Value>50</Value>
-            <Percental>1</Percental>
-        </ProductivityUpgrade>
+    <ModOp Type = 'replace' GUID = '191429' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>120008</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '191429' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
@@ -1841,11 +1890,20 @@
     </ModOp>
 
     <!-- Ferhat the Experienced Builder -->
-    <ModOp Type = 'replace' GUID = '191464' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-        <ProductivityUpgrade>
-            <Value>50</Value>
-            <Percental>1</Percental>
-        </ProductivityUpgrade>
+    <ModOp Type = 'replace' GUID = '191464' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>1010205</Product>
+                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '191464' Path = '/Values/IndustrializableUpgrade'>
@@ -1892,6 +1950,13 @@
             <Value>50</Value>
             <Percental>1</Percental>
         </ProductivityUpgrade>
+    </ModOp>
+
+    <!-- All ironworks and foundries -->
+    <ModOp Type = 'add' GUID = '190842' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+        <Item>
+            <GUID>1010327</GUID>
+        </Item>
     </ModOp>
 
     <!-- Henri Zanchi, Man of Steel -->
@@ -2347,11 +2412,20 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '1964' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-        <ProductivityUpgrade>
-            <Value>50</Value>
-            <Percental>1</Percental>
-        </ProductivityUpgrade>
+    <ModOp Type = 'replace' GUID = '1964' Path = '/Values/FactoryUpgrade'>
+        <FactoryUpgrade>
+            <ProductivityUpgrade>
+                <Value>50</Value>
+                <Percental>1</Percental>
+            </ProductivityUpgrade>
+            <AdditionalOutput>
+                <Item>
+                    <Product>24807</Product>
+                    <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                    <Amount>1</Amount>
+                </Item>
+            </AdditionalOutput>
+        </FactoryUpgrade>
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '1964' Path = '/Values/BuildingUpgrade'>
@@ -2917,6 +2991,19 @@
         </EffectTargets>
     </ModOp>
 
+    <ModOp Type = 'replace' GUID = '191419' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
     <!-- 'The Cutting Edge' -->
     <ModOp Type = 'replace' GUID = '190841' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
         <ProductivityUpgrade>
@@ -3026,6 +3113,10 @@
         </FactoryUpgrade>
     </ModOp>
 
+    <ModOp Type = 'replace' GUID = '190900' Path = '/Values/IndustrializableUpgrade'>
+        <IndustrializableUpgrade />
+    </ModOp>
+
     <!-- Science Whizz -->
     <ModOp Type = 'replace' GUID = '191353' Path = '/Values/Item'>
         <Item>
@@ -3054,6 +3145,37 @@
         </FactoryUpgrade>
     </ModOp>
 
+    <!-- Physicist -->
+    <ModOp Type = 'replace' GUID = '191352' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>750000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191352' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191352' Path = '/Values/BuildingUpgrade'>
+        <BuildingUpgrade>
+            <MaintenanceUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </MaintenanceUpgrade>
+            <WorkforceAmountUpgrade>
+                <Value>-25</Value>
+                <Percental>1</Percental>
+            </WorkforceAmountUpgrade>
+        </BuildingUpgrade>
+    </ModOp>
+
     <!-- Oriel Atomatic Blowing Machine -->
     <ModOp Type = 'replace' GUID = '190907' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
         <ProductivityUpgrade>
@@ -3077,20 +3199,11 @@
     </ModOp>
 
     <!-- Susannah Brightwoman -->
-    <ModOp Type = 'replace' GUID = '113799' Path = '/Values/FactoryUpgrade'>
-        <FactoryUpgrade>
-            <ProductivityUpgrade>
-                <Value>100</Value>
-                <Percental>1</Percental>
-            </ProductivityUpgrade>
-            <AdditionalOutput>
-                <Item>
-                    <Product>1010249</Product>
-                    <AdditionalOutputCycle>3</AdditionalOutputCycle>
-                    <Amount>1</Amount>
-                </Item>
-            </AdditionalOutput>
-        </FactoryUpgrade>
+    <ModOp Type = 'replace' GUID = '113799' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>100</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '113799' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
@@ -3315,9 +3428,9 @@
     <ModOp Type = 'replace' GUID = '8351' Path = '/Values/Item'>
         <Item>
             <MaxStackSize>1</MaxStackSize>
-            <Rarity>Legendary</Rarity>
+            <Rarity>Epic</Rarity>
             <ItemType>Specialist</ItemType>
-            <TradePrice>1000000</TradePrice>
+            <TradePrice>750000</TradePrice>
             <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
         </Item>
     </ModOp>
@@ -3638,7 +3751,6 @@
                 <Value>25</Value>
                 <Percental>1</Percental>
             </WorkforceAmountUpgrade>
-            <ReplacingWorkforce>5406</ReplacingWorkforce>
         </BuildingUpgrade>
     </ModOp>
 
@@ -3933,6 +4045,12 @@
         </FactoryUpgrade>
     </ModOp>
 
+    <ModOp Type = 'replace' GUID = '190693' Path = '/Values/ModuleOwnerUpgrade'>
+        <ModuleOwnerUpgrade>
+            <ModuleLimitPercent>-25</ModuleLimitPercent>
+        </ModuleOwnerUpgrade>
+    </ModOp>
+
     <ModOp Type = 'replace' GUID = '190693' Path = '/Values/CultureUpgrade'>
         <CultureUpgrade>
             <AttractivenessUpgrade>
@@ -3969,7 +4087,7 @@
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '190692' Path = '/Values/ModuleOwnerUpgrade/ModuleLimitPercent'>
-        <ModuleLimitPercent>-25</ModuleLimitPercent>
+        <ModuleOwnerUpgrade />
     </ModOp>
 
     <!-- Arborist -->
@@ -4055,8 +4173,10 @@
         </FactoryUpgrade>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '190689' Path = '/Values/ModuleOwnerUpgrade/ModuleLimitPercent'>
-        <ModuleLimitPercent>-25</ModuleLimitPercent>
+    <ModOp Type = 'replace' GUID = '190689' Path = '/Values/ModuleOwnerUpgrade'>
+        <ModuleOwnerUpgrade>
+            <ModuleLimitPercent>-25</ModuleLimitPercent>
+        </ModuleOwnerUpgrade>
     </ModOp>
 
     <!-- Dr. Iñigo Flores -->
@@ -4084,6 +4204,12 @@
                 </Item>
             </AdditionalOutput>
         </FactoryUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8347' Path = '/Values/ModuleOwnerUpgrade'>
+        <ModuleOwnerUpgrade>
+            <ModuleLimitPercent>-25</ModuleLimitPercent>
+        </ModuleOwnerUpgrade>
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '8347' Path = '/Values/BuildingUpgrade/WorkforceAmountUpgrade'>
@@ -4571,6 +4697,31 @@
         <ModuleLimitPercent>-25</ModuleLimitPercent>
     </ModOp>
 
+    <!-- Enbesan Envoy -->
+    <ModOp Type = 'replace' GUID = '8908' Path = '/Values/Item'>
+        <Item>
+            <MaxStackSize>1</MaxStackSize>
+            <Rarity>Epic</Rarity>
+            <ItemType>Specialist</ItemType>
+            <TradePrice>750000</TradePrice>
+            <TradePriceOnlineCurrency>50</TradePriceOnlineCurrency>
+        </Item>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8908' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
+        <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+        </ProductivityUpgrade>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '8908' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
+        <MaintenanceUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+        </MaintenanceUpgrade>
+    </ModOp>
+
     <!-- Yebeba Sturdy Greenhouse -->
     <ModOp Type = 'replace' GUID = '125060' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
         <ProductivityUpgrade>
@@ -4815,6 +4966,12 @@
         </ProductivityUpgrade>
     </ModOp>
 
+    <ModOp Type = 'replace' GUID = '125047' Path = '/Values/ModuleOwnerUpgrade'>
+        <ModuleOwnerUpgrade>
+            <ModuleLimitPercent>-25</ModuleLimitPercent>
+        </ModuleOwnerUpgrade>
+    </ModOp>
+
     <!-- Captain Nineveh's Miraculous Lobster Trap -->
     <ModOp Type = 'replace' GUID = '125057' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
         <ProductivityUpgrade>
@@ -4937,6 +5094,12 @@
         </FactoryUpgrade>
     </ModOp>
 
+    <ModOp Type = 'add' GUID = '1895' Path = '/Values/ItemEffect/EffectTargets'>
+        <Item>
+            <GUID>1010301</GUID>
+        </Item>
+    </ModOp>
+
     <ModOp Type = 'replace' GUID = '1895' Path = '/Values/BuildingUpgrade'>
         <BuildingUpgrade>
             <MaintenanceUpgrade>
@@ -5025,6 +5188,17 @@
                 <Amount>1</Amount>
             </Item>
         </AdditionalOutput>
+    </ModOp>
+
+    <ModOp Type = 'replace' GUID = '191375' Path = '/Values/IncidentInfectableUpgrade'>
+        <IncidentInfectableUpgrade>
+            <IncidentFireIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentFireIncreaseUpgrade>
+            <IncidentExplosionIncreaseUpgrade>
+                <Value>-5</Value>
+            </IncidentExplosionIncreaseUpgrade>
+        </IncidentInfectableUpgrade>
     </ModOp>
 
     <!-- Synthetic Chemist -->
@@ -5324,7 +5498,7 @@
 
     <ModOp Type = 'replace' GUID = '121020' Path = '/Values/PassiveTradeGoodGenUpgrade'>
         <PassiveTradeGoodGenUpgrade>
-            <GenProbability>50</GenProbability>
+            <GenProbability>100</GenProbability>
             <GenPool>129461</GenPool>
         </PassiveTradeGoodGenUpgrade>
     </ModOp>
@@ -5780,7 +5954,7 @@
     </ModOp>
 
     <!-- Ketema's Cousin -->
-    <ModOp Type = 'replace' GUID = '125135' Path = '/Values/Item'>
+    <ModOp Type = 'replace' GUID = '131014' Path = '/Values/Item'>
         <Item>
             <Allocation>HarborOffice</Allocation>
             <MaxStackSize>1</MaxStackSize>
@@ -5799,8 +5973,8 @@
             <AdditionalOutput>
                 <Item>
                     <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
-                    <AdditionalOutputCycle>1</AdditionalOutputCycle>
-                    <Amount>2</Amount>
+                    <AdditionalOutputCycle>2</AdditionalOutputCycle>
+                    <Amount>1</Amount>
                 </Item>
             </AdditionalOutput>
         </FactoryUpgrade>
@@ -7390,7 +7564,7 @@
     </ModOp>
 
     <!-- Jack of all Trades -->
-    <ModOp Type = "addNextSibling" GUID = "191626">
+    <ModOp Type = 'addNextSibling' GUID = '191626'>
         <Asset>
             <Template>ShipSpecialist</Template>
             <Values>
@@ -7739,7 +7913,7 @@
 
     <!-- Worlds Fair -->
     <!-- Architectural rewards -->
-    <ModOp Type = "replace" GUID = '17015' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17015' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102464</Reward>
@@ -7756,7 +7930,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17700' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17700' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102466</Reward>
@@ -7773,7 +7947,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17703' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17703' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102466</Reward>
@@ -7790,7 +7964,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17704' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17704' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102466</Reward>
@@ -7807,7 +7981,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17705' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17705' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102472</Reward>
@@ -7824,7 +7998,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17706' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17706' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102461</Reward>
@@ -7841,7 +8015,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17707' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17707' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102466</Reward>
@@ -7858,7 +8032,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17708' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17708' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102468</Reward>
@@ -7875,7 +8049,7 @@
         </RewardAssets>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '17709' Path = '/Values/Reward/RewardAssets'>
+    <ModOp Type = 'replace' GUID = '17709' Path = '/Values/Reward/RewardAssets'>
         <RewardAssets>
             <Item>
                 <Reward>102473</Reward>
@@ -8375,18 +8549,18 @@
 
     <!-- Building changes -->
     <!-- Coast Buildings Placement -->
-    <ModOp Type = "add" GUID = '101642' Path = '/Values/Building'>
+    <ModOp Type = 'add' GUID = '101642' Path = '/Values/Building'>
         <TerrainType>Water_Including_Coast</TerrainType>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '100429,102284' Path = '/Values/Building/TerrainType'>
+    <ModOp Type = 'replace' GUID = '100429,102284' Path = '/Values/Building/TerrainType'>
         <TerrainType>Water_Including_Coast</TerrainType>
     </ModOp>
 
     <ModOp Type = 'remove' GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
 
     <!-- Big Betty building placement -->
-    <ModOp Type = "replace" GUID = '1010524' Path = '/Values/Building'>
+    <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Building'>
         <Building>
             <BuildingCategoryName>11150</BuildingCategoryName>
             <TerrainType>Water_Including_Coast</TerrainType>
@@ -8396,12 +8570,12 @@
     </ModOp>
 
     <!-- Turrets Firing Angle -->
-    <ModOp Type = "replace" GUID = '3700,625,1010523,1010522' Path = '/Values/Attacker/Turrets/Item/TurnSpan'>
+    <ModOp Type = 'replace' GUID = '3700,625,1010523,1010522' Path = '/Values/Attacker/Turrets/Item/TurnSpan'>
         <TurnSpan>240</TurnSpan>
     </ModOp>
 
     <!-- Docklands Main Wharf influence area -->
-    <ModOp Type = "replace" GUID = '601470' Path = '/Values/ItemContainer'>
+    <ModOp Type = 'replace' GUID = '601470' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketCount>3</SocketCount>
             <SocketAllocation>RadiusBuilding;HarborOffice;Dockland</SocketAllocation>
@@ -8412,13 +8586,13 @@
 
     <!-- Trading Posts -->
     <!-- Small -->
-    <ModOp Type = "replace" GUID = '1010517,1010540,1010519,24775' Path = '/Values/Warehouse/WarehouseStorage'>
+    <ModOp Type = 'replace' GUID = '1010517,1010540,1010519,24775' Path = '/Values/Warehouse/WarehouseStorage'>
         <WarehouseStorage>
             <StorageMax>100</StorageMax>
         </WarehouseStorage>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '1010517,1010540,1010519,24775' Path = '/Values/LoadingPier'>
+    <ModOp Type = 'replace' GUID = '1010517,1010540,1010519,24775' Path = '/Values/LoadingPier'>
         <LoadingPier>
             <NumOfPiers>2</NumOfPiers>
             <LoadingSpeed>3</LoadingSpeed>
@@ -8427,13 +8601,13 @@
     </ModOp>
 
     <!-- Medium -->
-    <ModOp Type = "replace" GUID = '100510,100514' Path = '/Values/Warehouse/WarehouseStorage'>
+    <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Warehouse/WarehouseStorage'>
         <WarehouseStorage>
             <StorageMax>250</StorageMax>
         </WarehouseStorage>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '100510,100514' Path = '/Values/LoadingPier'>
+    <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/LoadingPier'>
         <LoadingPier>
             <NumOfPiers>2</NumOfPiers>
             <LoadingSpeed>5</LoadingSpeed>
@@ -8442,13 +8616,13 @@
     </ModOp>
 
     <!-- Large -->
-    <ModOp Type = "replace" GUID = '100511,100515' Path = '/Values/Warehouse/WarehouseStorage'>
+    <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Warehouse/WarehouseStorage'>
         <WarehouseStorage>
             <StorageMax>500</StorageMax>
         </WarehouseStorage>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '100511,100515' Path = '/Values/LoadingPier'>
+    <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/LoadingPier'>
         <LoadingPier>
             <NumOfPiers>2</NumOfPiers>
             <LoadingSpeed>7</LoadingSpeed>
@@ -8457,13 +8631,13 @@
     </ModOp>
 
     <!-- Grand -->
-    <ModOp Type = "replace" GUID = '269879,269867' Path = '/Values/Warehouse/WarehouseStorage'>
+    <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Warehouse/WarehouseStorage'>
         <WarehouseStorage>
             <StorageMax>1000</StorageMax>
         </WarehouseStorage>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '269879,269867' Path = '/Values/LoadingPier'>
+    <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/LoadingPier'>
         <LoadingPier>
             <NumOfPiers>2</NumOfPiers>
             <LoadingSpeed>10</LoadingSpeed>
@@ -8472,7 +8646,7 @@
     </ModOp>
 
     <!-- Pier -->
-    <ModOp Type = "replace" GUID = '100519' Path = '/Values/LoadingPier'>
+    <ModOp Type = 'replace' GUID = '100519' Path = '/Values/LoadingPier'>
         <LoadingPier>
             <NumOfPiers>1</NumOfPiers>
             <LoadingSpeed>10</LoadingSpeed>
@@ -8482,7 +8656,7 @@
 
     <!-- Palace Late Drink Act -->
     <!-- Farmers -->
-    <ModOp Type = 'replace' GUID = '269232' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269232' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010216</ProvidedNeed>
@@ -8492,7 +8666,7 @@
     </ModOp>
 
     <!-- Workers -->
-    <ModOp Type = 'replace' GUID = '269448' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269448' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010216</ProvidedNeed>
@@ -8506,7 +8680,7 @@
     </ModOp>
 
     <!-- Artisans -->
-    <ModOp Type = 'replace' GUID = '269235' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269235' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010214</ProvidedNeed>
@@ -8520,7 +8694,7 @@
     </ModOp>
 
     <!-- Engineers normal -->
-    <ModOp Type = 'replace' GUID = '269447' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269447' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>1010257</ProvidedNeed>
@@ -8534,7 +8708,7 @@
     </ModOp>
 
     <!-- Investor normal > lvl 2 + tower -->
-    <ModOp Type = 'replace' GUID = '269233' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '269233' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120032</ProvidedNeed>
@@ -8548,7 +8722,7 @@
     </ModOp>
 
     <!-- Scholars -->
-    <ModOp Type = 'replace' GUID = '273692' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '273692' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>114390</ProvidedNeed>
@@ -8562,7 +8736,7 @@
     </ModOp>
 
     <!-- Investors lvl 3 -->
-    <ModOp Type = 'replace' GUID = '280082' Path = "/Values/ResidenceUpgrade/GoodConsumptionUpgrade">
+    <ModOp Type = 'replace' GUID = '280082' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120032</ProvidedNeed>
@@ -8580,28 +8754,28 @@
     </ModOp>
 
     <!-- Modules Range -->
-    <ModOp Type = "replace" GUID = '1010267,1010263,1010269,101331,101272,112676,112682,114439,114456,24836,24844,24658' Path = '/Values/ModuleOwner/ModuleBuildRadius'>
+    <ModOp Type = 'replace' GUID = '1010267,1010263,1010269,101331,101272,112676,112682,114439,114456,24836,24844,24658' Path = '/Values/ModuleOwner/ModuleBuildRadius'>
         <ModuleBuildRadius>25</ModuleBuildRadius>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '5457,101269' Path = '/Values/ModuleOwner'>
+    <ModOp Type = 'add' GUID = '5457,101269' Path = '/Values/ModuleOwner'>
         <ModuleBuildRadius>25</ModuleBuildRadius>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner'>
+    <ModOp Type = 'add' GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner'>
         <ModuleBuildRadius>250</ModuleBuildRadius>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner/ModuleLimits/Connector/Limit'>
+    <ModOp Type = 'replace' GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner/ModuleLimits/Connector/Limit'>
         <Limit>1000</Limit>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '24805' Path = '/Values/BuffFactory/BaseBuffDistance'>
+    <ModOp Type = 'replace' GUID = '24805' Path = '/Values/BuffFactory/BaseBuffDistance'>
         <BaseBuffDistance>50</BaseBuffDistance>
     </ModOp>
 
     <!-- Hacienda building radius -->
-    <ModOp Type = "replace" GUID = '24768' Path = '/Values/Hacienda/AdditionalRadiusThresholds'>
+    <ModOp Type = 'replace' GUID = '24768' Path = '/Values/Hacienda/AdditionalRadiusThresholds'>
         <AdditionalRadiusThresholds>
             <Item>
                 <ResidentThreshold>0</ResidentThreshold>
@@ -8631,7 +8805,7 @@
     </ModOp>
 
     <!-- Hacienda satisfaction -->
-    <ModOp Type = "add" GUID = '24768' Path = '/Values/PublicService'>
+    <ModOp Type = 'add' GUID = '24768' Path = '/Values/PublicService'>
         <PublicService>
             <FullSatisfactionDistance>100</FullSatisfactionDistance>
             <NoSatisfactionDistance>100</NoSatisfactionDistance>
@@ -8639,7 +8813,7 @@
     </ModOp>
 
     <!-- Hacienda Decree 1 -->
-    <ModOp Type = "replace" GUID = '25623' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+    <ModOp Type = 'replace' GUID = '25623' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120033</ProvidedNeed>
@@ -8648,7 +8822,7 @@
         </GoodConsumptionUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '25624' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+    <ModOp Type = 'replace' GUID = '25624' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120033</ProvidedNeed>
@@ -8661,7 +8835,7 @@
         </GoodConsumptionUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '7728' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+    <ModOp Type = 'replace' GUID = '7728' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>5381</ProvidedNeed>
@@ -8674,7 +8848,7 @@
         </GoodConsumptionUpgrade>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '25634' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
+    <ModOp Type = 'replace' GUID = '25634' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
         <GoodConsumptionUpgrade>
             <Item>
                 <ProvidedNeed>120033</ProvidedNeed>
@@ -8688,21 +8862,21 @@
     </ModOp>
 
     <!-- Hacienda Decree 3 -->
-    <ModOp Type = "replace" GUID = '25687' Path = '/Values/WarehouseUpgrade'>
+    <ModOp Type = 'replace' GUID = '25687' Path = '/Values/WarehouseUpgrade'>
         <WarehouseUpgrade>
             <StorageCapacityModifier>100</StorageCapacityModifier>
         </WarehouseUpgrade>
     </ModOp>
 
     <!-- Hacienda Decree 4 -->
-    <ModOp Type = "replace" GUID = '25661' Path = '/Values/InfluenceSourceUpgrade/InfluenceAmounUpgrade'>
+    <ModOp Type = 'replace' GUID = '25661' Path = '/Values/InfluenceSourceUpgrade/InfluenceAmounUpgrade'>
         <InfluenceAmounUpgrade>
             <Value>10</Value>
         </InfluenceAmounUpgrade>
     </ModOp>
 
     <!-- Irrigation -->
-    <ModOp Type = "replace" GUID = '24829' Path = '/Values/IrrigationSource'>
+    <ModOp Type = 'replace' GUID = '24829' Path = '/Values/IrrigationSource'>
         <IrrigationSource>
             <AutoWaterBaseTile>Source_Canal</AutoWaterBaseTile>
             <PipeFillCapacity>25</PipeFillCapacity>
@@ -8712,7 +8886,7 @@
         </IrrigationSource>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = "114759" Path = "/Values/IrrigationConfig/IrrigationTiles/IrrigationTileDefinitions">
+    <ModOp Type = 'replace' GUID = '114759' Path = '/Values/IrrigationConfig/IrrigationTiles/IrrigationTileDefinitions'>
         <IrrigationTileDefinitions>
             <Source_River>
                 <SourceSpreadMin>8</SourceSpreadMin>
@@ -8755,31 +8929,31 @@
     </ModOp>
 
     <!-- Electricity buff -->
-    <ModOp Type = "replace" GUID = '1010318,24800,24801,25064,25126,25350,25508,132771,132777,132786,133533,135295,135418,135397,135407,135669,135221,135185,135134,135224,5828,135133,1010317,101415,923,924,934,935,936,937,1010341,101264,1010340,101266,101271,101252,101273,1010342,6630,1353' Path = '/Values/Industrializable'>
+    <ModOp Type = 'replace' GUID = '1010318,24800,24801,25064,25126,25350,25508,132771,132777,132786,133533,135295,135418,135397,135407,135669,135221,135185,135134,135224,5828,135133,1010317,101415,923,924,934,935,936,937,1010341,101264,1010340,101266,101271,101252,101273,1010342,6630,1353' Path = '/Values/Industrializable'>
         <Industrializable>
             <BoostedByIndustrialization>1</BoostedByIndustrialization>
         </Industrializable>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '6629,6631,5462' Path = '/Values/Industrializable'>
+    <ModOp Type = 'replace' GUID = '6629,6631,5462' Path = '/Values/Industrializable'>
         <Industrializable>
             <TransporterIndustrializationFactory>8943</TransporterIndustrializationFactory>
             <BoostedByIndustrialization>1</BoostedByIndustrialization>
         </Industrializable>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '114441,1010278,1010269,1010267,1010263,101262,5463,7919,1418,114466,114440,114444,114468,114467,118725,114469,114459,118729,114471,114472,117744,114470,114461,114464' Path = '/Values/Industrializable/BoostedByIndustrialization'>
+    <ModOp Type = 'replace' GUID = '114441,1010278,1010269,1010267,1010263,101262,5463,7919,1418,114466,114440,114444,114468,114467,118725,114469,114459,118729,114471,114472,117744,114470,114461,114464' Path = '/Values/Industrializable/BoostedByIndustrialization'>
         <BoostedByIndustrialization>1</BoostedByIndustrialization>
     </ModOp>
 
     <!-- More local storage for farms -->
-    <ModOp Type="merge" GUID = '1010262,1010264,1010265,100654,100655,101270,101251,101263,1010329,1010330,1010331,1010332,1010333' Path = "/Values/FactoryBase/FactoryOutputs/Item/StorageAmount">
+    <ModOp Type='merge' GUID = '1010262,1010264,1010265,100654,100655,101270,101251,101263,1010329,1010330,1010331,1010332,1010333' Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'>
         <StorageAmount>25</StorageAmount>
     </ModOp>
 
     <!-- Loading times -->
     <!-- Base Wagon -->
-    <ModOp Type = 'add' GUID = '1010104' Path = "/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '1010104' Path = '/Values/Transporter7'>
         <TransporterCapacity>100</TransporterCapacity>
         <ProcessingTimes>
             <LoadingTime>3</LoadingTime>
@@ -8788,11 +8962,11 @@
     </ModOp>
 
     <!-- Electric version -->
-    <ModOp Type = 'add' GUID = '120028' Path = "/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '120028' Path = '/Values/Transporter7'>
         <TransporterCapacity>100</TransporterCapacity>
     </ModOp>
 
-    <ModOp Type="merge" GUID = '120028' Path = "/Values/Transporter7/ProcessingTimes">
+    <ModOp Type='merge' GUID = '120028' Path = '/Values/Transporter7/ProcessingTimes'>
         <ProcessingTimes>
             <LoadingTime>2</LoadingTime>
             <UnloadingTime>2</UnloadingTime>
@@ -8800,7 +8974,7 @@
     </ModOp>
 
     <!-- Base Warehouse Wagon -->
-    <ModOp Type = 'add' GUID = '1010105,8943' Path = "/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '1010105,8943' Path = '/Values/Transporter7'>
         <TransporterCapacity>100</TransporterCapacity>
         <ProcessingTimes>
             <LoadingTime>3</LoadingTime>
@@ -8809,11 +8983,11 @@
     </ModOp>
 
     <!-- Electric Warehouse version -->
-    <ModOp Type = 'add' GUID = '120027' Path = "/Values/Transporter7">
+    <ModOp Type = 'add' GUID = '120027' Path = '/Values/Transporter7'>
         <TransporterCapacity>100</TransporterCapacity>
     </ModOp>
 
-    <ModOp Type="merge" GUID = '120027' Path = "/Values/Transporter7/ProcessingTimes">
+    <ModOp Type='merge' GUID = '120027' Path = '/Values/Transporter7/ProcessingTimes'>
         <ProcessingTimes>
             <LoadingTime>2</LoadingTime>
             <UnloadingTime>2</UnloadingTime>
@@ -8821,21 +8995,21 @@
     </ModOp>
 
     <!-- Post Office Overlap -->
-    <ModOp Type = 'replace' GUID = '3741,3761,4260' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '3741,3761,4260' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketScopeRadius>50</SocketScopeRadius>
         </ItemContainer>
     </ModOp>
 
     <!-- Mailbox Overlap -->
-    <ModOp Type = 'replace' GUID = '538,3661' Path = "/Values/ItemContainer">
+    <ModOp Type = 'replace' GUID = '538,3661' Path = '/Values/ItemContainer'>
         <ItemContainer>
             <SocketScopeRadius>12</SocketScopeRadius>
         </ItemContainer>
     </ModOp>
 
     <!-- Canteen -->
-    <ModOp Type = 'replace' GUID = '114889' Path = "/Values/PublicService">
+    <ModOp Type = 'replace' GUID = '114889' Path = '/Values/PublicService'>
         <PublicService>
             <FullSatisfactionDistance>50</FullSatisfactionDistance>
             <NoSatisfactionDistance>50</NoSatisfactionDistance>
@@ -8849,7 +9023,7 @@
     </ModOp>
 
     <!-- Post Office -->
-    <ModOp Type = 'replace' GUID = '112684' Path = "/Values/PublicService">
+    <ModOp Type = 'replace' GUID = '112684' Path = '/Values/PublicService'>
         <PublicService>
             <FullSatisfactionDistance>75</FullSatisfactionDistance>
             <NoSatisfactionDistance>75</NoSatisfactionDistance>
@@ -8862,19 +9036,19 @@
     </ModOp>
 
     <!-- Palace Range -->
-    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/BaseStreetRange">
+    <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/BaseStreetRange'>
         <BaseStreetRange>100</BaseStreetRange>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/AdditionalStreetRangePerModule">
+    <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/AdditionalStreetRangePerModule'>
         <AdditionalStreetRangePerModule>10</AdditionalStreetRangePerModule>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/AdditionalModulesForEachAdditionalCompanyLevelHigherMax">
+    <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/AdditionalModulesForEachAdditionalCompanyLevelHigherMax'>
         <AdditionalModulesForEachAdditionalCompanyLevelHigherMax>5</AdditionalModulesForEachAdditionalCompanyLevelHigherMax>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '249947' Path = "/Values/Palace/ModulesForCompanyLevelSetup">
+    <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/ModulesForCompanyLevelSetup'>
         <ModulesForCompanyLevelSetup>
             <Item>
                 <AdditionalModuleCountForThisCompanyLevel>10</AdditionalModuleCountForThisCompanyLevel>
@@ -8887,13 +9061,13 @@
     </ModOp>
 
     <!-- Harbour blocking space mod -->
-    <ModOp Type = 'remove' GUID = '1010520,1010521,100783,101403,101404,119259' Path = "Values/Blocking/HarbourAreaExpand"/>
+    <ModOp Type = 'remove' GUID = '1010520,1010521,100783,101403,101404,119259' Path = 'Values/Blocking/HarbourAreaExpand'/>
 
-    <ModOp Type = 'remove' GUID = '100429,102284,100519,125028,125191,125192,125193' Path = "Values/Blocking/HarbourAreaExpand"/>
+    <ModOp Type = 'remove' GUID = '100429,102284,100519,125028,125191,125192,125193' Path = 'Values/Blocking/HarbourAreaExpand'/>
 
-    <ModOp Type = 'remove' GUID = '1010517,100510,100511,1010540,100514,100515,269867,269879' Path = "Values/Blocking/HarbourAreaExpand"/>
+    <ModOp Type = 'remove' GUID = '1010517,100510,100511,1010540,100514,100515,269867,269879' Path = 'Values/Blocking/HarbourAreaExpand'/>
 
-    <ModOp Type = 'replace' GUID = '601460,601470' Path = "Values/Blocking/HarbourAreaExpand">
+    <ModOp Type = 'replace' GUID = '601460,601470' Path = 'Values/Blocking/HarbourAreaExpand'>
         <HarbourAreaExpand>0</HarbourAreaExpand>
     </ModOp>
 
@@ -8945,13 +9119,13 @@
 
     <ModOp Type = 'remove' GUID = '500954' Path = "/Values/ConstructionCategory/BuildingList/Item[Building='101642']"/>
 
-    <ModOp Type= 'add' GUID = '500952' Path = "/Values/ConstructionCategory/BuildingList">
+    <ModOp Type= 'add' GUID = '500952' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>101642</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '101642' Path = "/Values/Cost/Costs">
+    <ModOp Type = 'replace' GUID = '101642' Path = '/Values/Cost/Costs'>
         <Costs>
             <Item>
                 <Ingredient>1010017</Ingredient>
@@ -8970,6 +9144,11 @@
                 <Amount>25</Amount>
             </Item>
         </Costs>
+    </ModOp>
+
+    <!-- Item stacks mod -->
+    <ModOp Type = 'merge' Path = '//Item'>
+        <MaxStackSize>10</MaxStackSize>
     </ModOp>
 
     <!-- NPCs -->
@@ -9433,6 +9612,10 @@
     <ModOp Type = 'replace' GUID = '192073' Path = '/Values/RewardPool'>
         <RewardPool>
             <ItemsPool>
+                <Item>
+                    <ItemLink>190881</ItemLink>
+                    <Weight>10</Weight>
+                </Item>
                 <Item>
                     <ItemLink>191991</ItemLink>
                     <Weight>10</Weight>
@@ -10050,6 +10233,10 @@
     <ModOp Type = 'replace' GUID = '190774' Path = '/Values/RewardPool'>
         <RewardPool>
             <ItemsPool>
+                <Item>
+                    <ItemLink>191352</ItemLink>
+                    <Weight>10</Weight>
+                </Item>
                 <Item>
                     <ItemLink>191327</ItemLink>
                     <Weight>10</Weight>
@@ -12528,8 +12715,12 @@
     </ModOp>
 
     <ModOp Type = 'replace' GUID = '192073' Path = '/Values/RewardPool'>
-        <RewardPool>
+        <RewardPool>8347
             <ItemsPool>
+                <Item>
+                    <ItemLink>8347</ItemLink>
+                    <Weight>10</Weight>
+                </Item>
                 <Item>
                     <ItemLink>190643</ItemLink>
                     <Weight>10</Weight>
@@ -14114,6 +14305,10 @@
         <RewardPool>
             <ItemsPool>
                 <Item>
+                    <ItemLink>8908</ItemLink>
+                    <Weight>10</Weight>
+                </Item>
+                <Item>
                     <ItemLink>190739</ItemLink>
                     <Weight>10</Weight>
                 </Item>
@@ -14323,7 +14518,7 @@
     </ModOp>
 
     <!-- Pirate Diplomacy -->
-    <ModOp Type = "replace" GUID = '73' Path = '/Values/Diplomacy/DiplomacyActionBalancing'>
+    <ModOp Type = 'replace' GUID = '73' Path = '/Values/Diplomacy/DiplomacyActionBalancing'>
         <DiplomacyActionBalancing>
             <ThreatWar>
                 <AgreementThreshold>25</AgreementThreshold>
@@ -14358,7 +14553,7 @@
         </DiplomacyActionBalancing>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '73' Path = '/Values/Diplomacy/RepeatableActionBalancing/Actions'>
+    <ModOp Type = 'replace' GUID = '73' Path = '/Values/Diplomacy/RepeatableActionBalancing/Actions'>
         <Actions>
             <Flatter>
                 <Subdivisions>
@@ -14427,7 +14622,7 @@
         </Actions>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '76' Path = '/Values/Diplomacy/DiplomacyActionBalancing'>
+    <ModOp Type = 'replace' GUID = '76' Path = '/Values/Diplomacy/DiplomacyActionBalancing'>
         <DiplomacyActionBalancing>
             <ThreatWar>
                 <AgreementThreshold>25</AgreementThreshold>
@@ -14462,7 +14657,7 @@
         </DiplomacyActionBalancing>
     </ModOp>
 
-    <ModOp Type = "replace" GUID = '76' Path = '/Values/Diplomacy/RepeatableActionBalancing/Actions'>
+    <ModOp Type = 'replace' GUID = '76' Path = '/Values/Diplomacy/RepeatableActionBalancing/Actions'>
         <Actions>
             <Flatter>
                 <Subdivisions>
@@ -14568,7 +14763,7 @@
 
     <!-- New Buildings -->
     <!-- Old World Grand Trade Union -->
-    <ModOp Type = "addNextSibling" GUID = '1010516'>
+    <ModOp Type = 'addNextSibling' GUID = '1010516'>
         <Asset>
             <Template>Guildhouse</Template>
             <Values>
@@ -14708,45 +14903,45 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130252' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130252' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100001</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '141703' Path = '/Values/CharacterInteractionConfig/BuildBuildingWhitelist'>
+    <ModOp Type = 'add' GUID = '141703' Path = '/Values/CharacterInteractionConfig/BuildBuildingWhitelist'>
         <Item>
             <Building>1100001</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193990,193860,193879,190611,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193990,193860,193879,190611,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100001</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '500127,501002,25000190,500944,500092,10000025,10000037' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '500127,501002,25000190,500944,500092,10000025,10000037' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100001</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
+    <ModOp Type = 'add' GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
         <Item>
             <Building>1100001</Building>
             <Text>269197</Text>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '269492,269493,269494,269495,269496,269497,269498,269499,269500,269501,269701,269702,269703,269704,269705,269706,269707,269708,269709,269710,269711,269712,269713,269714,269715' Path = '/Values/ItemEffect/EffectTargets'>
+    <ModOp Type = 'add' GUID = '269492,269493,269494,269495,269496,269497,269498,269499,269500,269501,269701,269702,269703,269704,269705,269706,269707,269708,269709,269710,269711,269712,269713,269714,269715' Path = '/Values/ItemEffect/EffectTargets'>
         <Item>
             <GUID>1100001</GUID>
         </Item>
     </ModOp>
 
     <!-- New World Grand Trade Union -->
-    <ModOp Type = "addNextSibling" GUID = '101284'>
+    <ModOp Type = 'addNextSibling' GUID = '101284'>
         <Asset>
             <BaseAssetGUID>1100001</BaseAssetGUID>
             <Values>
@@ -14807,38 +15002,38 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130236' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '130236' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100002</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130237' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130237' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100002</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '141703' Path = '/Values/CharacterInteractionConfig/BuildBuildingWhitelist'>
+    <ModOp Type = 'add' GUID = '141703' Path = '/Values/CharacterInteractionConfig/BuildBuildingWhitelist'>
         <Item>
             <Building>1100002</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193990,193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193990,193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100002</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '1911,501004,25000193,500946,500137' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '1911,501004,25000193,500946,500137' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100002</Building>
         </Item>
     </ModOp>
 
     <!-- Grand Arctic Lodge -->
-    <ModOp Type = "addNextSibling" GUID = '112678'>
+    <ModOp Type = 'addNextSibling' GUID = '112678'>
         <Asset>
             <BaseAssetGUID>1100001</BaseAssetGUID>
             <Values>
@@ -15005,32 +15200,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,190611,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,190611,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100003</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '112648,116821' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '112648,116821' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100003</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '112649' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '112649' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100003</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '112791,116343' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '112791,116343' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100003</Building>
         </Item>
     </ModOp>
 
     <!-- Enbesa Grand Trade Union -->
-    <ModOp Type = "addNextSibling" GUID = '117858'>
+    <ModOp Type = 'addNextSibling' GUID = '117858'>
         <Asset>
             <BaseAssetGUID>1100001</BaseAssetGUID>
             <Values>
@@ -15159,32 +15354,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100004</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114332' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '114332' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100004</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114333' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '114333' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100004</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114553,119012' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '114553,119012' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100004</Building>
         </Item>
     </ModOp>
 
     <!-- Old World Grand Town Hall -->
-    <ModOp Type = "addNextSibling" GUID = '100415'>
+    <ModOp Type = 'addNextSibling' GUID = '100415'>
         <Asset>
             <Template>Guildhouse</Template>
             <Values>
@@ -15330,31 +15525,31 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130216' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130216' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100005</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '142734' Path = '/Values/FeedbackBuildingGroup/Buildings'>
+    <ModOp Type = 'add' GUID = '142734' Path = '/Values/FeedbackBuildingGroup/Buildings'>
         <Item>
             <Building>1100005</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '190781,193879,190611,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '190781,193879,190611,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100005</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '500129,501002,25000191,500944,500092,10000027,10000037' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '500129,501002,25000191,500944,500092,10000027,10000037' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100005</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
+    <ModOp Type = 'add' GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
         <Item>
             <Building>1100005</Building>
             <Text>269175</Text>
@@ -15362,7 +15557,7 @@
     </ModOp>
 
     <!-- New World Grand Town Hall -->
-    <ModOp Type = "addNextSibling" GUID = '101285'>
+    <ModOp Type = 'addNextSibling' GUID = '101285'>
         <Asset>
             <BaseAssetGUID>1100005</BaseAssetGUID>
             <Values>
@@ -15497,26 +15692,26 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130241' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130241' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100006</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '190781,193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '190781,193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100006</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '1912,501004,25000194,500946,500137' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '1912,501004,25000194,500946,500137' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100006</Building>
         </Item>
     </ModOp>
 
     <!-- Enbesa Grand Town Hall -->
-    <ModOp Type = "addNextSibling" GUID = '117859'>
+    <ModOp Type = 'addNextSibling' GUID = '117859'>
         <Asset>
             <BaseAssetGUID>1100005</BaseAssetGUID>
             <Values>
@@ -15647,32 +15842,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100007</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114336' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '114336' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100007</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114337' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '114337' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100007</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114554,119012' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '114554,119012' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100007</Building>
         </Item>
     </ModOp>
 
     <!-- Old World Grand Harbourmaster Office -->
-    <ModOp Type = "addNextSibling" GUID = '100586'>
+    <ModOp Type = 'addNextSibling' GUID = '100586'>
         <Asset>
             <Template>HarborOffice</Template>
             <Values>
@@ -15845,45 +16040,45 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193865,193879,190611,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193865,193879,190611,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100008</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130252' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '130252' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100008</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130253,150643' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130253,150643' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100008</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '501002,500952,500944,500903,500092,10000037' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '501002,500952,500944,500903,500092,10000037' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100008</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
+    <ModOp Type = 'add' GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
         <Item>
             <Building>1100008</Building>
             <Text>269197</Text>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '139942' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <ModOp Type = 'add' GUID = '139942' Path = '/Values/PlayerCounterContextPool/Contexts'>
         <Item>
             <Asset>1100008</Asset>
         </Item>
     </ModOp>
 
     <!-- New World Grand Harbourmaster Office -->
-    <ModOp Type = "addNextSibling" GUID = '101286'>
+    <ModOp Type = 'addNextSibling' GUID = '101286'>
         <Asset>
             <BaseAssetGUID>1100008</BaseAssetGUID>
             <Values>
@@ -15946,32 +16141,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100009</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130237' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '130237' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100009</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130238' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130238' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100009</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '501004,501007,500946,25000195,500137' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '501004,501007,500946,25000195,500137' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100009</Building>
         </Item>
     </ModOp>
 
     <!-- Enbesa Grand Harbourmaster Office -->
-    <ModOp Type = "addNextSibling" GUID = '117860'>
+    <ModOp Type = 'addNextSibling' GUID = '117860'>
         <Asset>
             <BaseAssetGUID>1100008</BaseAssetGUID>
             <Values>
@@ -16114,19 +16309,19 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100010</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114555,119012,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '114555,119012,119014' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100010</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '117918' Path = '/Values/AssetPool/AssetList'>
+    <ModOp Type = 'add' GUID = '117918' Path = '/Values/AssetPool/AssetList'>
         <Item>
             <Asset>1100010</Asset>
         </Item>
@@ -16414,7 +16609,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = '368,193879,191508' Path = "/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <ModOp Type = 'add' GUID = '368,193879,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100020</GUID>
         </Item>
@@ -16469,7 +16664,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = "4532" Path = "/Values/AssetPool/AssetList">
+    <ModOp Type = 'add' GUID = '4532' Path = '/Values/AssetPool/AssetList'>
         <Item>
             <Asset>103692001</Asset>
         </Item>
@@ -16478,7 +16673,7 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = '501065' Path = "/Values/ObjectmenuCommuterHarbourScene/WorkforceToRegion">
+    <ModOp Type = 'add' GUID = '501065' Path = '/Values/ObjectmenuCommuterHarbourScene/WorkforceToRegion'>
         <Arctic>
             <WorkforceList>
                 <Item>
@@ -16491,7 +16686,7 @@
         </Arctic>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = '501065' Path = "/Values/ObjectmenuCommuterHarbourScene/BuildingSpecificData">
+    <ModOp Type = 'add' GUID = '501065' Path = '/Values/ObjectmenuCommuterHarbourScene/BuildingSpecificData'>
         <Item>
             <Building>103692001</Building>
             <PortraitParticipant>Paloma</PortraitParticipant>
@@ -16500,7 +16695,7 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = '8528' Path = "/Values/ConstructionCategory/BuildingList/">
+    <ModOp Type = 'add' GUID = '8528' Path = '/Values/ConstructionCategory/BuildingList/'>
         <Item>
             <Building>103692001</Building>
         </Item>
@@ -16509,7 +16704,7 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = "4258" Path = "/Values/ModuleOwner/ConstructionOptions">
+    <ModOp Type = 'add' GUID = '4258' Path = '/Values/ModuleOwner/ConstructionOptions'>
         <Item>
             <ModuleGUID>103692001</ModuleGUID>
         </Item>
@@ -16518,7 +16713,7 @@
         </Item>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '4258' Path = "/Values/ModuleOwner/ModuleLimits">
+    <ModOp Type = 'replace' GUID = '4258' Path = '/Values/ModuleOwner/ModuleLimits'>
         <ModuleLimits>
             <PlatformItem>
                 <Limit>1</Limit>
@@ -16535,7 +16730,7 @@
         </ModuleLimits>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '4258' Path = "/Values/Cost">
+    <ModOp Type = 'replace' GUID = '4258' Path = '/Values/Cost'>
         <Cost>
             <Costs>
                 <Item>
@@ -16563,7 +16758,7 @@
         </Cost>
     </ModOp>
 
-    <ModOp Type = 'replace' GUID = '4259,4513,112684,4260' Path = "/Values/Cost">
+    <ModOp Type = 'replace' GUID = '4259,4513,112684,4260' Path = '/Values/Cost'>
         <Cost>
             <Costs>
                 <Item>
@@ -16591,7 +16786,7 @@
         </Cost>
     </ModOp>
 
-    <ModOp Type = 'addNextSibling' GUID = "4259">
+    <ModOp Type = 'addNextSibling' GUID = '4259'>
         <Asset>
             <Template>AirshipWorkforceFreeModule</Template>
             <Values>
@@ -17067,7 +17262,7 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = 'add' GUID = '117398,193835' Path = "/Values/RewardPool/ItemsPool">
+    <ModOp Type = 'add' GUID = '117398,193835' Path = '/Values/RewardPool/ItemsPool'>
         <Item>
             <ItemLink>1440134800</ItemLink>
             <Weight>3</Weight>
@@ -17075,7 +17270,7 @@
     </ModOp>
 
     <!-- Arctic Quay mod -->
-    <ModOp Type = 'addNextSibling' GUID = "102114">
+    <ModOp Type = 'addNextSibling' GUID = '102114'>
         <Asset>
             <BaseAssetGUID>1010567</BaseAssetGUID>
             <Values>
@@ -17444,44 +17639,44 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,190611,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,190611,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100011</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130253,150643' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '130253,150643' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100011</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130254,150692' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130254,150692' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100011</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '500952,500903,500111,10000034' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '500952,500903,500111,10000034' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100011</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130068' Path = '/Values/AssetPool/AssetList'>
+    <ModOp Type = 'add' GUID = '130068' Path = '/Values/AssetPool/AssetList'>
         <Item>
             <Asset>1100011</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <ModOp Type = 'add' GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
         <Item>
             <Asset>1100011</Asset>
         </Item>
     </ModOp>
 
     <!-- New World Land Cannon Tower -->
-    <ModOp Type = "addNextSibling" GUID = '101570'>
+    <ModOp Type = 'addNextSibling' GUID = '101570'>
         <Asset>
             <BaseAssetGUID>1100011</BaseAssetGUID>
             <Values>
@@ -17623,32 +17818,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100012</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '501008,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '501008,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100012</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130123' Path = '/Values/AssetPool/AssetList'>
+    <ModOp Type = 'add' GUID = '130123' Path = '/Values/AssetPool/AssetList'>
         <Item>
             <Asset>1100012</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <ModOp Type = 'add' GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
         <Item>
             <Asset>1100012</Asset>
         </Item>
     </ModOp>
 
     <!-- Arctic Land Cannon Tower -->
-    <ModOp Type = "addNextSibling" GUID = '112671'>
+    <ModOp Type = 'addNextSibling' GUID = '112671'>
         <Asset>
             <BaseAssetGUID>1100011</BaseAssetGUID>
             <Values>
@@ -17822,26 +18017,26 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,190611,368,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,190611,368,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100013</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '112648,116821' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '112648,116821' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100013</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100013</Building>
         </Item>
     </ModOp>
 
     <!-- Enbesa Land Cannon Tower -->
-    <ModOp Type = "addNextSibling" GUID = '117863'>
+    <ModOp Type = 'addNextSibling' GUID = '117863'>
         <Asset>
             <BaseAssetGUID>1100011</BaseAssetGUID>
             <Values>
@@ -18000,26 +18195,26 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100014</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '117897,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '117897,119014' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100014</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '117921' Path = '/Values/AssetPool/AssetList'>
+    <ModOp Type = 'add' GUID = '117921' Path = '/Values/AssetPool/AssetList'>
         <Item>
             <Asset>1100014</Asset>
         </Item>
     </ModOp>
 
     <!-- Old World Land Flak Emplacement -->
-    <ModOp Type = "addNextSibling" GUID = '736'>
+    <ModOp Type = 'addNextSibling' GUID = '736'>
         <Asset>
             <Template>HarborBuildingAttacker</Template>
             <Values>
@@ -18242,32 +18437,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100015</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2044' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '2044' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100015</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2046' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '2046' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100015</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '500952,500903,500111' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '500952,500903,500111' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100015</Building>
         </Item>
     </ModOp>
 
     <!-- New World Land Flak Emplacement -->
-    <ModOp Type = "addNextSibling" GUID = '742'>
+    <ModOp Type = 'addNextSibling' GUID = '742'>
         <Asset>
             <Template>HarborBuildingAttacker</Template>
             <Values>
@@ -18471,32 +18666,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100016</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2047' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '2047' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100016</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2048' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '2048' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100016</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '501007,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '501007,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100016</Building>
         </Item>
     </ModOp>
 
     <!-- Arctic Land Flak Emplacement -->
-    <ModOp Type = "addNextSibling" GUID = '822'>
+    <ModOp Type = 'addNextSibling' GUID = '822'>
         <Asset>
             <Template>HarborBuildingAttacker</Template>
             <Values>
@@ -18700,26 +18895,26 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100017</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2049' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '2049' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100017</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100017</Building>
         </Item>
     </ModOp>
 
     <!-- Enbesa Land Flak Emplacement -->
-    <ModOp Type = "addNextSibling" GUID = '743'>
+    <ModOp Type = 'addNextSibling' GUID = '743'>
         <Asset>
             <Template>HarborBuildingAttacker</Template>
             <Values>
@@ -18923,32 +19118,32 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100018</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2055' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '2055' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100018</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '2056' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '2056' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100018</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '114555,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '114555,119014' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100018</Building>
         </Item>
     </ModOp>
 
     <!-- Old World Land Big Betty -->
-    <ModOp Type = "addNextSibling" GUID = '1010524'>
+    <ModOp Type = 'addNextSibling' GUID = '1010524'>
         <Asset>
             <Template>HarborBuildingAttacker</Template>
             <Values>
@@ -19165,31 +19360,31 @@
         </Asset>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '193879,190611,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <ModOp Type = 'add' GUID = '193879,190611,368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
         <Item>
             <GUID>1100019</GUID>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130221' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <ModOp Type = 'add' GUID = '130221' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
         <Item>
             <Asset>1100019</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '130222' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <ModOp Type = 'add' GUID = '130222' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
         <Item>
             <Asset>1100019</Asset>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '500954,500903,500111,10000034' Path = '/Values/ConstructionCategory/BuildingList'>
+    <ModOp Type = 'add' GUID = '500954,500903,500111,10000034' Path = '/Values/ConstructionCategory/BuildingList'>
         <Item>
             <Building>1100019</Building>
         </Item>
     </ModOp>
 
-    <ModOp Type = "add" GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <ModOp Type = 'add' GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
         <Item>
             <Building>1100019</Building>
         </Item>
