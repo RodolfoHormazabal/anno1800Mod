@@ -1,0 +1,66 @@
+<ModOps>
+  <!-- NPC Maximum buy amount -->
+  <ModOp Type = 'replace' Path = '//Template[Name="Profile_3rdParty"]/Properties/Trader/ItemBuyLimit'>
+    <ItemBuyLimit>1000</ItemBuyLimit>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="Profile_3rdParty_ItemCrafter"]/Properties/Trader/ItemBuyLimit'>
+    <ItemBuyLimit>1000</ItemBuyLimit>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="Profile_3rdParty_Pirate"]/Properties/Trader/ItemBuyLimit'>
+    <ItemBuyLimit>1000</ItemBuyLimit>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="Profile_3rdParty-PlayerCounter"]/Properties/Trader/ItemBuyLimit'>
+    <ItemBuyLimit>1000</ItemBuyLimit>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="Profile_3rdParty-PlayerCounterPirate"]/Properties/Trader/ItemBuyLimit'>
+    <ItemBuyLimit>1000</ItemBuyLimit>
+  </ModOp>
+
+  <!-- Dockland attractiveness -->
+  <ModOp Type = 'replace' Path = '//Template[Name="DocklandMain"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>250</Attractiveness>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="DocklandItemModule"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>25</Attractiveness>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="DocklandModule"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>25</Attractiveness>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="DocklandModuleRepair"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>25</Attractiveness>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="DocklandPierModule"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>25</Attractiveness>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="DocklandStorageModule"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>25</Attractiveness>
+  </ModOp>
+
+  <!-- Iron tower stats -->
+  <ModOp Type = 'replace' Path = '//Template[Name="TowerRestaurant"]/Properties/BuffFactory'>
+    <BuffFactory>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>25</ProductionBuffDistance>
+      <CanBeAffectedByAdditionalWorkforce>1</CanBeAffectedByAdditionalWorkforce>
+      <RangeIncreasePerHundredAdditionalWorkforce>2</RangeIncreasePerHundredAdditionalWorkforce>
+    </BuffFactory>
+  </ModOp>
+
+  <!-- Palace attractiveness -->
+  <ModOp Type = 'replace' Path = '//Template[Name="Palace"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>250</Attractiveness>
+  </ModOp>
+
+  <ModOp Type = 'replace' Path = '//Template[Name="PalaceModule"]/Properties/Culture/Attractiveness'>
+    <Attractiveness>25</Attractiveness>
+  </ModOp>
+</ModOps>

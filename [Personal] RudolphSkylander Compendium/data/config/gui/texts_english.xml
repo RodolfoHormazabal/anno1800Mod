@@ -1,0 +1,113 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1100001</GUID>
+      <Text>Grand Trade Union</Text>
+    </Text>
+    <Text>
+      <GUID>1100002</GUID>
+      <Text>Grand Trade Union</Text>
+    </Text>
+    <Text>
+      <GUID>1100003</GUID>
+      <Text>Grand Arctic Lodge</Text>
+    </Text>
+    <Text>
+      <GUID>1100004</GUID>
+      <Text>Grand Trade Union</Text>
+    </Text>
+    <Text>
+      <GUID>1100005</GUID>
+      <Text>Grand Town Hall</Text>
+    </Text>
+    <Text>
+      <GUID>1100006</GUID>
+      <Text>Grand Town Hall</Text>
+    </Text>
+    <Text>
+      <GUID>1100007</GUID>
+      <Text>Grand Town Hall</Text>
+    </Text>
+    <Text>
+      <GUID>1100008</GUID>
+      <Text>Grand Harbourmaster's Office</Text>
+    </Text>
+    <Text>
+      <GUID>1100009</GUID>
+      <Text>Grand Harbourmaster's Office</Text>
+    </Text>
+    <Text>
+      <GUID>1100010</GUID>
+      <Text>Grand Harbourmaster's Office</Text>
+    </Text>
+    <Text>
+      <GUID>1100011</GUID>
+      <Text>Land Cannon Tower</Text>
+    </Text>
+    <Text>
+      <GUID>1100012</GUID>
+      <Text>Land Cannon Tower</Text>
+    </Text>
+    <Text>
+      <GUID>1100013</GUID>
+      <Text>Land Cannon Tower</Text>
+    </Text>
+    <Text>
+      <GUID>1100014</GUID>
+      <Text>Land Cannon Tower</Text>
+    </Text>
+    <Text>
+      <GUID>1100015</GUID>
+      <Text>Land Flak Emplacement</Text>
+    </Text>
+    <Text>
+      <GUID>1100016</GUID>
+      <Text>Land Flak Emplacement</Text>
+    </Text>
+    <Text>
+      <GUID>1100017</GUID>
+      <Text>Land Flak Emplacement</Text>
+    </Text>
+    <Text>
+      <GUID>1100018</GUID>
+      <Text>Land Flak Emplacement</Text>
+    </Text>
+    <Text>
+      <GUID>1100019</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100022</GUID>
+      <Text>Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100023</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100025</GUID>
+      <Text>Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100026</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100027</GUID>
+      <Text>Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100028</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>1100024</GUID>
+      <Text>Smoke Detector</Text>
+    </Text>
+    <Text>
+      <GUID>1100021</GUID>
+      <Text>All New World Animal Farms</Text>
+    </Text>
+  </ModOp>
+</ModOps>
+

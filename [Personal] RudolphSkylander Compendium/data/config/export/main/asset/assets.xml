@@ -1,0 +1,5125 @@
+<ModOps>
+  <!-- 
+    In this file there are all the imports to each section of the mod divided in the following sections:
+      - assets_items.xml, this file contains all the items modifications.
+      - assets_mechanics.xml, this file contains all the game creation and game mechanics changes.
+      - assets_ships.xml, this file contains all the ships changes.
+      - assets_buildings.xml, this file contains all the buldings changes.
+      - assets_npc.xml, this file contains all the NPC changes.
+
+    Each section can be disabled by commenting the corresponding 'Include' line, but most of the changes are designed to work with everything ON
+    Also the order of the imports is important, some imports are meant to be done last.
+  -->
+
+  <!-- Imports -->
+  <Include File = 'assets_items.xml' />
+  <Include File = 'assets_mechanics.xml' />
+  <Include File = 'assets_ships.xml' />
+  <Include File = 'assets_buildings.xml' />
+  <Include File = 'assets_npc.xml' />
+  
+  <!-- Harbour blocking space mod -->
+  <ModOp Type = 'remove' GUID = '1010520,1010521,100783,101403,101404,119259' Path = 'Values/Blocking/HarbourAreaExpand'/>
+  <ModOp Type = 'remove' GUID = '100429,102284,100519,125028,125191,125192,125193' Path = 'Values/Blocking/HarbourAreaExpand'/>
+  <ModOp Type = 'remove' GUID = '1010517,100510,100511,1010540,100514,100515,269867,269879' Path = 'Values/Blocking/HarbourAreaExpand'/>
+
+  <ModOp Type = 'replace' GUID = '601460,601470' Path = 'Values/Blocking/HarbourAreaExpand'>
+    <HarbourAreaExpand>0</HarbourAreaExpand>
+  </ModOp>
+
+  <!-- New Buildings -->
+  <!-- Old World Grand Trade Union -->
+  <ModOp Type = 'addNextSibling' GUID = '1010516'>
+    <Asset>
+      <Template>Guildhouse</Template>
+      <Values>
+        <Standard>
+          <GUID>1100001</GUID>
+          <Name>guild_house</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_guildhouse.png</IconFilename>
+          <InfoDescription>118031</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11152</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/guild_house/guild_house.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>1010516</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+            <OverrideDefaultIcon>data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc09/icon_tradeunion_default.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>5226</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Grand Trade Union</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>8503</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer>
+          <SocketCount>3</SocketCount>
+          <SocketScope>Area</SocketScope>
+          <UnsocketSound>247106</UnsocketSound>
+        </ItemContainer>
+        <UpgradeList />
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>3500</MaximumHitPoints>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>1000</Amount>
+              <InactiveAmount>500</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource>
+          <InfluenceSource>Culture</InfluenceSource>
+        </InfluenceSource>
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130252' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100001</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '141703' Path = '/Values/CharacterInteractionConfig/BuildBuildingWhitelist'>
+    <Item>
+      <Building>1100001</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '193990,193860,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100001</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '25000190,500092' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100001</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
+    <Item>
+      <Building>1100001</Building>
+      <Text>269197</Text>
+    </Item>
+  </ModOp>
+
+  <ModOp 
+    Type = 'add' 
+    GUID = '269492,269493,269494,269495,269496,269497,269498,269499,269500,269501,269701,269702,269703,269704,269705,269706,269707,269708,269709,269710,269711,269712,269713,269714,269715' 
+    Path = '/Values/ItemEffect/EffectTargets'
+  >
+    <Item>
+      <GUID>1100001</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- New World Grand Trade Union -->
+  <ModOp Type = 'addNextSibling' GUID = '101284'>
+    <Asset>
+      <BaseAssetGUID>1100001</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100002</GUID>
+          <Name>guild_house_colony01</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost />
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/graphics/buildings/special/guild_house_colony01/guild_house_colony01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text />
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130236' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100002</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130237' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100002</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '141703' Path = '/Values/CharacterInteractionConfig/BuildBuildingWhitelist'>
+    <Item>
+      <Building>1100002</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '193990,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100002</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '1911,501004,25000193,500946,500137' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100002</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Grand Arctic Lodge -->
+  <ModOp Type = 'addNextSibling' GUID = '112678'>
+    <Asset>
+      <BaseAssetGUID>1100001</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100003</GUID>
+          <Name>guild_house_arctic</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_community_lodge.png</IconFilename>
+          <InfoDescription>116498</InfoDescription>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Arctic</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/dlc03/graphics/buildings/special/guild_house_colony03/guild_house_colony03.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList />
+          </Skins>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Arctic Lodge</Text>
+            </English>
+          </LocaText>
+          <LineID>35499</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>243894</Sound>
+            </Item>
+          </ActiveSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer>
+          <SocketAllocation>RadiusBuilding;Lodge</SocketAllocation>
+        </ItemContainer>
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <InactiveAmount>500</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100003</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112648,116821' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100003</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112649' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100003</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112791,116343' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100003</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Enbesa Grand Trade Union -->
+  <ModOp Type = 'addNextSibling' GUID = '117858'>
+    <Asset>
+      <BaseAssetGUID>1100001</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100004</GUID>
+          <Name>guild_house_africa</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114356</Ingredient>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114402</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc06/graphics/buildings/special/guild_house_colony02/guild_house_colony02.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList />
+          </Skins>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>44476</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100004</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114332' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100004</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114333' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100004</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114553,119012' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100004</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Old World Grand Town Hall -->
+  <ModOp Type = 'addNextSibling' GUID = '100415'>
+    <Asset>
+      <Template>Guildhouse</Template>
+      <Values>
+        <Standard>
+          <GUID>1100005</GUID>
+          <Name>town hall</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_townhall.png</IconFilename>
+          <InfoDescription>11421</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11152</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+          <InfluenceCostType>Townhall</InfluenceCostType>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/town_hall/town_hall.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>100415</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+            <OverrideDefaultIcon>data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc09/icon_townhall_default.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>5227</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Mesh>
+          <DefaultSequence>default</DefaultSequence>
+        </Mesh>
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Grand Town Hall</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>3739</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer>
+          <SocketCount>3</SocketCount>
+          <SocketScope>Area</SocketScope>
+          <SocketAllocation>RadiusBuilding;TownHall</SocketAllocation>
+          <UnsocketSound>247106</UnsocketSound>
+        </ItemContainer>
+        <UpgradeList />
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>4000</MaximumHitPoints>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>1000</Amount>
+              <InactiveAmount>500</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource>
+          <InfluenceSource>Culture</InfluenceSource>
+        </InfluenceSource>
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130216' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100005</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '142734' Path = '/Values/FeedbackBuildingGroup/Buildings'>
+    <Item>
+      <Building>1100005</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '190781,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100005</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '25000191,500092' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100005</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
+    <Item>
+      <Building>1100005</Building>
+      <Text>269175</Text>
+    </Item>
+  </ModOp>
+
+  <!-- New World Grand Town Hall -->
+  <ModOp Type = 'addNextSibling' GUID = '101285'>
+    <Asset>
+      <BaseAssetGUID>1100005</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100006</GUID>
+          <Name>town hall_colony01</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/graphics/buildings/special/townhall_colony01_01/townhall_colony01_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>8504</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130241' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100006</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '190781,368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100006</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '1912,501004,25000194,500946,500137' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100006</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Enbesa Grand Town Hall -->
+  <ModOp Type = 'addNextSibling' GUID = '117859'>
+    <Asset>
+      <BaseAssetGUID>1100005</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100007</GUID>
+          <Name>town_hall_africa</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114356</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114402</Ingredient>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>Guildhouse</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc06/graphics/buildings/special/townhall_colony02/townhall_colony02.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList />
+          </Skins>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>44477</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+        <BuildingUnique />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100007</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114336' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100007</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114337' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100007</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114554,119012' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100007</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Old World Grand Harbourmaster Office -->
+  <ModOp Type = 'addNextSibling' GUID = '100586'>
+    <Asset>
+      <Template>HarborOffice</Template>
+      <Values>
+        <Standard>
+          <GUID>1100008</GUID>
+          <Name>harbor_office</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_harbour_kontor.png</IconFilename>
+          <InfoDescription>11422</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11152</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>100446</GroundDecalAsset>
+          <GroundDecalInvisible>101008</GroundDecalInvisible>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_office/harbor_office.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>100586</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+          </Skins>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Grand Harbourmaster's Office</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7008</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer>
+          <SocketCount>3</SocketCount>
+          <SocketScope>Area</SocketScope>
+          <UnsocketSound>247106</UnsocketSound>
+        </ItemContainer>
+        <UpgradeList />
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>5000</MaximumHitPoints>
+          <PausedTimeIfAttacked>0</PausedTimeIfAttacked>
+          <DefenseByAIFactor>333</DefenseByAIFactor>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102303</IslandWarFlag>
+          <RuinSmokeParticles>
+            <Item>
+              <SmokeParticleFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</SmokeParticleFilePath>
+            </Item>
+            <Item>
+              <SmokeParticleFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</SmokeParticleFilePath>
+            </Item>
+          </RuinSmokeParticles>
+          <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
+          <RuinSmokeParticlesMax>4</RuinSmokeParticlesMax>
+          <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+          <ExplosionEffects>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>2</ExplosionEffectsMin>
+          <ExplosionEffectsMax>2</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>1000</Amount>
+              <InactiveAmount>500</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Culture />
+        <Warehouse />
+        <LogisticNode>
+          <TransporterCountMax>0</TransporterCountMax>
+        </LogisticNode>
+        <StorageBase>
+          <ProductStorageList>120055</ProductStorageList>
+        </StorageBase>
+        <Distribution />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '193865,368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100008</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130252' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100008</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130253,150643' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100008</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '500952,500092' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100008</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '502091' Path = '/Values/ObjectMenuGuildHouseScene/BonusLabelTexts'>
+    <Item>
+      <Building>1100008</Building>
+      <Text>269197</Text>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '139942' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <Item>
+      <Asset>1100008</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- New World Grand Harbourmaster Office -->
+  <ModOp Type = 'addNextSibling' GUID = '101286'>
+    <Asset>
+      <BaseAssetGUID>1100008</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100009</GUID>
+          <Name>harbor_office_colony01</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>102460</GroundDecalAsset>
+          <GroundDecalInvisible>102459</GroundDecalInvisible>
+        </Blocking>
+        <Cost />
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/graphics/buildings/special/harbor_office_colony01/harbor_office_colony01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>8505</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <Culture />
+        <Warehouse />
+        <LogisticNode />
+        <StorageBase />
+        <Distribution />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100009</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130237' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100009</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130238' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100009</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '501004,501007,500946,25000195,500137' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100009</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Enbesa Grand Harbourmaster Office -->
+  <ModOp Type = 'addNextSibling' GUID = '117860'>
+    <Asset>
+      <BaseAssetGUID>1100008</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100010</GUID>
+          <Name>harbourmaster_africa</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>117730</GroundDecalAsset>
+          <GroundDecalInvisible>117731</GroundDecalInvisible>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114356</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114402</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc06/graphics/buildings/special/harbor_office_colony02/harbor_office_colony02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>44478</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable>
+          <RuinSmokeParticles>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborOffice</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <SmokeParticleFilePath>data/graphics/effects/military/explosions/damage_smoke_01.cfg</SmokeParticleFilePath>
+            </Item>
+          </RuinSmokeParticles>
+          <RuinSmokeParticlesMax>2</RuinSmokeParticlesMax>
+        </Attackable>
+        <Pausable />
+        <Maintenance />
+        <Culture />
+        <Warehouse />
+        <LogisticNode />
+        <StorageBase />
+        <Distribution />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,191508' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100010</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114555,119012,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100010</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '117918' Path = '/Values/AssetPool/AssetList'>
+    <Item>
+      <Asset>1100010</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- Arctic charter mod -->
+  <ModOp Type = 'addNextSibling' GUID = '130248'>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1440134801</GUID>
+          <Name>Unhide the entire Arctic on Session Enter</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionActiveSession</Template>
+            <Values>
+              <Condition />
+              <ConditionActiveSession>
+                <ActiveSession>180045</ActiveSession>
+              </ConditionActiveSession>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionExecuteScript</Template>
+                <Values>
+                  <Action />
+                  <ActionExecuteScript>
+                    <ScriptFileName>mods/[Gameplay] Passage Charts/data/script/session_charts/discover_current_session.lua</ScriptFileName>
+                  </ActionExecuteScript>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1440134807</GUID>
+          <Name>Unhide the entire Arctic on Game Reload</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionEvent</Template>
+            <Values>
+              <Condition />
+              <ConditionEvent>
+                <ConditionEvent>SessionEnter</ConditionEvent>
+              </ConditionEvent>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionExecuteScript</Template>
+                <Values>
+                  <Action />
+                  <ActionExecuteScript>
+                    <ScriptFileName>mods/[Gameplay] Passage Charts/data/script/session_charts/discover_current_session.lua</ScriptFileName>
+                  </ActionExecuteScript>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionResetTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionResetTrigger />
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+          <SubTriggers>
+            <Item>
+              <SubTrigger>
+                <Template>AutoCreateTrigger</Template>
+                <Values>
+                  <Trigger>
+                    <TriggerCondition>
+                      <Template>ConditionActiveSession</Template>
+                      <Values>
+                        <Condition />
+                        <ConditionActiveSession>
+                          <ActiveSession>180045</ActiveSession>
+                        </ConditionActiveSession>
+                      </Values>
+                    </TriggerCondition>
+                  </Trigger>
+                </Values>
+              </SubTrigger>
+            </Item>
+          </SubTriggers>
+        </Trigger>
+        <TriggerSetup>
+          <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Land Defenses -->
+  <!-- Old World Land Cannon Tower -->
+  <ModOp Type = 'addNextSibling' GUID = '1010523'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100011</GUID>
+          <Name>harbor_05 Land (Tower 02, Cannon Tower)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png</IconFilename>
+          <InfoDescription>3062</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_05/harbor_05.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Cannon Tower</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7019</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010221</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>7</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>4800</MaximumHitPoints>
+          <DefenseByAIFactor>301</DefenseByAIFactor>
+          <MilitaryDefensePoints>3.5</MilitaryDefensePoints>
+          <MoralePower>50</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>150</BaseDamage>
+          <ReloadTime>50</ReloadTime>
+          <AttackRange>92</AttackRange>
+          <LineOfSightRange>92</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_05/harbor_05_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101974</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>102220</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.3</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>30</Amount>
+              <InactiveAmount>15</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100011</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130253,150643' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100011</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130254,150692' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100011</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '500952,500111' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100011</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130068' Path = '/Values/AssetPool/AssetList'>
+    <Item>
+      <Asset>1100011</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <Item>
+      <Asset>1100011</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- New World Land Cannon Tower -->
+  <ModOp Type = 'addNextSibling' GUID = '101570'>
+    <Asset>
+      <BaseAssetGUID>1100011</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100012</GUID>
+          <Name>harbor_colony01_05 Land (Tower 02, Cannon Tower)</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/graphics/buildings/special/harbor_05_colony01/harbor_05_colony01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>14136</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Attackable />
+        <Attacker />
+        <Maintenance />
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter />
+        <CommandQueue />
+        <Culture />
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100012</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '501008,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100012</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130123' Path = '/Values/AssetPool/AssetList'>
+    <Item>
+      <Asset>1100012</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <Item>
+      <Asset>1100012</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- Arctic Land Cannon Tower -->
+  <ModOp Type = 'addNextSibling' GUID = '112671'>
+    <Asset>
+      <BaseAssetGUID>1100011</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100013</GUID>
+          <Name>harbor_arctic_02 Land (Cannon Tower)</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Arctic</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/dlc03/graphics/buildings/special/harbor_colony03_02/harbor_colony03_02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English />
+          </LocaText>
+          <LineID>35106</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Attackable />
+        <Attacker>
+          <Turrets>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <TurretCfg>data/dlc03/graphics/buildings/special/harbor_colony03_02/harbor_colony03_02_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter />
+        <CommandQueue />
+        <Culture />
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100013</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112648,116821' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100013</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100013</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Enbesa Land Cannon Tower -->
+  <ModOp Type = 'addNextSibling' GUID = '117863'>
+    <Asset>
+      <BaseAssetGUID>1100011</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1100014</GUID>
+          <Name>tower_colony02_02 Land (Cannon Tower)</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Filename>data/dlc06/graphics/buildings/special/harbor_05_colony02/harbor_05_colony02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LineID>44480</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114356</Ingredient>
+              <Amount>35</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Ingredient>114402</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </Costs>
+        </Cost>
+        <Attackable />
+        <Attacker>
+          <Turrets>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <TurretCfg>data/dlc06/graphics/buildings/special/harbor_05_colony02/harbor_05_colony02_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+        </Attacker>
+        <Maintenance />
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter />
+        <CommandQueue />
+        <Culture />
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100014</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '117897,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100014</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '117921' Path = '/Values/AssetPool/AssetList'>
+    <Item>
+      <Asset>1100014</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- Old World Land Flak Emplacement -->
+  <ModOp Type = 'addNextSibling' GUID = '736'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100015</GUID>
+          <Name>harbor_18 Land (Tower 05, FlaK)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png</IconFilename>
+          <InfoDescription>740</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_moderate.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <StaticHelpEntryPoint>EmpireOfTheSkies_War_Defense</StaticHelpEntryPoint>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Flak Emplacement</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56045</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010221</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>5</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>2800</MaximumHitPoints>
+          <DefenseByAIFactor>200</DefenseByAIFactor>
+          <MilitaryDefensePoints>2</MilitaryDefensePoints>
+          <MilitaryAirDefensePoints>3</MilitaryAirDefensePoints>
+          <MoralePower>50</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>Flak</BasicAttackType>
+          <BaseDamage>22</BaseDamage>
+          <ReloadTime>3</ReloadTime>
+          <AttackRange>52</AttackRange>
+          <LineOfSightRange>100</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>2037</ProjectileAsset>
+          <TurretExplosionEffectAsset>101975</TurretExplosionEffectAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>2581</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <AccuracyBase>27</AccuracyBase>
+          <AccuracyIncreaseOverDistance>0</AccuracyIncreaseOverDistance>
+          <AccuracySpeedDecay>0</AccuracySpeedDecay>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>16</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>40</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>100</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>10</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100015</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2044' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100015</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2046' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100015</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '500952,500111' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100015</Building>
+    </Item>
+  </ModOp>
+
+  <!-- New World Land Flak Emplacement -->
+  <ModOp Type = 'addNextSibling' GUID = '742'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100016</GUID>
+          <Name>harbor_18 Colony01 Land (Tower 05, FlaK)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png</IconFilename>
+          <InfoDescription>740</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_south_america.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <StaticHelpEntryPoint>EmpireOfTheSkies_War_Defense</StaticHelpEntryPoint>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Flak Emplacement</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56063</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010221</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>5</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>2800</MaximumHitPoints>
+          <DefenseByAIFactor>200</DefenseByAIFactor>
+          <MilitaryDefensePoints>2</MilitaryDefensePoints>
+          <MilitaryAirDefensePoints>3</MilitaryAirDefensePoints>
+          <MoralePower>50</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>Flak</BasicAttackType>
+          <BaseDamage>22</BaseDamage>
+          <ReloadTime>3</ReloadTime>
+          <AttackRange>52</AttackRange>
+          <LineOfSightRange>100</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>2037</ProjectileAsset>
+          <TurretExplosionEffectAsset>101975</TurretExplosionEffectAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>2581</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <AccuracyBase>27</AccuracyBase>
+          <AccuracyIncreaseOverDistance>0</AccuracyIncreaseOverDistance>
+          <AccuracySpeedDecay>0</AccuracySpeedDecay>
+          <AccuracyByDistance>
+            <Item />
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>16</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>40</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>100</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>10</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100016</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2047' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100016</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2048' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100016</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '501007,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100016</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Arctic Land Flak Emplacement -->
+  <ModOp Type = 'addNextSibling' GUID = '822'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100017</GUID>
+          <Name>harbor_03 arctic Land (Tower 05, FlaK)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png</IconFilename>
+          <InfoDescription>740</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Arctic</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_arctic.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>822</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <StaticHelpEntryPoint>EmpireOfTheSkies_War_Defense</StaticHelpEntryPoint>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Flak Emplacement</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56080</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010221</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>5</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>2800</MaximumHitPoints>
+          <DefenseByAIFactor>200</DefenseByAIFactor>
+          <MilitaryDefensePoints>2</MilitaryDefensePoints>
+          <MilitaryAirDefensePoints>3</MilitaryAirDefensePoints>
+          <MoralePower>50</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>Flak</BasicAttackType>
+          <BaseDamage>22</BaseDamage>
+          <ReloadTime>3</ReloadTime>
+          <AttackRange>52</AttackRange>
+          <LineOfSightRange>100</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>2037</ProjectileAsset>
+          <TurretExplosionEffectAsset>101975</TurretExplosionEffectAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101958</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <AccuracyBase>27</AccuracyBase>
+          <AccuracyIncreaseOverDistance>0</AccuracyIncreaseOverDistance>
+          <AccuracySpeedDecay>0</AccuracySpeedDecay>
+          <AccuracyByDistance>
+            <Item />
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>16</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>40</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>100</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>10</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100017</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2049' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100017</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100017</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Enbesa Land Flak Emplacement -->
+  <ModOp Type = 'addNextSibling' GUID = '743'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100018</GUID>
+          <Name>harbor_03 Colony02 Land (Tower 05, FlaK)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/military_building/icon_flack_tower.png</IconFilename>
+          <InfoDescription>740</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_platform_africa.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <StaticHelpEntryPoint>EmpireOfTheSkies_War_Defense</StaticHelpEntryPoint>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Flak Emplacement</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56079</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>114356</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>114402</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010221</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>5</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>2800</MaximumHitPoints>
+          <DefenseByAIFactor>200</DefenseByAIFactor>
+          <MilitaryDefensePoints>2</MilitaryDefensePoints>
+          <MilitaryAirDefensePoints>3</MilitaryAirDefensePoints>
+          <MoralePower>50</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_03.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>Flak</BasicAttackType>
+          <BaseDamage>22</BaseDamage>
+          <ReloadTime>3</ReloadTime>
+          <AttackRange>52</AttackRange>
+          <LineOfSightRange>100</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/buildings/special/flak_cannon_tower/flak_cannon_tower_africa.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>2037</ProjectileAsset>
+          <TurretExplosionEffectAsset>101975</TurretExplosionEffectAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101958</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <AccuracyBase>27</AccuracyBase>
+          <AccuracyIncreaseOverDistance>0</AccuracyIncreaseOverDistance>
+          <AccuracySpeedDecay>0</AccuracySpeedDecay>
+          <AccuracyByDistance>
+            <Item />
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>16</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>40</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>100</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>10</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100018</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2055' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100018</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2056' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100018</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114555,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100018</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Old World Land Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '1010524'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100019</GUID>
+          <Name>harbor_06 Land (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '368,190608,191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100019</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130221' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100019</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '130222' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100019</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '500954,500111' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100019</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '700067' Path = '/Values/PlayerCounterContextPool/Contexts'>
+    <Item>
+      <Building>1100019</Building>
+    </Item>
+  </ModOp>
+
+  <!-- New World Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '742'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100022</GUID>
+          <Name>harbor_06 Colony01 (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Water_Including_Coast</TerrainType>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>102460</GroundDecalAsset>
+          <GroundDecalInvisible>102459</GroundDecalInvisible>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+          <RemoveGrass>0</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100022</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2047' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100022</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2048' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100022</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '501007,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100022</Building>
+    </Item>
+  </ModOp>
+
+  <!-- New World Land Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '742'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100023</GUID>
+          <Name>harbor_06 Colony01 Land (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>1</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Land Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100023</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2047' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100023</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2048' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100023</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '501007,25000195,500149' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100023</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Arctic Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '822'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100025</GUID>
+          <Name>harbor_06 arctic (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Water_Including_Coast</TerrainType>
+          <AssociatedRegions>Arctic</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>114826</GroundDecalAsset>
+          <GroundDecalInvisible>113478</GroundDecalInvisible>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+          <RemoveGrass>0</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100025</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2049' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100025</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100025</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Arctic Land Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '822'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100026</GUID>
+          <Name>harbor_06 arctic Land (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Arctic</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>0</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100026</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2049' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100026</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '112792,116345' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100026</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Enbesa Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '743'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100027</GUID>
+          <Name>harbor_06 Colony02 (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Water_Including_Coast</TerrainType>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>117730</GroundDecalAsset>
+          <GroundDecalInvisible>117731</GroundDecalInvisible>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+          <RemoveGrass>0</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100027</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2055' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100027</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2056' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100027</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114555,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100027</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Arctic Land Big Betty -->
+  <ModOp Type = 'addNextSibling' GUID = '743'>
+    <Asset>
+      <Template>HarborBuildingAttacker</Template>
+      <Values>
+        <Standard>
+          <GUID>1100028</GUID>
+          <Name>harbor_06 Colony02 Land (Tower 03, Monster Gun)</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
+          <InfoDescription>3064</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11150</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Terrain</TerrainType>
+          <AssociatedRegions>Africa</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <RemoveGrass>0</RemoveGrass>
+        </Blocking>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+          </Skins>
+        </Object>
+        <AmbientMoodProvider />
+        <Constructable />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Big Betty</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>7020</LineID>
+        </Text>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>22000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>75</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>60</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+          <InfluenceCostPoints>14</InfluenceCostPoints>
+        </Cost>
+        <Attackable>
+          <AttackableType>HarbourBuilding</AttackableType>
+          <MaximumHitPoints>7000</MaximumHitPoints>
+          <DefenseByAIFactor>401</DefenseByAIFactor>
+          <MilitaryDefensePoints>10</MilitaryDefensePoints>
+          <MoralePower>100</MoralePower>
+          <IslandWarFlag>102307</IslandWarFlag>
+          <ExplosionEffects>
+            <Item>
+              <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+            </Item>
+          </ExplosionEffects>
+          <ExplosionEffectsMin>1</ExplosionEffectsMin>
+          <ExplosionEffectsMax>1</ExplosionEffectsMax>
+          <SelfHealPerHealTick>5</SelfHealPerHealTick>
+        </Attackable>
+        <Attacker>
+          <BasicAttackType>HarbourTower</BasicAttackType>
+          <BaseDamage>850</BaseDamage>
+          <ReloadTime>150</ReloadTime>
+          <AttackRange>108</AttackRange>
+          <LineOfSightRange>108</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>240</TurnSpan>
+              <TurretCfg>data/graphics/buildings/special/harbor_06/harbor_06_turret.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>101955</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>101972</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <EmitProjectileTimeAfterStartAnimation>0.35</EmitProjectileTimeAfterStartAnimation>
+          <AccuracyBase>1</AccuracyBase>
+          <AccuracyIncreaseOverDistance>100</AccuracyIncreaseOverDistance>
+          <AccuracyByDistance>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>HarborBuildingAttacker</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <AccuracyByDistancePair>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>175</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Locked />
+        <DelayedConstruction />
+        <Pausable />
+        <Infolayer />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>206544</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRuined>
+            <Item>
+              <Sound>203848</Sound>
+            </Item>
+          </BuildingRuined>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <CommandQueue />
+        <Culture>
+          <Attractiveness>0</Attractiveness>
+        </Culture>
+        <UpgradeList />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '191443,193986' Path = '/Values/ItemEffectTargetPool/EffectTargetGUIDs'>
+    <Item>
+      <GUID>1100028</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2055' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnhideAssets'>
+    <Item>
+      <Asset>1100028</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '2056' Path = '/Values/Trigger/TriggerActions/Item/TriggerAction/Values/ActionUnlockAsset/UnlockAssets'>
+    <Item>
+      <Asset>1100028</Asset>
+    </Item>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '114555,119014' Path = '/Values/ConstructionCategory/BuildingList'>
+    <Item>
+      <Building>1100028</Building>
+    </Item>
+  </ModOp>
+</ModOps>

@@ -1,0 +1,389 @@
+<ModOps>
+  <!-- 
+    This file contains all ship changes. 
+
+    Sections: 
+      - Ships
+      - Airships
+      - Trade routes
+  -->
+
+  <!-- Ships -->
+  <!-- Flagship -->
+  <ModOp Type = 'replace' GUID = '101121' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>3</SocketCount>
+      <SlotCount>8</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Salvager -->
+  <ModOp Type = 'replace' GUID = '112084' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>3</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Tradeship;DivingVessel</SocketAllocation>
+      <StackLimit>250</StackLimit>
+      <SlotCount>8</SlotCount>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Schooner -->
+  <ModOp Type = 'replace' GUID = '100438' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>1</SocketCount>
+      <SlotCount>2</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Clipper -->
+  <ModOp Type = 'replace' GUID = '100441' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>3</SocketCount>
+      <SlotCount>3</SlotCount>
+      <StackLimit>250</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Frigate -->
+  <ModOp Type = 'replace' GUID = '100439' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>2</SocketCount>
+      <SlotCount>2</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Ship of the Line -->
+  <ModOp Type = 'replace' GUID = '100440' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>3</SocketCount>
+      <SlotCount>3</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Cargo Ship -->
+  <ModOp Type = 'replace' GUID = '1010062' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SlotCount>6</SlotCount>
+      <StackLimit>250</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Monitor -->
+  <ModOp Type = 'replace' GUID = '100443,720' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>3</SocketCount>
+      <SlotCount>2</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Oil Tanker -->
+  <ModOp Type = 'replace' GUID = '100853' Path = '/Values/ItemContainer/StackLimit'>
+    <StackLimit>1000</StackLimit>
+  </ModOp>
+
+  <!-- Extravaganza Steamer -->
+  <ModOp Type = 'replace' GUID = '102455' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+      <SlotCount>8</SlotCount>
+      <StackLimit>500</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- World-Class Reefer -->
+  <ModOp Type = 'replace' GUID = '132404' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+      <SlotCount>8</SlotCount>
+      <StackLimit>1000</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Great Eastern -->
+  <ModOp Type = 'replace' GUID = '118718' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+      <SlotCount>8</SlotCount>
+      <StackLimit>2500</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Airships -->
+  <!-- Harpy -->
+  <ModOp Type = 'replace' GUID = '1654,1733' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>2</SocketCount>
+      <SlotCount>2</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Manticore -->
+  <ModOp Type = 'replace' GUID = '1655,1734' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>2</SocketCount>
+      <SlotCount>3</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Hermes -->
+  <ModOp Type = 'replace' GUID = '1058,1735' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SlotCount>6</SlotCount>
+      <StackLimit>250</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Pegasus -->
+  <ModOp Type = 'replace' GUID = '1059,1736' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SlotCount>8</SlotCount>
+      <StackLimit>500</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Zephyr -->
+  <ModOp Type = 'replace' GUID = '1060,1737' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SlotCount>8</SlotCount>
+      <StackLimit>1000</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Boreas -->
+  <ModOp Type = 'replace' GUID = '1755,114166' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>3</SocketCount>
+      <SlotCount>6</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Trade routes -->
+  <!-- Charter ship -->
+  <ModOp Type = 'replace' GUID = '100660'>
+    <Asset>
+      <BaseAssetGUID>1010062</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>100660</GUID>
+          <Name>Rented Ship - Schooner (Trade)</Name>
+        </Standard>
+        <Object />
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Walking>
+          <ShortenSailsAfter>0</ShortenSailsAfter>
+          <ReservationLength>14</ReservationLength>
+          <ReservationWidth>4</ReservationWidth>
+          <PathPlannerLayer>Water</PathPlannerLayer>
+          <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
+          <TurnAroundRadius>8</TurnAroundRadius>
+          <Acceleration>2.5</Acceleration>
+          <Deceleration>2.5</Deceleration>
+          <TurnRadius>8</TurnRadius>
+          <TurnSpeedInPlace>25</TurnSpeedInPlace>
+          <TurnDeceleration>0</TurnDeceleration>
+          <TurnMovement>0</TurnMovement>
+          <LeaningMaxAngle>-10</LeaningMaxAngle>
+          <ForwardSpeed>12.5</ForwardSpeed>
+          <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+          <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+          <CargoFullFactor>0.8</CargoFullFactor>
+          <MinSlowdownFactor>0.5</MinSlowdownFactor>
+          <CurveSegmentDensity>High</CurveSegmentDensity>
+        </Walking>
+        <Text>
+          <LineID>14873</LineID>
+        </Text>
+        <CommandQueue />
+        <Drifting />
+        <Collector />
+        <Attackable />
+        <MinimapToken />
+        <SoundEmitter />
+        <UpgradeList />
+        <QuestObject />
+        <Infolayer />
+        <ItemContainer>
+          <SocketCount>4</SocketCount>
+          <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+          <SlotCount>1</SlotCount>
+          <StackLimit>250</StackLimit>
+        </ItemContainer>
+        <FeedbackController />
+        <Draggable>
+          <DraggableOnDrag>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </DraggableOnDrag>
+          <DraggableOnDrop>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </DraggableOnDrop>
+        </Draggable>
+        <Cost>
+          <Costs />
+          <InfluenceCostType>CharterRoutes</InfluenceCostType>
+          <InfluenceCostPoints>1</InfluenceCostPoints>
+        </Cost>
+        <Craftable />
+        <TradeRouteVehicle />
+        <Locked />
+        <Nameable />
+        <MetaPersistent />
+        <ExpeditionAttribute />
+        <ShipMaintenance>
+          <Maintenance>100</Maintenance>
+        </ShipMaintenance>
+        <Sellable />
+        <Stance />
+        <Rentable />
+        <WorldMapSound />
+        <Pausable />
+        <ShipIncident />
+        <SoundEmitterCommandBarks />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Trade Route good amounts -->
+  <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Normal'>
+    <Normal>
+      <ExcludingGoods>
+        <Item>
+          <Good>120021</Good>
+        </Item>
+        <Item>
+          <Good>1010566</Good>
+        </Item>
+      </ExcludingGoods>
+      <MinGoodTransferAmount>1</MinGoodTransferAmount>
+      <MaxGoodTransferAmount>2500</MaxGoodTransferAmount>
+      <DefaultGoodTransferAmount>250</DefaultGoodTransferAmount>
+      <MaxTradeActionsPerStation>8</MaxTradeActionsPerStation>
+    </Normal>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Charter'>
+    <Charter>
+      <ExcludingGoods>
+        <Item>
+          <Good>120021</Good>
+        </Item>
+        <Item>
+          <Good>1010566</Good>
+        </Item>
+      </ExcludingGoods>
+      <MinGoodTransferAmount>1</MinGoodTransferAmount>
+      <MaxGoodTransferAmount>250</MaxGoodTransferAmount>
+      <DefaultGoodTransferAmount>250</DefaultGoodTransferAmount>
+      <MaxTradeActionsPerStation>1</MaxTradeActionsPerStation>
+      <Unlock>141414</Unlock>
+    </Charter>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Oil'>
+    <Oil>
+      <RestrictedGood>
+        <Item>
+          <Good>1010566</Good>
+        </Item>
+      </RestrictedGood>
+      <MinGoodTransferAmount>1</MinGoodTransferAmount>
+      <MaxGoodTransferAmount>1000</MaxGoodTransferAmount>
+      <DefaultGoodTransferAmount>1000</DefaultGoodTransferAmount>
+      <MaxTradeActionsPerStation>1</MaxTradeActionsPerStation>
+      <Unlock>141416</Unlock>
+    </Oil>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '140011' Path = '/Values/TradeRouteFeature/TransportationTypes/Mail'>
+    <Mail>
+      <RestrictedGood>
+        <Item>
+          <Good>535</Good>
+        </Item>
+        <Item>
+          <Good>4267</Good>
+        </Item>
+        <Item>
+          <Good>4268</Good>
+        </Item>
+      </RestrictedGood>
+      <MinGoodTransferAmount>1</MinGoodTransferAmount>
+      <MaxGoodTransferAmount>1000</MaxGoodTransferAmount>
+      <DefaultGoodTransferAmount>250</DefaultGoodTransferAmount>
+      <MaxTradeActionsPerStation>8</MaxTradeActionsPerStation>
+      <Unlock>962</Unlock>
+      <DumpEverythingAtStation>0</DumpEverythingAtStation>
+      <RouteAlchemy>
+        <DeliverGood>
+          <Item>
+            <LoadedGood>535</LoadedGood>
+            <UnloadedGood>536</UnloadedGood>
+          </Item>
+        </DeliverGood>
+        <SessionSwitch>
+          <Item>
+            <LeavingSession>110934</LeavingSession>
+            <LoadedGood>535</LoadedGood>
+            <UpgradedGood>2524</UpgradedGood>
+          </Item>
+          <Item>
+            <LeavingSession>180023</LeavingSession>
+            <LoadedGood>535</LoadedGood>
+            <UpgradedGood>2524</UpgradedGood>
+          </Item>
+          <Item>
+            <LeavingSession>180025</LeavingSession>
+            <LoadedGood>535</LoadedGood>
+            <UpgradedGood>2524</UpgradedGood>
+          </Item>
+          <Item>
+            <LeavingSession>180045</LeavingSession>
+            <LoadedGood>535</LoadedGood>
+            <UpgradedGood>2524</UpgradedGood>
+          </Item>
+        </SessionSwitch>
+        <RouteChange>
+          <Item>
+            <LoadedGood>535</LoadedGood>
+          </Item>
+          <Item>
+            <LoadedGood>4267</LoadedGood>
+          </Item>
+          <Item>
+            <LoadedGood>4268</LoadedGood>
+          </Item>
+        </RouteChange>
+      </RouteAlchemy>
+      <IgnoreMinimumLoadingTimes>1</IgnoreMinimumLoadingTimes>
+      <LoadingTimeGoodFactor>0.1</LoadingTimeGoodFactor>
+    </Mail>
+  </ModOp>
+</ModOps>

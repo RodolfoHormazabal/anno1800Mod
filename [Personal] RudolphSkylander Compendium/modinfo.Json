@@ -1,0 +1,64 @@
+{
+  "Version": "1",
+  "ModID": "RudolphSkylander Compendium",
+  "IncompatibleIds": null,
+  "ModDependencies": null,
+  "Category": {
+    "Chinese": null,
+    "English": "Personal",
+    "French": null,
+    "German": null,
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "ModName": {
+    "Chinese": null,
+    "English": "RudolphSkylander Compendium",
+    "French": null,
+    "German": null,
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "Description": {
+    "Chinese": null,
+    "English": "This is a personal mod, an aggregation of many changes to multiple game stats and mechanics, its meant for personal fun and not meant to be balanced.",
+    "French": null,
+    "German": null,
+    "Italian": null,
+    "Japanese": null,
+    "Korean": null,
+    "Polish": null,
+    "Russian": null,
+    "Spanish": null,
+    "Taiwanese": null
+  },
+  "KnownIssues": [
+    {
+      "Chinese": null,
+      "English": null,
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    }
+  ],
+  "DLCDependencies": null,
+  "CreatorName": "RudolphSkylander",
+  "CreatorContact": "",
+  "Image" : null
+}
