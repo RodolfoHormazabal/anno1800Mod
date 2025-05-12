@@ -485,7 +485,7 @@
   <ModOp Type = 'replace' GUID = '127865' Path = '/Values/IrrigationUpgrade'>
     <IrrigationUpgrade>
       <PipeCapacityUpgrade>
-        <Value>25</Value>
+        <Value>250</Value>
       </PipeCapacityUpgrade>
     </IrrigationUpgrade>
   </ModOp>
@@ -1385,38 +1385,45 @@
   <ModOp Type = 'replace' GUID = '24829' Path = '/Values/IrrigationSource'>
     <IrrigationSource>
       <AutoWaterBaseTile>Source_Canal</AutoWaterBaseTile>
-      <PipeFillCapacity>25</PipeFillCapacity>
+      <PipeFillCapacity>50</PipeFillCapacity>
       <TooManyPipesInfolayerIcon>125037</TooManyPipesInfolayerIcon>
       <CanBeFilledDynamically>1</CanBeFilledDynamically>
       <MaxDynamicFillCapacity>250</MaxDynamicFillCapacity>
     </IrrigationSource>
   </ModOp>
 
+  <ModOp Type = 'replace' GUID = '114544' Path = '/Values/IrrigationSource'>
+    <IrrigationSource>
+      <PipeFillCapacity>500</PipeFillCapacity>
+      <TooManyPipesInfolayerIcon>125037</TooManyPipesInfolayerIcon>
+    </IrrigationSource>
+  </ModOp>
+
   <ModOp Type = 'replace' GUID = '114759' Path = '/Values/IrrigationConfig/IrrigationTiles/IrrigationTileDefinitions'>
     <IrrigationTileDefinitions>
       <Source_River>
-        <SourceSpreadMin>10</SourceSpreadMin>
-        <SourceSpreadMax>10</SourceSpreadMax>
+        <SourceSpreadMin>20</SourceSpreadMin>
+        <SourceSpreadMax>25</SourceSpreadMax>
         <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
       </Source_River>
       <Source_Canal>
-        <SourceSpreadMin>10</SourceSpreadMin>
-        <SourceSpreadMax>10</SourceSpreadMax>
+        <SourceSpreadMin>12</SourceSpreadMin>
+        <SourceSpreadMax>15</SourceSpreadMax>
         <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
       </Source_Canal>
       <Source_Lake_Small>
-        <SourceSpreadMin>10</SourceSpreadMin>
-        <SourceSpreadMax>10</SourceSpreadMax>
+        <SourceSpreadMin>20</SourceSpreadMin>
+        <SourceSpreadMax>25</SourceSpreadMax>
         <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
       </Source_Lake_Small>
       <Source_Lake_Medium>
-        <SourceSpreadMin>12</SourceSpreadMin>
-        <SourceSpreadMax>12</SourceSpreadMax>
+        <SourceSpreadMin>20</SourceSpreadMin>
+        <SourceSpreadMax>25</SourceSpreadMax>
         <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
       </Source_Lake_Medium>
       <Source_Lake_Large>
-        <SourceSpreadMin>15</SourceSpreadMin>
-        <SourceSpreadMax>15</SourceSpreadMax>
+        <SourceSpreadMin>20</SourceSpreadMin>
+        <SourceSpreadMax>25</SourceSpreadMax>
         <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
       </Source_Lake_Large>
       <Source_LevelArt>
@@ -1432,5 +1439,64 @@
         <TileItselfIsIrrigated>1</TileItselfIsIrrigated>
       </Source_Condition3>
     </IrrigationTileDefinitions>
+  </ModOp>
+
+  <!-- Helium & Arctic gas buffs -->
+  <!-- Helium Gas Cells -->
+  <ModOp Type = 'replace' GUID = '721,1764' Path = '/Values/VehicleUpgrade'>
+    <VehicleUpgrade>
+      <MaintainanceUpgrade>
+        <Value>25</Value>
+        <Percental>1</Percental>
+      </MaintainanceUpgrade>
+      <IgnoreDamageFactorUpgrade>
+        <Value>25</Value>
+        <Percental>1</Percental>
+      </IgnoreDamageFactorUpgrade>
+    </VehicleUpgrade>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '721,1764' Path = '/Values/AttackableUpgrade'>
+    <AttackableUpgrade>
+      <DamageReceiveFactor>
+        <Normal>
+          <Factor>0.75</Factor>
+        </Normal>
+        <Cannon>
+          <Factor>0.75</Factor>
+        </Cannon>
+      </DamageReceiveFactor>
+    </AttackableUpgrade>
+  </ModOp>
+  
+  <!-- Arctic Gas Chambers -->
+  <ModOp Type = 'replace' GUID = '1740,1745,1746,1748,1749,1750,1751' Path = '/Values/VehicleUpgrade'>
+    <VehicleUpgrade>
+      <ForwardSpeedUpgrade>
+        <Value>25</Value>
+        <Percental>1</Percental>
+      </ForwardSpeedUpgrade>
+      <MaintainanceUpgrade>
+        <Value>-25</Value>
+        <Percental>1</Percental>
+      </MaintainanceUpgrade>
+      <IgnoreWeightFactorUpgrade>
+        <Value>-25</Value>
+        <Percental>1</Percental>
+      </IgnoreWeightFactorUpgrade>
+    </VehicleUpgrade>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '1740,1745,1746,1748,1749,1750,1751' Path = '/Values/AttackableUpgrade'>
+    <AttackableUpgrade>
+      <DamageReceiveFactor>
+        <Normal>
+          <Factor>1.5</Factor>
+        </Normal>
+        <Cannon>
+          <Factor>1.5</Factor>
+        </Cannon>
+      </DamageReceiveFactor>
+    </AttackableUpgrade>
   </ModOp>
 </ModOps>

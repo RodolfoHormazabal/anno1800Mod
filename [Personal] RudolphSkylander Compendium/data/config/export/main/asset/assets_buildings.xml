@@ -14,8 +14,9 @@
   -->
 
   <!-- Building changes -->
-  <!-- Harbour buildings -->
-  <!-- Coast Buildings Placement -->
+  <!-- Shared replacements -->
+  <!-- Shared Building replacements -->
+  <!-- Add TerrainType to Building -->
   <ModOp 
     Type = 'add' 
     GUID = '101642,1010517,1010540,1010519,24775,100510,100514,100511,100515,269879,269867' 
@@ -24,6 +25,7 @@
     <TerrainType>Water_Including_Coast</TerrainType>
   </ModOp>
 
+  <!-- Replace TerrainType -->
   <ModOp 
     Type = 'replace' 
     GUID = '100429,102284,114440,118729,112666,112674' 
@@ -32,18 +34,40 @@
     <TerrainType>Water_Including_Coast</TerrainType>
   </ModOp>
 
+  <!-- Remove SnapRadius -->
   <ModOp Type = 'remove' GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
 
-  <!-- Trading Posts -->
-  <!-- Small Trading Post -->
-  <!-- Increase storage -->
+  <!-- Shared Warehouse replacements -->
+  <!-- Replace WarehouseStorage 1000 -->
+  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Warehouse/WarehouseStorage'>
+    <WarehouseStorage>
+      <StorageMax>1000</StorageMax>
+    </WarehouseStorage>
+  </ModOp>
+
+  <!-- Replace WarehouseStorage 500 -->
+  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Warehouse/WarehouseStorage'>
+    <WarehouseStorage>
+      <StorageMax>500</StorageMax>
+    </WarehouseStorage>
+  </ModOp>
+
+  <!-- Replace WarehouseStorage 250 -->
+  <ModOp Type = 'replace' GUID = '100510,100514,3741,3761,4260' Path = '/Values/Warehouse/WarehouseStorage'>
+    <WarehouseStorage>
+      <StorageMax>250</StorageMax>
+    </WarehouseStorage>
+  </ModOp>
+
+  <!-- Replace WarehouseStorage 100 -->
   <ModOp Type = 'replace' GUID = '1010517,1010540,1010519,24775' Path = '/Values/Warehouse/WarehouseStorage'>
     <WarehouseStorage>
       <StorageMax>100</StorageMax>
     </WarehouseStorage>
   </ModOp>
 
-  <!-- Increase loading speed -->
+  <!-- Shared LoadingPier replacements -->
+  <!-- Replace LoadingPier 3 -->
   <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/LoadingPier'>
     <LoadingPier>
       <NumOfPiers>2</NumOfPiers>
@@ -52,39 +76,7 @@
     </LoadingPier>
   </ModOp>
 
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>10000</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase morale -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attackable/MoralePower'>
-    <MoralePower>250</MoralePower>
-  </ModOp>
-
-  <!-- Decrease turret damage -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>100</BaseDamage>
-  </ModOp>
-
-  <!-- Increase turret range & vision -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>100</AttackRange>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
-
-  <!-- Medium Trading Post -->
-  <!-- Increase storage -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Warehouse/WarehouseStorage'>
-    <WarehouseStorage>
-      <StorageMax>250</StorageMax>
-    </WarehouseStorage>
-  </ModOp>
-
-  <!-- Increase loading speed -->
+  <!-- Replace LoadingPier 5 -->
   <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/LoadingPier'>
     <LoadingPier>
       <NumOfPiers>2</NumOfPiers>
@@ -92,82 +84,18 @@
       <MinLoadingTime>3</MinLoadingTime>
     </LoadingPier>
   </ModOp>
-
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>20000</MaximumHitPoints>
-  </ModOp>
   
-  <!-- Increase morale -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MoralePower'>
-    <MoralePower>200</MoralePower>
-  </ModOp>
-
-  <!-- Increase turret damage -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>200</BaseDamage>
-  </ModOp>
-
-  <!-- Increase turret range & vision -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>100</AttackRange>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
-
-  <!-- Large Trading Post -->
-  <!-- Increase storage -->
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Warehouse/WarehouseStorage'>
-    <WarehouseStorage>
-      <StorageMax>500</StorageMax>
-    </WarehouseStorage>
-  </ModOp>
-
-  <!-- Increase loading speed -->
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/LoadingPier'>
+  <!-- Replace LoadingPier 7 -->
+  <ModOp Type = 'replace' GUID = '100511,100515,100519' Path = '/Values/LoadingPier'>
     <LoadingPier>
       <NumOfPiers>2</NumOfPiers>
       <LoadingSpeed>7</LoadingSpeed>
       <MinLoadingTime>3</MinLoadingTime>
     </LoadingPier>
   </ModOp>
-
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>25000</MaximumHitPoints>
-  </ModOp>
   
-  <!-- Increase morale -->
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Attackable/MoralePower'>
-    <MoralePower>250</MoralePower>
-  </ModOp>
-
-  <!-- Increase turret damage -->
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>250</BaseDamage>
-  </ModOp>
-
-  <!-- Increase turret range & vision -->
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>100</AttackRange>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
-
-  <!-- Grand Trading Post -->
-  <!-- Increase storage -->
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Warehouse/WarehouseStorage'>
-    <WarehouseStorage>
-      <StorageMax>1000</StorageMax>
-    </WarehouseStorage>
-  </ModOp>
-
-  <!-- Increase loading speed -->
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/LoadingPier'>
+  <!-- Replace LoadingPier 10 -->
+  <ModOp Type = 'replace' GUID = '269879,269867,601470,601460' Path = '/Values/LoadingPier'>
     <LoadingPier>
       <NumOfPiers>2</NumOfPiers>
       <LoadingSpeed>10</LoadingSpeed>
@@ -175,29 +103,227 @@
     </LoadingPier>
   </ModOp>
 
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Attackable/MaximumHitPoints'>
+  <!-- Shared Attackable replacements -->
+  <!-- Replace MaximumHitPoints 25 000 -->
+  <ModOp Type = 'replace' GUID = '100511,100515,269879,269867' Path = '/Values/Attackable/MaximumHitPoints'>
     <MaximumHitPoints>25000</MaximumHitPoints>
   </ModOp>
 
-  <!-- Increase morale -->
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Attackable/MoralePower'>
+  <!-- Replace MaximumHitPoints 20 000 -->
+  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>20000</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 10 000 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540,601470,1010524' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>10000</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 5 000 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540,601470,1010525,100519,125028,1010522,1010523,3700,601463,131777,131778,601460,601461,601462' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>5000</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 2 500 -->
+  <ModOp Type = 'replace' GUID = '625,3700' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>2500</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MoralePower 100 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attackable/MoralePower'>
+    <MoralePower>100</MoralePower>
+  </ModOp>
+
+  <!-- Replace MoralePower 200 -->
+  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MoralePower'>
+    <MoralePower>200</MoralePower>
+  </ModOp>
+
+  <!-- Replace MoralePower 250 -->
+  <ModOp Type = 'replace' GUID = '100511,100515,269879,269867,601470' Path = '/Values/Attackable/MoralePower'>
     <MoralePower>250</MoralePower>
   </ModOp>
 
-  <!-- Increase turret damage -->
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Attacker/BaseDamage'>
+  <!-- Shared Attacker replacements -->
+  <!-- Replace BaseDamage 25 -->
+  <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,736,742,743,822' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>25</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 100 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540,1010523' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>100</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 200 -->
+  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>200</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 250 -->
+  <ModOp Type = 'replace' GUID = '100511,100515,269879,269867' Path = '/Values/Attacker/BaseDamage'>
     <BaseDamage>250</BaseDamage>
   </ModOp>
 
-  <!-- Increase turret range & vision -->
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Attacker/AttackRange'>
+  <!-- Replace BaseDamage 1000 -->
+  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>1000</BaseDamage>
+  </ModOp>
+
+  <!-- Replace AttackRange 75 -->
+  <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,3700,4797,4799,4798,736,742,743,822' Path = '/Values/Attacker/AttackRange'>
+    <AttackRange>75</AttackRange>
+  </ModOp>
+
+  <!-- Replace AttackRange 100 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540,100510,100514,100511,100515,269879,269867,1010523' Path = '/Values/Attacker/AttackRange'>
     <AttackRange>100</AttackRange>
   </ModOp>
 
-  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Attacker/LineOfSightRange'>
+  <!-- Replace AttackRange 125 -->
+  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/AttackRange'>
+    <AttackRange>125</AttackRange>
+  </ModOp>
+
+  <!-- Replace LineOfSightRange 100 -->
+  <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,3700,4797,4799,4798,736,742,743,822,1010517,1010540,100510,100514,100511,100515,269879,269867,1010523' Path = '/Values/Attacker/LineOfSightRange'>
     <LineOfSightRange>100</LineOfSightRange>
   </ModOp>
+
+  <!-- Replace LineOfSightRange 125 -->
+  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/LineOfSightRange'>
+    <LineOfSightRange>125</LineOfSightRange>
+  </ModOp>
+  
+  <!-- Replace ReloadTime 75 -->
+  <ModOp Type = 'replace' GUID = '3700,4797,4799,4798' Path = '/Values/Attacker/ReloadTime'>
+    <ReloadTime>75</ReloadTime>
+  </ModOp>
+
+  <!-- Replace ReloadTime 125 -->
+  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/ReloadTime'>
+    <ReloadTime>125</ReloadTime>
+  </ModOp>
+
+  <!-- Shared Turrets replacements -->
+  <!-- Replace TurnSpan -->
+  <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,3700,4797,4799,4798,1010517,1010540,100510,100514,100511,100515,269879,269867,1010523' Path = '/Values/Attacker/Turrets/Item/TurnSpan'>
+    <TurnSpan>240</TurnSpan>
+  </ModOp>
+
+  <!-- Shared RepairCrane replacements -->
+  <!-- Replace RepairCrane -->
+  <ModOp Type = 'replace' GUID = '1010525,131777' Path = '/Values/RepairCrane'>
+    <RepairCrane>
+      <HealRadius>25</HealRadius>
+      <HealPerMinute>1000</HealPerMinute>
+      <HealBuildingsPerMinute>1000</HealBuildingsPerMinute>
+    </RepairCrane>
+  </ModOp>
+
+  <!-- Shared FactoryBase replacements -->
+  <!-- Replace FactoryInputs Amount 3 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryInputs/Item/Amount'
+  >
+    <Amount>3</Amount>
+  </ModOp>
+
+  <!-- Replace FactoryOutputs Amount 3 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '1010560,1010310,114440,118729,117743,112676,112682,112667,112666,112674,112673,116034,116029,112690,114703,114705,907,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryOutputs/Item/Amount'
+  >
+    <Amount>3</Amount>
+  </ModOp>
+
+  <!-- Replace FactoryInputs StorageAmount 10 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '5840,24805,835,6080,6083,5657,6279,5659,5862,5658,114444,114459,114471,114441,114466,114469,114468,114467,118725,114472,114470,114461,114464,112668,112679,112675,112672,114704,112681,112680,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,101264,101271,1010342,1010317,1010341,5458,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1353,6018,6258,6259,6260,1010313,1010291,1010316,1010312,1010281,1010293,1010295,1010315,1010288,1010325,118733,118734,1010294,25350,1010314,1010292,100659,100451,1010283,1010297,1010296,1010299,1010319,1010285,1010280,1010300,1010301,1010284,1010282,101250,1010323,135103,135187,135188,135189,135190,135105,135121,135120,135122,135123,135191,134631,135192,135193,135194' 
+    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
+  >
+    <StorageAmount>10</StorageAmount>
+  </ModOp>
+
+  <!-- Replace FactoryInputs StorageAmount 30 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
+  >
+    <StorageAmount>30</StorageAmount>
+  </ModOp>
+
+  <!-- Replace FactoryOutputs StorageAmount 10 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '24805,101272,101269,5457,1010339,101262,7919,1010311,1390,1308,114448,114450,114447,114451,114452,25020,114453,114456,114439,122963,1010265,25019,1010262,25128,1010264,100654,100655,1010267,1010269,1010263,1010278,1010558,1010305,1388,1010307,1010308,1010309,1010266,100416,1010298,101263,1010329,24798,1010331,1010333,25006,101270,25003,101251,25005,1010330,1010332,25009,5463,5814,835,6080,6083,5657,6279,5659,5862,5658,114444,114459,114471,114441,114466,114469,114468,114467,118725,114472,114470,114461,114464,112668,112679,112675,112672,114704,112681,112680,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,101264,101271,1010342,1010317,1010341,5458,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1353,1010313,1010291,1010316,1010312,1010281,1010293,1010295,1010315,1010288,1010325,118733,118734,1010294,25350,1010314,1010292,100659,100451,1010283,1010297,1010296,1010299,1010319,1010285,1010280,1010300,1010301,1010284,1010282,101250,1010323' 
+    Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'
+  >
+    <StorageAmount>10</StorageAmount>
+  </ModOp>
+
+  <!-- Replace FactoryOutputs StorageAmount 30 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '1010560,1010310,114440,118729,117743,112676,112682,112667,112666,112674,112673,116034,116029,112690,114703,114705,907,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'
+  >
+    <StorageAmount>30</StorageAmount>
+  </ModOp>
+
+  <!-- Replace CycleTime 15 -->
+  <ModOp Type = 'replace' GUID = '1308' Path = '/Values/FactoryBase/CycleTime'>
+    <CycleTime>15</CycleTime>
+  </ModOp>
+  
+  <!-- Replace CycleTime 30 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '538,3661,124739,124738,124737,1010296,1010301,1010286,5462,6629,6631,116034,114703,3741,3761,4260' 
+    Path = '/Values/FactoryBase/CycleTime'
+  >
+    <CycleTime>30</CycleTime>
+  </ModOp>
+
+  <!-- Replace CycleTime 60 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '114468,117547,5840,6018,1010264,100654,100655,1010263,1010293,1010295,1010299,1010310,101250,1010324,1010326,1010289,1010302,118735,1010330,1010339,1010311,835,5658,114472,112676,112682,112673,112672' 
+    Path = '/Values/FactoryBase/CycleTime'
+  >
+    <CycleTime>60</CycleTime>
+  </ModOp>
+  <!-- Add CycleTime 60 -->
+  <ModOp Type = 'add' GUID = '112674,114469' Path = '/Values/FactoryBase'>
+    <CycleTime>60</CycleTime>
+  </ModOp>
+
+  <!-- Replace CycleTime 180 -->
+  <ModOp Type = 'replace' GUID = '112690' Path = '/Values/FactoryBase/CycleTime'>
+    <CycleTime>180</CycleTime>
+  </ModOp>
+
+  <!-- Replace CycleTime 300 -->
+  <ModOp Type = 'replace' GUID = '6258,6259,6260' Path = '/Values/FactoryBase/CycleTime'>
+    <CycleTime>300</CycleTime>
+  </ModOp>
+
+  <!-- New world farms modules -->
+  <ModOp Type = 'remove' GUID = '101272,101269,5457' Path = '/Values/ModuleOwner/AddModuleLimit'></ModOp>
+
+  <!-- Trading Posts -->
+  <!-- Small Trading Post -->
+
+  <!-- Medium Trading Post -->
+
+  <!-- Large Trading Post -->
+
+  <!-- Grand Trading Post -->
 
   <!-- Small Oil Harbour -->
   <ModOp Type = 'replace' GUID = '100783' Path = '/Values/Warehouse/WarehouseStorage'>
@@ -228,7 +354,7 @@
   </ModOp>
 
   <!-- Commuter transport vehicles -->
-  <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
+  <!-- <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
     <WorkforceTransferFeature>
       <TransferShipForRegion>
         <Moderate>
@@ -241,8 +367,22 @@
           <WorkforceTransferShip>101743</WorkforceTransferShip>
         </Africa>
       </TransferShipForRegion>
-      <RoughFeedbackShipDistance>250</RoughFeedbackShipDistance>
-      <UnloadTime>15000</UnloadTime>
+      <RoughFeedbackShipDistance>500</RoughFeedbackShipDistance>
+      <UnloadTime>10000</UnloadTime>
+      <TransferInterruptedNotification>501311</TransferInterruptedNotification>
+    </WorkforceTransferFeature>
+  </ModOp> -->
+
+  <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
+    <WorkforceTransferFeature>
+      <TransferShipForRegion>
+        <Moderate />
+        <Colony01 />
+        <Africa />
+        <Arctic />
+      </TransferShipForRegion>
+      <RoughFeedbackShipDistance>500</RoughFeedbackShipDistance>
+      <UnloadTime>10000</UnloadTime>
       <TransferInterruptedNotification>501311</TransferInterruptedNotification>
     </WorkforceTransferFeature>
   </ModOp>
@@ -412,34 +552,9 @@
   <ModOp Type = 'remove' GUID = '77' Path = '/Values/Trader/ProvidesShipReplacements'></ModOp>
 
   <!-- Repair crane -->
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '1010525' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>5000</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase stats -->
-  <ModOp Type = 'replace' GUID = '1010525' Path = '/Values/RepairCrane'>
-    <RepairCrane>
-      <HealRadius>25</HealRadius>
-      <HealPerMinute>1000</HealPerMinute>
-      <HealBuildingsPerMinute>1000</HealBuildingsPerMinute>
-    </RepairCrane>
-  </ModOp>
 
   <!-- Piers -->
   <!-- Pier -->
-  <ModOp Type = 'replace' GUID = '100519' Path = '/Values/LoadingPier'>
-    <LoadingPier>
-      <NumOfPiers>1</NumOfPiers>
-      <LoadingSpeed>7</LoadingSpeed>
-      <MinLoadingTime>3</MinLoadingTime>
-    </LoadingPier>
-  </ModOp>
-
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '100519' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>5000</MaximumHitPoints>
-  </ModOp>
 
   <!-- Advanced Pier -->
   <ModOp Type = 'replace' GUID = '125028' Path = '/Values/LoadingPier'>
@@ -450,143 +565,19 @@
       <AllowExclusiveTrading>1</AllowExclusiveTrading>
     </LoadingPier>
   </ModOp>
-
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '125028' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>5000</MaximumHitPoints>
-  </ModOp>
   
   <!-- Turrets -->
-  <!-- All turrets except flak & big betty -->
-  <!-- Turrets Firing Angle -->
-  <ModOp Type = 'replace' GUID = '3700,625,1010523,1010522' Path = '/Values/Attacker/Turrets/Item/TurnSpan'>
-    <TurnSpan>240</TurnSpan>
-  </ModOp>
-
   <!-- Mounted guns -->
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '1010522' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>5000</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase damage -->
-  <ModOp Type = 'replace' GUID = '1010522' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>25</BaseDamage>
-  </ModOp>
-
-  <!-- Increase range & vision -->
-  <ModOp Type = 'replace' GUID = '1010522' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>75</AttackRange>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '1010522' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>75</LineOfSightRange>
-  </ModOp>
 
   <!-- Cannon tower -->
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '1010523' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>5000</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase damage -->
-  <ModOp Type = 'replace' GUID = '1010523' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>100</BaseDamage>
-  </ModOp>
-
-  <!-- Increase range & vision -->
-  <ModOp Type = 'replace' GUID = '1010523' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>100</AttackRange>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '1010523' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
   
   <!-- Fire tower -->
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '625' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>2500</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase damage -->
-  <ModOp Type = 'replace' GUID = '625' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>25</BaseDamage>
-  </ModOp>
-
-  <!-- Increase range & vision -->
-  <ModOp Type = 'replace' GUID = '625' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>75</AttackRange>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '625' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
   
   <!-- Armor piercing tower -->
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>5000</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Decrease reload time -->
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attacker/ReloadTime'>
-    <ReloadTime>75</ReloadTime>
-  </ModOp>
-
-  <!-- Increase range & vision -->
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>75</AttackRange>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
   
   <!-- Flak emplacement -->
-  <!-- Decrease HP -->
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>2500</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase damage -->
-  <ModOp Type = 'replace' GUID = '625' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>25</BaseDamage>
-  </ModOp>
-
-  <!-- Increase range & vision -->
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>75</AttackRange>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '3700' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>100</LineOfSightRange>
-  </ModOp>
   
   <!-- Big betty -->
-  <!-- Increase HP -->
-  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attackable/MaximumHitPoints'>
-    <MaximumHitPoints>7500</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Increase damage -->
-  <ModOp Type = 'replace' GUID = '625' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>1000</BaseDamage>
-  </ModOp>
-
-  <!-- Decrease reload time -->
-  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/ReloadTime'>
-    <ReloadTime>125</ReloadTime>
-  </ModOp>
-
-  <!-- Increase range & vision -->
-  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/AttackRange'>
-    <AttackRange>125</AttackRange>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/LineOfSightRange'>
-    <LineOfSightRange>125</LineOfSightRange>
-  </ModOp>
 
   <!-- Change building placement -->
   <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Building'>
@@ -597,6 +588,47 @@
       <AssociatedRegions>Moderate</AssociatedRegions>
     </Building>
   </ModOp>
+
+  <!-- Docklands -->
+  <!-- Increase amount of modules -->
+  <ModOp Type = 'replace' GUID = '601470' Path = '/Values/ModuleOwner/ModuleLimits'>
+    <ModuleLimits>
+      <DocklandModuleStorage>
+        <Limit>10</Limit>
+      </DocklandModuleStorage>
+      <DocklandModuleItem>
+        <Limit>10</Limit>
+      </DocklandModuleItem>
+      <DocklandModulePier>
+        <Limit>10</Limit>
+      </DocklandModulePier>
+      <DocklandModuleExport>
+        <Limit>25</Limit>
+      </DocklandModuleExport>
+      <DocklandModuleRepair>
+        <Limit>10</Limit>
+      </DocklandModuleRepair>
+      <DocklandModuleSpeed>
+        <Limit>10</Limit>
+      </DocklandModuleSpeed>
+    </ModuleLimits>
+  </ModOp>
+
+  <!-- Change radius type to area -->
+  <ModOp Type = 'replace' GUID = '601470' Path = '/Values/ItemContainer/SocketScope'>
+    <SocketScope>Area</SocketScope>
+  </ModOp>
+  
+  <!-- Remove socket radius -->
+  <ModOp Type = 'remove' GUID = '601470' Path = '/Values/ItemContainer/SocketScopeRadius'></ModOp>
+
+  <!-- Remove overlap -->
+  <ModOp Type = 'replace' GUID = '601470' Path = '/Values/ItemContainer/SocketScopeRadiusOverlapCategory'>
+    <SocketScopeRadiusOverlapCategory>None</SocketScopeRadiusOverlapCategory>
+  </ModOp>
+
+  <!-- Dockland modules -->
+  <!-- Repair module -->
 
   <!-- Unions -->
   <!-- All unions -->
@@ -639,11 +671,6 @@
     </PublicService>
   </ModOp>
 
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '117547' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
-
   <!-- Warehouses -->
   <!-- Small Warehouse -->
   <!-- Add storage -->
@@ -678,12 +705,7 @@
     </ItemContainer>
   </ModOp>
 
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '3741,3761,4260' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
-
-  <!-- Adjust maintenance -->
+  <!-- Adjust maintenances -->
   <!-- OW -->
   <ModOp Type = 'replace' GUID = '3741' Path = '/Values/Maintenance/Maintenances'>
     <Maintenances>
@@ -729,22 +751,12 @@
     </Maintenances>
   </ModOp>
 
-  <!-- Increase storage -->
-  <ModOp Type = 'replace' GUID = '3741,3761,4260' Path = '/Values/Warehouse/WarehouseStorage/StorageMax'>
-    <StorageMax>250</StorageMax>
-  </ModOp>
-
   <!-- All Mailbox -->
   <!-- Increase range -->
   <ModOp Type = 'replace' GUID = '538,3661' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketScopeRadius>12</SocketScopeRadius>
     </ItemContainer>
-  </ModOp>
-
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '538,3661' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
   </ModOp>
 
   <!-- Adjust maintenance -->
@@ -872,15 +884,6 @@
     Path = '/Values/BuffFactory/PublicServiceData/NoSatisfactionDistance'
   >
     <NoSatisfactionDistance>100</NoSatisfactionDistance>
-  </ModOp>
-
-  <!-- Increase internal storage -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '135103,135187,135188,135189,135190,135105,135121,135120,135122,135123,135191,134631,135192,135193,135194' 
-    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
-  >
-    <StorageAmount>10</StorageAmount>
   </ModOp>
 
   <!-- Reduce deliver range -->
@@ -1534,20 +1537,6 @@
   <ModOp Type = 'replace' GUID = '5840' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>100</FullSatisfactionDistance>
   </ModOp>
-
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5840' Path = '/Values/FactoryBase/FactoryInputs'>
-    <Item>
-      <Product>5389</Product>
-      <Amount>1</Amount>
-      <StorageAmount>10</StorageAmount>
-    </Item>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '5840' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Increase maintenance -->
   <ModOp Type = 'replace' GUID = '5840' Path = '/Values/Maintenance/Maintenances'>
@@ -1568,21 +1557,7 @@
   <ModOp Type = 'replace' GUID = '6018' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>100</FullSatisfactionDistance>
   </ModOp>
-
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6018' Path = '/Values/FactoryBase/FactoryInputs'>
-    <Item>
-      <Product>5392</Product>
-      <Amount>1</Amount>
-      <StorageAmount>10</StorageAmount>
-    </Item>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '6018' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
-  
+    
   <!-- Decrease maintenance -->
   <ModOp Type = 'replace' GUID = '6018' Path = '/Values/Maintenance/Maintenances'>
     <Maintenances>
@@ -1609,22 +1584,6 @@
     </Influence>
   </ModOp>
 
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6258' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5394</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '6258' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>300</CycleTime>
-  </ModOp>
-
   <!-- Increase automatic protection -->
   <ModOp Type = 'replace' GUID = '6258' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
@@ -1645,22 +1604,6 @@
     </Influence>
   </ModOp>
 
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6259' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5393</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '6259' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>300</CycleTime>
-  </ModOp>
-
   <!-- Increase automatic protection -->
   <ModOp Type = 'replace' GUID = '6259' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
@@ -1675,22 +1618,6 @@
         <Distance>50</Distance>
       </Illness>
     </Influence>
-  </ModOp>
-
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6260' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5397</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '6260' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>300</CycleTime>
   </ModOp>
 
   <!-- Increase automatic protection -->
@@ -3339,6 +3266,13 @@
     <Value>250</Value>
   </ModOp>
 
+  <!-- Department of Culture -->
+  <!-- Cultural Outreach Act -->
+  <!-- Increase extra rewards -->
+  <ModOp Type = 'replace' GUID = '269116' Path = '/Values/MonumentUpgrade/BonusRewardAmountUpgrade/Value'>
+    <Value>3</Value>
+  </ModOp>
+
   <!-- Department of Welfare -->
   <!-- City wide web act -->
   <!-- Increase power plants satisfaction range -->
@@ -3365,7 +3299,7 @@
   </ModOp>
 
   <!-- Increase infotip & buff -->
-  <ModOp Type = 'replace' GUID = '269453,269445,269449,269233,273692,280082,269451,269452,269453' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
+  <ModOp Type = 'replace' GUID = '269453,269233,273692,280082,269451,269452,269453' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
     <AmountInPercent>-50</AmountInPercent>
   </ModOp>
 
@@ -3391,7 +3325,7 @@
 
   <!-- Paragon levels -->
   <!-- First paragon level -->
-  <ModOp Type = 'replace' GUID = '269217' Path = '/Values/Palace/AttractivenessRequiredForFirstParagonLevel'>
+  <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/AttractivenessRequiredForFirstParagonLevel'>
     <AttractivenessRequiredForFirstParagonLevel>10000</AttractivenessRequiredForFirstParagonLevel>
   </ModOp>
 
@@ -3614,7 +3548,7 @@
     Path = '/Values/FactoryBase'
   >
     <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
-    <ClampedMaxTransporterLogisticCost>75</ClampedMaxTransporterLogisticCost>
+    <ClampedMaxTransporterLogisticCost>80</ClampedMaxTransporterLogisticCost>
   </ModOp>
 
   <!-- Electricity -->
@@ -3645,11 +3579,11 @@
 
   <!-- All lumberjacks & orchards -->
   <!-- Required area -->
-  <ModOp Type = 'replace' GUID = '1010266,114703,133496,135088,135085,134614,133004,133030,133031' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
+  <ModOp Type = 'replace' GUID = '122963,112667,112673,116034,114705,1010298,1010558,1010266,114703,133496,135088,135085,134614,133004,133030,133031' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
     <InfluenceRadius>10</InfluenceRadius>
   </ModOp>
   
-  <ModOp Type = 'replace' GUID = '1010266,114703,133496,135088,135085,134614,133004,133030,133031' Path = '/Values/FreeAreaProductivity/NeededAreaPercent'>
+  <ModOp Type = 'replace' GUID = '122963,1010266,114703,133496,135088,135085,134614,133004,133030,133031' Path = '/Values/FreeAreaProductivity/NeededAreaPercent'>
     <NeededAreaPercent>75</NeededAreaPercent>
   </ModOp>
 
@@ -3749,3940 +3683,405 @@
   <!-- Old world (OW) -->
   <!-- Farms (OW) -->
   <!-- Potato farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010265,25019' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010195</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
-  <!-- Grain farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010262,25128' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010192</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
+  <!-- Grain farm -->  
   <!-- Module limit -->
   <ModOp Type = 'replace' GUID = '1010262' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
     <Limit>128</Limit>
   </ModOp>
 
-  <!-- Hop farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010264' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010194</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010264' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
-  
+  <!-- Hop farm -->  
   <!-- Module limit -->
   <ModOp Type = 'replace' GUID = '1010264' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
     <Limit>72</Limit>
   </ModOp>
   
   <!-- Red pepper farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '100654' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010198</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '100654' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
-  
   <!-- Module limit -->
   <ModOp Type = 'replace' GUID = '100654' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
     <Limit>128</Limit>
   </ModOp>
 
   <!-- Vineyard -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '100655' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120014</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '100655' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Sheep farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010267' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010197</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
   <!-- Increase module required -->
   <ModOp Type = 'replace' GUID = '1010267' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
     <Limit>4</Limit>
   </ModOp>
 
   <!-- Pig farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010269' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010199</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Cattle farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010263' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010193</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010263' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Supplies (OW) -->
   <!-- Fishery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010278' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010200</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Flour mill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010313' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010192</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010313' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010235</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Bakery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010291' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010235</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010291' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010213</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Slaughterhouse -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010316' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010199</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010316' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010238</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Rendering works -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010312' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010199</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010312' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010234</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Soap factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010281' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010234</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010281' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010203</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Artisanal kitchen -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010293' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010193</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010198</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010293' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010215</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010293' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Cannery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010295' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010227</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010215</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010295' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010217</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010295' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Chemical plant: Shampoo -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '132786' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010203</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133095</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133093</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
   <!-- Assembly line: Biscuits -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135361' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010234</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010235</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133097</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '135361' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>135229</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Clothes (OW) -->
   <!-- Framework knitters -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010315' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010197</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010315' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010237</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Sails -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010288' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010197</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010288' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010210</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Hunter cabin -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010558' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010209</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Required area -->
-  <ModOp Type = 'replace' GUID = '1010558' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
 
   <!-- Fur dealer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010325' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010209</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010325' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010247</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Bootmakers -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '118733' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114357</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '118733' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114428</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Tailors shop -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '118734' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114391</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '118734' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114430</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Advanced cotton mill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '124739' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010197</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '124739' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '124739' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Drinks (OW) -->
   <!-- Schnapps distillery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010294,25350' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010195</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010294,25350' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010216</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Malthouse -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010314' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010192</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010314' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010236</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Brewery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010292' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010194</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010236</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010292' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010214</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Champagne cellar -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '100659' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120014</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '100659' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120016</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Advanced coffee roaster -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '124738' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010236</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '124738' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120032</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '124738' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Advanced rum distiller -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '124737' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010195</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '124737' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010257</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '124737' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Chemical plant: Lemonade -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '132777' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010232</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010239</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133097</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
   <!-- Artisan workshop: Cognac -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135418' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120014</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135087</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010239</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '135418' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>135234</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Mines (OW) -->
   <!-- Sand mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010560' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010228</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Iron mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010305,1388' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010227</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Zinc mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010307' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010229</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Copper mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010308' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010230</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Cement mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010309' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010231</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Materials (OW) -->
   <!-- Lumberjack hut (OW & NW) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010266' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Sawmill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '100451' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '100451' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010196</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Clay pit -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '100416' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Brick factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010283' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010283' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010205</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Charcoal kiln -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010298' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Required area -->
-  <ModOp Type = 'replace' GUID = '1010298' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
 
   <!-- Furnace -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010297' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010227</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010297' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Steelworks -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010296' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010296' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010218</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010296' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Weapons factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010299' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010299' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010221</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010299' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Glassmakers -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010319' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010228</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010319' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Windows factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010285' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010285' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010207</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Concrete factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010280' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010231</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010280' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010202</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Saltpeter works -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010310' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010232</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010310' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Dynamite factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010300' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010234</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010232</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010300' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010222</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Heavy weapons factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010301' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010222</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010301' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010223</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010301' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Lategame (OW) -->
   <!-- Sewing machine factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010284' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010284' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010206</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Brass smeltery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010282' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010229</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010230</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010282' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010204</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Spectacle factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101250' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010204</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101250' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120030</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '101250' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Bicycle factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010323' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010323' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010245</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Clockmakers -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010324' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010249</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010324' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010246</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010324' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Filament factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010321' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010321' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010243</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Light bulb factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010286' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010243</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010286' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010208</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010286' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Goldsmiths -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010327' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010233</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010327' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010249</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Jewellers -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010328' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010256</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010249</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010328' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010250</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Marquetry workshop -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010320' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010320' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010242</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Gramophone factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010326' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010242</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010204</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010326' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010248</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010326' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Coachmakers -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010289' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010289' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010211</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010289' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Motor assembly line (OW steam motors) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010302' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010204</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010302' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010224</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010302' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Cab assembly line -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010303' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010211</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010224</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010303' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010225</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Telephone manufacturer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '118735' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010243</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010242</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '118735' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114431</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '118735' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Chemical plant: Souvenirs -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '133533' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010253</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>134616</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
   <!-- Chemical plant: Lacquer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135133' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010228</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135086</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135130</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
   <!-- Assembly line: Elevators -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '134622' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010242</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010224</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '134622' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>134623</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Assembly line: Typewritters -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135148' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010204</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135129</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '135148' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>135230</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Artisan workshop: Billiard tables -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135407' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>135087</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120044</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135150</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '135407' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>135232</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Artisan workshop: Violins -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135397' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135087</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135129</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '135397' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>135233</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Artisan workshop: Toys -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135669' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120044</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135150</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135129</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '135669' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>135231</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- New world buildings (NW) -->
   <!-- Farms (NW) -->  
   <!-- Plantain plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101263' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120041</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Sugar cane plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010329,24798' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010251</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Cotton plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010331' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010253</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Caoutchouc plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010333,25006' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Corn farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101270,25003' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120034</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Coffee plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101251,25005' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120031</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Tobacco plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010330' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010252</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010330' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Cocoa plantation -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010332,25009' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010254</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Herb garden -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5463' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5383</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Orchid farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5814' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5386</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Alpaca farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101272' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120036</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Cattle farm (NW) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101269' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010193</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Nandu farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5457' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5384</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Hacienda fertilizer works -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '24805' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>24807</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '24805' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>24808</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Pearl farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010339' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010256</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010339' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Supplies (NW) -->
   <!-- Fish oil factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101262' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120042</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Fried plantain kitchen -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101264' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120042</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120041</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101264' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120033</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Tortilla maker -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101271' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010193</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120034</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101271' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120035</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Cigar factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010342' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010242</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010252</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010342' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010259</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Sugar refinery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010317' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010251</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010317' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010239</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Chocolate factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010341' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010239</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010254</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010341' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010258</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Calamari fishery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '7919' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5380</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Jalea kitchen -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5458' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5380</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>5383</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120034</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5458' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5381</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Chemical plant: Chewing gum -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135185' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010239</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133093</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
   
   <!-- Ice cream factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5459' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5385</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010258</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133097</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5459' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5382</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Clothes (NW) -->
   <!-- Poncho darner -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101266' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120036</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101266' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120043</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Cotton mill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010318' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010253</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010318' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Felt producer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101415' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120036</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101415' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120044</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Bombin weaver -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101273' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120044</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101273' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120037</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Ball manufactory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5879' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5384</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5879' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5803</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Custome shop -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5933' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>5400</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>5401</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
-  <ModOp Type = 'replace' GUID = '5933' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5389</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Drinks (OW) -->
+  <!-- Drinks (NW) -->
   <!-- Rum distillery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010340,24801' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010251</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '1010340,24801' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010257</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Coffee roaster -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '101252' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120031</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '101252' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120032</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Hacienda hot sauce factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '25508' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114369</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '25508' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>25506</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Hacienda atole maker -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '25126' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120034</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010251</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '25126' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>25131</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Hacienda brewery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '25064' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010192</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120034</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '25064' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010214</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Mezcal bar -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6594' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>133097</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010239</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>5383</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '6594' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>6600</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Mines (NW) -->
   <!-- Gold mine (NW) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1010311' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010233</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '1010311' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Mineral mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1390' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5398</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Bauxite mine -->
   <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1308' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>836</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '1308' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>15</CycleTime>
-  </ModOp>
   
   <!-- Helium extractor -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '1353' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1414</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
-  <ModOp Type = 'replace' GUID = '1353' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>840</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Lategame -->
+  <!-- Lategame (NW) -->
   <!-- Aluminium smelter -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '835' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>836</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '835' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>838</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '835' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Furnace (NW) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6080' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010227</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '6080' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Sewing machine factory (NW) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6083' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>838</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '6083' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010206</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Chemical plant: Ethanol -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135134' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120034</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
   
   <!-- Perfume mixer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5657' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5386</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135130</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>133095</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5657' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5388</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Cable factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6279' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010230</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '6279' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>6280</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Chemical plant: Celluloid -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '135224' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010253</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>134616</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135130</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
   
   <!-- Motor assembly plant (NW electrical motors) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5659' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>6280</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135150</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5659' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5390</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Fan factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5862' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5390</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>838</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5862' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5395</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Laboratory: Pigments -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5462' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5398</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010232</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5462' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5400</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '5462' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
   
   <!-- Scooter factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5658' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5390</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>5400</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '5658' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5391</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '5658' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Chemical plant: Film reels -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '5828' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010232</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135150</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
   
   <!-- Arsenal: Police equipment -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6630' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010240</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
   
   <!-- Laboratory: Fire extinguishers -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6629' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010219</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010255</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '6629' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5393</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '6629' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
   
   <!-- Laboratory: Medicine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '6631' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>5383</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>5386</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>135130</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '6631' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>5397</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '6631' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Enbesa buildings -->
   <!-- Farms (E) -->
   <!-- Linseed farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114448' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114365</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Teff farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114450' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114367</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Hibiscus farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114447' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114364</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Indigo farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114451' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114368</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Spice farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114452,25020' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114369</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Apiary -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114453' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114370</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Goat farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114456' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114371</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Sanga farm -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114439' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114357</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Supplies (E) -->
   <!-- Salt works -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114440' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114358</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Dry-house -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114444' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114357</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>114358</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114444' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114359</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Teff mill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114459' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114367</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>114369</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114459' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114408</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Lobster fishery -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '118729' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>118728</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Wat kitchen -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114471' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>118728</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>114408</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114471' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114410</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Clothes (E) -->
   <!-- Linen mill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114441' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114365</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114441' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114391</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Embroiderer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114466' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114391</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114466' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114401</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Tapestry looms -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114469' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114391</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>114368</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114469' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114404</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Drinks (E) -->
   <!-- Tea spicer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114468' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114364</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114468' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114390</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Materials (E) -->
   <!-- Wanza woodcutter -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '122963' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114356</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Required area -->
-  <ModOp Type = 'replace' GUID = '122963' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
-  
-  <ModOp Type = 'replace' GUID = '122963' Path = '/Values/FreeAreaProductivity/NeededAreaPercent'>
-    <NeededAreaPercent>75</NeededAreaPercent>
-  </ModOp>
   
   <!-- Clay collector -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '117743' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Brick dry-house -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114467' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>114367</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114467' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114402</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Lategame -->
   <!-- Ceramics workshop -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '118725' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>114368</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '118725' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>118724</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Pipe maker -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114472' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>1010201</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010252</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114472' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>114414</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '114472' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Paper mill -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '117744' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '117744' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>117702</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Luminer -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114470' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114368</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>117702</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114470' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>117698</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Chandler -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114461' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>114370</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010253</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114461' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>117701</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Lanternsmith -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114464' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>117701</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010241</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114464' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>117699</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Arctic buildings -->
   <!-- Farms (A) -->
   <!-- Goose farm -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112676' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112697</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '112676' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Husky farm -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112682' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112698</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '112682' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
 
   <!-- Supplies (A) -->
   <!-- Caribou hunter -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112667' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112694</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Reduce required area -->
-  <ModOp Type = 'replace' GUID = '112667' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
 
   <!-- Whale hunter -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112666' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112699</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Pemmican factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112668' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>112699</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>112694</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '112668' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112705</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
   
   <!-- Oil lamp factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112679' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>112699</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>1010204</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '112679' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112702</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Clothes (A) -->
   <!-- Seal hunter -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112674' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112696</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'add' GUID = '112674' Path = '/Values/FactoryBase'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Sleeping bag factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112675' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>112696</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>112697</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '112675' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112701</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Bear hunter -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112673' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112695</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '112673' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
-  
-  <!-- Reduce required area -->
-  <ModOp Type = 'replace' GUID = '112673' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
   
   <!-- Parka factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112672' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>112695</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>112696</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '112672' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112700</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Decrease cycle time -->
-  <ModOp Type = 'replace' GUID = '112672' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
   
   <!-- Prime hunting cabin -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '116034' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010209</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Reduce required area -->
-  <ModOp Type = 'replace' GUID = '116034' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '116034' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
 
   <!-- Mines (A) -->
   <!-- Deep Gold mine (A) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '116029' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010233</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Gas mine -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112690' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112706</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '112690' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>180</CycleTime>
-  </ModOp>
 
   <!-- Materials (A) -->
   <!-- Lumberjack hut (A) -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114703' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-
-  <!-- Increase cycle time -->
-  <ModOp Type = 'replace' GUID = '114703' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>30</CycleTime>
-  </ModOp>
   
   <!-- Charcoal kiln (A) -->
-  <!-- Increase output -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114705' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010226</Product>
-        <Amount>3</Amount>
-        <StorageAmount>30</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
-  
-  <!-- Reduce required area -->
-  <ModOp Type = 'replace' GUID = '114705' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
-    <InfluenceRadius>10</InfluenceRadius>
-  </ModOp>
   
   <!-- Sawmill (A) -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '114704' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '114704' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>1010196</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Lategame (A) -->
   <!-- Sled frame factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112681' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>112696</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>120008</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
-
-  <ModOp Type = 'replace' GUID = '112681' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112704</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
 
   <!-- Husky sled factory -->
-  <!-- Increase internal storage -->
-  <ModOp Type = 'replace' GUID = '112680' Path = '/Values/FactoryBase/FactoryInputs'>
-    <FactoryInputs>
-      <Item>
-        <Product>112698</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-      <Item>
-        <Product>112704</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryInputs>
-  </ModOp>
 
-  <ModOp Type = 'replace' GUID = '112680' Path = '/Values/FactoryBase/FactoryOutputs'>
-    <FactoryOutputs>
-      <Item>
-        <Product>112703</Product>
-        <Amount>1</Amount>
-        <StorageAmount>10</StorageAmount>
-      </Item>
-    </FactoryOutputs>
-  </ModOp>
+  <!-- Drop factories -->
+  <!-- Bomb factory -->
+
+  <!-- Sea Mine factory -->
+
+  <!-- Pamphlet printer -->
+
+  <!-- Care package factory -->
+
+  <!-- Water drop factory -->
 </ModOps>

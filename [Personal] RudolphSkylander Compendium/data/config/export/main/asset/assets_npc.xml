@@ -16,7 +16,7 @@
       - Emperor Ketema 
       - Pirate diplomacy
   -->
-  
+
   <!-- NPCs -->
   <!-- NPCs storage amount -->
   <ModOp 
@@ -545,18 +545,131 @@
   <ModOp Type = 'replace' GUID = '192069' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
+        <!-- New items -->
         <Item>
           <ItemLink>192074</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>2001000043</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000045</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000047</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Town hall -->
+        <Item>
+          <ItemLink>192468</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>192484</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191692</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>111024</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>111048</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125143</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125072</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Residences -->
+        <Item>
+          <ItemLink>191579</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190724</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190193</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Hotels -->
+        <Item>
+          <ItemLink>136668</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136697</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136699</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Skyscrappers -->
+        <Item>
+          <ItemLink>137797</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>137798</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>137799</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Restaurants -->
+        <Item>
+          <ItemLink>136647</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136648</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136649</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Shopping arcades -->
+        <Item>
+          <ItemLink>136885</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136886</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136887</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Harbour -->
+        <Item>
           <ItemLink>191882</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190904</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
           <ItemLink>191886</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Shipyards -->
         <Item>
           <ItemLink>190698</ItemLink>
           <Weight>10</Weight>
@@ -566,49 +679,14 @@
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>190696</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
           <ItemLink>192036</ItemLink>
           <Weight>10</Weight>
         </Item>
-        <Item>
-          <ItemLink>110938</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>110944</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190820</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116177</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191683</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190881</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191626</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191625</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191624</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191991</ItemLink>
-          <Weight>10</Weight>
-        </Item>
+        <!-- Public moor -->
         <Item>
           <ItemLink>190684</ItemLink>
           <Weight>10</Weight>
@@ -625,28 +703,51 @@
           <ItemLink>191814</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Ships -->
         <Item>
-          <ItemLink>136833</ItemLink>
+          <ItemLink>191616</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136827</ItemLink>
+          <ItemLink>191615</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>137631</ItemLink>
+          <ItemLink>191445</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136823</ItemLink>
+          <ItemLink>191991</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Incidents -->
+        <Item>
+          <ItemLink>190820</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136746</ItemLink>
+          <ItemLink>116177</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136712</ItemLink>
+          <ItemLink>191915</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191921</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Production -->
+        <Item>
+          <ItemLink>110938</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>110944</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190881</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -655,14 +756,6 @@
         </Item>
         <Item>
           <ItemLink>125070</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136739</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136825</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -687,10 +780,6 @@
         </Item>
         <Item>
           <ItemLink>190849</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190852</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -737,8 +826,33 @@
           <ItemLink>190913</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Books -->
         <Item>
-          <ItemLink>191686</ItemLink>
+          <ItemLink>136833</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136827</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>137631</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136823</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136746</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136825</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>136712</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -746,111 +860,7 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190904</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192468</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192484</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191692</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191579</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190724</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190193</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190410</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191010</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190658</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>8417</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>111024</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>111048</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125143</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136668</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136697</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136699</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136647</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136648</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136649</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>137797</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>137798</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>137799</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136885</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136886</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136887</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125072</ItemLink>
+          <ItemLink>136739</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -1268,12 +1278,17 @@
   <ModOp Type = 'replace' GUID = '190774' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
+        <!-- All production -->
         <Item>
-          <ItemLink>190237</ItemLink>
+          <ItemLink>2001000055</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>192450</ItemLink>
+          <ItemLink>2001000057</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000059</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -1281,143 +1296,16 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190761</ItemLink>
+          <ItemLink>111131</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190760</ItemLink>
+          <ItemLink>111129</ItemLink>
           <Weight>10</Weight>
         </Item>
-        <Item>
-          <ItemLink>190648</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191382</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191352</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>1948</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191327</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190627</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190632</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190650</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190705</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190739</ItemLink>
-          <Weight>10</Weight>
-        </Item>
+        <!-- All crop farms -->
         <Item>
           <ItemLink>190752</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191310</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191319</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191324</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191329</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191355</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191383</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191388</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191407</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191408</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>113799</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125139</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191422</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191431</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191465</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191584</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191591</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190626</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190631</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190649</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190704</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190738</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190743</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -1425,71 +1313,20 @@
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>191379</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
           <ItemLink>190751</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191309</ItemLink>
+          <ItemLink>190749</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- All animal farms -->
         <Item>
-          <ItemLink>191318</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191323</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191328</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192039</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191346</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191354</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191377</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191401</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191406</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191405</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191420</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191424</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125138</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191430</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191464</ItemLink>
+          <ItemLink>191584</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -1497,59 +1334,7 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191590</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192443</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>193187</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190630</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190742</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190737</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191308</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191353</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191376</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191403</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191404</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191400</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191418</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191419</ItemLink>
+          <ItemLink>191580</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -1557,47 +1342,369 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>1956</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
           <ItemLink>8348</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Bakery -->
         <Item>
-          <ItemLink>8351</ItemLink>
+          <ItemLink>190632</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190631</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190630</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Slaughterhouse -->
+        <Item>
+          <ItemLink>191388</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191401</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191403</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Artisanal kitchen -->
+        <Item>
+          <ItemLink>191408</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191405</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191400</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Cannery -->
+        <Item>
+          <ItemLink>191407</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191406</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191404</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Soap factory -->
+        <Item>
+          <ItemLink>191319</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191318</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191316</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Schnapps & beer -->
+        <Item>
+          <ItemLink>191383</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191382</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191380</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Champagne -->
+        <Item>
+          <ItemLink>190650</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190649</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190644</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Furs -->
+        <Item>
+          <ItemLink>190743</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190736</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190734</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Old World Clothiers -->
+        <Item>
+          <ItemLink>191329</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191328</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191327</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>192039</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125138</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Bootmakers -->
+        <Item>
+          <ItemLink>125139</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125137</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>129022</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All mines -->
+        <Item>
+          <ItemLink>190760</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190757</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190755</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1948</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All lumberjacks -->
+        <Item>
+          <ItemLink>190739</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>11657</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190733</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Charcoal Kilns -->
+        <Item>
+          <ItemLink>190738</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190742</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190740</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All woodworking -->
+        <Item>
+          <ItemLink>191431</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191430</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
           <ItemLink>191429</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Open pits and coastal mines -->
         <Item>
-          <ItemLink>191463</ItemLink>
+          <ItemLink>191591</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191375</ItemLink>
+          <ItemLink>191590</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>1895</ItemLink>
+          <ItemLink>191589</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
           <ItemLink>2224</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- All brickmakers -->
+        <Item>
+          <ItemLink>191465</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191464</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191463</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Foundries -->
+        <Item>
+          <ItemLink>190705</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190704</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190703</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1895</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All assembly factories -->
+        <Item>
+          <ItemLink>191422</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191424</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191417</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Spectacle factory -->
+        <Item>
+          <ItemLink>191310</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191309</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191308</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All electronics production -->
+        <Item>
+          <ItemLink>191355</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191353</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191352</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Gramophone Factory -->
+        <Item>
+          <ItemLink>191354</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Clockmakers -->
+        <Item>
+          <ItemLink>113799</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191324</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191323</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191322</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Jewellers -->
+        <Item>
+          <ItemLink>190627</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190626</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190625</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Cab assembly line -->
+        <Item>
+          <ItemLink>191418</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191420</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191419</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>8351</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Fishery -->
         <Item>
           <ItemLink>190622</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>8356</ItemLink>
+          <ItemLink>190619</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190621</ItemLink>
+          <ItemLink>190615</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Others -->
+        <Item>
+          <ItemLink>8355</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1897</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>958</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1956</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -3292,22 +3399,7 @@
   <ModOp Type = 'replace' GUID = '192070' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
-        <Item>
-          <ItemLink>190668</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192465</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191436</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191442</ItemLink>
-          <Weight>10</Weight>
-        </Item>
+        <!-- Trading posts -->
         <Item>
           <ItemLink>190667</ItemLink>
           <Weight>10</Weight>
@@ -3317,35 +3409,47 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>111130</ItemLink>
+          <ItemLink>190665</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Ship plans -->
+        <Item>
+          <ItemLink>192465</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Defenses -->
+        <Item>
+          <ItemLink>191432</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>111131</ItemLink>
+          <ItemLink>191442</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>111129</ItemLink>
+          <ItemLink>121022</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Warships -->
+        <Item>
+          <ItemLink>191596</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191453</ItemLink>
+          <ItemLink>191598</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191610</ItemLink>
+          <ItemLink>191601</ItemLink>
           <Weight>10</Weight>
         </Item>
-        <Item>
-          <ItemLink>191611</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192074</ItemLink>
-          <Weight>10</Weight>
-        </Item>
+        <!-- Airships -->
         <Item>
           <ItemLink>4135</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>4134</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -3353,7 +3457,7 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>4132</ItemLink>
+          <ItemLink>2232</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -4106,37 +4210,91 @@
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>4270</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- New items -->
+        <Item>
           <ItemLink>192074</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191683</ItemLink>
+          <ItemLink>2001000043</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190868</ItemLink>
+          <ItemLink>2001000045</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191991</ItemLink>
+          <ItemLink>2001000047</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Town hall -->
+        <Item>
+          <ItemLink>192468</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191625</ItemLink>
+          <ItemLink>192484</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191624</ItemLink>
+          <ItemLink>191692</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191626</ItemLink>
+          <ItemLink>111024</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191814</ItemLink>
+          <ItemLink>111048</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Residences -->
+        <Item>
+          <ItemLink>191579</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190724</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190193</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Harbour -->
+        <Item>
+          <ItemLink>191882</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190904</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191886</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Shipyards -->
+        <Item>
+          <ItemLink>190698</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190697</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190696</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>192036</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Public moor -->
         <Item>
           <ItemLink>190684</ItemLink>
           <Weight>10</Weight>
@@ -4150,27 +4308,58 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136712</ItemLink>
+          <ItemLink>191814</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Ships -->
+        <Item>
+          <ItemLink>191616</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191615</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191445</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191991</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Incidents -->
+        <Item>
+          <ItemLink>190820</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116177</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191915</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191921</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Production -->
+        <Item>
+          <ItemLink>110938</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>110944</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190881</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
           <ItemLink>125067</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136739</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136825</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136827</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190820</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4182,6 +4371,18 @@
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>190841</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190845</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190849</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
           <ItemLink>190871</ItemLink>
           <Weight>10</Weight>
         </Item>
@@ -4190,7 +4391,15 @@
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>190878</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
           <ItemLink>192319</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190889</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4202,23 +4411,32 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>110938</ItemLink>
+          <ItemLink>190900</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>110944</ItemLink>
+          <ItemLink>190907</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>116177</ItemLink>
+          <ItemLink>190910</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136741</ItemLink>
+          <ItemLink>190913</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Books -->
+        <Item>
+          <ItemLink>136833</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136746</ItemLink>
+          <ItemLink>136827</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>137631</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4226,71 +4444,23 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>192036</ItemLink>
+          <ItemLink>136746</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191882</ItemLink>
+          <ItemLink>136825</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191886</ItemLink>
+          <ItemLink>136712</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190904</ItemLink>
+          <ItemLink>136741</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190410</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191010</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>111024</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>111048</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190658</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>8417</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192468</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191692</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192484</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190698</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190697</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>136819</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>4270</ItemLink>
+          <ItemLink>136739</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -4741,200 +4911,17 @@
   <ModOp Type = 'replace' GUID = '192073' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
+        <!-- All production -->
         <Item>
-          <ItemLink>191589</ItemLink>
+          <ItemLink>2001000055</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190648</ItemLink>
+          <ItemLink>2001000057</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191382</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>8347</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190643</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190650</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190752</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>2224</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191419</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190693</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190705</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190739</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190761</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191329</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191347</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191334</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191355</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190237</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191371</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191383</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191402</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191422</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191431</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191465</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191584</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191591</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190642</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190649</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190691</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190692</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190704</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190738</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190750</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190751</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190760</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191346</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191333</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191377</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191370</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191387</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191424</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>8355</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191430</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191464</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191583</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191590</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192443</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192450</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>193187</ItemLink>
+          <ItemLink>2001000059</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4942,7 +4929,20 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190689</ItemLink>
+          <ItemLink>111131</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>111129</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All New World Crops -->
+        <Item>
+          <ItemLink>190693</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190692</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4950,7 +4950,146 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190742</ItemLink>
+          <ItemLink>190688</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190691</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190687</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190689</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>8347</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All animal farms -->
+        <Item>
+          <ItemLink>191584</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191583</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191580</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1964</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>8348</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Kitchens -->
+        <Item>
+          <ItemLink>191334</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191333</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191330</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Fried plantains -->
+        <Item>
+          <ItemLink>191356</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Chocolate factory -->
+        <Item>
+          <ItemLink>191332</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Ice cream factory -->
+        <Item>
+          <ItemLink>191331</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Tortilla maker & Jalea kitchen -->
+        <Item>
+          <ItemLink>191402</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191387</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191386</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Cigar Factory -->
+        <Item>
+          <ItemLink>190643</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190640</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190639</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Rum distillery -->
+        <Item>
+          <ItemLink>190650</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190649</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190644</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Coffee roaster -->
+        <Item>
+          <ItemLink>191371</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191370</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191367</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Schnapps & beer -->
+        <Item>
+          <ItemLink>191383</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191382</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191380</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- New world clothiers -->
+        <Item>
+          <ItemLink>191347</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191346</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4961,50 +5100,136 @@
           <ItemLink>191349</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- All mines -->
         <Item>
-          <ItemLink>191332</ItemLink>
+          <ItemLink>190760</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191356</ItemLink>
+          <ItemLink>190757</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191376</ItemLink>
+          <ItemLink>190755</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191386</ItemLink>
+          <ItemLink>1948</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Lumberjacks -->
+        <Item>
+          <ItemLink>190739</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>1897</ItemLink>
+          <ItemLink>11657</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>1961</ItemLink>
+          <ItemLink>190733</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Charcoal Kilns -->
+        <Item>
+          <ItemLink>190738</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>8348</ItemLink>
+          <ItemLink>190742</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190740</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All woodworking -->
+        <Item>
+          <ItemLink>191431</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191430</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
           <ItemLink>191429</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Open pits and coastal mines -->
+        <Item>
+          <ItemLink>191591</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191590</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191589</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2224</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All brickmakers -->
+        <Item>
+          <ItemLink>191465</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191464</ItemLink>
+          <Weight>10</Weight>
+        </Item>
         <Item>
           <ItemLink>191463</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Foundries -->
         <Item>
-          <ItemLink>191375</ItemLink>
+          <ItemLink>190705</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190622</ItemLink>
+          <ItemLink>190704</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <Item>
+          <ItemLink>190703</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1895</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All assembly factories -->
+        <Item>
+          <ItemLink>191422</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191424</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191417</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All electronics production -->
+        <Item>
+          <ItemLink>191355</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191353</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191352</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Fisheries -->
         <Item>
           <ItemLink>8356</ItemLink>
           <Weight>10</Weight>
@@ -5014,7 +5239,28 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190620</ItemLink>
+          <ItemLink>190617</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Others -->
+        <Item>
+          <ItemLink>8355</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1897</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>958</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2223</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1961</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -5379,120 +5625,21 @@
   <ModOp Type = 'replace' GUID = '193452' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
-        <Item>
-          <ItemLink>1100024</ItemLink>
-          <Weight>10</Weight>
-        </Item>
+        <!-- Arctic -->
         <Item>
           <ItemLink>4277</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>116174</ItemLink>
+          <ItemLink>2001000054</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>193650</ItemLink>
+          <ItemLink>2001000052</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>193649</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112373</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112376</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116185</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116187</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116189</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116190</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112367</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112394</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116184</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116188</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116186</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112391</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116183</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112379</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112553</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112550</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>113364</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112370</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112388</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112382</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>112385</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>117302</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116175</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116173</ItemLink>
+          <ItemLink>2001000053</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5537,6 +5684,124 @@
         </Item>
         <Item>
           <ItemLink>116160</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Airships -->
+        <Item>
+          <ItemLink>116174</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>4117</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>4132</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>4133</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Maps -->
+        <Item>
+          <ItemLink>193650</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>193649</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All production -->
+        <Item>
+          <ItemLink>112367</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112373</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112376</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Mines -->
+        <Item>
+          <ItemLink>116189</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Farms -->
+        <Item>
+          <ItemLink>116187</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116190</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Drinks -->
+        <Item>
+          <ItemLink>116185</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Harbour -->
+        <Item>
+          <ItemLink>112382</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112385</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112388</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Ships -->
+        <Item>
+          <ItemLink>112379</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112370</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Salvager -->
+        <Item>
+          <ItemLink>113364</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112553</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112550</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Town Hall -->
+        <Item>
+          <ItemLink>112394</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116184</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116188</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116186</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112391</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116183</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -5720,8 +5985,35 @@
   <ModOp Type = 'replace' GUID = '193835' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
+        <!-- New items -->
         <Item>
-          <ItemLink>7225</ItemLink>
+          <ItemLink>2001000049</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000045</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Woodworking -->
+        <Item>
+          <ItemLink>116153</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116150</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116147</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116101</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Pemmican Cookhouse -->
+        <Item>
+          <ItemLink>116154</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5729,11 +6021,28 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>4277</ItemLink>
+          <ItemLink>116151</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>4272</ItemLink>
+          <ItemLink>116083</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Hunters -->
+        <Item>
+          <ItemLink>116152</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116149</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116146</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>7225</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5748,40 +6057,9 @@
           <ItemLink>116080</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Arctic Clothiers -->
         <Item>
-          <ItemLink>116083</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116089</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116098</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116101</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116144</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116152</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116153</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116154</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116088</ItemLink>
+          <ItemLink>116133</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5789,19 +6067,37 @@
           <Weight>10</Weight>
         </Item>
         <Item>
+          <ItemLink>116130</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116088</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>116089</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Arctic Animal Farms -->
+        <Item>
+          <ItemLink>116144</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
           <ItemLink>116143</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>116149</ItemLink>
+          <ItemLink>116142</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>116150</ItemLink>
+          <ItemLink>116098</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <!-- Others -->
         <Item>
-          <ItemLink>116150</ItemLink>
+          <ItemLink>4277</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5810,10 +6106,6 @@
         </Item>
         <Item>
           <ItemLink>1772</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>116133</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -6248,162 +6540,37 @@
   <ModOp Type = 'replace' GUID = '127480' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
+        <!-- New items -->
         <Item>
-          <ItemLink>125113</ItemLink>
+          <ItemLink>192074</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>191589</ItemLink>
+          <ItemLink>2001000043</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>125126</ItemLink>
+          <ItemLink>2001000045</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>8908</ItemLink>
+          <ItemLink>2001000047</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Town hall -->
+        <Item>
+          <ItemLink>192468</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190739</ItemLink>
+          <ItemLink>192484</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190237</ItemLink>
+          <ItemLink>191692</ItemLink>
           <Weight>10</Weight>
         </Item>
-        <Item>
-          <ItemLink>125116</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125131</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125122</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125133</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191431</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191465</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191584</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191591</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190738</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125128</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125129</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125045</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125047</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125050</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125053</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125055</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125060</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125062</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191430</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191464</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191583</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191590</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>192450</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>111179</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125118</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>1966</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>8348</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191429</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191463</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125112</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190658</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190410</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>191010</ItemLink>
-          <Weight>10</Weight>
-        </Item>
+        <!-- Residences -->
         <Item>
           <ItemLink>125114</ItemLink>
           <Weight>10</Weight>
@@ -6413,19 +6580,62 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>192468</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
           <ItemLink>125144</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>125065</ItemLink>
+          <ItemLink>121004</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>121020</ItemLink>
+          <ItemLink>125134</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125132</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Enbesan Farms -->
+        <Item>
+          <ItemLink>125116</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125131</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125115</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125060</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125047</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Animal Farms -->
+        <Item>
+          <ItemLink>191581</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125113</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125112</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>1966</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Enbesan Fisheries -->
+        <Item>
+          <ItemLink>125136</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -6433,19 +6643,126 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190622</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>8356</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>190621</ItemLink>
+          <ItemLink>190618</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
           <ItemLink>125057</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Enbesan Clothiers -->
+        <Item>
+          <ItemLink>125146</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125127</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191325</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>192319</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Tea Spicer -->
+        <Item>
+          <ItemLink>125119</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125118</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125117</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190896</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Enbesan Workshops -->
+        <Item>
+          <ItemLink>125128</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125126</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191459</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125055</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- All Enbesan Kitchens -->
+        <Item>
+          <ItemLink>125122</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125121</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125120</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125050</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>190893</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Lanternsmith -->
+        <Item>
+          <ItemLink>125124</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Luminer -->
+        <Item>
+          <ItemLink>125133</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125123</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>118103</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125045</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Others -->
+        <Item>
+          <ItemLink>8908</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125129</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125053</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125062</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125065</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -6695,5 +7012,484 @@
         <ForgettingTime>1500000</ForgettingTime>
       </Gift>
     </Actions>
+  </ModOp>
+
+  <!-- AI shipbuilding -->
+  <!-- Global replace and add - Less Gunboats, more stronger ships  -->
+  <ModOp Type="replace" GUID="47,79,80,83,82,81,11,220,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList/Item[Type='100437']">
+    <Item>
+      <Type>100437</Type>
+      <Weight>0.5</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="47,79,80,83,82,81,11,220,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList/Item[Type='100439']">
+    <Item>
+      <Type>100439</Type>
+      <Weight>10</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="79,80,83,82,81,11,220,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList/Item[Type='100440']">
+    <Item>
+      <Type>100440</Type>
+      <Weight>18</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="82,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList/Item[Type='968']">
+    <Item>
+      <Type>968</Type>
+      <Weight>30</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="81,11,220,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList/Item[Type='100443']">
+    <Item>
+      <Type>100443</Type>
+      <Weight>30</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="83,81,11,220,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList/Item[Type='100442']">
+    <Item>
+      <Type>100442</Type>
+      <Weight>120</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="47" Path="/Values/MilitaryAI/WarFleet/ShipList">
+    <Item>
+      <Type>100440</Type>
+      <Weight>18</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="47,79,80,82" Path="/Values/MilitaryAI/WarFleet/ShipList">
+    <Item>
+      <Type>100442</Type>
+      <Weight>120</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="47,79,80,48" Path="/Values/MilitaryAI/WarFleet/ShipList">
+    <Item>
+      <Type>100443</Type>
+      <Weight>30</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="47,79,80,83,82,81,11,220,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList">
+    <Item>
+      <Type>720</Type>
+      <Weight>25</Weight>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="47,79,80,83,82,81,11,220,48,84,85" Path="/Values/MilitaryAI/WarFleet/ShipList">
+    <Item>
+      <Type>720</Type>
+      <Weight>25</Weight>
+    </Item>
+  </ModOp>
+
+  <!-- QING / WILLY / BENTE -->
+  <ModOp Type="merge" GUID="79,80,47" Path="/Values/MilitaryAI">
+    <WarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>5</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>10</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>25</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>40</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>50</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>100</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>8</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>20</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>35</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>55</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>80</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>150</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </WarFleet>
+    <AirWarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>1</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>2</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>4</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>20</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>1</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>3</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>6</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>30</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </AirWarFleet>
+  </ModOp>
+
+  <!-- MERCIER -->
+  <ModOp Type="merge" GUID="220" Path="/Values/MilitaryAI">
+    <WarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>5</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>18</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>40</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>125</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>125</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>125</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>8</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>25</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>45</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>200</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>200</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>200</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </WarFleet>
+    <AirWarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>2</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>20</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>20</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>20</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>3</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>30</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>30</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>30</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </AirWarFleet>
+  </ModOp>
+
+  <!-- SMITH / GASPAROV / VON MALCHING / O'MARA -->
+  <ModOp Type="merge" GUID="81,83,11,82" Path="/Values/MilitaryAI">
+    <WarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>5</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>18</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>35</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>45</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>70</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>125</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>8</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>25</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>45</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>75</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>125</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>200</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </WarFleet>
+    <AirWarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>2</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>4</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>8</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>20</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>3</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>6</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>9</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>30</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </AirWarFleet>
+  </ModOp>
+
+  <!-- SILVA / HUNT / GRAVES -->
+  <ModOp Type="merge" GUID="84,85,48" Path="/Values/MilitaryAI">
+    <WarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>5</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>30</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>65</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>125</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>175</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>250</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>8</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>40</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>65</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>125</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>175</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>250</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </WarFleet>
+    <AirWarFleet>
+      <ShipLimits>
+        <Peace>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>4</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>8</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>16</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>30</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </Peace>
+        <War>
+          <Progress>
+            <EarlyGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyGame>
+            <EarlyMidGame>
+              <MaxShipCount>0</MaxShipCount>
+            </EarlyMidGame>
+            <MidGame>
+              <MaxShipCount>4</MaxShipCount>
+            </MidGame>
+            <LateMidGame>
+              <MaxShipCount>8</MaxShipCount>
+            </LateMidGame>
+            <LateGame>
+              <MaxShipCount>16</MaxShipCount>
+            </LateGame>
+            <EndGame>
+              <MaxShipCount>30</MaxShipCount>
+            </EndGame>
+          </Progress>
+        </War>
+      </ShipLimits>
+    </AirWarFleet>
   </ModOp>
 </ModOps>

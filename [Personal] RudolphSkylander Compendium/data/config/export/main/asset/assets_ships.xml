@@ -9,11 +9,186 @@
   -->
 
   <!-- Ships -->
+  <!-- Shared ForwardSpeed Replacement -->
+  <!-- Replace ForwardSpeed 25 -->
+  <ModOp Type = 'replace' GUID = '1654,1733,1731' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>25</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 20 -->
+  <ModOp Type = 'replace' GUID = '1655,1734,1732' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>20</ForwardSpeed>
+  </ModOp>
+
+  <!-- Add ForwardSpeed 15 -->
+  <ModOp Type = 'add' GUID = '1058,1735' Path = '/Values/Walking'>
+    <ForwardSpeed>17.5</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 15 -->
+  <ModOp Type = 'replace' GUID = '1059,1736,1755,114166' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>15</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 12.5 -->
+  <ModOp Type = 'replace' GUID = '1060,1737' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>12.5</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 10 -->
+  <ModOp Type = 'add' GUID = '101121' Path = '/Values/Walking'>
+    <ForwardSpeed>10</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 7 -->
+  <ModOp Type = 'add' GUID = '100437' Path = '/Values/Walking'>
+    <ForwardSpeed>7</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 6.25 -->
+  <ModOp Type = 'replace' GUID = '118718,100443,720' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>6.25</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 6 -->
+  <ModOp Type = 'replace' GUID = '100438,100439' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>6</ForwardSpeed>
+  </ModOp>
+
+  <!-- Replace ForwardSpeed 5 -->
+  <ModOp Type = 'replace' GUID = '1010062,102455,132404,112084,100440,100438,100441,100442' Path = '/Values/Walking/ForwardSpeed'>
+    <ForwardSpeed>5</ForwardSpeed>
+  </ModOp>
+
+  <!-- Shared WindMaxSpeedupFactor Replacement -->
+  <!-- Replace WindMaxSpeedupFactor 1.6 -->
+  <ModOp Type = 'replace' GUID = '100441' Path = '/Values/Walking/WindMaxSpeedupFactor'>
+    <WindMaxSpeedupFactor>1.6</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <!-- Replace WindMaxSpeedupFactor 1.5 -->
+  <ModOp Type = 'replace' GUID = '100438,100440' Path = '/Values/Walking/WindMaxSpeedupFactor'>
+    <WindMaxSpeedupFactor>1.5</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <!-- Replace WindMaxSpeedupFactor 1.42 -->
+  <ModOp Type = 'replace' GUID = '100439' Path = '/Values/Walking/WindMaxSpeedupFactor'>
+    <WindMaxSpeedupFactor>1.42</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <!-- Replace WindMaxSpeedupFactor 1.36 -->
+  <ModOp Type = 'replace' GUID = '100437' Path = '/Values/Walking/WindMaxSpeedupFactor'>
+    <WindMaxSpeedupFactor>1.36</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <!-- Replace WindMaxSpeedupFactor 1.25 -->
+  <ModOp Type = 'replace' GUID = '101121' Path = '/Values/Walking/WindMaxSpeedupFactor'>
+    <WindMaxSpeedupFactor>1.25</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <!-- Replace WindMaxSpeedupFactor 1 -->
+  <ModOp Type = 'replace' GUID = '1058,1735,1655,1734,1732,1060,1737,1654,1733,1731' Path = '/Values/Walking/WindMaxSpeedupFactor'>
+    <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <ModOp Type = 'add' GUID = '1059,1736,1755,114166' Path = '/Values/Walking'>
+    <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+  </ModOp>
+
+  <!-- Shared MaximumHitPoints Replacement -->
+  <!-- Replace MaximumHitPoints 10000 -->
+  <ModOp Type = 'replace' GUID = '132404,118718' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>10000</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 7500 -->
+  <ModOp Type = 'replace' GUID = '100442' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>7500</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 5000 -->
+  <ModOp Type = 'replace' GUID = '100440,1010062,100443,720,112084,1060,1737' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>5000</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 2500 -->
+  <ModOp Type = 'replace' GUID = '101121,100439,1732,1655,1734,1059,1736,1755,114166' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>2500</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 1250 -->
+  <ModOp Type = 'replace' GUID = '1731,1058,1735,1654,1733' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>1250</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Replace MaximumHitPoints 1000 -->
+  <ModOp Type = 'replace' GUID = '100437' Path = '/Values/Attackable/MaximumHitPoints'>
+    <MaximumHitPoints>1000</MaximumHitPoints>
+  </ModOp>
+
+  <!-- Shared BaseDamage Replacement -->
+  <!-- Replace BaseDamage 500 -->
+  <ModOp Type = 'replace' GUID = '100440' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>500</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 250 -->
+  <ModOp Type = 'replace' GUID = '101121,100439,100442' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>250</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 125 -->
+  <ModOp Type = 'replace' GUID = '1732' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>125</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 100 -->
+  <ModOp Type = 'replace' GUID = '100437,100443' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>100</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 50 -->
+  <ModOp Type = 'replace' GUID = '1731' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>50</BaseDamage>
+  </ModOp>
+
+  <!-- Shared ReloadTime Replacement -->
+  <!-- Replace ReloadTime 30 -->
+  <ModOp Type = 'replace' GUID = '101121' Path = '/Values/Attacker/ReloadTime'>
+    <ReloadTime>30</ReloadTime>
+  </ModOp>
+
+  <!-- Replace ReloadTime 25 -->
+  <ModOp Type = 'replace' GUID = '1732,1731' Path = '/Values/Attacker/ReloadTime'>
+    <ReloadTime>25</ReloadTime>
+  </ModOp>
+
+  <!-- Shared AttackRange Replacement -->
+  <!-- Replace AttackRange 75 -->
+  <ModOp Type = 'replace' GUID = '100442' Path = '/Values/Attacker/AttackRange'>
+    <AttackRange>100</AttackRange>
+  </ModOp>
+
+  <!-- Replace AttackRange 75 -->
+  <ModOp Type = 'replace' GUID = '101121,100440,100443,720' Path = '/Values/Attacker/AttackRange'>
+    <AttackRange>75</AttackRange>
+  </ModOp>
+
+  <!-- Replace AttackRange 60 -->
+  <ModOp Type = 'replace' GUID = '100439' Path = '/Values/Attacker/AttackRange'>
+    <AttackRange>60</AttackRange>
+  </ModOp>
+
+  <!-- Replace AttackRange 50 -->
+  <ModOp Type = 'replace' GUID = '100437' Path = '/Values/Attacker/AttackRange'>
+    <AttackRange>50</AttackRange>
+  </ModOp>
+
   <!-- Flagship -->
   <ModOp Type = 'replace' GUID = '101121' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketCount>3</SocketCount>
-      <SlotCount>8</SlotCount>
+      <SlotCount>6</SlotCount>
       <StackLimit>100</StackLimit>
     </ItemContainer>
   </ModOp>
@@ -24,14 +199,14 @@
       <SocketCount>3</SocketCount>
       <SocketAllocation>Ship;SteamShip;Tradeship;DivingVessel</SocketAllocation>
       <StackLimit>250</StackLimit>
-      <SlotCount>8</SlotCount>
+      <SlotCount>6</SlotCount>
     </ItemContainer>
   </ModOp>
 
   <!-- Schooner -->
   <ModOp Type = 'replace' GUID = '100438' Path = '/Values/ItemContainer'>
     <ItemContainer>
-      <SocketCount>1</SocketCount>
+      <SocketCount>2</SocketCount>
       <SlotCount>2</SlotCount>
       <StackLimit>100</StackLimit>
     </ItemContainer>
@@ -46,10 +221,19 @@
     </ItemContainer>
   </ModOp>
 
+  <!-- Gunboat -->
+  <ModOp Type = 'replace' GUID = '100437' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>2</SocketCount>
+      <SlotCount>1</SlotCount>
+      <StackLimit>50</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
   <!-- Frigate -->
   <ModOp Type = 'replace' GUID = '100439' Path = '/Values/ItemContainer'>
     <ItemContainer>
-      <SocketCount>2</SocketCount>
+      <SocketCount>3</SocketCount>
       <SlotCount>2</SlotCount>
       <StackLimit>100</StackLimit>
     </ItemContainer>
@@ -58,18 +242,9 @@
   <!-- Ship of the Line -->
   <ModOp Type = 'replace' GUID = '100440' Path = '/Values/ItemContainer'>
     <ItemContainer>
-      <SocketCount>3</SocketCount>
+      <SocketCount>4</SocketCount>
       <SlotCount>3</SlotCount>
       <StackLimit>100</StackLimit>
-    </ItemContainer>
-  </ModOp>
-
-  <!-- Cargo Ship -->
-  <ModOp Type = 'replace' GUID = '1010062' Path = '/Values/ItemContainer'>
-    <ItemContainer>
-      <SocketCount>4</SocketCount>
-      <SlotCount>6</SlotCount>
-      <StackLimit>250</StackLimit>
     </ItemContainer>
   </ModOp>
 
@@ -77,14 +252,35 @@
   <ModOp Type = 'replace' GUID = '100443,720' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketCount>3</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
       <SlotCount>2</SlotCount>
       <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Battle Cruiser -->
+  <ModOp Type = 'replace' GUID = '100442' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
+      <SlotCount>3</SlotCount>
+      <StackLimit>250</StackLimit>
     </ItemContainer>
   </ModOp>
 
   <!-- Oil Tanker -->
   <ModOp Type = 'replace' GUID = '100853' Path = '/Values/ItemContainer/StackLimit'>
     <StackLimit>1000</StackLimit>
+  </ModOp>
+
+  <!-- Cargo Ship -->
+  <ModOp Type = 'replace' GUID = '1010062' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+      <SlotCount>6</SlotCount>
+      <StackLimit>250</StackLimit>
+    </ItemContainer>
   </ModOp>
 
   <!-- Extravaganza Steamer -->
@@ -121,8 +317,17 @@
   <!-- Harpy -->
   <ModOp Type = 'replace' GUID = '1654,1733' Path = '/Values/ItemContainer'>
     <ItemContainer>
-      <SocketCount>2</SocketCount>
+      <SocketCount>1</SocketCount>
       <SlotCount>2</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
+  <!-- Harpy (Armed) -->
+  <ModOp Type = 'replace' GUID = '1731' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>2</SocketCount>
+      <SlotCount>1</SlotCount>
       <StackLimit>100</StackLimit>
     </ItemContainer>
   </ModOp>
@@ -136,11 +341,20 @@
     </ItemContainer>
   </ModOp>
 
+  <!-- Manticore (Armed) -->
+  <ModOp Type = 'replace' GUID = '1732' Path = '/Values/ItemContainer'>
+    <ItemContainer>
+      <SocketCount>4</SocketCount>
+      <SlotCount>2</SlotCount>
+      <StackLimit>100</StackLimit>
+    </ItemContainer>
+  </ModOp>
+
   <!-- Hermes -->
   <ModOp Type = 'replace' GUID = '1058,1735' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketCount>4</SocketCount>
-      <SlotCount>6</SlotCount>
+      <SlotCount>3</SlotCount>
       <StackLimit>250</StackLimit>
     </ItemContainer>
   </ModOp>
@@ -149,7 +363,7 @@
   <ModOp Type = 'replace' GUID = '1059,1736' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketCount>4</SocketCount>
-      <SlotCount>8</SlotCount>
+      <SlotCount>6</SlotCount>
       <StackLimit>500</StackLimit>
     </ItemContainer>
   </ModOp>
@@ -166,7 +380,7 @@
   <!-- Boreas -->
   <ModOp Type = 'replace' GUID = '1755,114166' Path = '/Values/ItemContainer'>
     <ItemContainer>
-      <SocketCount>3</SocketCount>
+      <SocketCount>4</SocketCount>
       <SlotCount>6</SlotCount>
       <StackLimit>100</StackLimit>
     </ItemContainer>
@@ -180,7 +394,7 @@
       <Values>
         <Standard>
           <GUID>100660</GUID>
-          <Name>Rented Ship - Schooner (Trade)</Name>
+          <Name>Rented Ship - Collier (Trade)</Name>
         </Standard>
         <Object />
         <Mesh />
@@ -385,5 +599,1388 @@
       <IgnoreMinimumLoadingTimes>1</IgnoreMinimumLoadingTimes>
       <LoadingTimeGoodFactor>0.1</LoadingTimeGoodFactor>
     </Mail>
+  </ModOp>
+
+  <!-- hierOnimus ships -->
+  <!-- Add to steam shipyard options -->
+  <ModOp Type = 'add' GUID = '1010521' Path = '/Values/Shipyard/AssemblyOptions'>
+    <Item>
+      <Vehicle>2001000081</Vehicle>
+    </Item>
+    <Item>
+      <Vehicle>2001000083</Vehicle>
+    </Item>
+    <Item>
+      <Vehicle>2001000067</Vehicle>
+    </Item>
+  </ModOp>
+
+  <!-- Small Cargo Ship -->
+  <ModOp Type="addNextSibling" GUID='1010062'>
+    <Asset>
+      <BaseAssetGUID>1010062</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>2001000081</GUID>
+          <Name>Small Cargo Ship</Name>
+          <IconFilename>data/graphics/icons/icon_small_cargo_ship.png</IconFilename>
+          <InfoDescription>1742100582</InfoDescription>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/vehicle/small_cargo_ship/small_cargo_ship.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>2001000081</DefaultSkinName>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>2001000084</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000085</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000086</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000087</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Walking>
+          <ReservationLength>8</ReservationLength>
+          <ReservationWidth>3</ReservationWidth>
+          <TurnAroundRadius>5</TurnAroundRadius>
+          <Acceleration>1.85</Acceleration>
+          <Deceleration>1.5</Deceleration>
+          <TurnRadius>5</TurnRadius>
+          <TurnSpeedInPlace>30</TurnSpeedInPlace>
+          <ForwardSpeed>5</ForwardSpeed>
+          <CargoFullFactor>0.5</CargoFullFactor>
+        </Walking>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Small Cargo Ship</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>14859</LineID>
+        </Text>
+        <CommandQueue>
+          <TradeShipPoints>3</TradeShipPoints>
+        </CommandQueue>
+        <Drifting>
+          <Length>4.5</Length>
+          <Width>1.25</Width>
+        </Drifting>
+        <Attackable>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+        </Attackable>
+        <ItemContainer>
+          <SocketCount>4</SocketCount>
+          <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+          <SlotCount>3</SlotCount>
+          <StackLimit>250</StackLimit>
+        </ItemContainer>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>7500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010224</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>TradeShip</InfluenceCostType>
+          <InfluenceCostPoints>3</InfluenceCostPoints>
+        </Cost>
+        <Craftable>
+          <CraftingTime>250000</CraftingTime>
+        </Craftable>
+        <TradeRouteVehicle>
+          <LoadingSpeedFactor>1.5</LoadingSpeedFactor>
+        </TradeRouteVehicle>
+        <ExpeditionAttribute>
+          <BaseMorale>50</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Navigation</Attribute>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkTradeShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkSteamShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+        <ShipMaintenance>
+          <Maintenance>250</Maintenance>
+        </ShipMaintenance>
+        <Sellable>
+          <Baseprice>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>TradeShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>150000</Amount>
+            </Item>
+          </Baseprice>
+        </Sellable>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Small Cargo Ship Skins -->
+  <ModOp Type = 'addNextSibling' GUID = '80147'>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000084</GUID>
+          <Name>Small Cargo Ship Skin 01</Name>
+          <IconFilename>data/graphics/icons/icon_small_cargo_ship_skin_01.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000084</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/small_cargo_ship/small_cargo_ship_skin_01.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000085</GUID>
+          <Name>Small Cargo Ship Skin 01</Name>
+          <IconFilename>data/graphics/icons/icon_small_cargo_ship_skin_02.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000085</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/small_cargo_ship/small_cargo_ship_skin_02.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000086</GUID>
+          <Name>Small Cargo Ship Skin 03</Name>
+          <IconFilename>data/graphics/icons/icon_small_cargo_ship_skin_03.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000086</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/small_cargo_ship/small_cargo_ship_skin_03.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000087</GUID>
+          <Name>Small Cargo Ship Skin 04</Name>
+          <IconFilename>data/graphics/icons/icon_small_cargo_ship_skin_04.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000087</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/small_cargo_ship/small_cargo_ship_skin_04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Small World-Class Refeer -->
+  <ModOp Type="addNextSibling" GUID='132706'>
+    <Asset>
+      <BaseAssetGUID>132404</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>2001000082</GUID>
+          <Name>Small Reefer</Name>
+          <IconFilename>data/graphics/icons/icon_small_reefer.png</IconFilename>
+          <InfoDescription>2001000089</InfoDescription>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/vehicle/small_reefer/small_reefer.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>2001000082</DefaultSkinName>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+            <SkinList />
+          </Skins>
+        </Object>
+        <Walking>
+          <ReservationLength>8</ReservationLength>
+          <ReservationWidth>3</ReservationWidth>
+          <TurnAroundRadius>6</TurnAroundRadius>
+          <Acceleration>1.6</Acceleration>
+          <Deceleration>2</Deceleration>
+          <TurnRadius>6</TurnRadius>
+          <ForwardSpeed>5.6</ForwardSpeed>
+          <CargoFullFactor>0.7</CargoFullFactor>
+        </Walking>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Small Reefer</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>48546</LineID>
+        </Text>
+        <CommandQueue>
+          <TradeShipPoints>2</TradeShipPoints>
+        </CommandQueue>
+        <Drifting>
+          <Length>4.5</Length>
+          <Width>1.25</Width>
+        </Drifting>
+        <Attackable>
+          <MaximumHitPoints>5000</MaximumHitPoints>
+          <SelfHealPerHealTick>2</SelfHealPerHealTick>
+          <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
+        </Attackable>
+        <ItemContainer>
+          <SocketCount>4</SocketCount>
+          <SocketAllocation>Ship;SteamShip;Tradeship</SocketAllocation>
+          <SlotCount>3</SlotCount>
+          <StackLimit>1000</StackLimit>
+        </ItemContainer>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010224</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>TradeShip</InfluenceCostType>
+          <InfluenceCostPoints>4</InfluenceCostPoints>
+        </Cost>
+        <Craftable>
+          <CraftingTime>250000</CraftingTime>
+        </Craftable>
+        <Nameable/>
+        <ExpeditionAttribute>
+          <BaseMorale>50</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Might</Attribute>
+            </Item>
+            <Item>
+              <Attribute>Navigation</Attribute>
+              <Amount>15</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkTradeShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkSteamShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+        <ShipMaintenance>
+          <Maintenance>250</Maintenance>
+        </ShipMaintenance>
+        <Sellable>
+          <Baseprice>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>TradeShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>150000</Amount>
+            </Item>
+          </Baseprice>
+        </Sellable>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Add option to deep blue blueprint -->
+  <ModOp Type = 'addPrevSibling' GUID = '132401' Path = "/Values/ShipyardUpgrade/AddAssemblyOptions/Item[NewOption='132404']">
+    <Item>
+      <NewOption>2001000082</NewOption>      <!--Small Reefer-->
+    </Item>
+  </ModOp>
+
+  <!-- Flak Ironclad -->
+  <ModOp Type="addNextSibling" GUID='720'>
+    <Asset>
+      <BaseAssetGUID>720</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>2001000083</GUID>
+          <Name>Flak Ironclad</Name>
+          <IconFilename>data/graphics/icons/icon_flak_ironclad.png</IconFilename>
+          <InfoDescription>2001000090</InfoDescription>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/vehicle/flak_cruiser/flak_cruiser.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>2001000083</DefaultSkinName>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+            <SkinList />
+          </Skins>
+        </Object>
+        <Walking>
+          <ReservationLength>16</ReservationLength>
+          <ReservationWidth>6</ReservationWidth>
+          <TurnAroundRadius>10</TurnAroundRadius>
+          <Acceleration>0.8</Acceleration>
+          <Deceleration>1</Deceleration>
+          <TurnRadius>8</TurnRadius>
+          <TurnSpeed>20</TurnSpeed>
+          <TurnSpeedInPlace>20</TurnSpeedInPlace>
+          <ForwardSpeed>5</ForwardSpeed>
+        </Walking>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Flak Ironclad</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56081</LineID>
+        </Text>
+        <CommandQueue>
+          <MilitaryAirShipPoints>4</MilitaryAirShipPoints>
+        </CommandQueue>
+        <Drifting>
+          <Length>9</Length>
+          <Width>2</Width>
+        </Drifting>
+        <Collector/>
+        <Attackable>
+          <MaximumHitPoints>7500</MaximumHitPoints>
+          <AlertRange>170</AlertRange>
+          <AccuracyWidth>2.5</AccuracyWidth>
+          <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
+          <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
+        </Attackable>
+        <Attacker>
+          <BaseDamage>50</BaseDamage>
+          <ReloadTime>2.5</ReloadTime>
+          <AttackRange>75</AttackRange>
+          <LineOfSightRange>125</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>320</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/vehicle/ships/monitor_flak/monitor_flak_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>320</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/vehicle/ships/monitor_flak/monitor_flak_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>320</TurnSpan>
+              <TurretCfg>data/dlc11/graphics/vehicle/ships/monitor_flak/monitor_flak_turret_01.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>2037</ProjectileAsset>
+          <TurretExplosionEffectAsset>101975</TurretExplosionEffectAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>WarShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <MuzzleEffectAsset>2581</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <AccuracyBase>25</AccuracyBase>
+          <AccuracyIncreaseOverDistance>0</AccuracyIncreaseOverDistance>
+          <AccuracySpeedDecay>0</AccuracySpeedDecay>
+          <AccuracyByDistance>
+            <Item>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>16</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>40</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>100</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>10</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+          <WeaponIcon>2189</WeaponIcon>
+        </Attacker>
+        <UpgradeList>
+          <DefaultBuff>1593</DefaultBuff>
+        </UpgradeList>
+        <ItemContainer>
+          <SocketCount>4</SocketCount>
+          <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
+          <SlotCount>3</SlotCount>
+          <StackLimit>100</StackLimit>
+        </ItemContainer>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>165000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010224</Ingredient>
+              <Amount>35</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>WarShip</InfluenceCostType>
+          <InfluenceCostPoints>20</InfluenceCostPoints>
+        </Cost>
+        <Craftable>
+          <CraftingTime>900000</CraftingTime>
+        </Craftable>
+        <Locked>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
+        <ExpeditionAttribute>
+          <BaseMorale>50</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Might</Attribute>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Attribute>Navigation</Attribute>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkMilitaryShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkSteamShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+        <ShipMaintenance>
+          <Maintenance>1000</Maintenance>
+        </ShipMaintenance>
+        <Sellable>
+          <Baseprice>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>WarShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>1000000</Amount>
+            </Item>
+          </Baseprice>
+        </Sellable>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Heavy Battle Cruiser -->
+  <ModOp Type='addNextSibling' GUID='100442'>
+    <Asset>
+      <Template>HeavyBattleCruiser</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000067</GUID>
+          <Name>Heavy Battle Cruiser</Name>
+          <IconFilename>data/graphics/icons/icon_heavy_battlecruiser.png</IconFilename>
+          <InfoDescription>2001000077</InfoDescription>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>2001000067</DefaultSkinName>
+            <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>2001000068</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000069</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000070</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000071</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>2001000072</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Mesh>
+          <MeshPlacement>OnWaterSlope</MeshPlacement>
+        </Mesh>
+        <Selection>
+          <MultiSelectable>1</MultiSelectable>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList/>
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Walking>
+          <ShortenSailsAfter>0</ShortenSailsAfter>
+          <ReservationLength>20</ReservationLength>
+          <ReservationWidth>8</ReservationWidth>
+          <PathPlannerLayer>Water</PathPlannerLayer>
+          <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
+          <TurnAroundRadius>22</TurnAroundRadius>
+          <Acceleration>0.4</Acceleration>
+          <Deceleration>0.4</Deceleration>
+          <TurnRadius>22</TurnRadius>
+          <TurnDeceleration>0</TurnDeceleration>
+          <TurnMovement>0</TurnMovement>
+          <LeaningMaxAngle>-10</LeaningMaxAngle>
+          <ForwardSpeed>5</ForwardSpeed>
+          <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+          <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+          <CargoFullFactor>0.5</CargoFullFactor>
+          <DamageFullFactor>0.5</DamageFullFactor>
+          <MinSlowdownFactor>0.5</MinSlowdownFactor>
+          <CurveSegmentDensity>High</CurveSegmentDensity>
+        </Walking>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Heavy Battle Cruiser</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>14857</LineID>
+        </Text>
+        <CommandQueue>
+          <FormationPriority>2</FormationPriority>
+          <MilitaryShipPoints>20</MilitaryShipPoints>
+          <PriorityShipList>1</PriorityShipList>
+        </CommandQueue>
+        <Drifting>
+          <Length>18</Length>
+          <Width>8</Width>
+          <FactorMovement>0.7</FactorMovement>
+          <FactorRotation>0.65</FactorRotation>
+        </Drifting>
+        <Collector/>
+        <Attackable>
+          <MaximumHitPoints>10000</MaximumHitPoints>
+          <AlertRange>175</AlertRange>
+          <HPBarOffset>6.5</HPBarOffset>
+          <AccuracyWidth>10</AccuracyWidth>
+          <ArmorType>HeavyArmor</ArmorType>
+          <SelfHealPerHealTick>10</SelfHealPerHealTick>
+          <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
+        </Attackable>
+        <Attacker>
+          <ShootingTracking>TurretFixed</ShootingTracking>
+          <BaseDamage>500</BaseDamage>
+          <ReloadTime>100</ReloadTime>
+          <AttackRange>100</AttackRange>
+          <LineOfSightRange>150</LineOfSightRange>
+          <Turrets>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_turret_large_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>300</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>130</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+            <Item>
+              <TurnSpan>130</TurnSpan>
+              <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+            </Item>
+          </Turrets>
+          <ProjectileAsset>102033</ProjectileAsset>
+          <MuzzleEffectAssets>
+            <Item>
+              <MuzzleEffectAsset>102228</MuzzleEffectAsset>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>WarShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <MuzzleEffectAsset>102228</MuzzleEffectAsset>
+            </Item>
+          </MuzzleEffectAssets>
+          <FullVolleyTimeMin>2.8</FullVolleyTimeMin>
+          <FullVolleyTimeMax>4</FullVolleyTimeMax>
+          <AccuracyBase>15</AccuracyBase>
+          <AccuracyIncreaseOverDistance>200</AccuracyIncreaseOverDistance>
+          <AccuracySpeedDecay>20</AccuracySpeedDecay>
+          <AccuracyByDistance>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>0</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>5</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>20</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>10</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>30</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>20</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>40</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>50</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>50</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>70</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>60</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>90</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+            <Item>
+              <AccuracyByDistancePair>
+                <EnemyDistanceRelToAttackRange>100</EnemyDistanceRelToAttackRange>
+                <CorrespondingAccuracy>100</CorrespondingAccuracy>
+              </AccuracyByDistancePair>
+            </Item>
+          </AccuracyByDistance>
+        </Attacker>
+        <MinimapToken>
+          <TokenAsset>2001947</TokenAsset>
+          <StrategicMapAsset>501018</StrategicMapAsset>
+        </MinimapToken>
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>216009</Sound>
+            </Item>
+          </ActiveSounds>
+          <DestroySounds>
+            <Item>
+              <Sound>238314</Sound>
+            </Item>
+          </DestroySounds>
+        </SoundEmitter>
+        <UpgradeList/>
+        <QuestObject/>
+        <Infolayer/>
+        <ItemContainer>
+          <SocketCount>4</SocketCount>
+          <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
+          <SlotCount>6</SlotCount>
+          <StackLimit>250</StackLimit>
+        </ItemContainer>
+        <FeedbackController/>
+        <Draggable>
+          <DraggableOnDrag>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList/>
+            </Values>
+          </DraggableOnDrag>
+          <DraggableOnDrop>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList/>
+            </Values>
+          </DraggableOnDrop>
+        </Draggable>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>100</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010224</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010223</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>WarShip</InfluenceCostType>
+          <InfluenceCostPoints>50</InfluenceCostPoints>
+        </Cost>
+        <Craftable>
+          <CraftingTime>1050000</CraftingTime>
+        </Craftable>
+        <TradeRouteVehicle/>
+        <Locked/>
+        <Nameable/>
+        <MetaPersistent/>
+        <ExpeditionAttribute>
+          <BaseMorale>100</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Might</Attribute>
+              <Amount>80</Amount>
+            </Item>
+            <Item>
+              <Attribute>Navigation</Attribute>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkMilitaryShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkSteamShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+        <ShipMaintenance>
+          <Maintenance>2500</Maintenance>
+        </ShipMaintenance>
+        <Sellable>
+          <Baseprice>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>WarShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+              <Amount>10000000</Amount>
+            </Item>
+          </Baseprice>
+        </Sellable>
+        <Stance/>
+        <Rentable/>
+        <WorldMapSound/>
+        <Pausable/>
+        <ShipIncident/>
+        <SoundEmitterCommandBarks>
+          <BarkMapping>
+            <Selection>
+              <AudioPool>700081</AudioPool>
+            </Selection>
+            <SelectionDamaged>
+              <AudioPool>700110</AudioPool>
+            </SelectionDamaged>
+            <AttackCommand>
+              <AudioPool>700082</AudioPool>
+            </AttackCommand>
+            <MoveCommand>
+              <AudioPool>700083</AudioPool>
+            </MoveCommand>
+            <EscortCommand>
+              <AudioPool>700112</AudioPool>
+            </EscortCommand>
+            <PatrolCommand>
+              <AudioPool>700111</AudioPool>
+            </PatrolCommand>
+          </BarkMapping>
+        </SoundEmitterCommandBarks>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Battle Cruiser Turret -->
+  <!-- Change second front turret from vanilla Battle Cruiser to bigger turret -->
+  <ModOp Type = 'merge' GUID = '100442' Path = '/Values/Attacker/Turrets'>
+    <Turrets>
+      <Item>
+        <TurnSpan>300</TurnSpan>
+        <TurretCfg>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_turret_large_01.cfg</TurretCfg>
+      </Item>
+      <Item>
+        <TurnSpan>300</TurnSpan>
+        <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+      </Item>
+      <Item>
+        <TurnSpan>300</TurnSpan>
+        <TurretCfg>data/graphics/vehicle/battle_cruiser/battle_cruiser_turret_01.cfg</TurretCfg>
+      </Item>
+    </Turrets>
+  </ModOp>
+
+  <!-- Heavy Battle Cruiser Skins -->
+  <ModOp GUID = '80147' Type = 'addNextSibling'>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000068</GUID>
+          <Name>Heavy Battle Cruiser Skin 01</Name>
+          <IconFilename>data/graphics/icons/icon_heavy_battlecruiser_skin_01.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000068</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_skin_01.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000069</GUID>
+          <Name>Heavy Battle Cruiser Skin 02</Name>
+          <IconFilename>data/graphics/icons/icon_heavy_battlecruiser_skin_02.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000069</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_skin_02.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000070</GUID>
+          <Name>Heavy Battle Cruiser Skin 03</Name>
+          <IconFilename>data/graphics/icons/icon_heavy_battlecruiser_skin_03.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000070</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_skin_03.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000071</GUID>
+          <Name>Heavy Battle Cruiser Skin 04</Name>
+          <IconFilename>data/graphics/icons/icon_heavy_battlecruiser_skin_04.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000071</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_skin_04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000072</GUID>
+          <Name>Heavy Battle Cruiser Skin 05</Name>
+          <IconFilename>data/graphics/icons/icon_heavy_battlecruiser_skin_05.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>2001000072</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/vehicle/heavy_battle_cruiser/heavy_battle_cruiser_skin_05.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Triggers -->
+  <!-- Unhide Flak Ironclad / Unlock Small Cargo Ship -->
+  <ModOp Type="addnextSibling" GUID="130248">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000088</GUID>
+          <Name>Unhide Flak Ironclad / Unlock Small Cargo Ship</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>2001000083</Asset>
+                      </Item>
+                    </UnhideAssets>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2001000081</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Unhide Heavy Battle Cruiser / Unlock Flak Ironclad trigger -->
+  <ModOp Type = 'addnextSibling' GUID = '130248'>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000073</GUID>
+          <Name>Unhide Heavy Battle Cruiser / Unlock Flak Ironclad trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>2001000067</Asset>
+                      </Item>
+                    </UnhideAssets>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2001000083</Asset>                        <!-- Flak Ironclad - Ship -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Unlock Heavy Battle Cruiser trigger -->
+  <ModOp Type='addnextSibling' GUID='130248'>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000075</GUID>
+          <Name>Unlock Heavy Battle Cruiser trigger</Name>
+        </Standard>
+        <Trigger>
+          <SubTriggers>
+            <Item>
+              <SubTrigger>
+                <Template>AutoCreateTrigger</Template>
+                <Values>
+                  <Trigger>
+                    <TriggerCondition>
+                      <Template>ConditionPlayerCounter</Template>
+                      <Values>
+                        <Condition />
+                        <ConditionPlayerCounter>
+                          <PlayerCounter>PopulationByLevel</PlayerCounter>
+                          <Context>15000004</Context>
+                          <CounterAmount>10000</CounterAmount>
+                        </ConditionPlayerCounter>
+                      </Values>
+                    </TriggerCondition>
+                  </Trigger>
+                </Values>
+              </SubTrigger>
+            </Item>
+          </SubTriggers>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                    </UnhideAssets>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2001000067</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Creative unlock new ships trigger -->
+  <ModOp Type = 'addNextSibling' GUID = '130248'>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000076</GUID>
+          <Name>Creative unlock new ships trigger</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>2001000081</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+                      </Item>
+                      <Item>
+                        <Asset>2001000083</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+                      </Item>
+                      <Item>
+                        <Asset>2001000067</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+                      </Item>
+                    </UnhideAssets>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>2001000081</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+                      </Item>
+                      <Item>
+                        <Asset>2001000083</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+                      </Item>
+                      <Item>
+                        <Asset>2001000067</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+          <ResetTrigger>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <EmptyAutoCreateValue />
+            </Values>
+          </ResetTrigger>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Pools -->
+  <!-- All player ships -->
+  <ModOp Type='add' GUID='700151,270174' Path='/Values/AssetPool/AssetList/'>
+    <Item>
+      <Asset>2001000081</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000082</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000083</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000067</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- Player counter context pool -->
+  <ModOp Type='add' GUID='700155,700065' Path='/Values/PlayerCounterContextPool/Contexts/'>
+    <Item>
+      <Asset>2001000081</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000082</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000083</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000067</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- All military ships -->
+  <ModOp Type='add' GUID='119965' Path='/Values/PlayerCounterContextPool/Contexts/'>
+    <Item>
+      <Asset>2001000083</Asset>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <Asset>2001000067</Asset>
+    </Item>
+  </ModOp>
+
+  <!-- All ships pool -->
+  <ModOp Type='add' GUID='191454' Path='/Values/ItemEffectTargetPool/EffectTargetGUIDs/'>
+    <Item>
+      <GUID>2001000081</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000082</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000083</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000067</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- All steamships -->
+  <ModOp Type='add' GUID='191456' Path='/Values/ItemEffectTargetPool/EffectTargetGUIDs/'>
+    <Item>
+      <GUID>2001000081</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000082</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000083</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000067</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- All warships -->
+  <ModOp Type='add' GUID='191458,193986' Path='/Values/ItemEffectTargetPool/EffectTargetGUIDs/'>
+    <Item>
+      <GUID>2001000083</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000067</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- All steel hulled ships -->
+  <ModOp Type='add' GUID='1404' Path='/Values/ItemEffectTargetPool/EffectTargetGUIDs/'>
+    <Item>
+      <GUID>2001000081</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000083</GUID>                        <!-- Heavy Batle Cruiser - Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000067</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- All trade ships pool -->
+  <ModOp Type='add' GUID='193982' Path='/Values/ItemEffectTargetPool/EffectTargetGUIDs/'>
+    <Item>
+      <GUID>2001000081</GUID>      <!-- Small Cargo Ship -->
+    </Item>
+    <Item>
+      <GUID>2001000082</GUID>      <!-- Small Reefer - Ship -->
+    </Item>
   </ModOp>
 </ModOps>

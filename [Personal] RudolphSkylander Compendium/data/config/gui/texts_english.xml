@@ -1,112 +1,945 @@
 <ModOps>
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1100001</GUID>
+      <GUID>2001000000</GUID>
       <Text>Grand Trade Union</Text>
     </Text>
     <Text>
-      <GUID>1100002</GUID>
+      <GUID>2001000001</GUID>
       <Text>Grand Trade Union</Text>
     </Text>
     <Text>
-      <GUID>1100003</GUID>
+      <GUID>2001000002</GUID>
+      <Text>Grand Trade Union</Text>
+    </Text>
+    <Text>
+      <GUID>2001000003</GUID>
       <Text>Grand Arctic Lodge</Text>
     </Text>
     <Text>
-      <GUID>1100004</GUID>
-      <Text>Grand Trade Union</Text>
-    </Text>
-    <Text>
-      <GUID>1100005</GUID>
-      <Text>Grand Town Hall</Text>
-    </Text>
-    <Text>
-      <GUID>1100006</GUID>
-      <Text>Grand Town Hall</Text>
-    </Text>
-    <Text>
-      <GUID>1100007</GUID>
-      <Text>Grand Town Hall</Text>
-    </Text>
-    <Text>
-      <GUID>1100008</GUID>
+      <GUID>2001000004</GUID>
       <Text>Grand Harbourmaster's Office</Text>
     </Text>
     <Text>
-      <GUID>1100009</GUID>
+      <GUID>2001000005</GUID>
       <Text>Grand Harbourmaster's Office</Text>
     </Text>
     <Text>
-      <GUID>1100010</GUID>
+      <GUID>2001000006</GUID>
       <Text>Grand Harbourmaster's Office</Text>
     </Text>
     <Text>
-      <GUID>1100011</GUID>
+      <GUID>2001000007</GUID>
+      <Text>Grand Town Hall</Text>
+    </Text>
+    <Text>
+      <GUID>2001000008</GUID>
+      <Text>Grand Town Hall</Text>
+    </Text>
+    <Text>
+      <GUID>2001000009</GUID>
+      <Text>Grand Town Hall</Text>
+    </Text>
+    <Text>
+      <GUID>2001000010</GUID>
       <Text>Land Cannon Tower</Text>
     </Text>
     <Text>
-      <GUID>1100012</GUID>
+      <GUID>2001000011</GUID>
       <Text>Land Cannon Tower</Text>
     </Text>
     <Text>
-      <GUID>1100013</GUID>
+      <GUID>2001000012</GUID>
       <Text>Land Cannon Tower</Text>
     </Text>
     <Text>
-      <GUID>1100014</GUID>
+      <GUID>2001000013</GUID>
       <Text>Land Cannon Tower</Text>
     </Text>
     <Text>
-      <GUID>1100015</GUID>
+      <GUID>2001000014</GUID>
       <Text>Land Flak Emplacement</Text>
     </Text>
     <Text>
-      <GUID>1100016</GUID>
+      <GUID>2001000015</GUID>
       <Text>Land Flak Emplacement</Text>
     </Text>
     <Text>
-      <GUID>1100017</GUID>
+      <GUID>2001000016</GUID>
       <Text>Land Flak Emplacement</Text>
     </Text>
     <Text>
-      <GUID>1100018</GUID>
+      <GUID>2001000017</GUID>
       <Text>Land Flak Emplacement</Text>
     </Text>
     <Text>
-      <GUID>1100019</GUID>
-      <Text>Land Big Betty</Text>
-    </Text>
-    <Text>
-      <GUID>1100022</GUID>
+      <GUID>2001000018</GUID>
       <Text>Big Betty</Text>
     </Text>
     <Text>
-      <GUID>1100023</GUID>
-      <Text>Land Big Betty</Text>
-    </Text>
-    <Text>
-      <GUID>1100025</GUID>
+      <GUID>2001000019</GUID>
       <Text>Big Betty</Text>
     </Text>
     <Text>
-      <GUID>1100026</GUID>
-      <Text>Land Big Betty</Text>
-    </Text>
-    <Text>
-      <GUID>1100027</GUID>
+      <GUID>2001000020</GUID>
       <Text>Big Betty</Text>
     </Text>
     <Text>
-      <GUID>1100028</GUID>
+      <GUID>2001000021</GUID>
       <Text>Land Big Betty</Text>
     </Text>
     <Text>
-      <GUID>1100024</GUID>
+      <GUID>2001000022</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>2001000023</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>2001000024</GUID>
+      <Text>Land Big Betty</Text>
+    </Text>
+    <Text>
+      <GUID>2001000025</GUID>
+      <Text>All Trade Unions</Text>
+    </Text>
+    <Text>
+      <GUID>2001000026</GUID>
+      <Text>All Arctic Lodges</Text>
+    </Text>
+    <Text>
+      <GUID>2001000027</GUID>
+      <Text>All Old World Fisheries</Text>
+    </Text>
+    <Text>
+      <GUID>2001000028</GUID>
+      <Text>All New World Fisheries</Text>
+    </Text>
+    <Text>
+      <GUID>2001000029</GUID>
+      <Text>All Enbesan Fisheries</Text>
+    </Text>
+    <Text>
+      <GUID>2001000030</GUID>
+      <Text>All New World Animal Farms</Text>
+    </Text>
+    <Text>
+      <GUID>2001000080</GUID>
+      <Text>All Enbesan Animal Farms</Text>
+    </Text>
+    <Text>
+      <GUID>2001000031</GUID>
+      <Text>All Open Pits And Coastal Mines</Text>
+    </Text>
+    <Text>
+      <GUID>2001000032</GUID>
+      <Text>All Enbesan Food Production</Text>
+    </Text>
+    <Text>
+      <GUID>2001000033</GUID>
+      <Text>All Old World Distilleries and Mezcal Bar</Text>
+    </Text>
+    <Text>
+      <GUID>2001000034</GUID>
+      <Text>All New World Distilleries and Champagne Cellar</Text>
+    </Text>
+    <Text>
+      <GUID>2001000035</GUID>
+      <Text>All Old World Clothiers</Text>
+    </Text>
+    <Text>
+      <GUID>2001000036</GUID>
+      <Text>All New World Clothiers</Text>
+    </Text>
+    <Text>
+      <GUID>2001000037</GUID>
+      <Text>All Enbesan Clothiers</Text>
+    </Text>
+    <Text>
+      <GUID>2001000038</GUID>
+      <Text>All Oil Refineries</Text>
+    </Text>
+    <Text>
+      <GUID>2001000039</GUID>
+      <Text>All Power Plants</Text>
+    </Text>
+    <Text>
+      <GUID>2001000040</GUID>
+      <Text>All Assembly Factories</Text>
+    </Text>
+    <Text>
+      <GUID>2001000041</GUID>
+      <Text>All Electronics Production</Text>
+    </Text>
+    <Text>
+      <GUID>2001000042</GUID>
+      <Text>All Enbesan Workshops</Text>
+    </Text>
+    <Text>
+      <GUID>2001000043</GUID>
+      <Text>Union Subsidies Act</Text>
+    </Text>
+    <Text>
+      <GUID>2001000044</GUID>
+      <Text>Allows the allocation of more specialists on trade unions.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000045</GUID>
+      <Text>Harbour Stewardship Act</Text>
+    </Text>
+    <Text>
+      <GUID>2001000046</GUID>
+      <Text>Allows the allocation of more specialists on harbourmaster offices.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000047</GUID>
+      <Text>Open Minds Act</Text>
+    </Text>
+    <Text>
+      <GUID>2001000048</GUID>
+      <Text>Allows the allocation of more specialists on town halls.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000049</GUID>
+      <Text>Lodge Subsidies Act</Text>
+    </Text>
+    <Text>
+      <GUID>2001000050</GUID>
+      <Text>Allows the allocation of more specialists on arctic lodges.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000051</GUID>
+      <Text>Iron and Glass Grillwork</Text>
+    </Text>
+    <Text>
+      <GUID>2001000052</GUID>
+      <Text>CTC Extinguisher</Text>
+    </Text>
+    <Text>
+      <GUID>2001000053</GUID>
+      <Text>CTC Grenade</Text>
+    </Text>
+    <Text>
+      <GUID>2001000054</GUID>
       <Text>Smoke Detector</Text>
     </Text>
     <Text>
-      <GUID>1100021</GUID>
-      <Text>All New World Animal Farms</Text>
+      <GUID>2001000055</GUID>
+      <Text>Rudolph "The Completionist" Skylander, Perfectionist Engineer</Text>
+    </Text>
+    <Text>
+      <GUID>2001000056</GUID>
+      <Text>Founder leader of the Skylander Engineers Company. In his constant search of completion develops its own version of every product, always looking for a way of improving its work. After his company outgrew his home island he setted his looked at the bigger picture and started gathering awesome talents far and wide giving them silly titles and the Skylander surname.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000057</GUID>
+      <Text>Romeo "The Brain" Skylander, Ingenious Schematics Designer</Text>
+    </Text>
+    <Text>
+      <GUID>2001000058</GUID>
+      <Text>Brain of the Skylander Engineers. Romeo's ingenious designs cover all the possibilities leaving no margin for error making him the ideal partner for Roman. Prefers problem solving tasks over physical work.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000059</GUID>
+      <Text>Roman "The Brawn" Skylander, Resilient Overtime Worker</Text>
+    </Text>
+    <Text>
+      <GUID>2001000060</GUID>
+      <Text>Brawn of the Skylander Engineers. Roman's ability to work all day long with great precision and little rest makes him the ideal partner for Romeo. Prefers repetitive tasks over complicated stuff.</Text>
+    </Text>
+    <Text>
+      <GUID>191596</GUID>
+      <Text>Raynor "The Raider" Skylander, Fleet Heroic Admiral</Text>
+    </Text>
+    <Text>
+      <GUID>19961</GUID>
+      <Text>Admiral of the Skylander Engineers Fleet. Named after a faraway freedom fighter Raynor is known for turning against corruption and fighting for true justice. Was contracted by the Skylander Engineers after the company encountered some heavy resistance on their way to new seas.</Text>
+    </Text>
+    <Text>
+      <GUID>191598</GUID>
+      <Text>Rowan "The Peacemaker" Skylander, Fleet Orderly Vice-Admiral</Text>
+    </Text>
+    <Text>
+      <GUID>19963</GUID>
+      <Text>Vice-Admiral of the Skylander Engineers Fleet. Rowan will achieve peace and order at all costs, be it by reason or force, specially force. Always at odds with Ronan even when their ways are usually the same.</Text>
+    </Text>
+    <Text>
+      <GUID>191601</GUID>
+      <Text>Ronan "The Troublemaker" Skylander, Fleet Chaotic Vice-Admiral</Text>
+    </Text>
+    <Text>
+      <GUID>19966</GUID>
+      <Text>Vice-Admiral of the Skylander Engineers Fleet. Ronan will achieve chaos and revolt at all costs, be it by force or... force, specially force. Always at odds with Rowan even if their ways are usually the same.</Text>
+    </Text>
+    <Text>
+      <GUID>191616</GUID>
+      <Text>Rafferty "The Captain" Skylander, Fleet Customs Officer</Text>
+    </Text>
+    <Text>
+      <GUID>20019</GUID>
+      <Text>Captain of the Skylander Engineers Fleet. On high seas he is master of his vessel and its cargo, on port he has memorized and optimized all the necessary procedures to ensure no problems arise when trading. When the company went global his talents were greatly appreciated. Is great friends with "The Harbourmaster".</Text>
+    </Text>
+    <Text>
+      <GUID>191615</GUID>
+      <Text>Rosemary "The Wise" Skylander, Fleet Master of all Trades</Text>
+    </Text>
+    <Text>
+      <GUID>20018</GUID>
+      <Text>Wise Trader of the Skylander Engineers Fleet. Not to be confused with her twin sister Roselle. Rosemary engaged in market trades and diplomatic relations all her life drives a hard bargain, assists her sister in order to get everything the company needs or wants. Has long hair.</Text>
+    </Text>
+    <Text>
+      <GUID>191445</GUID>
+      <Text>Roselle "The Expert" Skylander, Fleet Walking Encyclopedia</Text>
+    </Text>
+    <Text>
+      <GUID>19816</GUID>
+      <Text>Expert Trader of the Skylander Engineers Fleet. Not to be confused with her twin sister Rosemary. Roselle studied all her life has acquired knowledge of all the market products natural and man-made, assists her sister in order to get everything the company needs or wants. Has short hair.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000061</GUID>
+      <Text>Raymond "The Icebreaker" Skylander, Warm Arctic Conqueror</Text>
+    </Text>
+    <Text>
+      <GUID>2001000062</GUID>
+      <Text>Icebreaker of the Skylander Engineers. Despite having worked all his life in the cold Raymond's heart hasn't frozen. Always has the right words to start a conversation, offers a warm welcome and his vast knowledge to all who dares to defy the icy peaks and the dark depths of the arctic. It pierces through the hardships and the ice.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000063</GUID>
+      <Text>Romulus "The Unstoppable" Skylander, Brown Bear of the Arctic</Text>
+    </Text>
+    <Text>
+      <GUID>2001000064</GUID>
+      <Text>The Unstoppable of the Skylander Engineers and Remus brother. No matter how hard the wind blows Romulus can push through any storm thanks to his knowledge on arctic tools and techniques. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he didn't kill his brother.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000065</GUID>
+      <Text>Remus "The Unmoveable" Skylander, Polar Bear of the Arctic</Text>
+    </Text>
+    <Text>
+      <GUID>2001000066</GUID>
+      <Text>The Unmoveable of the Skylander Engineers and Romulus brother. No matter how hard the wind blows Remus can withstand any storm thanks to his knowledge on arctic survival tactics. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he wasn't killed by his brother.</Text>
+    </Text>
+    <Text>
+      <GUID>111129</GUID>
+      <Text>Wild Anarchist Vanzetti</Text>
+    </Text>
+    <Text>
+      <GUID>191921</GUID>
+      <Text>CTC Grenade</Text>
+    </Text>
+    <Text>
+      <GUID>190619</GUID>
+      <Text>William the Veteran Whaler</Text>
+    </Text>
+    <Text>
+      <GUID>190615</GUID>
+      <Text>Whitney the Veteran Angler</Text>
+    </Text>
+    <Text>
+      <GUID>190621</GUID>
+      <Text>Megan the Mother of Pearls</Text>
+    </Text>
+    <Text>
+      <GUID>190617</GUID>
+      <Text>Dylan the Deep Sea Diver</Text>
+    </Text>
+    <Text>
+      <GUID>125136</GUID>
+      <Text>Diric Sheekh, Fearless Lobsterman</Text>
+    </Text>
+    <Text>
+      <GUID>125135</GUID>
+      <Text>Safwaan the Seasoned Salter</Text>
+    </Text>
+    <Text>
+      <GUID>190618</GUID>
+      <Text>Mahir the Meticulous Trapper</Text>
+    </Text>
+    <Text>
+      <GUID>190738</GUID>
+      <Text>Miss Rodriguez the Conservationist</Text>
+    </Text>
+    <Text>
+      <GUID>11657</GUID>
+      <Text>Aldea the Forest Warden</Text>
+    </Text>
+    <Text>
+      <GUID>190733</GUID>
+      <Text>Andrea the Forest Restorator</Text>
+    </Text>
+    <Text>
+      <GUID>190742</GUID>
+      <Text>Percival the Park Protector</Text>
+    </Text>
+    <Text>
+      <GUID>190740</GUID>
+      <Text>Keith the Kiln Keeper</Text>
+    </Text>
+    <Text>
+      <GUID>191431</GUID>
+      <Text>Seraphim Papadikas the Window Dresser</Text>
+    </Text>
+    <Text>
+      <GUID>191589</GUID>
+      <Text>George the Geologist</Text>
+    </Text>
+    <Text>
+      <GUID>2224</GUID>
+      <Text>Miletus the Malleable Mineralogist</Text>
+    </Text>
+    <Text>
+      <GUID>19937</GUID>
+      <Text>Leaves many large puddles and hills in the wake of his exhaustive quarrying.</Text>
+    </Text>
+    <Text>
+      <GUID>191429</GUID>
+      <Text>Master Craftsman Marlow</Text>
+    </Text>
+    <Text>
+      <GUID>190757</GUID>
+      <Text>Montgomery the Mountain Miner</Text>
+    </Text>
+    <Text>
+      <GUID>190755</GUID>
+      <Text>Eisenhart the Explosives Expert</Text>
+    </Text>
+    <Text>
+      <GUID>12630</GUID>
+      <Text>Certified explosives full and claustrophobia free.</Text>
+    </Text>
+    <Text>
+      <GUID>2223</GUID>
+      <Text>Helia the Helium Expert</Text>
+    </Text>
+    <Text>
+      <GUID>191464</GUID>
+      <Text>Ferhat the Foundational Builder</Text>
+    </Text>
+    <Text>
+      <GUID>191463</GUID>
+      <Text>Fergus the Forthcoming Foreman</Text>
+    </Text>
+    <Text>
+      <GUID>190736</GUID>
+      <Text>Wise Trapper Spencer</Text>
+    </Text>
+    <Text>
+      <GUID>190734</GUID>
+      <Text>Wily Poacher Sterling</Text>
+    </Text>
+    <Text>
+      <GUID>191580</GUID>
+      <Text>Sigurd the Shepherd</Text>
+    </Text>
+    <Text>
+      <GUID>8348</GUID>
+      <Text>Valentina Alvarez, Cattle Caretaker</Text>
+    </Text>
+    <Text>
+      <GUID>191581</GUID>
+      <Text>Atuf Alrai, Hale Herdsman</Text>
+    </Text>
+    <Text>
+      <GUID>19929</GUID>
+      <Text>He is the greatest of all time.</Text>
+    </Text>
+    <Text>
+      <GUID>125113</GUID>
+      <Text>Cigaal the Caring Cattleherd</Text>
+    </Text>
+    <Text>
+      <GUID>125112</GUID>
+      <Text>Gawdat the Gentle Grazer</Text>
+    </Text>
+    <Text>
+      <GUID>1966</GUID>
+      <Text>Esmat the Enbesan Animal Nutricionist</Text>
+    </Text>
+    <Text>
+      <GUID>125131</GUID>
+      <Text>Shula the Spice Master</Text>
+    </Text>
+    <Text>
+      <GUID>125115</GUID>
+      <Text>Farah the Flower Girl</Text>
+    </Text>
+    <Text>
+      <GUID>1964</GUID>
+      <Text>Adriel the Animal Nutricionist</Text>
+    </Text>
+    <Text>
+      <GUID>191379</GUID>
+      <Text>Yvette the Moonshiner</Text>
+    </Text>
+    <Text>
+      <GUID>190751</GUID>
+      <Text>Patrick the Medal-Winning Producer</Text>
+    </Text>
+    <Text>
+      <GUID>190749</GUID>
+      <Text>Percival the Expert Planter</Text>
+    </Text>
+    <Text>
+      <GUID>190690</GUID>
+      <Text>Horticulturalist Hannah</Text>
+    </Text>
+    <Text>
+      <GUID>190688</GUID>
+      <Text>Ephraim Tomer the Tree Surgeon</Text>
+    </Text>
+    <Text>
+      <GUID>190691</GUID>
+      <Text>Mrs. Bethany Brown the Cultivator</Text>
+    </Text>
+    <Text>
+      <GUID>190687</GUID>
+      <Text>Mrs. Gardenia Green the Cultivator</Text>
+    </Text>
+    <Text>
+      <GUID>190689</GUID>
+      <Text>Passionate Pedologist Pradel</Text>
+    </Text>
+    <Text>
+      <GUID>191328</GUID>
+      <Text>Lily the Lovely Designer</Text>
+    </Text>
+    <Text>
+      <GUID>191327</GUID>
+      <Text>Frida the Fine Couturier</Text>
+    </Text>
+    <Text>
+      <GUID>191345</GUID>
+      <Text>Magnolia the Magnificent Modiste</Text>
+    </Text>
+    <Text>
+      <GUID>191349</GUID>
+      <Text>Millicent the Modest Milliner</Text>
+    </Text>
+    <Text>
+      <GUID>191380</GUID>
+      <Text>Brewmaster Bruce</Text>
+    </Text>
+    <Text>
+      <GUID>190644</GUID>
+      <Text>Sommelier Rochelle</Text>
+    </Text>
+    <Text>
+      <GUID>191367</GUID>
+      <Text>Catalina the Coffessieur</Text>
+    </Text>
+    <Text>
+      <GUID>190630</GUID>
+      <Text>Pâtissier Priscilla</Text>
+    </Text>
+    <Text>
+      <GUID>191403</GUID>
+      <Text>Chayanne the Charcutier</Text>
+    </Text>
+    <Text>
+      <GUID>191316</GUID>
+      <Text>Perfumier Phoebe</Text>
+    </Text>
+    <Text>
+      <GUID>191400</GUID>
+      <Text>Ramsey the Recipe Archivist</Text>
+    </Text>
+    <Text>
+      <GUID>191404</GUID>
+      <Text>Chef Minerva</Text>
+    </Text>
+    <Text>
+      <GUID>191333</GUID>
+      <Text>Charlotte the Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191330</GUID>
+      <Text>Caroline the Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191356</GUID>
+      <Text>Charles the Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191332</GUID>
+      <Text>Carmine the Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191331</GUID>
+      <Text>Casper the Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191387</GUID>
+      <Text>Keila, Kantyi of the Quinoa</Text>
+    </Text>
+    <Text>
+      <GUID>191386</GUID>
+      <Text>Manuel the Mole Master</Text>
+    </Text>
+    <Text>
+      <GUID>190640</GUID>
+      <Text>Benicio the Beguiling Blender</Text>
+    </Text>
+    <Text>
+      <GUID>190639</GUID>
+      <Text>Luiz the Loquacious Lector</Text>
+    </Text>
+    <Text>
+      <GUID>191377</GUID>
+      <Text>Iloaina, Former Pyrphorian Whizz</Text>
+    </Text>
+    <Text>
+      <GUID>191373</GUID>
+      <Text>Melchior, Metropolis Galvanic Electrician</Text>
+    </Text>
+    <Text>
+      <GUID>191376</GUID>
+      <Text>Emmerich the Electrical Engineer</Text>
+    </Text>
+    <Text>
+      <GUID>191375</GUID>
+      <Text>Maxwell the Master Magnetician</Text>
+    </Text>
+    <Text>
+      <GUID>190704</GUID>
+      <Text>Fflamddwyn the Forge Master</Text>
+    </Text>
+    <Text>
+      <GUID>190703</GUID>
+      <Text>Smidr the Steely-Eyed Steelsmith</Text>
+    </Text>
+    <Text>
+      <GUID>1895</GUID>
+      <Text>Viggo the Military Logistician</Text>
+    </Text>
+    <Text>
+      <GUID>958</GUID>
+      <Text>Barzillai Jethro, Combustion Chemist</Text>
+    </Text>
+    <Text>
+      <GUID>1897</GUID>
+      <Text>Annona Arcadia, Synthetic Chemist</Text>
+    </Text>
+    <Text>
+      <GUID>191424</GUID>
+      <Text>Dario the Dynamic Engineer</Text>
+    </Text>
+    <Text>
+      <GUID>191417</GUID>
+      <Text>Derek the Dependable Repairman</Text>
+    </Text>
+    <Text>
+      <GUID>191309</GUID>
+      <Text>Optimistic Optometrist Otto</Text>
+    </Text>
+    <Text>
+      <GUID>191308</GUID>
+      <Text>Observant Optician Odilia</Text>
+    </Text>
+    <Text>
+      <GUID>191418</GUID>
+      <Text>Isambard Wayne, Mechanical Giant</Text>
+    </Text>
+    <Text>
+      <GUID>191419</GUID>
+      <Text>Dorothea the Diligent Draughtswoman</Text>
+    </Text>
+    <Text>
+      <GUID>8351</GUID>
+      <Text>Maria Maravilla, Electrical Mechanic</Text>
+    </Text>
+    <Text>
+      <GUID>191323</GUID>
+      <Text>Ceaseless Chronometrist Chiara</Text>
+    </Text>
+    <Text>
+      <GUID>190626</GUID>
+      <Text>Gilded Goldsmith Gilbert</Text>
+    </Text>
+    <Text>
+      <GUID>190625</GUID>
+      <Text>Gleaming Gemologist Goldstan</Text>
+    </Text>
+    <Text>
+      <GUID>191322</GUID>
+      <Text>Handy Horologist Clara</Text>
+    </Text>
+    <Text>
+      <GUID>191354</GUID>
+      <Text>Johan the Jovial Inventor</Text>
+    </Text>
+    <Text>
+      <GUID>191353</GUID>
+      <Text>Stella the Science Whizz</Text>
+    </Text>
+    <Text>
+      <GUID>191352</GUID>
+      <Text>Pandora the Passionate Physicist</Text>
+    </Text>
+    <Text>
+      <GUID>19524</GUID>
+      <Text>Wants to unleash all her research knowledge into the world.</Text>
+    </Text>
+    <Text>
+      <GUID>136648</GUID>
+      <Text>Seth the Sous Chef</Text>
+    </Text>
+    <Text>
+      <GUID>136649</GUID>
+      <Text>Eleder the Eloquent Entremetier</Text>
+    </Text>
+    <Text>
+      <GUID>136699</GUID>
+      <Text>Madame Curtis, Concierge d'hotel</Text>
+    </Text>
+    <Text>
+      <GUID>136697</GUID>
+      <Text>Madame Meinwen, Maitre d'hotel</Text>
+    </Text>
+    <Text>
+      <GUID>137799</GUID>
+      <Text>Blue Skies Clerk</Text>
+    </Text>
+    <Text>
+      <GUID>136886</GUID>
+      <Text>Wilbur the Window-Dresser</Text>
+    </Text>
+    <Text>
+      <GUID>136887</GUID>
+      <Text>Spencer the Store Greeter</Text>
+    </Text>
+    <Text>
+      <GUID>125121</GUID>
+      <Text>Idil the Banquet Chef</Text>
+    </Text>
+    <Text>
+      <GUID>125120</GUID>
+      <Text>Ifrah the Enthusiast Cook</Text>
+    </Text>
+    <Text>
+      <GUID>125118</GUID>
+      <Text>Tasnim the Tea Selector</Text>
+    </Text>
+    <Text>
+      <GUID>125117</GUID>
+      <Text>Sahra the Soft Drink Seller</Text>
+    </Text>
+    <Text>
+      <GUID>125137</GUID>
+      <Text>Basim the Bespoke Tailor</Text>
+    </Text>
+    <Text>
+      <GUID>129022</GUID>
+      <Text>Ismaacil the Ingenious designer</Text>
+    </Text>
+    <Text>
+      <GUID>125127</GUID>
+      <Text>Inara the Industrious Embroidress</Text>
+    </Text>
+    <Text>
+      <GUID>191325</GUID>
+      <Text>Izara the Colorful Embroidress</Text>
+    </Text>
+    <Text>
+      <GUID>17084</GUID>
+      <Text>Produces intricate colorful patterns using dyes produced from local grown flowers and vegetables.</Text>
+    </Text>
+    <Text>
+      <GUID>125124</GUID>
+      <Text>Abune Siraj, The Enbesan Bishop</Text>
+    </Text>
+    <Text>
+      <GUID>125128</GUID>
+      <Text>Maxamed Magan, The Master Craftsman</Text>
+    </Text>
+    <Text>
+      <GUID>125126</GUID>
+      <Text>Cadnaan the Careful Craftsman</Text>
+    </Text>
+    <Text>
+      <GUID>191459</GUID>
+      <Text>Cimil the Curious Craftsman</Text>
+    </Text>
+    <Text>
+      <GUID>116147</GUID>
+      <Text>Savvy Sled Builder</Text>
+    </Text>
+    <Text>
+      <GUID>116148</GUID>
+      <Text>Oceanic Outdoor Cook</Text>
+    </Text>
+    <Text>
+      <GUID>116151</GUID>
+      <Text>Observative Outdoor Cook</Text>
+    </Text>
+    <Text>
+      <GUID>116149</GUID>
+      <Text>Ingenious Inuit Hunter</Text>
+    </Text>
+    <Text>
+      <GUID>116146</GUID>
+      <Text>Impressive Inuit Hunter</Text>
+    </Text>
+    <Text>
+      <GUID>116132</GUID>
+      <Text>Industrious Inuit Seamster</Text>
+    </Text>
+    <Text>
+      <GUID>116130</GUID>
+      <Text>Insightful Inuit Seamster</Text>
+    </Text>
+    <Text>
+      <GUID>116143</GUID>
+      <Text>Doting Dog-Breeder</Text>
+    </Text>
+    <Text>
+      <GUID>116142</GUID>
+      <Text>Devoted Dog-Breeder</Text>
+    </Text>
+    <Text>
+      <GUID>7225</GUID>
+      <Text>Bjorn the Bait Specialist</Text>
+    </Text>
+    <Text>
+      <GUID>190697</GUID>
+      <Text>Mr. Swell, Heuristic Hydrodynamist</Text>
+    </Text>
+    <Text>
+      <GUID>190696</GUID>
+      <Text>Mr. Sevard, Seaworthy Ship Builder</Text>
+    </Text>
+    <Text>
+      <GUID>190683</GUID>
+      <Text>Caius the Cruise Impresario</Text>
+    </Text>
+    <Text>
+      <GUID>190682</GUID>
+      <Text>Thalia the Travel Agent</Text>
+    </Text>
+    <Text>
+      <GUID>4135</GUID>
+      <Text>Willa Cochran, Highfleet Ace Pilot</Text>
+    </Text>
+    <Text>
+      <GUID>4134</GUID>
+      <Text>Amelia Coleman, Highfleet Expert Aviator</Text>
+    </Text>
+    <Text>
+      <GUID>2226</GUID>
+      <Text>Mark Sayadi, Highfleet Elite Gunner</Text>
+    </Text>
+    <Text>
+      <GUID>2232</GUID>
+      <Text>Pyotr Sahin, Highfleet Munitions Loader</Text>
+    </Text>
+    <Text>
+      <GUID>190667</GUID>
+      <Text>Rembrandt "The Harbourmaster" Skylander, Eager Empire builder</Text>
+    </Text>
+    <Text>
+      <GUID>12550</GUID>
+      <Text>The Harbourmaster of the Skylander Engineers. Rembrandt has experienced the humble beginings of newly settled islands and the bustling chaos of gigantic metropolis he knows every procedure and has the priorities clear, every empire new or old needs a whole lot of construction materials. Is great friends with "The Captain".</Text>
+    </Text>
+    <Text>
+      <GUID>190666</GUID>
+      <Text>Reynard "The Negotiator" Skylander, Alluring Arms Dealer</Text>
+    </Text>
+    <Text>
+      <GUID>12549</GUID>
+      <Text>The Negotiator of the Skylanders Engineers. Reynards knows that where there is competition there will be conflict, where there is conflict there will be weapon trafficking. On Reynards watch no weapon contraband will enter his port... unless bought of course, the company is always in need of weapons supply.</Text>
+    </Text>
+    <Text>
+      <GUID>190665</GUID>
+      <Text>Reynold "The Confiscator" Skylander, Incorruptible Inspector</Text>
+    </Text>
+    <Text>
+      <GUID>12548</GUID>
+      <Text>The Confiscator of the Skylander Engineers. Reynold rigorously searches ships, opens every cargo crate, looks in every nook and cranny and no bribe nor intimidation will work. On Reynolds watch no weapon contraband will enter his port... unless confiscated of course, the company will put those weapons to good use.</Text>
+    </Text>
+    <Text>
+      <GUID>191432</GUID>
+      <Text>Roderick "The Fortress" Skylander, Dauntless Defender</Text>
+    </Text>
+    <Text>
+      <GUID>19799</GUID>
+      <Text>The Fortress of the Skylander Engineers. Strong-willed and reassuring he will keep everyone safe and sound. Roderick can fend off any invader and in dire situations the longer the fight goes on the fiercer he becomes.</Text>
+    </Text>
+    <Text>
+      <GUID>191442</GUID>
+      <Text>Rostislav "The Bullet" Skylander, Skilled Sharp Shooter</Text>
+    </Text>
+    <Text>
+      <GUID>19804</GUID>
+      <Text>The Bullet of the Skylander Engineers. Locked and loaded, Rotislav can shoot every ship weakness with utmost precision and speed, such is his effectiveness that enemy fleets will never know what hit them, wich is why he earned his place as "The Bullet". Works in great conjunction with his comrade "The Scope".</Text>
+    </Text>
+    <Text>
+      <GUID>191436</GUID>
+      <Text>Radivoje "The Scope" Skylander, Steady Sharp Spotter</Text>
+    </Text>
+    <Text>
+      <GUID>19803</GUID>
+      <Text>The Scope of the Skylander Engineers. Always vigilant, Radivoje can see beyond the horizons, ships on other regions and can look into your very soul. Legends aside he has really good sight and can lock on enemies far away, wich is why he earned his place as "The Scope". Works in great conjunction with his comrade "The Bullet".</Text>
+    </Text>
+    <!-- hier0nimus ships -->
+    <Text>
+      <GUID>2001000084</GUID>
+      <Text>Small Cargo Ship Skin 01</Text>
+    </Text>
+    <Text>
+      <GUID>2001000085</GUID>
+      <Text>Small Cargo Ship Skin 02</Text>
+    </Text>
+    <Text>
+      <GUID>2001000086</GUID>
+      <Text>Small Cargo Ship Skin 03</Text>
+    </Text>
+    <Text>
+      <GUID>2001000087</GUID>
+      <Text>Small Cargo Ship Skin 04</Text>
+    </Text>
+    <Text>
+      <GUID>2001000083</GUID>
+      <Text>Flak Ironclad</Text>
+    </Text>
+    <Text>
+      <GUID>2001000090</GUID>
+      <Text>Defending your ships against airships was never easier with this Flak Ironclad.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000082</GUID>
+      <Text>Small Reefer</Text>
+    </Text>
+    <Text>
+      <GUID>2001000089</GUID>
+      <Text>Fast, easy! small deliveries to other regions is never been easier with this small reefer.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000067</GUID>
+      <Text>Heavy Battle Cruiser</Text>
+    </Text>
+    <Text>
+      <GUID>2001000077</GUID>
+      <Text>Heavy Battle Cruiser that can only be stopped by heavy firepower.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000068</GUID>
+      <Text>Heavy Battle Cruiser Skin 01</Text>
+    </Text>
+    <Text>
+      <GUID>2001000069</GUID>
+      <Text>Heavy Battle Cruiser Skin 02</Text>
+    </Text>
+    <Text>
+      <GUID>2001000070</GUID>
+      <Text>Heavy Battle Cruiser Skin 03</Text>
+    </Text>
+    <Text>
+      <GUID>2001000071</GUID>
+      <Text>Heavy Battle Cruiser Skin 04</Text>
+    </Text>
+    <Text>
+      <GUID>2001000072</GUID>
+      <Text>Heavy Battle Cruiser Skin 05</Text>
     </Text>
   </ModOp>
 </ModOps>
