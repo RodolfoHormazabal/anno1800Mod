@@ -177,6 +177,14 @@
       <Text>All Enbesan Workshops</Text>
     </Text>
     <Text>
+      <GUID>2001000091</GUID>
+      <Text>All New World Residences</Text>
+    </Text>
+    <Text>
+      <GUID>2001000092</GUID>
+      <Text>All Arctic Residences</Text>
+    </Text>
+    <Text>
       <GUID>2001000043</GUID>
       <Text>Union Subsidies Act</Text>
     </Text>
@@ -234,19 +242,19 @@
     </Text>
     <Text>
       <GUID>2001000057</GUID>
-      <Text>Romeo "The Brain" Skylander, Ingenious Schematics Designer</Text>
+      <Text>Romeo "The Mind" Skylander, Ingenious Schematics Designer</Text>
     </Text>
     <Text>
       <GUID>2001000058</GUID>
-      <Text>Brain of the Skylander Engineers. Romeo's ingenious designs cover all the possibilities leaving no margin for error making him the ideal partner for Roman. Prefers problem solving tasks over physical work.</Text>
+      <Text>Mind of the Skylander Engineers. Romeo's ingenious designs cover all the possibilities leaving no margin for error making him the ideal partner for Roman. Prefers problem solving tasks over physical work.</Text>
     </Text>
     <Text>
       <GUID>2001000059</GUID>
-      <Text>Roman "The Brawn" Skylander, Resilient Overtime Worker</Text>
+      <Text>Roman "The Body" Skylander, Outstanding Overtime Worker</Text>
     </Text>
     <Text>
       <GUID>2001000060</GUID>
-      <Text>Brawn of the Skylander Engineers. Roman's ability to work all day long with great precision and little rest makes him the ideal partner for Romeo. Prefers repetitive tasks over complicated stuff.</Text>
+      <Text>Body of the Skylander Engineers. Roman's ability to work all day long with great precision and little rest makes him the ideal partner for Romeo. Prefers repetitive tasks over complicated stuff.</Text>
     </Text>
     <Text>
       <GUID>191596</GUID>
@@ -274,7 +282,7 @@
     </Text>
     <Text>
       <GUID>191616</GUID>
-      <Text>Rafferty "The Captain" Skylander, Fleet Customs Officer</Text>
+      <Text>Rafferty "The Captain" Skylander, Comprehensive Customs Officer</Text>
     </Text>
     <Text>
       <GUID>20019</GUID>
@@ -282,43 +290,43 @@
     </Text>
     <Text>
       <GUID>191615</GUID>
-      <Text>Rosemary "The Wise" Skylander, Fleet Master of all Trades</Text>
+      <Text>Rosemary "The Merchant" Skylander, Master of all Trades</Text>
     </Text>
     <Text>
       <GUID>20018</GUID>
-      <Text>Wise Trader of the Skylander Engineers Fleet. Not to be confused with her twin sister Roselle. Rosemary engaged in market trades and diplomatic relations all her life drives a hard bargain, assists her sister in order to get everything the company needs or wants. Has long hair.</Text>
+      <Text>Merchant of the Skylander Engineers Fleet. Not to be confused with her twin sister Roselle. While her sister studied Rosemary travelled all across the world experiencing trade historic relevance, culture diversity, diplomatic exhanges. Has experience, controls the conversation flow and drives a hard bargain. With the help of her sister no deal is out of reach and the company is always on the winning side. Has long hair.</Text>
     </Text>
     <Text>
       <GUID>191445</GUID>
-      <Text>Roselle "The Expert" Skylander, Fleet Walking Encyclopedia</Text>
+      <Text>Roselle "The Expert" Skylander, Bursarial Businesswoman</Text>
     </Text>
     <Text>
       <GUID>19816</GUID>
-      <Text>Expert Trader of the Skylander Engineers Fleet. Not to be confused with her twin sister Rosemary. Roselle studied all her life has acquired knowledge of all the market products natural and man-made, assists her sister in order to get everything the company needs or wants. Has short hair.</Text>
+      <Text>Expert of the Skylander Engineers Fleet. Not to be confused with her twin sister Rosemary. While her sister travelled Roselle dedicated her whole life to the study of mathemathics, statistics, finances and international trade. Has knowledge, gives accurate information about any product both natural or man-made. With the help of her sister no deal is out of reach and the company is always on the winning side. Has short hair.</Text>
     </Text>
     <Text>
       <GUID>2001000061</GUID>
-      <Text>Raymond "The Icebreaker" Skylander, Warm Arctic Conqueror</Text>
+      <Text>Raymond "The Icebreaker" Skylander, Affable Arctic Conqueror</Text>
     </Text>
     <Text>
       <GUID>2001000062</GUID>
-      <Text>Icebreaker of the Skylander Engineers. Despite having worked all his life in the cold Raymond's heart hasn't frozen. Always has the right words to start a conversation, offers a warm welcome and his vast knowledge to all who dares to defy the icy peaks and the dark depths of the arctic. It pierces through the hardships and the ice.</Text>
+      <Text>Icebreaker of the Skylander Engineers. Despite having worked all his life in the cold arctic Raymond's heart hasn't frozen. Offers a warm welcome and always has the right words to start a conversation. With ancient advice and oceanic experience pierces through the hardships and the ice with ease.</Text>
     </Text>
     <Text>
       <GUID>2001000063</GUID>
-      <Text>Romulus "The Unstoppable" Skylander, Brown Bear of the Arctic</Text>
+      <Text>Romulus "The Unstoppable" Skylander, Stalwart Storm Breaker</Text>
     </Text>
     <Text>
       <GUID>2001000064</GUID>
-      <Text>The Unstoppable of the Skylander Engineers and Remus brother. No matter how hard the wind blows Romulus can push through any storm thanks to his knowledge on arctic tools and techniques. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he didn't kill his brother.</Text>
+      <Text>The Unstoppable of the Skylander Engineers and Remus brother. No matter how hard the wind blows Romulus can push through any storm. His vast knowledge on arctic tools and techniques allows him to break out of the tempestous winds this frozen landscape has to offer. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he didn't kill his brother.</Text>
     </Text>
     <Text>
       <GUID>2001000065</GUID>
-      <Text>Remus "The Unmoveable" Skylander, Polar Bear of the Arctic</Text>
+      <Text>Remus "The Unmoveable" Skylander, Steadfast Storm Trooper</Text>
     </Text>
     <Text>
       <GUID>2001000066</GUID>
-      <Text>The Unmoveable of the Skylander Engineers and Romulus brother. No matter how hard the wind blows Remus can withstand any storm thanks to his knowledge on arctic survival tactics. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he wasn't killed by his brother.</Text>
+      <Text>The Unmoveable of the Skylander Engineers and Romulus brother. No matter how hard the wind blows Remus can withstand any storm. His vast knowledge on arctic survival tactics allows him to endure the bitter temperatures this frozen landscape has to offer. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he wasn't killed by his brother.</Text>
     </Text>
     <Text>
       <GUID>111129</GUID>
@@ -463,6 +471,10 @@
     <Text>
       <GUID>125115</GUID>
       <Text>Farah the Flower Girl</Text>
+    </Text>
+    <Text>
+      <GUID>8908</GUID>
+      <Text>Efrem the Enbesan Envoy</Text>
     </Text>
     <Text>
       <GUID>1964</GUID>
@@ -761,6 +773,14 @@
       <Text>Cimil the Curious Craftsman</Text>
     </Text>
     <Text>
+      <GUID>118103</GUID>
+      <Text>Elder Rahim the Polyglot</Text>
+    </Text>
+    <Text>
+      <GUID>125123</GUID>
+      <Text>Elder Pater Dekama</Text>
+    </Text>
+    <Text>
       <GUID>116147</GUID>
       <Text>Savvy Sled Builder</Text>
     </Text>
@@ -834,7 +854,7 @@
     </Text>
     <Text>
       <GUID>190667</GUID>
-      <Text>Rembrandt "The Harbourmaster" Skylander, Eager Empire builder</Text>
+      <Text>Rembrandt "The Harbourmaster" Skylander, Eager Empire Builder</Text>
     </Text>
     <Text>
       <GUID>12550</GUID>
@@ -879,6 +899,54 @@
     <Text>
       <GUID>19803</GUID>
       <Text>The Scope of the Skylander Engineers. Always vigilant, Radivoje can see beyond the horizons, ships on other regions and can look into your very soul. Legends aside he has really good sight and can lock on enemies far away, wich is why he earned his place as "The Scope". Works in great conjunction with his comrade "The Bullet".</Text>
+    </Text>
+    <Text>
+      <GUID>191747</GUID>
+      <Text>Reginald "The Omen" Skylander, Salutary Security Engineer</Text>
+    </Text>
+    <Text>
+      <GUID>19447</GUID>
+      <Text>The Omen of the Skylander Engineers. Whenever tragedy is about to strike Reginald already has a plan in motion, technicians and emergency services at the ready. When presented with the many legends about his supposed 'prophecies' he laughs and says 'Great engineering can indeed predict the future!'.</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Renault "The Plan" Skylander, Paradigmatic Planner</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>The Plan of the Skylander Engineers. .</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Reinhardt "The Action" Skylander, Temeritous Technician</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>The Action of the Skylander Engineers. .</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Roderick "The Administrator" Skylander, Pampering Purveyor</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>The Supplier of the Skylander Engineers. Roderick knows a city without supplies bring no people, and a city without people serves no purpose. He makes sure that the people needs are provided in abundance, at minimum twofold! Otherwise how are we gonna support all the population needed for this world changing endeavour.</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Revaz "The Banker" Skylander, Thrifty Treasurer</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>The Banker of the Skylander Engineers. Revaz knows a company without money cant progress, and a company that doesnt progress cannot survive. He makes sure the people money is invested on the right place, making the company porfitable, its funds secured and by consequence the population future guaranteed.</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Renat "The Host" Skylander, Comfort Club Founder</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>The Host of the Skylander Engineers. Renat knows a person without enjoyment cant live properly, and a city filled with stress and unrest is doomed to fall. He makes sure the people have places were they can relax, treat themselves to good entertainment, develop hobbies and partake in social activities.</Text>
     </Text>
     <!-- hier0nimus ships -->
     <Text>

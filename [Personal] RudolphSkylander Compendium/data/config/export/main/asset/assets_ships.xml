@@ -313,6 +313,10 @@
     </ItemContainer>
   </ModOp>
 
+  <ModOp Type = 'add' GUID = '118718' Path = '/Values/Walking'>
+    <SessionTransferSpeedFactor>2</SessionTransferSpeedFactor>
+  </ModOp>
+  
   <!-- Airships -->
   <!-- Harpy -->
   <ModOp Type = 'replace' GUID = '1654,1733' Path = '/Values/ItemContainer'>

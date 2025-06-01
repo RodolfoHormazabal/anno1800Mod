@@ -40,24 +40,60 @@
   </ModOp>
 
   <!-- Harbour -->
-  <!-- Harbour area -->
-  <ModOp Type = 'replace' GUID = '2001241' Path = '/Values/BuildingBaseTiles'>
-    <BuildingBaseTiles>
-      <HarbourBaseHeight>0.55</HarbourBaseHeight>
-      <HarbourFeedbackHeight>0.55</HarbourFeedbackHeight>
-      <HarbourTerrainHeight>0.55</HarbourTerrainHeight>
-      <HarbourAreaFree>-432562515</HarbourAreaFree>
-      <HarbourAreaOccupied>-1595180997</HarbourAreaOccupied>
-      <HarbourAreaBuildable>551665809</HarbourAreaBuildable>
-      <HarbourConstructionAreaRadius>60</HarbourConstructionAreaRadius>
-      <HarbourConstructionAreaRadiusCreativeMode>60</HarbourConstructionAreaRadiusCreativeMode>
-      <HarbourConstructionAreaDistanceToEdge>1</HarbourConstructionAreaDistanceToEdge>
-      <HarbourAreaFreeTexture>data/graphics/effects/feedback/section_lining_diff.psd</HarbourAreaFreeTexture>
-      <MinimumRailHeight>0.1</MinimumRailHeight>
-      <HarbourBlockerPercentage>25</HarbourBlockerPercentage>
-      <MaximumBeachHeight>0.8</MaximumBeachHeight>
-      <MinimumBeachHeight>0.4</MinimumBeachHeight>
-    </BuildingBaseTiles>
+  <!-- Harbour area normal mode -->
+  <ModOp Type = 'replace' GUID = '2001241' Path = '/Values/BuildingBaseTiles/HarbourConstructionAreaRadius'>
+    <HarbourConstructionAreaRadius>60</HarbourConstructionAreaRadius>
+  </ModOp>
+
+  <!-- Harbour area creative mode -->
+  <ModOp Type = 'replace' GUID = '2001241' Path = '/Values/BuildingBaseTiles/HarbourConstructionAreaRadiusCreativeMode'>
+    <HarbourConstructionAreaRadiusCreativeMode>60</HarbourConstructionAreaRadiusCreativeMode>
+  </ModOp>
+
+  <!-- ? -->
+  <ModOp Type = 'replace' GUID = '2001241' Path = '/Values/BuildingBaseTiles/HarbourConstructionAreaDistanceToEdge'>
+    <HarbourConstructionAreaDistanceToEdge>0</HarbourConstructionAreaDistanceToEdge>
+  </ModOp>
+
+  <!-- ? -->
+  <ModOp Type = 'replace' GUID = '2001241' Path = '/Values/BuildingBaseTiles/HarbourBlockerPercentage'>
+    <HarbourBlockerPercentage>10</HarbourBlockerPercentage>
+  </ModOp>
+
+  <!-- Worforce Transfer feature (141647) -->
+  <!-- Commuter transport vehicles -->
+  <!-- <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
+    <WorkforceTransferFeature>
+      <TransferShipForRegion>
+        <Moderate>
+          <WorkforceTransferShip>101743</WorkforceTransferShip>
+        </Moderate>
+        <Colony01>
+          <WorkforceTransferShip>101743</WorkforceTransferShip>
+        </Colony01>
+        <Africa>
+          <WorkforceTransferShip>101743</WorkforceTransferShip>
+        </Africa>
+      </TransferShipForRegion>
+      <RoughFeedbackShipDistance>500</RoughFeedbackShipDistance>
+      <UnloadTime>10000</UnloadTime>
+      <TransferInterruptedNotification>501311</TransferInterruptedNotification>
+    </WorkforceTransferFeature>
+  </ModOp> -->
+
+  <!-- Remove commuter vehicles (No reason, personal preference) -->
+  <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
+    <WorkforceTransferFeature>
+      <TransferShipForRegion>
+        <Moderate />
+        <Colony01 />
+        <Africa />
+        <Arctic />
+      </TransferShipForRegion>
+      <RoughFeedbackShipDistance>500</RoughFeedbackShipDistance>
+      <UnloadTime>10000</UnloadTime>
+      <TransferInterruptedNotification>501311</TransferInterruptedNotification>
+    </WorkforceTransferFeature>
   </ModOp>
 
   <!-- Difficulty settings -->
@@ -175,9 +211,11 @@
       </InfluenceForInvestorSkyscraper>
       <InfluenceForEngineerSkyscraper>
         <Item />
-        <Item />
         <Item>
           <AmountForFloor>1</AmountForFloor>
+        </Item>
+        <Item>
+          <AmountForFloor>2</AmountForFloor>
         </Item>
         <Item>
           <AmountForFloor>3</AmountForFloor>
@@ -208,7 +246,7 @@
         <SubCategoryInfotip>501677</SubCategoryInfotip>
       </HarborOffice>
       <WarShip>
-        <FreeAmount>25</FreeAmount>
+        <FreeAmount>10</FreeAmount>
         <InfluenceCosts>0.5</InfluenceCosts>
         <SubCategoryName>12812</SubCategoryName>
         <SubCategoryInfotip>501667</SubCategoryInfotip>
@@ -220,7 +258,7 @@
         <SubCategoryInfotip>501668</SubCategoryInfotip>
       </DefenseBuilding>
       <TradeShip>
-        <FreeAmount>5</FreeAmount>
+        <FreeAmount>10</FreeAmount>
         <InfluenceCosts>0.5</InfluenceCosts>
         <SubCategoryName>12006</SubCategoryName>
         <SubCategoryInfotip>501669</SubCategoryInfotip>
@@ -271,13 +309,13 @@
         <SubCategoryInfotip>114325</SubCategoryInfotip>
       </BotanicModule>
       <AirshipTrade>
-        <FreeAmount>25</FreeAmount>
+        <FreeAmount>10</FreeAmount>
         <InfluenceCosts>0.5</InfluenceCosts>
         <SubCategoryName>115182</SubCategoryName>
         <SubCategoryInfotip>115183</SubCategoryInfotip>
       </AirshipTrade>
       <AirshipCombat>
-        <FreeAmount>25</FreeAmount>
+        <FreeAmount>10</FreeAmount>
         <InfluenceCosts>0.5</InfluenceCosts>
         <SubCategoryName>4095</SubCategoryName>
         <SubCategoryInfotip>4100</SubCategoryInfotip>
@@ -289,21 +327,21 @@
   <!-- Optimization buff -->
   <ModOp Type = 'replace' GUID = '369' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
     <MaintenanceUpgrade>
-      <Value>-7</Value>
+      <Value>-5</Value>
       <Percental>1</Percental>
     </MaintenanceUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '372' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
     <MaintenanceUpgrade>
-      <Value>-15</Value>
+      <Value>-7</Value>
       <Percental>1</Percental>
     </MaintenanceUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '374' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
     <MaintenanceUpgrade>
-      <Value>-25</Value>
+      <Value>-10</Value>
       <Percental>1</Percental>
     </MaintenanceUpgrade>
   </ModOp>
@@ -311,25 +349,124 @@
   <!-- Culture buff -->
   <ModOp Type = 'replace' GUID = '190607' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
     <AttractivenessUpgrade>
-      <Value>10</Value>
+      <Value>5</Value>
       <Percental>1</Percental>
     </AttractivenessUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191363' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
     <AttractivenessUpgrade>
-      <Value>25</Value>
+      <Value>7</Value>
       <Percental>1</Percental>
     </AttractivenessUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191364' Path = '/Values/CultureUpgrade/AttractivenessUpgrade'>
     <AttractivenessUpgrade>
-      <Value>50</Value>
+      <Value>10</Value>
       <Percental>1</Percental>
     </AttractivenessUpgrade>
   </ModOp>
 
+  <!-- Expansion buffs -->
+  <!-- All Arctic Trading Posts target pool -->
+  <ModOp Type = 'addNextSibling' GUID = '1965'>
+    <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000074</GUID>
+          <Name>All Arctic Trading Posts</Name>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>All Arctic Trading Posts</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56797</LineID>
+        </Text>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <Item>
+              <GUID>112659</GUID>
+            </Item>
+            <Item>
+              <GUID>112660</GUID>
+            </Item>
+            <Item>
+              <GUID>112661</GUID>
+            </Item>
+            <Item>
+              <GUID>112865</GUID>
+            </Item>
+            <Item>
+              <GUID>112866</GUID>
+            </Item>
+            <Item>
+              <GUID>112867</GUID>
+            </Item>
+            <Item>
+              <GUID>112726</GUID>
+            </Item>
+            <Item>
+              <GUID>116003</GUID>
+            </Item>
+            <Item>
+              <GUID>116004</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- All Enbesan Trading Posts target pool -->
+  <ModOp Type = 'addNextSibling' GUID = '1965'>
+    <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000075</GUID>
+          <Name>All Enbesan Trading Posts</Name>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>All Enbesan Trading Posts</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>56797</LineID>
+        </Text>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <Item>
+              <GUID>114626</GUID>
+            </Item>
+            <Item>
+              <GUID>114627</GUID>
+            </Item>
+            <Item>
+              <GUID>114628</GUID>
+            </Item>
+            <Item>
+              <GUID>114629</GUID>
+            </Item>
+            <Item>
+              <GUID>114630</GUID>
+            </Item>
+            <Item>
+              <GUID>114631</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Conqueror fake buff -->
   <ModOp Type = 'replace' GUID = '192933' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -339,7 +476,7 @@
     </AddDeltas>
   </ModOp>
 
-  <!-- Expansion buff -->
+  <!-- Conqueror buff OW -->
   <ModOp Type = 'replace' GUID = '191296' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -361,6 +498,7 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- Conqueror buff NW -->
   <ModOp Type = 'replace' GUID = '191299' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -378,6 +516,109 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- Conqueror buff A -->
+  <ModOp Type = 'addNextSibling' GUID = '191299'>
+    <Asset>
+      <Template>InfluenceTitleBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000076</GUID>
+          <Name>Conqueror Expansion Buff Arctic</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_bronce.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Conqueror</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>27117</LineID>
+        </Text>
+        <VehicleUpgrade />
+        <AttackerUpgrade />
+        <AttackableUpgrade />
+        <CultureUpgrade />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>2001000074</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <NewspaperUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>112653</Product>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Product>112654</Product>
+              <Amount>50</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Conqueror buff E -->
+  <ModOp Type = 'addNextSibling' GUID = '191299'>
+    <Asset>
+      <Template>InfluenceTitleBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000077</GUID>
+          <Name>Conqueror Expansion Buff Enbesa</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_bronce.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Conqueror</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>27117</LineID>
+        </Text>
+        <VehicleUpgrade />
+        <AttackerUpgrade />
+        <AttackableUpgrade />
+        <CultureUpgrade />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>2001000075</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <NewspaperUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>114340</Product>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Product>114341</Product>
+              <Amount>50</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Unifier fake buff -->
   <ModOp Type = 'replace' GUID = '192934' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -387,6 +628,7 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- Unifier buff OW -->
   <ModOp Type = 'replace' GUID = '191301' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -408,6 +650,7 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- Unifier buff NW -->
   <ModOp Type = 'replace' GUID = '191300' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -425,6 +668,109 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- Unifier buff A -->
+  <ModOp Type = 'addNextSibling' GUID = '191300'>
+    <Asset>
+      <Template>InfluenceTitleBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000078</GUID>
+          <Name>Unifier Expansion Buff Arctic</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_silver.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Unifier</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>27119</LineID>
+        </Text>
+        <VehicleUpgrade />
+        <AttackerUpgrade />
+        <AttackableUpgrade />
+        <CultureUpgrade />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>2001000074</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <NewspaperUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>112653</Product>
+              <Amount>125</Amount>
+            </Item>
+            <Item>
+              <Product>112654</Product>
+              <Amount>125</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Unifier buff E -->
+  <ModOp Type = 'addNextSibling' GUID = '191300'>
+    <Asset>
+      <Template>InfluenceTitleBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000079</GUID>
+          <Name>Unifier Expansion Buff Enbesa</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_silver.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Unifier</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>27119</LineID>
+        </Text>
+        <VehicleUpgrade />
+        <AttackerUpgrade />
+        <AttackableUpgrade />
+        <CultureUpgrade />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>2001000075</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <NewspaperUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>114340</Product>
+              <Amount>125</Amount>
+            </Item>
+            <Item>
+              <Product>114341</Product>
+              <Amount>125</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- World Leader fake buff -->
   <ModOp Type = 'replace' GUID = '192935' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -434,6 +780,7 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- World Leader buff OW -->
   <ModOp Type = 'replace' GUID = '191302' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -455,6 +802,7 @@
     </AddDeltas>
   </ModOp>
 
+  <!-- World Leader buff NW -->
   <ModOp Type = 'replace' GUID = '191303' Path = '/Values/DistributionUpgrade/AddDeltas'>
     <AddDeltas>
       <Item>
@@ -470,6 +818,140 @@
         <Amount>250</Amount>
       </Item>
     </AddDeltas>
+  </ModOp>
+
+  <!-- World Leader buff A -->
+  <ModOp Type = 'addNextSibling' GUID = '191303'>
+    <Asset>
+      <Template>InfluenceTitleBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000080</GUID>
+          <Name>World Leader Expansion Buff Arctic</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_gold.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>World Leader</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>27121</LineID>
+        </Text>
+        <VehicleUpgrade />
+        <AttackerUpgrade />
+        <AttackableUpgrade />
+        <CultureUpgrade />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>2001000074</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <NewspaperUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>112653</Product>
+              <Amount>250</Amount>
+            </Item>
+            <Item>
+              <Product>112654</Product>
+              <Amount>250</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- World Leader buff E -->
+  <ModOp Type = 'addNextSibling' GUID = '191303'>
+    <Asset>
+      <Template>InfluenceTitleBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>2001000081</GUID>
+          <Name>World Leader Expansion Buff Enbesa</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/influence/icon_buff_expansion_gold.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>World Leader</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>27121</LineID>
+        </Text>
+        <VehicleUpgrade />
+        <AttackerUpgrade />
+        <AttackableUpgrade />
+        <CultureUpgrade />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>2001000075</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <NewspaperUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>114340</Product>
+              <Amount>250</Amount>
+            </Item>
+            <Item>
+              <Product>114341</Product>
+              <Amount>250</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Expansion influence feature section -->
+  <ModOp Type = 'add' GUID = '1010347' Path = '/Values/InfluenceFeature/InfluenceCategories/Expansion/CategoryBuffs'>
+    <Item>
+      <Buff>2001000081</Buff>
+      <MinSpentInfluence>300</MinSpentInfluence>
+    </Item>
+    <Item>
+      <Buff>2001000080</Buff>
+      <MinSpentInfluence>300</MinSpentInfluence>
+    </Item>
+    <Item>
+      <Buff>2001000079</Buff>
+      <MinSpentInfluence>150</MinSpentInfluence>
+      <MaxSpentInfluence>299</MaxSpentInfluence>
+    </Item>
+    <Item>
+      <Buff>2001000078</Buff>
+      <MinSpentInfluence>150</MinSpentInfluence>
+      <MaxSpentInfluence>299</MaxSpentInfluence>
+    </Item>
+    <Item>
+      <Buff>2001000077</Buff>
+      <MinSpentInfluence>50</MinSpentInfluence>
+      <MaxSpentInfluence>149</MaxSpentInfluence>
+    </Item>
+    <Item>
+      <Buff>2001000076</Buff>
+      <MinSpentInfluence>50</MinSpentInfluence>
+      <MaxSpentInfluence>149</MaxSpentInfluence>
+    </Item>
   </ModOp>
 
   <!-- Investor Influence -->
@@ -496,7 +978,7 @@
       <InputBenefitModifier>
         <Item>
           <Product>117698</Product>
-          <AdditionalResearch>3</AdditionalResearch>
+          <AdditionalResearch>5</AdditionalResearch>
         </Item>
       </InputBenefitModifier>
     </PopulationUpgrade>
@@ -514,19 +996,73 @@
 
   <!-- Cultural expedition / rewards / buff changes -->
   <!-- Expedition rewards -->
-  <!-- The Fugitive -->
+  <!-- The Fugitive event -->
   <ModOp Type = 'replace' GUID = '190637' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
+      <!-- Ship plans -->
       <Item>
-        <ItemLink>192979</ItemLink>
+        <ItemLink>192457</ItemLink>
       </Item>
       <Item>
-        <ItemLink>192980</ItemLink>
+        <ItemLink>192458</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192459</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192460</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192461</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192462</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192463</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192464</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>192465</ItemLink>
+      </Item>
+      <!-- Military Ship specialists -->
+      <Item>
+        <ItemLink>191451</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191452</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191453</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191608</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191609</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191610</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191611</ItemLink>
+      </Item>
+      <!-- Trade Ship specialists -->
+      <Item>
+        <ItemLink>191624</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191625</ItemLink>
+      </Item>
+      <Item>
+        <ItemLink>191626</ItemLink>
       </Item>
     </ItemsPool>
   </ModOp>
 
-  <!-- The Inspector -->
+  <!-- The Inspector event -->
   <ModOp Type = 'replace' GUID = '190348' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -546,7 +1082,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- The Predator -->
+  <!-- The Predator event -->
   <ModOp Type = 'replace' GUID = '190637' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -561,7 +1097,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Sunken Depths -->
+  <!-- Sunken Depths event -->
   <ModOp Type = 'replace' GUID = '191150' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -573,7 +1109,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- The Trial -->
+  <!-- The Trial event -->
   <ModOp Type = 'replace' GUID = '191151' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -585,7 +1121,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- The Deeper you go -->
+  <!-- The Deeper you go event -->
   <ModOp Type = 'replace' GUID = '192037' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -600,7 +1136,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Songs of the Sea -->
+  <!-- Songs of the Sea event -->
   <ModOp Type = 'replace' GUID = '192038' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -621,7 +1157,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Cities of Gold -->
+  <!-- Cities of Gold event -->
   <ModOp Type = 'replace' GUID = '192041' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -650,7 +1186,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Call of the Devil -->
+  <!-- Call of the Devil event -->
   <ModOp Type = 'replace' GUID = '192044' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -662,7 +1198,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- The Treasure of Hassan Ben Sahid -->
+  <!-- The Treasure of Hassan Ben Sahid event -->
   <ModOp Type = 'replace' GUID = '192045' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -680,7 +1216,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Too Good to be True? -->
+  <!-- Too Good to be True? event -->
   <ModOp Type = 'replace' GUID = '192046' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -689,7 +1225,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Archeological Reward -->
+  <!-- Archeological Expedition Reward -->
   <ModOp Type = 'replace' GUID = '190417' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -701,7 +1237,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Zoological Reward -->
+  <!-- Zoological Expedition Reward -->
   <ModOp Type = 'replace' GUID = '190421' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -713,7 +1249,7 @@
     </ItemsPool>
   </ModOp>
 
-  <!-- Botanical Reward -->
+  <!-- Botanical Expedition Reward -->
   <ModOp Type = 'replace' GUID = '190421' Path = '/Values/RewardPool/ItemsPool'>
     <ItemsPool>
       <Item>
@@ -756,7 +1292,7 @@
   <!-- Aegean Cultures -->
   <ModOp Type = 'replace' GUID = '191142' Path = '/Values/BuildingUpgrade/MaintenanceUpgrade'>
     <MaintenanceUpgrade>
-      <Value>-25</Value>
+      <Value>-10</Value>
       <Percental>1</Percental>
     </MaintenanceUpgrade>
   </ModOp>
@@ -812,14 +1348,10 @@
   <!-- Bronze Age -->
   <ModOp Type = 'replace' GUID = '191141' Path = '/Values/FactoryUpgrade'>
     <FactoryUpgrade>
-      <ProductivityUpgrade>
-        <Value>25</Value>
-        <Percental>1</Percental>
-      </ProductivityUpgrade>
       <AdditionalOutput>
         <Item>
           <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
-          <AdditionalOutputCycle>5</AdditionalOutputCycle>
+          <AdditionalOutputCycle>3</AdditionalOutputCycle>
           <Amount>1</Amount>
         </Item>
       </AdditionalOutput>
@@ -833,35 +1365,34 @@
   </ModOp>
 
   <!-- Cordillera -->
-  <ModOp Type = 'add' GUID = '191132' Path = '/Values/ItemEffect/EffectTargets'>
-    <Item>
-      <GUID>1010344</GUID>
-    </Item>
-  </ModOp>
-
   <ModOp Type = 'replace' GUID = '191132' Path = '/Values/ResidenceUpgrade'>
     <ResidenceUpgrade>
-      <WorkforceModifierInPercent>25</WorkforceModifierInPercent>
-      <TaxModifierInPercent>25</TaxModifierInPercent>
+      <WorkforceModifierInPercent>10</WorkforceModifierInPercent>
+      <TaxModifierInPercent>10</TaxModifierInPercent>
     </ResidenceUpgrade>
   </ModOp>
 
   <!-- Domestic Animals -->
-  <ModOp Type = 'replace' GUID = '191139' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-    <ProductivityUpgrade>
-      <Value>25</Value>
-      <Percental>1</Percental>
-    </ProductivityUpgrade>
+  <ModOp Type = 'replace' GUID = '191139' Path = '/Values/FactoryUpgrade'>
+    <FactoryUpgrade>
+      <AdditionalOutput>
+        <Item>
+          <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+          <AdditionalOutputCycle>3</AdditionalOutputCycle>
+          <Amount>1</Amount>
+        </Item>
+      </AdditionalOutput>
+    </FactoryUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191139' Path = '/Values/BuildingUpgrade'>
     <BuildingUpgrade>
       <MaintenanceUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </MaintenanceUpgrade>
       <WorkforceAmountUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </WorkforceAmountUpgrade>
     </BuildingUpgrade>
@@ -869,23 +1400,23 @@
 
   <!-- Empire of the Eagle -->
   <ModOp Type = 'replace' GUID = '191148' Path = '/Values/ResidenceUpgrade/TaxModifierInPercent'>
-    <TaxModifierInPercent>25</TaxModifierInPercent>
+    <TaxModifierInPercent>10</TaxModifierInPercent>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191148' Path = '/Values/IncidentInfectableUpgrade'>
     <IncidentInfectableUpgrade>
       <IncidentFireIncreaseUpgrade>
-        <Value>-5</Value>
+        <Value>-1</Value>
       </IncidentFireIncreaseUpgrade>
-      <IncidentIllnessIncreaseUpgrade>
-        <Value>-5</Value>
-      </IncidentIllnessIncreaseUpgrade>
-      <IncidentRiotIncreaseUpgrade>
-        <Value>-5</Value>
-      </IncidentRiotIncreaseUpgrade>
       <IncidentExplosionIncreaseUpgrade>
-        <Value>-5</Value>
+        <Value>-1</Value>
       </IncidentExplosionIncreaseUpgrade>
+      <IncidentRiotIncreaseUpgrade>
+        <Value>-1</Value>
+      </IncidentRiotIncreaseUpgrade>
+      <IncidentIllnessIncreaseUpgrade>
+        <Value>-1</Value>
+      </IncidentIllnessIncreaseUpgrade>
     </IncidentInfectableUpgrade>
   </ModOp>
 
@@ -938,7 +1469,7 @@
         <Value>1</Value>
       </ResolverUnitCountUpgrade>
       <ResolverUnitDecreaseUpgrade>
-        <Value>50</Value>
+        <Value>25</Value>
         <Percental>1</Percental>
       </ResolverUnitDecreaseUpgrade>
       <ResolverUnitMovementSpeedUpgrade>
@@ -953,24 +1484,39 @@
     <GenProbability>100</GenProbability>
   </ModOp>
 
+  <ModOp Type = 'replace' GUID = '129128' Path = '/Values/RewardPool/ItemsPool/Item/MinAmount'>
+    <MinAmount>25</MinAmount>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '129128' Path = '/Values/RewardPool/ItemsPool/Item/MaxAmount'>
+    <MaxAmount>25</MaxAmount>
+  </ModOp>
+
+  <ModOp Type = 'replace' GUID = '129128' Path = '/Values/RewardPool/ItemsPool/Item/Weight'>
+    <Weight>100</Weight>
+  </ModOp>
+
   <!-- Icebound -->
   <ModOp Type = 'replace' GUID = '193777' Path = '/Values/FactoryUpgrade'>
     <FactoryUpgrade>
-      <ProductivityUpgrade>
-        <Value>25</Value>
-        <Percental>1</Percental>
-      </ProductivityUpgrade>
+      <AdditionalOutput>
+        <Item>
+          <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+          <AdditionalOutputCycle>3</AdditionalOutputCycle>
+          <Amount>1</Amount>
+        </Item>
+      </AdditionalOutput>
     </FactoryUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '193777' Path = '/Values/BuildingUpgrade'>
     <BuildingUpgrade>
       <MaintenanceUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </MaintenanceUpgrade>
       <WorkforceAmountUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </WorkforceAmountUpgrade>
     </BuildingUpgrade>
@@ -980,7 +1526,7 @@
   <ModOp Type = 'replace' GUID = '191143' Path = '/Values/ResidenceUpgrade'>
     <ResidenceUpgrade>
       <AdditionalHappiness>10</AdditionalHappiness>
-      <TaxModifierInPercent>25</TaxModifierInPercent>
+      <TaxModifierInPercent>10</TaxModifierInPercent>
     </ResidenceUpgrade>
   </ModOp>
 
@@ -1023,7 +1569,7 @@
         <Value>1</Value>
       </ResolverUnitCountUpgrade>
       <ResolverUnitDecreaseUpgrade>
-        <Value>50</Value>
+        <Value>25</Value>
         <Percental>1</Percental>
       </ResolverUnitDecreaseUpgrade>
       <ResolverUnitMovementSpeedUpgrade>
@@ -1036,7 +1582,7 @@
   <!-- Miombo Woodlands -->
   <ModOp Type = 'replace' GUID = '124210' Path = '/Values/FactoryUpgrade/NeededAreaPercentUpgrade'>
     <NeededAreaPercentUpgrade>
-      <Value>-25</Value>
+      <Value>-10</Value>
     </NeededAreaPercentUpgrade>
   </ModOp>
 
@@ -1099,35 +1645,52 @@
   </ModOp>
 
   <!-- Origin of Mankind -->
-  <ModOp Type = 'replace' GUID = '191147' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-    <ProductivityUpgrade>
-      <Value>25</Value>
-      <Percental>1</Percental>
-    </ProductivityUpgrade>
+  <ModOp Type = 'replace' GUID = '191147' Path = '/Values/FactoryUpgrade'>
+    <FactoryUpgrade>
+      <AdditionalOutput>
+        <Item>
+          <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+          <AdditionalOutputCycle>3</AdditionalOutputCycle>
+          <Amount>1</Amount>
+        </Item>
+      </AdditionalOutput>
+    </FactoryUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191147' Path = '/Values/BuildingUpgrade'>
     <BuildingUpgrade>
       <MaintenanceUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </MaintenanceUpgrade>
       <WorkforceAmountUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </WorkforceAmountUpgrade>
     </BuildingUpgrade>
   </ModOp>
 
   <!-- Polar Circle -->
+  <ModOp Type = 'replace' GUID = '191137' Path = '/Values/FactoryUpgrade'>
+    <FactoryUpgrade>
+      <AdditionalOutput>
+        <Item>
+          <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+          <AdditionalOutputCycle>3</AdditionalOutputCycle>
+          <Amount>1</Amount>
+        </Item>
+      </AdditionalOutput>
+    </FactoryUpgrade>
+  </ModOp>
+
   <ModOp Type = 'replace' GUID = '191137' Path = '/Values/BuildingUpgrade'>
     <BuildingUpgrade>
       <MaintenanceUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </MaintenanceUpgrade>
       <WorkforceAmountUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </WorkforceAmountUpgrade>
     </BuildingUpgrade>
@@ -1255,21 +1818,26 @@
   </ModOp>
 
   <!-- Teeming Lakes -->
-  <ModOp Type = 'replace' GUID = '124207' Path = '/Values/FactoryUpgrade/ProductivityUpgrade'>
-    <ProductivityUpgrade>
-      <Value>25</Value>
-      <Percental>1</Percental>
-    </ProductivityUpgrade>
+  <ModOp Type = 'replace' GUID = '124207' Path = '/Values/FactoryUpgrade'>
+    <FactoryUpgrade>
+      <AdditionalOutput>
+        <Item>
+          <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
+          <AdditionalOutputCycle>3</AdditionalOutputCycle>
+          <Amount>1</Amount>
+        </Item>
+      </AdditionalOutput>
+    </FactoryUpgrade>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '124207' Path = '/Values/BuildingUpgrade'>
     <BuildingUpgrade>
       <MaintenanceUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </MaintenanceUpgrade>
       <WorkforceAmountUpgrade>
-        <Value>-25</Value>
+        <Value>-10</Value>
         <Percental>1</Percental>
       </WorkforceAmountUpgrade>
     </BuildingUpgrade>
@@ -1498,5 +2066,4068 @@
         </Cannon>
       </DamageReceiveFactor>
     </AttackableUpgrade>
+  </ModOp>
+
+  <!-- Residences -->
+  <!-- Old World Residences -->
+  <!-- Farmer needs -->
+  <ModOp Type = 'replace' GUID = '15000000' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120020</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010200</Product>
+        <Amount>0.0004166667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>100</FullWeightPopulationCount>
+        <NoWeightPopulationCount>49</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010216</Product>
+        <Amount>0.000555556</Amount>
+        <HappinessValue>8</HappinessValue>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>150</FullWeightPopulationCount>
+        <NoWeightPopulationCount>99</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010237</Product>
+        <Amount>0.000512821</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>150</FullWeightPopulationCount>
+        <NoWeightPopulationCount>99</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010349</Product>
+        <HappinessValue>12</HappinessValue>
+        <MoneyValue>12</MoneyValue>
+        <FullWeightPopulationCount>150</FullWeightPopulationCount>
+        <NoWeightPopulationCount>149</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010235</Product>
+        <Amount>0.0004</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000001</Population>
+          <MinPopulationAmount>150</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010239</Product>
+        <Amount>0.0002</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>19</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>133183</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>601379</Population>
+          <MinPopulationAmount>300</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000266667</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000133333</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>30</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>5E-05</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010203</Product>
+        <Amount>5.833333E-05</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000001</Population>
+          <MinPopulationAmount>300</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5383</Product>
+        <Amount>0.0002833333</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>45</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>114364</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114329</Population>
+          <MinPopulationAmount>300</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Worker needs -->
+  <ModOp Type = 'replace' GUID = '15000001' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120020</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010200</Product>
+        <Amount>0.0008333334</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010216</Product>
+        <Amount>0.001111112</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>30</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010237</Product>
+        <Amount>0.001025642</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>30</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010349</Product>
+        <HappinessValue>6</HappinessValue>
+        <MoneyValue>12</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010238</Product>
+        <Amount>0.000333334</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>150</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010213</Product>
+        <Amount>0.00030303</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>149</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010350</Product>
+        <HappinessValue>7</HappinessValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>149</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010203</Product>
+        <Amount>0.000138889</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010214</Product>
+        <Amount>0.00025641</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010351</Product>
+        <SupplyWeight>2</SupplyWeight>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010245</Product>
+        <Amount>0.0001333333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>16</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>25506</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000541667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000133333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>30</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.000125</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010193</Product>
+        <Amount>0.0002083333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5803</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>18</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>114414</Product>
+        <Amount>0.0001111111</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>8</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>300</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Artisan needs -->
+  <ModOp Type = 'replace' GUID = '15000002' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>1010238</Product>
+        <Amount>0.000666667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010213</Product>
+        <Amount>0.000606061</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010350</Product>
+        <HappinessValue>7</HappinessValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010203</Product>
+        <Amount>0.000277778</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010214</Product>
+        <Amount>0.000512821</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>100</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010351</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010217</Product>
+        <Amount>0.00017094</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>250</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>249</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010352</Product>
+        <HappinessValue>6</HappinessValue>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>249</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.000952381</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>900</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010247</Product>
+        <Amount>0.000444444</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>899</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010353</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010197</Product>
+        <Amount>0.001</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010201</Product>
+        <Amount>0.001333333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>117702</Product>
+        <Amount>0.0005</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>6</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>600</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000766667</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000183333</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.000166667</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5803</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>17</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5388</Product>
+        <Amount>0.000125</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>32</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>2700</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5391</Product>
+        <Amount>0.0001083333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>45</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>6000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Engineer needs -->
+  <ModOp Type = 'replace' GUID = '15000003' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>1010217</Product>
+        <Amount>0.00034188</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.000952381</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>80</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010352</Product>
+        <HappinessValue>6</HappinessValue>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.001904762</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>100</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010247</Product>
+        <Amount>0.000888889</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>120</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010353</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120030</Product>
+        <Amount>0.000148148</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010245</Product>
+        <Amount>0.000416667</Amount>
+        <HappinessValue>5</HappinessValue>
+        <MoneyValue>70</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.000784314</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>1750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010246</Product>
+        <Amount>0.000130719</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>90</MoneyValue>
+        <FullWeightPopulationCount>1750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010354</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010208</Product>
+        <Amount>0.000208333</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>70</MoneyValue>
+        <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010356</Product>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>100</MoneyValue>
+        <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>2999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>135108</Product>
+        <SupplyWeight>10</SupplyWeight>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135186</Product>
+        <Amount>8.66667E-05</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>43</MoneyValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135107</Product>
+        <SupplyWeight>10</SupplyWeight>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135230</Product>
+        <Amount>0.000133333</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>95</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135109</Product>
+        <SupplyWeight>10</SupplyWeight>
+        <RequiredFloorLevel>3</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135233</Product>
+        <Amount>5E-05</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>72</MoneyValue>
+        <RequiredFloorLevel>3</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>1010203</Product>
+        <Amount>0.0005208334</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010258</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <MoneyValue>36</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>133181</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <MoneyValue>17</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>601379</Population>
+          <MinPopulationAmount>850</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.001041667</Amount>
+        <SupplyWeight>8</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <MoneyValue>120</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.0002</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <MoneyValue>240</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6600</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>22</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5382</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1800</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5397</Product>
+        <Amount>0.0002777778</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <MoneyValue>16</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>6000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Investor needs -->
+  <ModOp Type = 'replace' GUID = '15000004' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120030</Product>
+        <Amount>0.000296296</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>100</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010245</Product>
+        <Amount>0.000833333</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>140</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.001568627</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>80</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010246</Product>
+        <Amount>0.000261438</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>180</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010354</Product>
+        <SupplyWeight>6</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010208</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>140</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010356</Product>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>200</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120016</Product>
+        <Amount>0.000392</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010259</Product>
+        <Amount>0.00037037</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>1750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010355</Product>
+        <HappinessValue>5</HappinessValue>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>1750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010258</Product>
+        <Amount>0.000888889</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010250</Product>
+        <Amount>0.000350877</Amount>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>250</MoneyValue>
+        <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010248</Product>
+        <Amount>8.77E-05</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>150</MoneyValue>
+        <FullWeightPopulationCount>5000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>2999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010225</Product>
+        <Amount>0.000111111</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>300</MoneyValue>
+        <FullWeightPopulationCount>5000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>4999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>135108</Product>
+        <SupplyWeight>10</SupplyWeight>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135186</Product>
+        <Amount>9.16667E-05</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135229</Product>
+        <Amount>0.000446667</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>88</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135234</Product>
+        <Amount>0.000183333</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>104</MoneyValue>
+        <RequiredFloorLevel>3</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135107</Product>
+        <SupplyWeight>10</SupplyWeight>
+        <RequiredFloorLevel>3</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135230</Product>
+        <Amount>0.000233333</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>76</MoneyValue>
+        <RequiredFloorLevel>4</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135232</Product>
+        <Amount>0.000216667</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>84</MoneyValue>
+        <RequiredFloorLevel>4</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135233</Product>
+        <Amount>5.3E-05</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>42</MoneyValue>
+        <RequiredFloorLevel>5</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135109</Product>
+        <SupplyWeight>10</SupplyWeight>
+        <RequiredFloorLevel>5</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135231</Product>
+        <Amount>9.33333E-05</Amount>
+        <SupplyWeight>10</SupplyWeight>
+        <MoneyValue>92</MoneyValue>
+        <RequiredFloorLevel>5</RequiredFloorLevel>
+      </Item>
+      <Item>
+        <Product>135816</Product>
+        <SupplyWeight>200</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135877</Product>
+        <SupplyWeight>200</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135876</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135878</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135879</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135880</Product>
+        <SupplyWeight>200</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135881</Product>
+        <SupplyWeight>200</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135882</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135883</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135884</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135885</Product>
+        <SupplyWeight>200</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135886</Product>
+        <SupplyWeight>200</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135887</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135888</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135889</Product>
+        <SupplyWeight>150</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>406</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1010209</Product>
+        <Amount>0.0002666667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>6</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>112695</Product>
+        <Amount>0.0001083333</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>22</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>112643</Population>
+          <MinPopulationAmount>100</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>114404</Product>
+        <Amount>0.0002666667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>22</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.001291667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000316667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>140</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>250</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>5388</Product>
+        <Amount>0.0002083333</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>18</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>2700</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>5395</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>5392</Product>
+        <Amount>0.0001875</Amount>
+        <SupplyWeight>12</SupplyWeight>
+        <MoneyValue>17</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1010347</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601882</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601883</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601884</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601886</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>601891</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      </PopulationInputs>
+  </ModOp>
+  
+  <!-- Scholar needs -->
+  <ModOp Type = 'replace' GUID = '118745' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>1010353</Product>
+        <SupplyWeight>15</SupplyWeight>
+        <ResearchValue>1</ResearchValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010217</Product>
+        <Amount>0.001</Amount>
+        <SupplyWeight>15</SupplyWeight>
+        <ResearchValue>1</ResearchValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114428</Product>
+        <Amount>0.002</Amount>
+        <HappinessValue>3</HappinessValue>
+        <ResearchValue>3</ResearchValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.0008</Amount>
+        <HappinessValue>2</HappinessValue>
+        <ResearchValue>2</ResearchValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114430</Product>
+        <Amount>0.00275</Amount>
+        <SupplyWeight>14</SupplyWeight>
+        <ResearchValue>4</ResearchValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120037</Product>
+        <Amount>0.0008</Amount>
+        <HappinessValue>3</HappinessValue>
+        <ResearchValue>2</ResearchValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114390</Product>
+        <Amount>0.00175</Amount>
+        <HappinessValue>3</HappinessValue>
+        <ResearchValue>3</ResearchValue>
+        <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010354</Product>
+        <SupplyWeight>14</SupplyWeight>
+        <ResearchValue>1</ResearchValue>
+        <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114410</Product>
+        <Amount>0.0015</Amount>
+        <SupplyWeight>14</SupplyWeight>
+        <ResearchValue>4</ResearchValue>
+        <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114404</Product>
+        <Amount>0.00125</Amount>
+        <HappinessValue>3</HappinessValue>
+        <ResearchValue>3</ResearchValue>
+        <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114414</Product>
+        <Amount>0.00075</Amount>
+        <HappinessValue>3</HappinessValue>
+        <ResearchValue>4</ResearchValue>
+        <FullWeightPopulationCount>7000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114431</Product>
+        <Amount>0.0015</Amount>
+        <SupplyWeight>14</SupplyWeight>
+        <ResearchValue>2</ResearchValue>
+        <FullWeightPopulationCount>7000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114425</Product>
+        <SupplyWeight>14</SupplyWeight>
+        <ResearchValue>1</ResearchValue>
+        <FullWeightPopulationCount>9000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>6999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010248</Product>
+        <Amount>0.0007</Amount>
+        <HappinessValue>3</HappinessValue>
+        <ResearchValue>2</ResearchValue>
+        <FullWeightPopulationCount>9000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>6999</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>3000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.003</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.0015</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.0015</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010232</Product>
+        <Amount>0.0001833333</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <ResearchValue>1</ResearchValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>118745</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>4267</Product>
+        <Amount>0.000666667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <ResearchValue>4</ResearchValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>4268</Product>
+        <Amount>0.000666667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <ResearchValue>10</ResearchValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5395</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <ResearchValue>2</ResearchValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5391</Product>
+        <Amount>0.0002083333</Amount>
+        <SupplyWeight>11</SupplyWeight>
+        <MoneyValue>30</MoneyValue>
+        <ResearchValue>3</ResearchValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>6000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5392</Product>
+        <Amount>0.0002083333</Amount>
+        <SupplyWeight>12</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <ResearchValue>4</ResearchValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+  
+  <!-- Tourist needs -->
+  <ModOp Type = 'replace' GUID = '601379' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>133891</Product>
+        <SupplyWeight>50</SupplyWeight>
+      </Item>
+      <Item>
+        <Product>1010213</Product>
+        <Amount>0.008333333</Amount>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>55</MoneyValue>
+        <FullWeightPopulationCount>30</FullWeightPopulationCount>
+        <NoWeightPopulationCount>29</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>133573</Product>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>45</MoneyValue>
+        <FullWeightPopulationCount>50</FullWeightPopulationCount>
+        <NoWeightPopulationCount>49</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>132751</Product>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <FullWeightPopulationCount>250</FullWeightPopulationCount>
+        <NoWeightPopulationCount>249</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>133183</Product>
+        <Amount>0.01666667</Amount>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>54</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>132755</Product>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <FullWeightPopulationCount>550</FullWeightPopulationCount>
+        <NoWeightPopulationCount>549</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>133181</Product>
+        <Amount>0.008333333</Amount>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>66</MoneyValue>
+        <FullWeightPopulationCount>850</FullWeightPopulationCount>
+        <NoWeightPopulationCount>849</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>132754</Product>
+        <SupplyWeight>50</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>132761</Product>
+        <SupplyWeight>100</SupplyWeight>
+        <MoneyValue>135</MoneyValue>
+        <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>1010247</Product>
+        <Amount>0.01666667</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>120</MoneyValue>
+        <FullWeightPopulationCount>75</FullWeightPopulationCount>
+        <NoWeightPopulationCount>49</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>601485</Product>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>75</MoneyValue>
+        <FullWeightPopulationCount>400</FullWeightPopulationCount>
+        <NoWeightPopulationCount>324</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>1010250</Product>
+        <Amount>0.01666667</Amount>
+        <HappinessValue>5</HappinessValue>
+        <MoneyValue>255</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1750</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+      <Item>
+        <Product>133185</Product>
+        <Amount>0.01666667</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>90</MoneyValue>
+        <FullWeightPopulationCount>1550</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1249</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1750</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+      <Item>
+        <Product>134781</Product>
+        <HappinessValue>3</HappinessValue>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <MoneyValue>65</MoneyValue>
+        <NoWeightPopulationCount>600</NoWeightPopulationCount>
+        <OptionalInputPopulationUnlock>449</OptionalInputPopulationUnlock>
+      </Item>
+      <Item>
+        <Product>133535</Product>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>75</MoneyValue>
+        <FullWeightPopulationCount>650</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>355</Product>
+        <HappinessValue>3</HappinessValue>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <MoneyValue>75</MoneyValue>
+        <FullWeightPopulationCount>650</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+      <Item>
+        <Product>134257</Product>
+        <HappinessValue>3</HappinessValue>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <MoneyValue>75</MoneyValue>
+        <FullWeightPopulationCount>1100</FullWeightPopulationCount>
+        <NoWeightPopulationCount>899</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+      <Item>
+        <Product>133536</Product>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>135</MoneyValue>
+        <FullWeightPopulationCount>1250</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>5000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+      <Item>
+        <Product>133532</Product>
+        <Amount>0.03333333</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>205</MoneyValue>
+        <FullWeightPopulationCount>2500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>137757</Product>
+        <HappinessValue>3</HappinessValue>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <MoneyValue>135</MoneyValue>
+        <FullWeightPopulationCount>1250</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>5000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+      <Item>
+        <Product>1010248</Product>
+        <Amount>0.001</Amount>
+        <SupplyWeight>40</SupplyWeight>
+        <MoneyValue>34</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>3000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120037</Product>
+        <Amount>0.00325</Amount>
+        <SupplyWeight>40</SupplyWeight>
+        <MoneyValue>18</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>114428</Product>
+        <Amount>0.0007083333</Amount>
+        <SupplyWeight>40</SupplyWeight>
+        <MoneyValue>34</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>118745</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6600</Product>
+        <Amount>0.002866667</Amount>
+        <SupplyWeight>40</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5382</Product>
+        <Amount>0.001666667</Amount>
+        <SupplyWeight>45</SupplyWeight>
+        <MoneyValue>45</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1800</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5388</Product>
+        <Amount>0.0009583333</Amount>
+        <SupplyWeight>45</SupplyWeight>
+        <MoneyValue>28</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>2700</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- New World residences -->
+  <!-- Hacienda Jornalero default buff -->
+  <ModOp Type = 'replace' GUID = '6086,24793,24792' Path = '/Values/UpgradeList'>
+    <UpgradeList />
+  </ModOp>
+
+  <!-- Jornalero needs -->
+  <ModOp Type = 'replace' GUID = '15000005' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120020</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>25546</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>120033</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>100</FullWeightPopulationCount>
+        <NoWeightPopulationCount>49</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120033</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>100</FullWeightPopulationCount>
+        <NoWeightPopulationCount>49</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.000238095</Amount>
+        <HappinessValue>6</HappinessValue>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>200</FullWeightPopulationCount>
+        <NoWeightPopulationCount>99</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120043</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>199</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120043</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>199</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120050</Product>
+        <HappinessValue>14</HappinessValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010216</Product>
+        <Amount>0.000555556</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>25506</Product>
+        <Amount>0.00041667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000266667</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000266667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>5.833333E-05</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>5.833333E-05</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>5E-05</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>50</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>5E-05</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>50</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>114367</Product>
+        <Amount>0.0002833333</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>114367</Product>
+        <Amount>0.0002833333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120044</Product>
+        <Amount>0.000375</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>14</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>600</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120044</Product>
+        <Amount>0.000375</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>14</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>600</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010237</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>11</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010237</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>11</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5803</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5803</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6265</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1800</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6265</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1800</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5830</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101254</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>16</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5830</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24792</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>16</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Obrera needs -->
+  <ModOp Type = 'replace' GUID = '15000006' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120020</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>25546</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>120033</Product>
+        <Amount>0.000952381</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120033</Product>
+        <Amount>0.000952381</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.000476191</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>25</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120043</Product>
+        <Amount>0.000833333</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120043</Product>
+        <Amount>0.000833333</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120050</Product>
+        <HappinessValue>7</HappinessValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120035</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120035</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>25506</Product>
+        <Amount>0.000476191</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>25131</Product>
+        <Amount>0.000952381</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.000196079</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>600</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.000196079</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>600</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010348</Product>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>600</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120037</Product>
+        <Amount>0.000444444</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>599</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120037</Product>
+        <Amount>0.000444444</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>599</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010214</Product>
+        <Amount>0.000444444</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>599</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010259</Product>
+        <Amount>0.000185185</Amount>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>35</MoneyValue>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000766667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.000766667</Amount>
+        <SupplyWeight>8</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000183333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000183333</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.000166667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>40</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.000166667</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>40</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5391</Product>
+        <Amount>8.333333E-05</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>58</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>6000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5391</Product>
+        <Amount>8.333333E-05</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>58</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>6000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120030</Product>
+        <Amount>0.0001333333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>5</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120030</Product>
+        <Amount>0.0001333333</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>5</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>135230</Product>
+        <Amount>0.0001333333</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>35</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>10000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>135230</Product>
+        <Amount>0.0001333333</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>35</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>10000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>117698</Product>
+        <Amount>0.000125</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>26</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>117698</Product>
+        <Amount>0.000125</Amount>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>26</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6265</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1800</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6265</Product>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1800</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5831</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>101255</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>14</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>2700</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5831</Product>
+        <SupplyWeight>9</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>24793</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>14</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>2700</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Artista needs -->
+  <ModOp Type = 'replace' GUID = '5403' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>25546</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>120035</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120035</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.000196079</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.000196079</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120037</Product>
+        <Amount>0.000444444</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120037</Product>
+        <Amount>0.000444444</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>10</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010214</Product>
+        <Amount>0.000888888</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>60</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>1010348</Product>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>1010259</Product>
+        <Amount>0.000185185</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>35</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>5803</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5803</Product>
+        <Amount>0.000416667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>6600</Product>
+        <Amount>0.000952381</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>30</MoneyValue>
+      </Item>
+      <Item>
+        <Product>6600</Product>
+        <Amount>0.000952381</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>30</MoneyValue>
+      </Item>
+      <Item>
+        <Product>5381</Product>
+        <Amount>0.00055</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>1800</FullWeightPopulationCount>
+        <NoWeightPopulationCount>899</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5381</Product>
+        <Amount>0.00055</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>1800</FullWeightPopulationCount>
+        <NoWeightPopulationCount>899</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>6265</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>2700</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1799</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>6265</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>2700</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1799</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5382</Product>
+        <Amount>8.99E-05</Amount>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>60</MoneyValue>
+        <FullWeightPopulationCount>2700</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1799</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5831</Product>
+        <HappinessValue>4</HappinessValue>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>2699</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5388</Product>
+        <Amount>0.000833333</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>70</MoneyValue>
+        <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>2699</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5388</Product>
+        <Amount>0.000833333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>70</MoneyValue>
+        <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>2699</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5395</Product>
+        <Amount>5.2E-05</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>80</MoneyValue>
+        <FullWeightPopulationCount>5000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5395</Product>
+        <Amount>5.2E-05</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>80</MoneyValue>
+        <FullWeightPopulationCount>5000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5830</Product>
+        <HappinessValue>6</HappinessValue>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>5000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5391</Product>
+        <Amount>2.898E-05</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>90</MoneyValue>
+        <FullWeightPopulationCount>8000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>5391</Product>
+        <Amount>2.898E-05</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>90</MoneyValue>
+        <FullWeightPopulationCount>8000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      </Item>
+      <Item>
+        <Product>120030</Product>
+        <Amount>0.000296296</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>100</MoneyValue>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1010354</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.00125</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>15</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.00125</Amount>
+        <SupplyWeight>13</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>15</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000316667</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>30</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000316667</Amount>
+        <SupplyWeight>13</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>30</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>55</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>13</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>55</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120016</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>27</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120016</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>13</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>27</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010208</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>1750</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010208</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>13</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>1750</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010250</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>45</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1750</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010250</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>13</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>45</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>1750</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>133532</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>24</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>601379</Population>
+          <MinPopulationAmount>2000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>133532</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>14</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>24</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>601379</Population>
+          <MinPopulationAmount>2000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>135232</Product>
+        <Amount>0.000125</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>32</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>9500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>135232</Product>
+        <Amount>0.000125</Amount>
+        <SupplyWeight>14</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <MoneyValue>32</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000004</Population>
+          <MinPopulationAmount>9500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>117699</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>5405</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>117699</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>14</SupplyWeight>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>6086</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>114330</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Arctic residences -->
+  <!-- Explorer needs -->
+  <ModOp Type = 'replace' GUID = '112642' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>114890</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112705</Product>
+        <Amount>0.0002</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>250</FullWeightPopulationCount>
+        <NoWeightPopulationCount>99</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112702</Product>
+        <Amount>0.0001</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>70</MoneyValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112708</Product>
+        <HeatValue>32</HeatValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112701</Product>
+        <Amount>0.00015</Amount>
+        <MoneyValue>50</MoneyValue>
+        <HeatValue>16</HeatValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>249</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010216</Product>
+        <Amount>0.00025</Amount>
+        <MoneyValue>35</MoneyValue>
+        <HeatValue>12</HeatValue>
+        <FullWeightPopulationCount>500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>112643</Population>
+          <MinPopulationAmount>100</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>8.333333E-05</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>8.333333E-05</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010234</Product>
+        <Amount>0.0005</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <HeatValue>5</HeatValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010213</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>25506</Product>
+        <Amount>0.0003333333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <HeatValue>2</HeatValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Technician needs -->
+  <ModOp Type = 'replace' GUID = '112643' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>114890</Product>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112705</Product>
+        <Amount>0.0004</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112702</Product>
+        <Amount>0.0002</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>70</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112693</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>30</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>99</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010217</Product>
+        <Amount>0.0002</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112703</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>80</MoneyValue>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112708</Product>
+        <HeatValue>32</HeatValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112701</Product>
+        <Amount>0.0003</Amount>
+        <MoneyValue>50</MoneyValue>
+        <HeatValue>8</HeatValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010216</Product>
+        <Amount>0.0005</Amount>
+        <MoneyValue>35</MoneyValue>
+        <HeatValue>6</HeatValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>112700</Product>
+        <Amount>0.0004</Amount>
+        <MoneyValue>45</MoneyValue>
+        <HeatValue>8</HeatValue>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120032</Product>
+        <Amount>0.0004</Amount>
+        <MoneyValue>60</MoneyValue>
+        <HeatValue>6</HeatValue>
+        <FullWeightPopulationCount>750</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>535</Product>
+        <Amount>0.0005</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>536</Product>
+        <Amount>0.000166667</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>2524</Product>
+        <Amount>0.000166667</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010222</Product>
+        <Amount>0.0001</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000003</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010257</Product>
+        <Amount>0.0005</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <HeatValue>5</HeatValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>500</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>6600</Product>
+        <Amount>0.0002333333</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <HeatValue>5</HeatValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5390</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>4</MoneyValue>
+        <HeatValue>2</HeatValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>4000</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+
+  <!-- Enbesa residences -->
+  <!-- Shepherds needs -->
+  <ModOp Type = 'replace' GUID = '114329' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120020</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114371</Product>
+        <Amount>0.0005</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <FullWeightPopulationCount>100</FullWeightPopulationCount>
+        <NoWeightPopulationCount>49</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114401</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>149</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114361</Product>
+        <HappinessValue>8</HappinessValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <NoWeightPopulationCount>149</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114359</Product>
+        <Amount>0.00035</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <FullWeightPopulationCount>400</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114390</Product>
+        <Amount>0.0002</Amount>
+        <HappinessValue>12</HappinessValue>
+        <MoneyValue>20</MoneyValue>
+        <FullWeightPopulationCount>400</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114356</Product>
+        <Amount>0.0006666667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010192</Product>
+        <Amount>0.0001458333</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010217</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>133183</Product>
+        <Amount>0.00025</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>601379</Population>
+          <MinPopulationAmount>300</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>120043</Product>
+        <Amount>0.0005333333</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000005</Population>
+          <MinPopulationAmount>200</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>25506</Product>
+        <Amount>8.333333E-05</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000006</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
+  </ModOp>
+  
+  <!-- Shepherds needs -->
+  <ModOp Type = 'replace' GUID = '114329' Path = '/Values/PopulationLevel7/PopulationInputs'>
+    <PopulationInputs>
+      <Item>
+        <Product>120020</Product>
+        <SupplyWeight>3</SupplyWeight>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114371</Product>
+        <Amount>0.001</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114401</Product>
+        <Amount>0.0005</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114361</Product>
+        <HappinessValue>4</HappinessValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114359</Product>
+        <Amount>0.0007</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114390</Product>
+        <Amount>0.0004</Amount>
+        <HappinessValue>6</HappinessValue>
+        <MoneyValue>20</MoneyValue>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>118724</Product>
+        <Amount>0.0004</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114404</Product>
+        <Amount>0.00035</Amount>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>300</FullWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114410</Product>
+        <Amount>0.00037</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <FullWeightPopulationCount>600</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114414</Product>
+        <Amount>0.00015</Amount>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>24</MoneyValue>
+        <FullWeightPopulationCount>600</FullWeightPopulationCount>
+        <NoWeightPopulationCount>299</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>117698</Product>
+        <Amount>0.00018</Amount>
+        <SupplyWeight>2</SupplyWeight>
+        <MoneyValue>16</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>599</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>120030</Product>
+        <Amount>0.00012</Amount>
+        <HappinessValue>3</HappinessValue>
+        <MoneyValue>34</MoneyValue>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>599</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>117699</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>3</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>114362</Product>
+        <HappinessValue>3</HappinessValue>
+        <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <IsConsideredByAI>1</IsConsideredByAI>
+      </Item>
+      <Item>
+        <Product>1010203</Product>
+        <Amount>0.0001666667</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>15</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000001</Population>
+          <MinPopulationAmount>300</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010206</Product>
+        <Amount>0.0003</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>32</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>250</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1010240</Product>
+        <Amount>0.001</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>17</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5383</Product>
+        <Amount>0.001083333</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>12</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>1</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>5386</Product>
+        <Amount>0.0008333334</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>14</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>5403</Population>
+          <MinPopulationAmount>2700</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>112697</Product>
+        <Amount>8.333333E-05</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>8</MoneyValue>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>112642</Population>
+          <MinPopulationAmount>250</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </PopulationInputs>
   </ModOp>
 </ModOps>

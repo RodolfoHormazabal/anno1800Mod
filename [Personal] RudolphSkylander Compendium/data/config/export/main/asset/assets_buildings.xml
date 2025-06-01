@@ -3,40 +3,17 @@
     This file contains all building changes. 
 
     Sections: 
-      - Harbour buildings 
-      - Unions 
-      - Power plants 
-      - Warehouses 
-      - Services 
-      - Palace 
-      - Hacienda 
-      - Production buildings
+      - Shared Non-production replacements. 
+      - Harbour buildings. 
+      - Union buildings. 
+      - Service buildings. 
+      - Culture buildings.
+      - Monuments. 
+      - Shared Production buildings replacements.
+      - Production buildings. 
   -->
 
-  <!-- Building changes -->
-  <!-- Shared replacements -->
-  <!-- Shared Building replacements -->
-  <!-- Add TerrainType to Building -->
-  <ModOp 
-    Type = 'add' 
-    GUID = '101642,1010517,1010540,1010519,24775,100510,100514,100511,100515,269879,269867' 
-    Path = '/Values/Building'
-  >
-    <TerrainType>Water_Including_Coast</TerrainType>
-  </ModOp>
-
-  <!-- Replace TerrainType -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '100429,102284,114440,118729,112666,112674' 
-    Path = '/Values/Building/TerrainType'
-  >
-    <TerrainType>Water_Including_Coast</TerrainType>
-  </ModOp>
-
-  <!-- Remove SnapRadius -->
-  <ModOp Type = 'remove' GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
-
+  <!-- Shared Non-production replacements -->
   <!-- Shared Warehouse replacements -->
   <!-- Replace WarehouseStorage 1000 -->
   <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/Warehouse/WarehouseStorage'>
@@ -67,6 +44,33 @@
   </ModOp>
 
   <!-- Shared LoadingPier replacements -->
+  <!-- Replace LoadingPier 10 -->
+  <ModOp Type = 'replace' GUID = '269879,269867' Path = '/Values/LoadingPier'>
+    <LoadingPier>
+      <NumOfPiers>2</NumOfPiers>
+      <LoadingSpeed>10</LoadingSpeed>
+      <MinLoadingTime>3</MinLoadingTime>
+    </LoadingPier>
+  </ModOp>
+  
+  <!-- Replace LoadingPier 7 -->
+  <ModOp Type = 'replace' GUID = '100511,100515' Path = '/Values/LoadingPier'>
+    <LoadingPier>
+      <NumOfPiers>2</NumOfPiers>
+      <LoadingSpeed>7</LoadingSpeed>
+      <MinLoadingTime>3</MinLoadingTime>
+    </LoadingPier>
+  </ModOp>
+
+  <!-- Replace LoadingPier 5 -->
+  <ModOp Type = 'replace' GUID = '100510,100514,601470,601460' Path = '/Values/LoadingPier'>
+    <LoadingPier>
+      <NumOfPiers>2</NumOfPiers>
+      <LoadingSpeed>5</LoadingSpeed>
+      <MinLoadingTime>3</MinLoadingTime>
+    </LoadingPier>
+  </ModOp>
+
   <!-- Replace LoadingPier 3 -->
   <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/LoadingPier'>
     <LoadingPier>
@@ -75,68 +79,31 @@
       <MinLoadingTime>3</MinLoadingTime>
     </LoadingPier>
   </ModOp>
-
-  <!-- Replace LoadingPier 5 -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/LoadingPier'>
-    <LoadingPier>
-      <NumOfPiers>2</NumOfPiers>
-      <LoadingSpeed>5</LoadingSpeed>
-      <MinLoadingTime>3</MinLoadingTime>
-    </LoadingPier>
-  </ModOp>
   
-  <!-- Replace LoadingPier 7 -->
-  <ModOp Type = 'replace' GUID = '100511,100515,100519' Path = '/Values/LoadingPier'>
-    <LoadingPier>
-      <NumOfPiers>2</NumOfPiers>
-      <LoadingSpeed>7</LoadingSpeed>
-      <MinLoadingTime>3</MinLoadingTime>
-    </LoadingPier>
-  </ModOp>
-  
-  <!-- Replace LoadingPier 10 -->
-  <ModOp Type = 'replace' GUID = '269879,269867,601470,601460' Path = '/Values/LoadingPier'>
-    <LoadingPier>
-      <NumOfPiers>2</NumOfPiers>
-      <LoadingSpeed>10</LoadingSpeed>
-      <MinLoadingTime>3</MinLoadingTime>
-    </LoadingPier>
-  </ModOp>
-
   <!-- Shared Attackable replacements -->
-  <!-- Replace MaximumHitPoints 25 000 -->
+  <!-- Replace MaximumHitPoints 25.000 -->
   <ModOp Type = 'replace' GUID = '100511,100515,269879,269867' Path = '/Values/Attackable/MaximumHitPoints'>
     <MaximumHitPoints>25000</MaximumHitPoints>
   </ModOp>
 
-  <!-- Replace MaximumHitPoints 20 000 -->
+  <!-- Replace MaximumHitPoints 20.000 -->
   <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MaximumHitPoints'>
     <MaximumHitPoints>20000</MaximumHitPoints>
   </ModOp>
 
-  <!-- Replace MaximumHitPoints 10 000 -->
+  <!-- Replace MaximumHitPoints 10.000 -->
   <ModOp Type = 'replace' GUID = '1010517,1010540,601470,1010524' Path = '/Values/Attackable/MaximumHitPoints'>
     <MaximumHitPoints>10000</MaximumHitPoints>
   </ModOp>
 
-  <!-- Replace MaximumHitPoints 5 000 -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540,601470,1010525,100519,125028,1010522,1010523,3700,601463,131777,131778,601460,601461,601462' Path = '/Values/Attackable/MaximumHitPoints'>
+  <!-- Replace MaximumHitPoints 5.000 -->
+  <ModOp Type = 'replace' GUID = '1010525,100519,125028,1010522,1010523,3700,4797,4799,4798,601463,131777,131778,601460,601461,601462' Path = '/Values/Attackable/MaximumHitPoints'>
     <MaximumHitPoints>5000</MaximumHitPoints>
   </ModOp>
 
-  <!-- Replace MaximumHitPoints 2 500 -->
-  <ModOp Type = 'replace' GUID = '625,3700' Path = '/Values/Attackable/MaximumHitPoints'>
+  <!-- Replace MaximumHitPoints 2.500 -->
+  <ModOp Type = 'replace' GUID = '625,632,823,824,736,742,743,822' Path = '/Values/Attackable/MaximumHitPoints'>
     <MaximumHitPoints>2500</MaximumHitPoints>
-  </ModOp>
-
-  <!-- Replace MoralePower 100 -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attackable/MoralePower'>
-    <MoralePower>100</MoralePower>
-  </ModOp>
-
-  <!-- Replace MoralePower 200 -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MoralePower'>
-    <MoralePower>200</MoralePower>
   </ModOp>
 
   <!-- Replace MoralePower 250 -->
@@ -144,20 +111,25 @@
     <MoralePower>250</MoralePower>
   </ModOp>
 
+  <!-- Replace MoralePower 200 -->
+  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attackable/MoralePower'>
+    <MoralePower>200</MoralePower>
+  </ModOp>
+
+  <!-- Replace MoralePower 100 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540' Path = '/Values/Attackable/MoralePower'>
+    <MoralePower>100</MoralePower>
+  </ModOp>
+
+  <!-- Replace MoralePower 50 -->
+  <ModOp Type = 'replace' GUID = '625,632,823,824,3700,4797,4799,4798' Path = '/Values/Attackable/MoralePower'>
+    <MoralePower>50</MoralePower>
+  </ModOp>
+
   <!-- Shared Attacker replacements -->
-  <!-- Replace BaseDamage 25 -->
-  <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,736,742,743,822' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>25</BaseDamage>
-  </ModOp>
-
-  <!-- Replace BaseDamage 100 -->
-  <ModOp Type = 'replace' GUID = '1010517,1010540,1010523' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>100</BaseDamage>
-  </ModOp>
-
-  <!-- Replace BaseDamage 200 -->
-  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>200</BaseDamage>
+  <!-- Replace BaseDamage 1000 -->
+  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>1000</BaseDamage>
   </ModOp>
 
   <!-- Replace BaseDamage 250 -->
@@ -165,11 +137,22 @@
     <BaseDamage>250</BaseDamage>
   </ModOp>
 
-  <!-- Replace BaseDamage 1000 -->
-  <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Attacker/BaseDamage'>
-    <BaseDamage>1000</BaseDamage>
+  <!-- Replace BaseDamage 200 -->
+  <ModOp Type = 'replace' GUID = '100510,100514' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>200</BaseDamage>
   </ModOp>
 
+  <!-- Replace BaseDamage 100 -->
+  <ModOp Type = 'replace' GUID = '1010517,1010540,1010523' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>100</BaseDamage>
+  </ModOp>
+
+  <!-- Replace BaseDamage 25 -->
+  <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,736,742,743,822' Path = '/Values/Attacker/BaseDamage'>
+    <BaseDamage>25</BaseDamage>
+  </ModOp>
+
+  <!-- Shared AttackRange replacements -->
   <!-- Replace AttackRange 75 -->
   <ModOp Type = 'replace' GUID = '1010522,625,632,823,824,3700,4797,4799,4798,736,742,743,822' Path = '/Values/Attacker/AttackRange'>
     <AttackRange>75</AttackRange>
@@ -221,173 +204,116 @@
     </RepairCrane>
   </ModOp>
 
-  <!-- Shared FactoryBase replacements -->
-  <!-- Replace FactoryInputs Amount 3 -->
+  <!-- Harbour buildings  -->
+  <!-- Shared Harbour buildings replacements -->
+  <!-- Add TerrainType Water_Including_Coast -->
+  <ModOp 
+    Type = 'add' 
+    GUID = '101642,1010517,1010540,1010519,24775,100510,100514,100511,100515,269879,269867' 
+    Path = '/Values/Building'
+  >
+    <TerrainType>Water_Including_Coast</TerrainType>
+  </ModOp>
+
+  <!-- Replace TerrainType Water_Including_Coast -->
   <ModOp 
     Type = 'replace' 
-    GUID = '132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
-    Path = '/Values/FactoryBase/FactoryInputs/Item/Amount'
+    GUID = '100429,102284,114440,118729,112666,112674' 
+    Path = '/Values/Building/TerrainType'
   >
-    <Amount>3</Amount>
+    <TerrainType>Water_Including_Coast</TerrainType>
   </ModOp>
 
-  <!-- Replace FactoryOutputs Amount 3 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '1010560,1010310,114440,118729,117743,112676,112682,112667,112666,112674,112673,116034,116029,112690,114703,114705,907,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
-    Path = '/Values/FactoryBase/FactoryOutputs/Item/Amount'
-  >
-    <Amount>3</Amount>
-  </ModOp>
-
-  <!-- Replace FactoryInputs StorageAmount 10 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '5840,24805,835,6080,6083,5657,6279,5659,5862,5658,114444,114459,114471,114441,114466,114469,114468,114467,118725,114472,114470,114461,114464,112668,112679,112675,112672,114704,112681,112680,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,101264,101271,1010342,1010317,1010341,5458,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1353,6018,6258,6259,6260,1010313,1010291,1010316,1010312,1010281,1010293,1010295,1010315,1010288,1010325,118733,118734,1010294,25350,1010314,1010292,100659,100451,1010283,1010297,1010296,1010299,1010319,1010285,1010280,1010300,1010301,1010284,1010282,101250,1010323,135103,135187,135188,135189,135190,135105,135121,135120,135122,135123,135191,134631,135192,135193,135194' 
-    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
-  >
-    <StorageAmount>10</StorageAmount>
-  </ModOp>
-
-  <!-- Replace FactoryInputs StorageAmount 30 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
-    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
-  >
-    <StorageAmount>30</StorageAmount>
-  </ModOp>
-
-  <!-- Replace FactoryOutputs StorageAmount 10 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '24805,101272,101269,5457,1010339,101262,7919,1010311,1390,1308,114448,114450,114447,114451,114452,25020,114453,114456,114439,122963,1010265,25019,1010262,25128,1010264,100654,100655,1010267,1010269,1010263,1010278,1010558,1010305,1388,1010307,1010308,1010309,1010266,100416,1010298,101263,1010329,24798,1010331,1010333,25006,101270,25003,101251,25005,1010330,1010332,25009,5463,5814,835,6080,6083,5657,6279,5659,5862,5658,114444,114459,114471,114441,114466,114469,114468,114467,118725,114472,114470,114461,114464,112668,112679,112675,112672,114704,112681,112680,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,101264,101271,1010342,1010317,1010341,5458,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1353,1010313,1010291,1010316,1010312,1010281,1010293,1010295,1010315,1010288,1010325,118733,118734,1010294,25350,1010314,1010292,100659,100451,1010283,1010297,1010296,1010299,1010319,1010285,1010280,1010300,1010301,1010284,1010282,101250,1010323' 
-    Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'
-  >
-    <StorageAmount>10</StorageAmount>
-  </ModOp>
-
-  <!-- Replace FactoryOutputs StorageAmount 30 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '1010560,1010310,114440,118729,117743,112676,112682,112667,112666,112674,112673,116034,116029,112690,114703,114705,907,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
-    Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'
-  >
-    <StorageAmount>30</StorageAmount>
-  </ModOp>
-
-  <!-- Replace CycleTime 15 -->
-  <ModOp Type = 'replace' GUID = '1308' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>15</CycleTime>
-  </ModOp>
-  
-  <!-- Replace CycleTime 30 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '538,3661,124739,124738,124737,1010296,1010301,1010286,5462,6629,6631,116034,114703,3741,3761,4260' 
-    Path = '/Values/FactoryBase/CycleTime'
-  >
-    <CycleTime>30</CycleTime>
-  </ModOp>
-
-  <!-- Replace CycleTime 60 -->
-  <ModOp 
-    Type = 'replace' 
-    GUID = '114468,117547,5840,6018,1010264,100654,100655,1010263,1010293,1010295,1010299,1010310,101250,1010324,1010326,1010289,1010302,118735,1010330,1010339,1010311,835,5658,114472,112676,112682,112673,112672' 
-    Path = '/Values/FactoryBase/CycleTime'
-  >
-    <CycleTime>60</CycleTime>
-  </ModOp>
-  <!-- Add CycleTime 60 -->
-  <ModOp Type = 'add' GUID = '112674,114469' Path = '/Values/FactoryBase'>
-    <CycleTime>60</CycleTime>
-  </ModOp>
-
-  <!-- Replace CycleTime 180 -->
-  <ModOp Type = 'replace' GUID = '112690' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>180</CycleTime>
-  </ModOp>
-
-  <!-- Replace CycleTime 300 -->
-  <ModOp Type = 'replace' GUID = '6258,6259,6260' Path = '/Values/FactoryBase/CycleTime'>
-    <CycleTime>300</CycleTime>
-  </ModOp>
-
-  <!-- New world farms modules -->
-  <ModOp Type = 'remove' GUID = '101272,101269,5457' Path = '/Values/ModuleOwner/AddModuleLimit'></ModOp>
+  <!-- Remove SnapRadius -->
+  <ModOp Type = 'remove' GUID = '100429,102284' Path = '/Values/Building/SnapRadius'></ModOp>
 
   <!-- Trading Posts -->
-  <!-- Small Trading Post -->
+  <!-- Small Trading Post (1010517,1010540) -->
+  <!-- 
+    - Can build on open water now.
+    - Increased Storage from 75 to 100.
+    - Increased Loading speed from 2 to 3.
+    - Decreased Max Loading time from 5 to 3.
+    - Increased HP from 9.000 to 10.000.
+    - Decreased Morale from 200 to 100.
+    - Decreased Damage from 150 to 100.
+    - Increased Range from 92 to 100.
+    - Decreased Turret span from 360 to 240.
+   -->
 
-  <!-- Medium Trading Post -->
+  <!-- Medium Trading Post (100510,100514) -->
+  <!-- 
+    - Can build on open water now.
+    - Increased Storage from 150 to 250.
+    - Increased Loading speed from 3 to 5.
+    - Decreased Max Loading time from 5 to 3.
+    - Increased HP from 9.000 to 20.000.
+    - Decreased Damage from 150 to 200.
+    - Increased Range from 92 to 100.
+    - Decreased Turret span from 360 to 240.
+   -->
 
-  <!-- Large Trading Post -->
+  <!-- Large Trading Post (100511,100515) -->
+  <!-- 
+    - Can build on open water now.
+    - Increased Storage from 250 to 500.
+    - Increased Loading speed from 5 to 7.
+    - Decreased Max Loading time from 5 to 3.
+    - Increased HP from 9.000 to 25.000.
+    - Decreased Morale from 200 to 250.
+    - Decreased Damage from 150 to 250.
+    - Increased Range from 92 to 100.
+    - Decreased Turret span from 360 to 240.
+   -->
 
-  <!-- Grand Trading Post -->
+  <!-- Grand Trading Post (269879,269867) -->
+  <!-- 
+    - Can build on open water now.
+    - Increased Storage from 500 to 1000.
+    - Increased Loading speed from 5 to 10.
+    - Decreased Max Loading time from 5 to 3.
+    - Increased HP from 9.000 to 25.000.
+    - Decreased Morale from 200 to 250.
+    - Decreased Damage from 150 to 250.
+    - Increased Range from 92 to 100.
+    - Decreased Turret span from 360 to 240.
+   -->
 
-  <!-- Small Oil Harbour -->
+  <!-- Oil Harbours -->
+  <!-- Small Oil Harbour (100783) -->
   <ModOp Type = 'replace' GUID = '100783' Path = '/Values/Warehouse/WarehouseStorage'>
     <WarehouseStorage>
       <StorageMax>1000</StorageMax>
     </WarehouseStorage>
   </ModOp>
 
-  <!-- Medium Oil Harbour -->
+  <!-- Medium Oil Harbour (101403) -->
   <ModOp Type = 'replace' GUID = '101403' Path = '/Values/Warehouse/WarehouseStorage'>
     <WarehouseStorage>
       <StorageMax>1500</StorageMax>
     </WarehouseStorage>
   </ModOp>
 
-  <!-- Large Oil Harbour -->
+  <!-- Large Oil Harbour (101404) -->
   <ModOp Type = 'replace' GUID = '101404' Path = '/Values/Warehouse/WarehouseStorage'>
     <WarehouseStorage>
       <StorageMax>2000</StorageMax>
     </WarehouseStorage>
   </ModOp>
 
-  <!-- Grand Oil Harbour -->
+  <!-- Grand Oil Harbour (119259) -->
   <ModOp Type = 'replace' GUID = '119259' Path = '/Values/Warehouse/WarehouseStorage'>
     <WarehouseStorage>
       <StorageMax>2500</StorageMax>
     </WarehouseStorage>
   </ModOp>
 
-  <!-- Commuter transport vehicles -->
-  <!-- <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
-    <WorkforceTransferFeature>
-      <TransferShipForRegion>
-        <Moderate>
-          <WorkforceTransferShip>101743</WorkforceTransferShip>
-        </Moderate>
-        <Colony01>
-          <WorkforceTransferShip>101743</WorkforceTransferShip>
-        </Colony01>
-        <Africa>
-          <WorkforceTransferShip>101743</WorkforceTransferShip>
-        </Africa>
-      </TransferShipForRegion>
-      <RoughFeedbackShipDistance>500</RoughFeedbackShipDistance>
-      <UnloadTime>10000</UnloadTime>
-      <TransferInterruptedNotification>501311</TransferInterruptedNotification>
-    </WorkforceTransferFeature>
-  </ModOp> -->
+  <!-- Shipyards (1010520, 1010521) -->
+  <!-- 
+    - Can build on open water now.
+    - Add flagship and salvager to buildable ships.
+   -->
 
-  <ModOp Type = 'replace' GUID = '141647' Path = '/Values/WorkforceTransferFeature'>
-    <WorkforceTransferFeature>
-      <TransferShipForRegion>
-        <Moderate />
-        <Colony01 />
-        <Africa />
-        <Arctic />
-      </TransferShipForRegion>
-      <RoughFeedbackShipDistance>500</RoughFeedbackShipDistance>
-      <UnloadTime>10000</UnloadTime>
-      <TransferInterruptedNotification>501311</TransferInterruptedNotification>
-    </WorkforceTransferFeature>
-  </ModOp>
-
-  <!-- Shipyard -->
   <!-- Add Flagship to buildable ships -->
   <ModOp Type = 'add' GUID = '1010520' Path = '/Values/Shipyard/AssemblyOptions'>
     <Item>
@@ -551,12 +477,37 @@
   <ModOp Type = 'remove' GUID = '112084' Path = '/Values/CommandQueue/ShipUniqueType'></ModOp>
   <ModOp Type = 'remove' GUID = '77' Path = '/Values/Trader/ProvidesShipReplacements'></ModOp>
 
-  <!-- Repair crane -->
+  <!-- Repair crane & repair crane module (1010525,131777) -->
+  <!-- 
+    - Increased HP from 4.000 to 5.000.
+    - Increased Heal radius from 20 to 25.
+    - Increased Heal ship per minute from 600 to 1000.
+    - Increased Heal building per minute from 600 to 1000.
+   -->
 
   <!-- Piers -->
-  <!-- Pier -->
+  <!-- Pier (100519) -->
+  <!-- 
+    - Increased HP from 4.000 to 5.000.
+    - Increased Loading speed from 2 to 7.
+    - Decreased Max Loading time from 5 to 3.
+   -->
 
-  <!-- Advanced Pier -->
+  <ModOp Type = 'replace' GUID = '100519' Path = '/Values/LoadingPier'>
+    <LoadingPier>
+      <NumOfPiers>1</NumOfPiers>
+      <LoadingSpeed>7</LoadingSpeed>
+      <MinLoadingTime>3</MinLoadingTime>
+    </LoadingPier>
+  </ModOp>
+
+  <!-- Advanced Pier (125028) -->
+  <!-- 
+    - Increased HP from 4.000 to 5.000.
+    - Increased Loading speed from 4 to 10.
+    - Decreased Max Loading time from 5 to 3.
+   -->
+
   <ModOp Type = 'replace' GUID = '125028' Path = '/Values/LoadingPier'>
     <LoadingPier>
       <NumOfPiers>1</NumOfPiers>
@@ -567,17 +518,56 @@
   </ModOp>
   
   <!-- Turrets -->
-  <!-- Mounted guns -->
+  <!-- Mounted guns (1010522) -->
+  <!-- 
+    - Increased HP from 3.200 to 5.000.
+    - Increased Damage from 23 to 25.
+    - Increased Range from 72 to 75.
+    - Decreased Turret span from 360 to 240.
+   -->
 
-  <!-- Cannon tower -->
+  <!-- Cannon tower (1010523) -->
+  <!-- 
+    - Increased HP from 4.800 to 5.000.
+    - Decreased Damage from 150 to 100.
+    - Increased Range from 92 to 100.
+    - Decreased Turret span from 360 to 240.
+   -->
   
-  <!-- Fire tower -->
+  <!-- Fire tower (625,632,823,824) -->
+  <!-- 
+    - Increased HP from 1.701 to 2.500.
+    - Increased Morale from 45 to 50.
+    - Increased Damage from 19 to 25.
+    - Increased Range from 70 to 75.
+    - Decreased Turret span from 360 to 240.
+   -->
   
-  <!-- Armor piercing tower -->
+  <!-- Armor piercing tower (3700,4797,4799,4798) -->
+  <!-- 
+    - Increased HP from 3.750 to 5.000.
+    - Decreased Morale from 60 to 50.
+    - Decreased Reload time from 93 to 75.
+    - Increased Range from 65 to 75.
+    - Decreased Turret span from 360 to 240.
+   -->
   
-  <!-- Flak emplacement -->
+  <!-- Flak emplacement (736,742,743,822) -->
+  <!-- 
+    - Decreased HP from 2.800 to 2.500.
+    - Increased Damage from 22 to 25.
+    - Decreased Reload time from 93 to 75.
+    - Increased Range from 52 to 75.
+    - Decreased Turret span from 360 to 240.
+   -->
   
-  <!-- Big betty -->
+  <!-- Big betty (1010524) -->
+  <!-- 
+    - Increased HP from 7.000 to 10.000.
+    - Increased Damage from 850 to 1000.
+    - Decreased Reload time from 150 to 125.
+    - Increased Range from 108 to 125.
+   -->
 
   <!-- Change building placement -->
   <ModOp Type = 'replace' GUID = '1010524' Path = '/Values/Building'>
@@ -589,8 +579,18 @@
     </Building>
   </ModOp>
 
-  <!-- Docklands -->
-  <!-- Increase amount of modules -->
+  <!-- Docklands (601470) -->
+  <!-- 
+    - Increased Loading speed from 2 to 5.
+    - Decreased Max Loading time from 5 to 3.
+    - Increased HP from 9.000 to 10.000.
+    - Increased Morale from 200 to 250.
+    - Increased amount of starting modules.
+    - Change socket scope from radius to area.
+    - Remove socket overlap category.
+   -->
+
+  <!-- Increased amount of modules -->
   <ModOp Type = 'replace' GUID = '601470' Path = '/Values/ModuleOwner/ModuleLimits'>
     <ModuleLimits>
       <DocklandModuleStorage>
@@ -627,10 +627,7 @@
     <SocketScopeRadiusOverlapCategory>None</SocketScopeRadiusOverlapCategory>
   </ModOp>
 
-  <!-- Dockland modules -->
-  <!-- Repair module -->
-
-  <!-- Unions -->
+  <!-- Union buildings -->
   <!-- All unions -->
   <!-- Remove unions overlap -->
   <ModOp 
@@ -642,33 +639,9 @@
   </ModOp>
 
   <!-- Trade union -->
-  <!-- Increase radius -->
+  <!-- Increased socket scope radius -->
   <ModOp Type = 'replace' GUID = '1010516' Path = '/Values/ItemContainer/SocketScopeRadius'>
     <SocketScopeRadius>16</SocketScopeRadius>
-  </ModOp>
-
-  <!-- Power plants -->
-  <!-- All power plants -->
-  <!-- Increase industrialization range (NOT the green street range) -->
-  <ModOp Type = 'replace' GUID = '100780,5164,117547,7399' Path = '/Values/Powerplant/IndustrializationDistance'>
-    <IndustrializationDistance>75</IndustrializationDistance>
-  </ModOp>
-
-  <!-- Increase satisfaction range (the green range used for population) -->
-  <ModOp Type = 'replace' GUID = '100780,5164,7399' Path = '/Values/PublicService'>
-    <PublicService>
-      <FullSatisfactionDistance>50</FullSatisfactionDistance>
-      <NoSatisfactionDistance>50</NoSatisfactionDistance>
-    </PublicService>
-  </ModOp>
-  
-  <!-- Gas power plant -->
-  <!-- Increase satisfaction range (the green range used for population) -->
-  <ModOp Type = 'replace' GUID = '117547' Path = '/Values/PublicService'>
-    <PublicService>
-      <FullSatisfactionDistance>75</FullSatisfactionDistance>
-      <NoSatisfactionDistance>75</NoSatisfactionDistance>
-    </PublicService>
   </ModOp>
 
   <!-- Warehouses -->
@@ -696,9 +669,33 @@
     <StorageMax>100</StorageMax>
   </ModOp>
 
-  <!-- Services -->
+  <!-- Service buildings -->
+  <!-- Power plants -->
+  <!-- All power plants -->
+  <!-- Increased industrialization range (NOT the green street range) -->
+  <ModOp Type = 'replace' GUID = '100780,5164,117547,7399' Path = '/Values/Powerplant/IndustrializationDistance'>
+    <IndustrializationDistance>75</IndustrializationDistance>
+  </ModOp>
+
+  <!-- Increased satisfaction range (the green range used for population) -->
+  <ModOp Type = 'replace' GUID = '100780,5164,7399' Path = '/Values/PublicService'>
+    <PublicService>
+      <FullSatisfactionDistance>50</FullSatisfactionDistance>
+      <NoSatisfactionDistance>50</NoSatisfactionDistance>
+    </PublicService>
+  </ModOp>
+  
+  <!-- Gas power plant -->
+  <!-- Increased satisfaction range (the green range used for population) -->
+  <ModOp Type = 'replace' GUID = '117547' Path = '/Values/PublicService'>
+    <PublicService>
+      <FullSatisfactionDistance>75</FullSatisfactionDistance>
+      <NoSatisfactionDistance>75</NoSatisfactionDistance>
+    </PublicService>
+  </ModOp>
+
   <!-- All Post Offices -->
-  <!-- Increase range -->
+  <!-- Increased range -->
   <ModOp Type = 'replace' GUID = '3741,3761,4260' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketScopeRadius>50</SocketScopeRadius>
@@ -752,7 +749,7 @@
   </ModOp>
 
   <!-- All Mailbox -->
-  <!-- Increase range -->
+  <!-- Increased range -->
   <ModOp Type = 'replace' GUID = '538,3661' Path = '/Values/ItemContainer'>
     <ItemContainer>
       <SocketScopeRadius>12</SocketScopeRadius>
@@ -788,21 +785,21 @@
     </Maintenances>
   </ModOp>
 
-  <!-- Increase storage -->
+  <!-- Increased storage -->
   <ModOp Type = 'replace' GUID = '538,3661' Path = '/Values/Warehouse/WarehouseStorage/StorageMax'>
     <StorageMax>25</StorageMax>
   </ModOp>
 
-  <!-- Old world services -->
+  <!-- OW Services -->
   <!-- Marketplace -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '1010372' Path = '/Values/Market'>
     <FullSupplyDistance>50</FullSupplyDistance>
     <NoSupplyDistance>75</NoSupplyDistance>
   </ModOp>
 
   <!-- All services except market, bank & club -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '1010358,1010359,1010360,1010361,1010362,118736' Path = '/Values/PublicService/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
@@ -812,7 +809,7 @@
   </ModOp>
 
   <!-- Bank & Members club -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '1010365,1010364' Path = '/Values/PublicService/FullSatisfactionDistance'>
     <FullSatisfactionDistance>100</FullSatisfactionDistance>
   </ModOp>
@@ -823,7 +820,7 @@
 
   <!-- Emergency services -->
   <!-- Police station -->
-  <!-- Increase influence distance -->
+  <!-- Increased influence distance -->
   <ModOp Type = 'replace' GUID = '1010462' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Riot>
@@ -834,7 +831,7 @@
   </ModOp>
   
   <!-- Fire department -->
-  <!-- Increase influence distance -->
+  <!-- Increased influence distance -->
   <ModOp Type = 'replace' GUID = '1010463' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Fire>
@@ -849,7 +846,7 @@
   </ModOp>
   
   <!-- Hospital -->
-  <!-- Increase influence distance -->
+  <!-- Increased influence distance -->
   <ModOp Type = 'replace' GUID = '1010464' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Illness>
@@ -860,7 +857,7 @@
   </ModOp>
 
   <!-- Shopping Arcades -->
-  <!-- Increase buff range -->
+  <!-- Increased buff range -->
   <ModOp 
     Type = 'replace' 
     GUID = '135103,135187,135188,135189,135190,135105,135121,135120,135122,135123,135191,134631,135192,135193,135194' 
@@ -869,7 +866,7 @@
     <ProductionBuffDistance>100</ProductionBuffDistance>
   </ModOp>
 
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp 
     Type = 'replace' 
     GUID = '135103,135187,135188,135189,135190,135105,135121,135120,135122,135123,135191,134631,135192,135193,135194' 
@@ -915,240 +912,35 @@
   </ModOp>
 
   <!-- Shopping arcade buffs -->
-  <!-- All buffs -->
-  <!-- Increase happiness buff -->
+  <!-- Shared recipe buff replacements -->
+  <!-- Replace AdditionalHappiness 5 -->
   <ModOp Type = 'replace' GUID = '135111,135195,135196,135197,658,135112,135151,135152,135153,661,135113,135199,135200,135201,664' Path = '/Values/ResidenceUpgrade/AdditionalHappiness'>
     <AdditionalHappiness>5</AdditionalHappiness>
   </ModOp>
 
-  <!-- Increase income buff -->
+  <!-- Replace TaxModifierInPercent 10 -->
   <ModOp Type = 'replace' GUID = '135111,135195,135196,135197,658,135112,135151,135152,135153,661,135113,135199,135200,135201,664' Path = '/Values/ResidenceUpgrade/TaxModifierInPercent'>
     <TaxModifierInPercent>10</TaxModifierInPercent>
   </ModOp>
 
-  <!-- Toaster buff -->
-  <ModOp Type = 'replace' GUID = '135111' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010250</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010208</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Crockery buff -->
-  <ModOp Type = 'replace' GUID = '135195' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010248</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010259</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Vacuum cleaner buff -->
-  <ModOp Type = 'replace' GUID = '135196' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010245</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010208</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Fridges buff -->
-  <ModOp Type = 'replace' GUID = '135197' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120030</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010225</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Briefcases buff -->
-  <ModOp Type = 'replace' GUID = '658' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>114428</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010259</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Banker lamps buff -->
-  <ModOp Type = 'replace' GUID = '135112' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010250</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010208</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Vanity screens buff -->
-  <ModOp Type = 'replace' GUID = '135151' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010246</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010250</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Writing desks buff -->
-  <ModOp Type = 'replace' GUID = '135152' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010259</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010245</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Four-posted beds buff -->
-  <ModOp Type = 'replace' GUID = '135153' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120030</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010208</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Lounge seating buff -->
-  <ModOp Type = 'replace' GUID = '661' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010246</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>114431</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Toothpaste buff -->
-  <ModOp Type = 'replace' GUID = '135113' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010246</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010206</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Detergent buff -->
-  <ModOp Type = 'replace' GUID = '135199' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010248</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010225</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Lipstick buff -->
-  <ModOp Type = 'replace' GUID = '135200' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010208</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010225</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Face cream buff -->
-  <ModOp Type = 'replace' GUID = '135201' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010248</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010245</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Pomade buff -->
-  <ModOp Type = 'replace' GUID = '664' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120030</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>114430</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
+  <!-- Replace AmountInPercent -25 -->
+  <ModOp Type = 'replace' GUID = '135111,135195,135196,135197,658,135112,135151,135152,135153,661,135113,135199,135200,135201,664' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
+    <AmountInPercent>-25</AmountInPercent>
   </ModOp>
 
   <!-- Bus stop -->
-  <!-- Increase radius -->
+  <!-- Increased radius -->
   <ModOp Type = 'replace' GUID = '601326' Path = '/Values/BusStop/ActivationRadius'>
     <ActivationRadius>25</ActivationRadius>
   </ModOp>
 
-  <!-- Increase street range -->
+  <!-- Increased street range -->
   <ModOp Type = 'replace' GUID = '601326' Path = '/Values/BusStop/StreetConnectionRange'>
     <StreetConnectionRange>50</StreetConnectionRange>
   </ModOp>
 
   <!-- Food venues -->
-  <!-- Increase buff range -->
+  <!-- Increased buff range -->
   <ModOp 
     Type = 'replace' 
     GUID = '132780,132747,132750,133339,133340,133341,132781,132752,133342,133343,133345,133346,132782,132753,133347,133348,133349,133350,6136,6137,6138' 
@@ -1163,7 +955,7 @@
     GUID = '132780,132747,132750,133339,133340,133341,132781,132752,133342,133343,133345,133346,132782,132753,133347,133348,133349,133350,6136,6137,6138' 
     Path = '/Values/FactoryBase/ClampedMaxTransporterLogisticCost'
   >
-    <ClampedMaxTransporterLogisticCost>75</ClampedMaxTransporterLogisticCost>
+    <ClampedMaxTransporterLogisticCost>80</ClampedMaxTransporterLogisticCost>
   </ModOp>
 
   <!-- Reduce maintenances -->
@@ -1185,316 +977,15 @@
   </ModOp>
 
   <!-- Food venues buffs -->
-  <!-- All buffs -->
-  <!-- Increase happiness buff -->
+  <!-- Shared recipe buff replacements -->
+  <!-- Replace AdditionalHappiness 5 -->
   <ModOp Type = 'replace' GUID = '132745,132749,133352,133353,133354,132758,133361,133362,133363,133364,132759,133357,133358,133359,133360,6148,6154,6157' Path = '/Values/ResidenceUpgrade/AdditionalHappiness'>
     <AdditionalHappiness>5</AdditionalHappiness>
   </ModOp>
 
-  <!-- Archduke schnitzel buff -->
-  <ModOp Type = 'replace' GUID = '132745' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010213</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010200</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Stroggof goulash buff -->
-  <ModOp Type = 'replace' GUID = '132749' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010200</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010238</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010217</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Fish and frites buff -->
-  <ModOp Type = 'replace' GUID = '133352' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010217</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010213</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Venison en croute buff -->
-  <ModOp Type = 'replace' GUID = '133353' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010238</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010216</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Lobster cheminee buff -->
-  <ModOp Type = 'replace' GUID = '133354' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010214</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010257</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Daiquiri tropic buff -->
-  <ModOp Type = 'replace' GUID = '132758' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010216</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010214</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010257</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Black muscovy buff -->
-  <ModOp Type = 'replace' GUID = '133361' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010216</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Montmartre 75 buff -->
-  <ModOp Type = 'replace' GUID = '133362' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010217</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010214</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010257</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Glogg buff -->
-  <ModOp Type = 'replace' GUID = '133363' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010214</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Enbesa sunrise buff -->
-  <ModOp Type = 'replace' GUID = '133364' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010216</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010257</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Donut fourre buff -->
-  <ModOp Type = 'replace' GUID = '132759' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010216</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Eclair buff -->
-  <ModOp Type = 'replace' GUID = '133357' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010238</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Palmier biscuit buff -->
-  <ModOp Type = 'replace' GUID = '133358' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010213</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Venison tartare buff -->
-  <ModOp Type = 'replace' GUID = '133359' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010214</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Banana surprise buff -->
-  <ModOp Type = 'replace' GUID = '133360' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Empanadas buff -->
-  <ModOp Type = 'replace' GUID = '6148' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010200</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010238</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>6600</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-
-  <!-- Absinthe buff -->
-  <ModOp Type = 'replace' GUID = '6154' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>1010257</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010216</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>6600</ProvidedNeed>
-        <AmountInPercent>-25</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
+  <!-- Replace AmountInPercent -25 -->
+  <ModOp Type = 'replace' GUID = '132745,132749,133352,133353,133354,132758,133361,133362,133363,133364,132759,133357,133358,133359,133360,6148,6154' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
+    <AmountInPercent>-25</AmountInPercent>
   </ModOp>
 
   <!-- Cone O'Copia buff -->
@@ -1517,7 +1008,7 @@
 
   <!-- New world services -->
   <!-- All services -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '101258' Path = '/Values/PublicService/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
@@ -1527,18 +1018,18 @@
   </ModOp>
   
   <!-- Beach -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '6264' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
 
   <!-- Samba school -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '5840' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>100</FullSatisfactionDistance>
   </ModOp>
   
-  <!-- Increase maintenance -->
+  <!-- Increased maintenance -->
   <ModOp Type = 'replace' GUID = '5840' Path = '/Values/Maintenance/Maintenances'>
     <Maintenances>
       <Item>
@@ -1553,12 +1044,12 @@
   </ModOp>
 
   <!-- Cinema -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '6018' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>100</FullSatisfactionDistance>
   </ModOp>
     
-  <!-- Decrease maintenance -->
+  <!-- Decreased maintenance -->
   <ModOp Type = 'replace' GUID = '6018' Path = '/Values/Maintenance/Maintenances'>
     <Maintenances>
       <Item>
@@ -1574,7 +1065,7 @@
 
   <!-- Advanced emergency services -->
   <!-- Police headquarters -->
-  <!-- Increase influence -->
+  <!-- Increased influence -->
   <ModOp Type = 'replace' GUID = '6258' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Riot>
@@ -1584,13 +1075,13 @@
     </Influence>
   </ModOp>
 
-  <!-- Increase automatic protection -->
+  <!-- Increased automatic protection -->
   <ModOp Type = 'replace' GUID = '6258' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
 
   <!-- Fire department -->
-  <!-- Increase influence -->
+  <!-- Increased influence -->
   <ModOp Type = 'replace' GUID = '6259' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Fire>
@@ -1604,13 +1095,13 @@
     </Influence>
   </ModOp>
 
-  <!-- Increase automatic protection -->
+  <!-- Increased automatic protection -->
   <ModOp Type = 'replace' GUID = '6259' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
 
   <!-- City hospital -->
-  <!-- Increase influence -->
+  <!-- Increased influence -->
   <ModOp Type = 'replace' GUID = '6260' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Illness>
@@ -1620,14 +1111,14 @@
     </Influence>
   </ModOp>
 
-  <!-- Increase automatic protection -->
+  <!-- Increased automatic protection -->
   <ModOp Type = 'replace' GUID = '6260' Path = '/Values/BuffFactory/PublicServiceData/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
 
   <!-- Enbesa services -->
   <!-- All services -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '114518,114519,114520' Path = '/Values/PublicService/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
@@ -1638,7 +1129,7 @@
 
   <!-- Emergency services -->
   <!-- Fire station -->
-  <!-- Increase influence -->
+  <!-- Increased influence -->
   <ModOp Type = 'replace' GUID = '119892' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Fire>
@@ -1654,7 +1145,7 @@
 
   <!-- Arctic services -->
   <!-- All services -->
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'replace' GUID = '114889,112684' Path = '/Values/PublicService/FullSatisfactionDistance'>
     <FullSatisfactionDistance>50</FullSatisfactionDistance>
   </ModOp>
@@ -1665,7 +1156,7 @@
 
   <!-- Emergency service -->
   <!-- Ranger Station -->
-  <!-- Increase influence -->
+  <!-- Increased influence -->
   <ModOp Type = 'add' GUID = '112669' Path = '/Values/IncidentInfluencer/Influence'>
     <Influence>
       <Fire>
@@ -1683,32 +1174,36 @@
     </Influence>
   </ModOp>
 
-  <!-- Heater -->
-  <!-- Increase heat range -->
+  <!-- Heater (114751) -->
+  <!-- 
+    - Increased heat range from 18 to 50.
+    - Production changes on production building section
+   -->
+
   <ModOp Type = 'add' GUID = '114751' Path = '/Values/HeatProvider'>
     <HeatRange>50</HeatRange>
   </ModOp>
 
-  <!-- Culture -->
   <!-- Culture buildings -->
-  <!-- Increase modules building radius -->
+  <!-- Culture buildings -->
+  <!-- Increased modules building radius -->
   <ModOp Type = 'add' GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner'>
     <ModuleBuildRadius>250</ModuleBuildRadius>
   </ModOp>
 
-  <!-- Increase modules building limits -->
+  <!-- Increased modules building limits -->
   <ModOp Type = 'replace' GUID = '1010470,1010471,102282,102283,110935,114141' Path = '/Values/ModuleOwner/ModuleLimits/Connector/Limit'>
     <Limit>1000</Limit>
   </ModOp>
 
   <!-- Monuments -->
   <!-- Worlds fair -->
-  <!-- Increase transporters -->
+  <!-- Increased transporters -->
   <ModOp Type = 'replace' GUID = '1010492' Path = '/Values/LogisticNode/TransporterCountMax'>
     <TransporterCountMax>3</TransporterCountMax>
   </ModOp>
 
-  <!-- Increase attracticity -->
+  <!-- Increased attractivity -->
   <ModOp Type = 'replace' GUID = '1010492' Path = '/Values/Culture/Attractiveness'>
     <Attractiveness>250</Attractiveness>
   </ModOp>
@@ -1879,7 +1374,7 @@
 
   <!-- The iron tower -->
   <!-- NOTE: Additional stats on template file (Name: TowerRestaurant) -->
-  <!-- Decrease maintenance -->
+  <!-- Decreased maintenance -->
   <ModOp Type = 'replace' GUID = '132770' Path = '/Values/Maintenance/Maintenances'>
     <Maintenances>
       <Item>
@@ -1893,7 +1388,7 @@
     </Maintenances>
   </ModOp>
 
-  <!-- Decrease maintenance (Recipes) -->
+  <!-- Decreased maintenance (Recipes) -->
   <ModOp Type = 'replace' GUID = '133928,133930,133931,133932,133933' Path = '/Values/Maintenance/Maintenances'>
     <Maintenances>
       <Item>
@@ -1909,109 +1404,25 @@
   </ModOp>
 
   <!-- Iron tower buffs -->
-  <!-- Brioche royale buff -->
-  <ModOp Type = 'replace' GUID = '133929' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010257</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-  
-  <!-- Trifle tower buff -->
-  <ModOp Type = 'replace' GUID = '133934' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010217</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-  
-  <!-- Lady marmelade buff -->
-  <ModOp Type = 'replace' GUID = '133935' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010213</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-  
-  <!-- Age of exploration buff -->
-  <ModOp Type = 'replace' GUID = '133936' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>120032</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>120016</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010258</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
-  </ModOp>
-  
-  <!-- Homard sur lit de terroir buff -->
-  <ModOp Type = 'replace' GUID = '133937' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade'>
-    <GoodConsumptionUpgrade>
-      <Item>
-        <ProvidedNeed>114410</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>114390</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-      <Item>
-        <ProvidedNeed>1010217</ProvidedNeed>
-        <AmountInPercent>-50</AmountInPercent>
-      </Item>
-    </GoodConsumptionUpgrade>
+  <!-- Shared GoodConsumptionUpgrade replacements -->
+  <!-- Replace AmountInPercent -50 -->
+  <ModOp Type = 'replace' GUID = '133929,133934,133935,133936,133937' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
+    <AmountInPercent>-50</AmountInPercent>
   </ModOp>
 
   <!-- Skyline tower -->
-  <!-- Increase attractiveness -->
+  <!-- Increased attractiveness -->
   <ModOp Type = 'replace' GUID = '406' Path = '/Values/Culture/Attractiveness'>
     <Attractiveness>250</Attractiveness>
   </ModOp>
   
-  <!-- Increase influence source -->
+  <!-- Increased influence source -->
   <ModOp Type = 'replace' GUID = '406' Path = '/Values/InfluenceSource/InfluenceAmount'>
     <InfluenceAmount>1000</InfluenceAmount>
   </ModOp>
 
   <!-- Research institute -->
-  <!-- Increase attractiveness -->
+  <!-- Increased attractiveness -->
   <ModOp Type = 'replace' GUID = '118940' Path = '/Values/Culture/Attractiveness'>
     <Attractiveness>250</Attractiveness>
   </ModOp>
@@ -2039,7 +1450,7 @@
   </ModOp>
 
   <!-- Palace -->
-  <!-- Increase modules per company level -->
+  <!-- Increased modules per company level -->
   <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/AdditionalModulesForEachAdditionalCompanyLevelHigherMax'>
     <AdditionalModulesForEachAdditionalCompanyLevelHigherMax>5</AdditionalModulesForEachAdditionalCompanyLevelHigherMax>
   </ModOp>
@@ -2056,12 +1467,12 @@
     </ModulesForCompanyLevelSetup>
   </ModOp>
 
-  <!-- Increase Range -->
+  <!-- Increased Range -->
   <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/BaseStreetRange'>
     <BaseStreetRange>100</BaseStreetRange>
   </ModOp>
 
-  <!-- Increase range per module -->
+  <!-- Increased range per module -->
   <ModOp Type = 'replace' GUID = '249947' Path = '/Values/Palace/AdditionalStreetRangePerModule'>
     <AdditionalStreetRangePerModule>10</AdditionalStreetRangePerModule>
   </ModOp>
@@ -2644,7 +2055,7 @@
 
   <!-- Department of labour -->
   <!-- Increased productivity around trade unions -->
-  <!-- Increase forward range -->
+  <!-- Increased forward range -->
   <ModOp Type = 'replace' GUID = '249965,269492,269493,269494,269495,269496,269497,269498,269499,269500,269501,269701,269702,269703,269704,269705,269706,269707,269708,269709,269710,269711,269712,269713,269714,269715' Path = '/Values/EffectForward/ForwardEffectRange'>
     <ForwardEffectRange>16</ForwardEffectRange>
   </ModOp>
@@ -3228,13 +2639,13 @@
   <!-- Palace decrees -->
   <!-- Department of administration -->
   <!-- Cellar repurposing act -->
-  <!-- Increase storage -->
+  <!-- Increased storage -->
   <ModOp Type = 'replace' GUID = '269125' Path = '/Values/WarehouseUpgrade/StorageCapacityModifier'>
     <StorageCapacityModifier>250</StorageCapacityModifier>
   </ModOp>
   
   <!-- Dietary education initiative -->
-  <!-- Increase forward range -->
+  <!-- Increased forward range -->
   <ModOp Type = 'replace' GUID = '273695' Path = '/Values/EffectForward/ForwardEffectRange'>
     <ForwardEffectRange>50</ForwardEffectRange>
   </ModOp>
@@ -3244,38 +2655,38 @@
     <AmountInPercent>-50</AmountInPercent>
   </ModOp>
 
-  <!-- Increase reduced needs -->
+  <!-- Increased reduced needs -->
   <ModOp Type = 'replace' GUID = '269409,269408,269177,269411,269412,273690,280078,280079' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
     <AmountInPercent>-50</AmountInPercent>
   </ModOp>
   
   <!-- Science fair act -->
-  <!-- Increase forward range -->
+  <!-- Increased forward range -->
   <ModOp Type = 'replace' GUID = '269128' Path = '/Values/EffectForward/ForwardEffectRange'>
     <ForwardEffectRange>50</ForwardEffectRange>
   </ModOp>
 
-  <!-- Increase influence source -->
+  <!-- Increased influence source -->
   <ModOp Type = 'replace' GUID = '269178' Path = '/Values/InfluenceSourceUpgrade/InfluenceAmounUpgrade/Value'>
     <Value>5</Value>
   </ModOp>
   
   <!-- Guildhall act -->
-  <!-- Increase forward range -->
+  <!-- Increased forward range -->
   <ModOp Type = 'replace' GUID = '269130' Path = '/Values/CultureUpgrade/AttractivenessUpgrade/Value'>
     <Value>250</Value>
   </ModOp>
 
   <!-- Department of Culture -->
   <!-- Cultural Outreach Act -->
-  <!-- Increase extra rewards -->
+  <!-- Increased extra rewards -->
   <ModOp Type = 'replace' GUID = '269116' Path = '/Values/MonumentUpgrade/BonusRewardAmountUpgrade/Value'>
     <Value>3</Value>
   </ModOp>
 
   <!-- Department of Welfare -->
   <!-- City wide web act -->
-  <!-- Increase power plants satisfaction range -->
+  <!-- Increased power plants satisfaction range -->
   <ModOp Type = 'replace' GUID = '269231' Path = '/Values/BuildingUpgrade'>
     <BuildingUpgrade>
       <PublicServiceFullSatisfactionDistance>
@@ -3287,25 +2698,25 @@
     </BuildingUpgrade>
   </ModOp>
 
-  <!-- Increase power plants industrialization range -->
+  <!-- Increased power plants industrialization range -->
   <ModOp Type = 'replace' GUID = '269231' Path = '/Values/PowerplantUpgrade/IndustrializationRangeUpgrade/Value'>
     <Value>25</Value>
   </ModOp>
 
   <!-- Late Drink Act -->
-  <!-- Increase forward infotip & buff -->
+  <!-- Increased forward infotip & buff -->
   <ModOp Type = 'replace' GUID = '269553,269236,269413,269414,273693,280083' Path = '/Values/EffectForward/ForwardEffectRange'>
     <ForwardEffectRange>50</ForwardEffectRange>
   </ModOp>
 
-  <!-- Increase infotip & buff -->
+  <!-- Increased infotip & buff -->
   <ModOp Type = 'replace' GUID = '269453,269233,273692,280082,269451,269452,269453' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
     <AmountInPercent>-50</AmountInPercent>
   </ModOp>
 
   <!-- Department of trade -->
   <!-- Coastal reform act -->
-  <!-- Increase forward range -->
+  <!-- Increased forward range -->
   <ModOp Type = 'replace' GUID = '269217' Path = '/Values/EffectForward/ForwardEffectRange'>
     <ForwardEffectRange>50</ForwardEffectRange>
   </ModOp>
@@ -3335,7 +2746,7 @@
     <HaciendaRadius>250</HaciendaRadius>
   </ModOp>
 
-  <!-- Increase building radius -->
+  <!-- Increased building radius -->
   <ModOp Type = 'replace' GUID = '24768' Path = '/Values/Hacienda/AdditionalRadiusThresholds'>
     <AdditionalRadiusThresholds>
       <Item>
@@ -3361,7 +2772,7 @@
     </AdditionalRadiusThresholds>
   </ModOp>
 
-  <!-- Increase satisfaction range -->
+  <!-- Increased satisfaction range -->
   <ModOp Type = 'add' GUID = '24768' Path = '/Values/PublicService'>
     <PublicService>
       <FullSatisfactionDistance>100</FullSatisfactionDistance>
@@ -3404,37 +2815,15 @@
     </LogisticNode>
   </ModOp>
 
-  <!-- Hacienda fertiliser buff -->
-  <!-- Increase buff range -->
-  <ModOp Type = 'replace' GUID = '24805' Path = '/Values/BuffFactory/BaseBuffDistance'>
-    <BaseBuffDistance>25</BaseBuffDistance>
-  </ModOp>
-
-  <!-- Increase extra product buff -->
-  <ModOp Type = 'replace' GUID = '24806' Path = '/Values/FactoryUpgrade'>
-    <FactoryUpgrade>
-      <ProductivityUpgrade>
-        <Percental>1</Percental>
-      </ProductivityUpgrade>
-      <AdditionalOutput>
-        <Item>
-          <Product>24807</Product>
-          <AdditionalOutputCycle>2</AdditionalOutputCycle>
-          <Amount>1</Amount>
-        </Item>
-      </AdditionalOutput>
-    </FactoryUpgrade>
-  </ModOp>
-
   <!-- Hacienda decrees -->
   <!-- Dietary education initiative -->
-  <!-- Increase buff -->
+  <!-- Increased buff -->
   <ModOp Type = 'replace' GUID = '25623,25624,7728,25634' Path = '/Values/ResidenceUpgrade/GoodConsumptionUpgrade/Item/AmountInPercent'>
     <AmountInPercent>-50</AmountInPercent>
   </ModOp>
 
   <!-- Standard weights and measures -->
-  <!-- Increase storage -->
+  <!-- Increased storage -->
   <ModOp Type = 'replace' GUID = '25687' Path = '/Values/WarehouseUpgrade'>
     <WarehouseUpgrade>
       <StorageCapacityModifier>100</StorageCapacityModifier>
@@ -3442,7 +2831,7 @@
   </ModOp>
 
   <!-- Local assemblies -->
-  <!-- Increase influence source -->
+  <!-- Increased influence source -->
   <ModOp Type = 'replace' GUID = '25661' Path = '/Values/InfluenceSourceUpgrade/InfluenceAmounUpgrade'>
     <InfluenceAmounUpgrade>
       <Value>10</Value>
@@ -3450,12 +2839,12 @@
   </ModOp>
 
   <!-- Grand stadium -->
-  <!-- Increase transporters -->
+  <!-- Increased transporters -->
   <ModOp Type = 'replace' GUID = '6121' Path = '/Values/LogisticNode/TransporterCountMax'>
     <TransporterCountMax>3</TransporterCountMax>
   </ModOp>
   
-  <!-- Increase attractiveness -->
+  <!-- Increased attractiveness -->
   <ModOp Type = 'replace' GUID = '6121' Path = '/Values/Culture/Attractiveness'>
     <Attractiveness>250</Attractiveness>
   </ModOp>
@@ -3538,21 +2927,106 @@
     </RewardAssets>
   </ModOp>
   
-  <!-- Production Buildings -->
-  <!-- General -->
-  <!-- All production buildings -->
-  <!-- Alter delivery range -->
+  <!-- Production buildings -->
+  <!-- Shared production buildings replacements -->
+  <!-- Shared FactoryInputs replacements -->
+  <!-- Replace FactoryInputs StorageAmount 10 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '25240,25241,25242,269957,269958,119025,5840,24805,835,6080,6083,5657,6279,5659,5862,5658,114444,114459,114471,114441,114466,114469,114468,114467,118725,114472,114470,114461,114464,112668,112679,112675,112672,114704,112681,112680,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,101264,101271,1010342,1010317,1010341,5458,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1353,6018,6258,6259,6260,1010313,1010291,1010316,1010312,1010281,1010293,1010295,1010315,1010288,1010325,118733,118734,1010294,25350,1010314,1010292,100659,100451,1010283,1010297,1010296,1010299,1010319,1010285,1010280,1010300,1010301,1010284,1010282,101250,1010323,135103,135187,135188,135189,135190,135105,135121,135120,135122,135123,135191,134631,135192,135193,135194' 
+    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
+  >
+    <StorageAmount>10</StorageAmount>
+  </ModOp>
+
+  <!-- Replace FactoryInputs StorageAmount 30 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '114751,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryInputs/Item/StorageAmount'
+  >
+    <StorageAmount>30</StorageAmount>
+  </ModOp>
+
+  <!-- Shared FactoryOutputs replacements -->
+  <!-- Replace FactoryOutputs Amount 3 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '1010560,1010310,114440,118729,117743,112676,112682,112667,112666,112674,112673,116034,116029,112690,114703,114705,907,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryOutputs/Item/Amount'
+  >
+    <Amount>3</Amount>
+  </ModOp>
+
+  <!-- Replace FactoryOutputs StorageAmount 10 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '24805,101272,101269,5457,1010339,101262,7919,1010311,114448,114450,114447,114451,114452,25020,114453,114456,114439,122963,1010265,25019,1010262,25128,1010264,100654,100655,1010267,1010269,1010263,1010278,100416,101263,1010329,24798,1010331,1010333,25006,101270,25003,101251,25005,1010330,1010332,25009,5463,5814,835,6080,6083,5657,6279,5659,5862,5658,114444,114459,114471,114441,114466,114469,114468,114467,118725,114472,114470,114461,114464,112668,112679,112675,112672,114704,112681,112680,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,101264,101271,1010342,1010317,1010341,5458,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1353,1010313,1010291,1010316,1010312,1010281,1010293,1010295,1010315,1010288,1010325,118733,118734,1010294,25350,1010314,1010292,100659,100451,1010283,1010297,1010296,1010299,1010319,1010285,1010280,1010300,1010301,1010284,1010282,101250,1010323' 
+    Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'
+  >
+    <StorageAmount>10</StorageAmount>
+  </ModOp>
+
+  <!-- Replace FactoryOutputs StorageAmount 30 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '1010558,1010266,1010298,1010305,1388,1010307,1010308,1010309,1390,1308,1010560,1010310,114440,118729,117743,112676,112682,112667,112666,112674,112673,116034,116029,112690,114703,114705,907,132786,135361,124739,124738,124737,132777,135418,133533,135133,134622,135148,135407,135397,135669,135185,135134,135224,5462,5828,6630,6629,6631,117744,906,907,908,916' 
+    Path = '/Values/FactoryBase/FactoryOutputs/Item/StorageAmount'
+  >
+    <StorageAmount>30</StorageAmount>
+  </ModOp>
+
+  <!-- Shared CycleTime replacements -->
+  <!-- Replace CycleTime 15 -->
+  <ModOp Type = 'replace' GUID = '1308' Path = '/Values/FactoryBase/CycleTime'>
+    <CycleTime>15</CycleTime>
+  </ModOp>
+  
+  <!-- Replace CycleTime 30 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '538,3661,1010296,1010286,116034,114703,3741,3761,4260' 
+    Path = '/Values/FactoryBase/CycleTime'
+  >
+    <CycleTime>30</CycleTime>
+  </ModOp>
+
+  <!-- Replace CycleTime 60 -->
+  <ModOp 
+    Type = 'replace' 
+    GUID = '118571,269840,119028,5462,6629,6631,114468,117547,5840,6018,1010264,100654,100655,1010263,1010293,1010295,1010299,1010301,1010310,101250,1010324,1010326,1010289,1010302,118735,1010330,1010339,1010311,835,5658,114472,112676,112682,112673,112672' 
+    Path = '/Values/FactoryBase/CycleTime'
+  >
+    <CycleTime>60</CycleTime>
+  </ModOp>
+
+  <!-- Add CycleTime 60 -->
+  <ModOp Type = 'add' GUID = '112674,114469' Path = '/Values/FactoryBase'>
+    <CycleTime>60</CycleTime>
+  </ModOp>
+
+  <!-- Replace CycleTime 180 -->
+  <ModOp Type = 'replace' GUID = '112690' Path = '/Values/FactoryBase/CycleTime'>
+    <CycleTime>180</CycleTime>
+  </ModOp>
+
+  <!-- Replace CycleTime 300 -->
+  <ModOp Type = 'replace' GUID = '6258,6259,6260' Path = '/Values/FactoryBase/CycleTime'>
+    <CycleTime>300</CycleTime>
+  </ModOp>
+
+  <!-- Add ClampedMaxTransporterLogisticCost -->
   <ModOp 
     Type = 'add' 
-    GUID = '1010266,114703,133496,135088,135085,134614,133004,133030,133031,1010265,25019,1010262,25128,1010264,100654,100655,1010267,1010269,1010263,1010278,1010313,1010291,1010316,1010312,1010281,1010293,1010295,132786,135361,1010315,1010288,1010558,1010325,118733,118734,124739,1010294,25350,1010314,1010292,100659,124738,124737,132777,135418,1010560,1010305,1388,1010307,1010308,1010309,100451,100416,1010283,1010298,1010297,1010296,1010299,1010319,1010285,1010280,1010310,1010300,1010301,1010284,1010282,101250,1010323,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,133533,135133,134622,134622,135148,135407,135397,135669,101263,1010329,24798,1010331,1010333,25006,101270,25003,101251,25005,1010330,1010332,25009,5463,5814,101272,101269,5457,24805,1010339,101262,101264,101271,1010342,1010317,1010341,7919,5458,135185,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,25064,6594,1010311,1390,1308,1353,835,6080,6083,135134,5657,6279,135224,5659,5862,5462,5658,5828,6630,6629,6631,114448,114450,114447,114451,114452,25020,114453,114456,114439,114440,114444,114459,118729,114471,114441,114466,114469,114468,122963,117743,114467,118725,114472,117744,114470,114461,114464,112676,112682,112667,112666,112668,112679,112674,112675,112673,112672,116034,116029,112690,114464,114705,114704,112681,112680' 
+    GUID = '118571,269840,119028,133496,135088,135085,134614,133004,133030,133031,1010265,25019,1010262,25128,1010264,100654,100655,1010267,1010269,1010263,1010278,1010313,1010291,1010316,1010312,1010281,1010293,1010295,132786,135361,1010315,1010288,1010558,1010325,118733,118734,124739,1010294,25350,1010314,1010292,25064,100659,124738,124737,132777,135418,1010560,1010305,1388,1010307,1010308,1010309,1010266,100451,100416,1010283,1010298,1010297,1010296,1010299,1010319,1010285,1010280,1010310,1010300,1010301,1010284,1010282,101250,1010323,1010324,1010321,1010286,1010327,1010328,1010320,1010326,1010289,1010302,1010303,118735,133533,135133,134622,135148,135407,135397,135669,101263,1010329,24798,1010331,1010333,25006,101270,25003,101251,25005,1010330,1010332,25009,5463,5814,101272,101269,5457,24805,1010339,101262,101264,101271,1010342,1010317,1010341,7919,5458,135185,5459,101266,1010318,101415,101273,5879,5933,1010340,24801,101252,25508,25126,6594,1010311,1390,1308,1353,835,6080,6083,135134,5657,6279,135224,5659,5862,5462,5658,5828,6630,6629,6631,114448,114450,114447,114451,114452,25020,114453,114456,114439,114440,114444,114459,118729,114471,114441,114466,114469,114468,122963,117743,114467,118725,114472,117744,114470,114461,114464,112676,112682,112667,112666,112668,112679,112674,112675,112673,112672,116034,116029,112690,114703,114705,114704,112681,112680' 
     Path = '/Values/FactoryBase'
   >
     <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
     <ClampedMaxTransporterLogisticCost>80</ClampedMaxTransporterLogisticCost>
   </ModOp>
 
-  <!-- Electricity -->
-  <!-- Add electricity boost to all missing buildings -->
+  <!-- Shared Industrializable replacements -->
+  <!-- Replace Industrializable 1 -->
   <ModOp 
     Type = 'replace' 
     GUID = '24800,24801,25064,25126,25350,25508,132771,132777,132786,133533,135295,135418,135397,135407,135669,135221,135185,135134,135224,5828,135133,923,924,934,935,936,937,6630' 
@@ -3562,6 +3036,7 @@
     </Industrializable>
   </ModOp>
 
+  <!-- Replace BoostedByIndustrialization 1 -->
   <ModOp 
     Type = 'replace' 
     GUID = '114441,1010278,101262,7919,114466,114440,114444,114468,114467,118725,114469,114459,118729,114471,114472,117744,114470,114461,114464' 
@@ -3569,7 +3044,7 @@
     <BoostedByIndustrialization>1</BoostedByIndustrialization>
   </ModOp>
 
-  <!-- Change transporter -->
+  <!-- Replace Industrializable & TransporterIndustrializationFactory -->
   <ModOp Type = 'replace' GUID = '6629,6631,5462' Path = '/Values/Industrializable'>
     <Industrializable>
       <TransporterIndustrializationFactory>8943</TransporterIndustrializationFactory>
@@ -3577,51 +3052,47 @@
     </Industrializable>
   </ModOp>
 
-  <!-- All lumberjacks & orchards -->
-  <!-- Required area -->
+  <!-- Shared FreeAreaProductivity replacements -->
+  <!-- Replace InfluenceRadius 10 -->
   <ModOp Type = 'replace' GUID = '122963,112667,112673,116034,114705,1010298,1010558,1010266,114703,133496,135088,135085,134614,133004,133030,133031' Path = '/Values/FreeAreaProductivity/InfluenceRadius'>
     <InfluenceRadius>10</InfluenceRadius>
   </ModOp>
   
+  <!-- Replace NeededAreaPercent 75 -->
   <ModOp Type = 'replace' GUID = '122963,1010266,114703,133496,135088,135085,134614,133004,133030,133031' Path = '/Values/FreeAreaProductivity/NeededAreaPercent'>
     <NeededAreaPercent>75</NeededAreaPercent>
   </ModOp>
 
-  <!-- All Farms -->
-  <!-- Modules -->
-  <!-- Farms module radius -->
+  <!-- Shared ModuleOwner replacements -->
+  <!-- Replace ModuleLimits 125 -->
+  <ModOp Type = 'replace' GUID = '1010265,1010262,1010264,100654,100655,101263,1010329,1010331,1010333,101270,101251,1010330,1010332,5463,5814,114448,114450,114447,114451,114452,114453' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
+    <Limit>125</Limit>
+  </ModOp>
+
+  <!-- Replace ModuleLimits 100 -->
+  <ModOp Type = 'replace' GUID = '24798,25006,25003,25005,25009,25019,25128,25020' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
+    <Limit>100</Limit>
+  </ModOp>
+
+  <!-- Replace ModuleBuildRadius 25 -->
   <ModOp 
     Type = 'replace' 
-    GUID = '1010267,1010263,1010269,101272,112676,112682,114439,114456,24836,24844,24658' 
+    GUID = '1010267,1010263,1010269,101272,112676,112682,114439,114456,24836,24844,24658,101331,112690' 
     Path = '/Values/ModuleOwner/ModuleBuildRadius'>
     <ModuleBuildRadius>25</ModuleBuildRadius>
   </ModOp>
 
+  <!-- Add ModuleBuildRadius 25 -->
   <ModOp Type = 'add' GUID = '5457,101269' Path = '/Values/ModuleOwner'>
     <ModuleBuildRadius>25</ModuleBuildRadius>
   </ModOp>
 
-  <!-- Grain silo -->
-  <!-- Remove productivity bonus -->
-  <ModOp Type = 'remove' GUID = '269978' Path = '/Values/FactoryUpgrade/ProductivityUpgrade' Condition= '/Values/FactoryUpgrade/ProductivityUpgrade'></ModOp>
+  <!-- New world farms modules -->
+  <ModOp Type = 'remove' GUID = '101272,101269,5457' Path = '/Values/ModuleOwner/AddModuleLimit'></ModOp>
 
-  <!-- Buff extra goods -->
-  <ModOp Type = 'merge' GUID = '269978' Path = '/Values/FactoryUpgrade'>
-    <AdditionalOutput>
-      <Item>
-        <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
-        <AdditionalOutputCycle>1</AdditionalOutputCycle>
-        <Amount>1</Amount>
-      </Item>
-    </AdditionalOutput>
-  </ModOp>
-
-  <!-- Tractor barn -->
-  <!-- Remove productivity bonus -->
-  <ModOp Type = 'remove' GUID = '269979' Path = '/Values/FactoryUpgrade/ProductivityUpgrade' Condition= '/Values/FactoryUpgrade/ProductivityUpgrade'></ModOp>
-
-  <!-- Buff extra goods -->
-  <ModOp Type = 'merge' GUID = '269979' Path = '/Values'>
+  <!-- Farm silos -->
+  <!-- Replace FactoryUpgrade additional product -->
+  <ModOp Type = 'replace' GUID = '269978,269979,25713' Path = '/Values/FactoryUpgrade'>
     <FactoryUpgrade>
       <AdditionalOutput>
         <Item>
@@ -3633,455 +3104,1387 @@
     </FactoryUpgrade>
   </ModOp>
 
-  <!-- Fertilizer silo -->
-  <!-- Remove productivity bonus -->
-  <ModOp Type = 'remove' GUID = '25713' Path = '/Values/FactoryUpgrade/ProductivityUpgrade' Condition= '/Values/FactoryUpgrade/ProductivityUpgrade'></ModOp>
-
-  <!-- Buff extra goods -->
-  <ModOp Type = 'merge' GUID = '25713' Path = '/Values/FactoryUpgrade'>
-    <AdditionalOutput>
-      <Item>
-        <ForceProductSameAsFactoryOutput>1</ForceProductSameAsFactoryOutput>
-        <AdditionalOutputCycle>1</AdditionalOutputCycle>
-        <Amount>1</Amount>
-      </Item>
-    </AdditionalOutput>
-  </ModOp>
-
-  <!-- Oil refinery -->
-  <ModOp Type = 'replace' GUID = '101331' Path = '/Values/ModuleOwner/ModuleBuildRadius'>
-    <ModuleBuildRadius>25</ModuleBuildRadius>
-  </ModOp>
-
-  <!-- All fuel stations -->
-  <!-- Increase internal storage -->
+  <!-- Shared Fuel Stations replacements -->
+  <!-- Replace FactoryInputs internal storage -->
   <ModOp Type = 'replace' GUID = '118571,269840,119028' Path = '/Values/FactoryBase/FactoryInputs'>
     <FactoryInputs>
       <Item>
         <Product>1010566</Product>
-        <Amount>1</Amount>
+        <Amount>5</Amount>
         <StorageAmount>100</StorageAmount>
       </Item>
     </FactoryInputs>
   </ModOp>
 
+  <!-- Replace FactoryOutputs internal storage -->
   <ModOp Type = 'replace' GUID = '118571,269840,119028' Path = '/Values/FactoryBase/FactoryOutputs'>
     <FactoryOutputs>
       <Item>
         <Product>270042</Product>
-        <Amount>1</Amount>
+        <Amount>5</Amount>
         <StorageAmount>100</StorageAmount>
       </Item>
     </FactoryOutputs>
   </ModOp>
 
-  <!-- Gas pump -->
-  <ModOp Type = 'add' GUID = '112690' Path = '/Values/ModuleOwner'>
-    <ModuleBuildRadius>25</ModuleBuildRadius>
-  </ModOp>
+  <!-- Production adjacent buildings -->
+  <!-- Crops Farm tractor barns (269837,269839,269848,269849,119026,119027)  -->
+  <!-- 
+    - Decrease productivity buff from 100 to 0.
+    - Increase extra product buff from 1/3 to 1/1.
+   -->
+
+  <!-- Crops Farm fertilizer silos (25240,25241,25242)  -->
+  <!-- 
+    - Decrease productivity buff from 100 to 0.
+    - Increase extra product buff from 1/3 to 1/1.
+    - Increase internal storage to 10.
+   -->
+
+  <!-- Animal Farm silos (269957,269958,119025)  -->
+  <!-- 
+    - Decrease productivity buff from 100 to 0.
+    - Increase extra product buff from 1/3 to 1/1.
+    - Increase internal storage to 10.
+   -->
+
+  <!-- Fuel stations (118571,269840,119028) -->
+  <!-- 
+    - Increase internal storage to 100.
+    - Increase production per cycle from 1 to 5.
+    - Increase cycle time to 60.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Old world (OW) -->
   <!-- Farms (OW) -->
-  <!-- Potato farm -->
+  <!-- Potato farm (1010265) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 125.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Grain farm -->  
-  <!-- Module limit -->
-  <ModOp Type = 'replace' GUID = '1010262' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
-    <Limit>128</Limit>
-  </ModOp>
+  <!-- Grain farm (1010262) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Hop farm -->  
-  <!-- Module limit -->
-  <ModOp Type = 'replace' GUID = '1010264' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
-    <Limit>72</Limit>
-  </ModOp>
+  <!-- Hop farm (1010264) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Red pepper farm -->
-  <!-- Module limit -->
-  <ModOp Type = 'replace' GUID = '100654' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
-    <Limit>128</Limit>
-  </ModOp>
+  <!-- Red pepper farm (100654) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 125.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Vineyard -->
+  <!-- Vineyard (100655) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Sheep farm -->
-  <!-- Increase module required -->
+  <!-- Sheep farm (1010267) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 4.
+    - Reduce transport range to 80.
+   -->
+
+  <!-- Increased module required -->
   <ModOp Type = 'replace' GUID = '1010267' Path = '/Values/ModuleOwner/ModuleLimits/Main/Limit'>
     <Limit>4</Limit>
   </ModOp>
 
-  <!-- Pig farm -->
+  <!-- Pig farm (1010269) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Cattle farm -->
+  <!-- Cattle farm (1010263) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Supplies (OW) -->
-  <!-- Fishery -->
+  <!-- Fishery (1010278) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
-  <!-- Flour mill -->
+  <!-- Flour mill (1010313) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Bakery -->
+  <!-- Bakery (1010291) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Slaughterhouse -->
+  <!-- Slaughterhouse (1010316) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Rendering works -->
+  <!-- Rendering works (1010312) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Soap factory -->
+  <!-- Soap factory (1010281) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Artisanal kitchen -->
+  <!-- Artisanal kitchen (1010293) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Reduce cycle time to 60.
+   -->
 
-  <!-- Cannery -->
+  <!-- Cannery (1010295) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Reduce cycle time to 60.
+   -->
 
-  <!-- Chemical plant: Shampoo -->
+  <!-- Chemical plant: Shampoo (132786) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Assembly line: Biscuits -->
+  <!-- Assembly line: Biscuits (135361) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Clothes (OW) -->
-  <!-- Framework knitters -->
+  <!-- Framework knitters (1010315) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Sails -->
+  <!-- Sails (1010288) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Hunter cabin -->
+  <!-- Hunter cabin (1010558) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+    - Reduce area needed from 11 to 10.
+   -->
 
-  <!-- Fur dealer -->
+  <!-- Fur dealer (1010325) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Bootmakers -->
+  <!-- Bootmakers (118733) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Tailors shop -->
+  <!-- Tailors shop (118734) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Advanced cotton mill -->
+  <!-- Advanced cotton mill (124739) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Drinks (OW) -->
-  <!-- Schnapps distillery -->
+  <!-- Schnapps distillery (1010294) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Malthouse -->
+  <!-- Malthouse (1010314) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Brewery -->
+  <!-- Brewery (1010292) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Champagne cellar -->
+  <!-- Champagne cellar (100659) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Advanced coffee roaster -->
+  <!-- Advanced coffee roaster (124738) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Advanced rum distiller -->
+  <!-- Advanced rum distiller (124737) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Chemical plant: Lemonade -->
+  <!-- Chemical plant: Lemonade (132777) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Artisan workshop: Cognac -->
+  <!-- Artisan workshop: Cognac (135418) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Mines (OW) -->
-  <!-- Sand mine -->
+  <!-- Sand mine (1010560) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Iron mine -->
+  <!-- Iron mine (1010305) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Zinc mine -->
+  <!-- Zinc mine (1010307) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Copper mine -->
+  <!-- Copper mine (1010308) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Cement mine -->
+  <!-- Cement mine (1010309) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Materials (OW) -->
-  <!-- Lumberjack hut (OW & NW) -->
+  <!-- Lumberjack hut (OW & NW) (1010266) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+    - Increase area needed from 9 to 10.
+    - Reduce area needed percentage from 80 to 75.
+   -->
 
-  <!-- Sawmill -->
+  <!-- Sawmill (100451) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Clay pit -->
+  <!-- Clay pit (100416) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Brick factory -->
+  <!-- Brick factory (1010283) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Charcoal kiln -->
+  <!-- Charcoal kiln (1010298) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+    - Reduce area needed from 11 to 10.
+   -->
 
-  <!-- Furnace -->
+  <!-- Furnace (1010297) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Steelworks -->
+  <!-- Steelworks (1010296) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Reduce cycle time from 45 to 30.
+   -->
 
-  <!-- Weapons factory -->
+  <!-- Weapons factory (1010299) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Glassmakers -->
+  <!-- Glassmakers (1010319) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Windows factory -->
+  <!-- Windows factory (1010285) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Concrete factory -->
+  <!-- Concrete factory (1010280) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Saltpeter works -->
+  <!-- Saltpeter works (1010310) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce cycle time from 120 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Dynamite factory -->
+  <!-- Dynamite factory (1010300) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Heavy weapons factory -->
+  <!-- Heavy weapons factory (1010301) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 120 to 60.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Lategame (OW) -->
-  <!-- Sewing machine factory -->
+  <!-- Sewing machine factory (1010284) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Brass smeltery -->
+  <!-- Brass smeltery (1010282) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Spectacle factory -->
+  <!-- Spectacle factory (101250) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Bicycle factory -->
+  <!-- Bicycle factory (1010323) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Clockmakers -->
+  <!-- Clockmakers (1010324) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Filament factory -->
+  <!-- Filament factory (1010321) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Light bulb factory -->
+  <!-- Light bulb factory (1010286) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 60 to 30.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Goldsmiths -->
+  <!-- Goldsmiths (1010327) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Jewellers -->
+  <!-- Jewellers (1010328) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Marquetry workshop -->
+  <!-- Marquetry workshop (1010320) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Gramophone factory -->
+  <!-- Gramophone factory (1010326) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 120 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Coachmakers -->
+  <!-- Coachmakers (1010289) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 120 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Motor assembly line (OW steam motors) -->
+  <!-- Motor assembly line (1010302, OW steam motors) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Cab assembly line -->
+  <!-- Cab assembly line (1010303) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Telephone manufacturer -->
+  <!-- Telephone manufacturer (118735) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Chemical plant: Souvenirs -->
+  <!-- Chemical plant: Souvenirs (133533) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Chemical plant: Lacquer -->
+  <!-- Chemical plant: Lacquer (135133) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
-  <!-- Assembly line: Elevators -->
+  <!-- Assembly line: Elevators (134622) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Assembly line: Typewritters -->
+  <!-- Assembly line: Typewritters (135148) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Artisan workshop: Billiard tables -->
+  <!-- Artisan workshop: Billiard tables (135407) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
-  <!-- Artisan workshop: Violins -->
+  <!-- Artisan workshop: Violins (135397) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
-  <!-- Artisan workshop: Toys -->
+  <!-- Artisan workshop: Toys (135669) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
   <!-- New world buildings (NW) -->
   <!-- Farms (NW) -->  
-  <!-- Plantain plantation -->
+  <!-- Plantain plantation (101263) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Sugar cane plantation -->
-  
-  <!-- Cotton plantation -->
-  
-  <!-- Caoutchouc plantation -->
+  <!-- Sugar cane plantation (1010329) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Corn farm -->
+  <!-- Hacienda Sugar cane plantation (24798) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Coffee plantation -->
+  <!-- Cotton plantation (1010331) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Tobacco plantation -->
+  <!-- Caoutchouc plantation (1010333) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Cocoa plantation -->
-  
-  <!-- Herb garden -->
-  
-  <!-- Orchid farm -->
-  
-  <!-- Alpaca farm -->
+  <!-- Hacienda Caoutchouc plantation (25006) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Cattle farm (NW) -->
+  <!-- Corn farm (101270) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
+
+  <!-- Hacienda Corn farm (25003) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Nandu farm -->
+  <!-- Coffee plantation (101251) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Hacienda fertilizer works -->
+  <!-- Hacienda Coffee plantation (25005) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Pearl farm -->
+  <!-- Tobacco plantation (1010330) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 125.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Cocoa plantation (1010332) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Hacienda Cocoa plantation (25009) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Herb garden (5463) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Orchid farm (5814) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
+
+  <!-- Hacienda Potato farm (25019) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
+
+  <!-- Hacienda Grain farm (25128) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
+
+  <!-- Hacienda Spice farm (25020) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 100.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Alpaca farm (101272) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
+
+  <!-- Cattle farm (101269, NW) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Nandu farm (5457) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Hacienda fertilizer works (24805) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
+  
+  <!-- Pearl farm (1010339) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Supplies (NW) -->
-  <!-- Fish oil factory -->
+  <!-- Fish oil factory (101262) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
 
-  <!-- Fried plantain kitchen -->
+  <!-- Fried plantain kitchen (101264) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Tortilla maker -->
+  <!-- Tortilla maker (101271) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Cigar factory -->
+  <!-- Cigar factory (1010342) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Sugar refinery -->
+  <!-- Sugar refinery (1010317) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Chocolate factory -->
+  <!-- Chocolate factory (1010341) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Calamari fishery -->
+  <!-- Calamari fishery (7919) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Jalea kitchen -->
+  <!-- Jalea kitchen (5458) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Chemical plant: Chewing gum -->
+  <!-- Chemical plant: Chewing gum (135185) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Ice cream factory -->
+  <!-- Ice cream factory (5459) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Clothes (NW) -->
-  <!-- Poncho darner -->
+  <!-- Poncho darner (101266) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Cotton mill -->
+  <!-- Cotton mill (1010318) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Felt producer -->
+  <!-- Felt producer (101415) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Bombin weaver -->
+  <!-- Bombin weaver (101273) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Ball manufactory -->
+  <!-- Ball manufactory (5879) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Custome shop -->
+  <!-- Custome shop (5933) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Drinks (NW) -->
-  <!-- Rum distillery -->
+  <!-- Rum distillery (1010340,24801) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Coffee roaster -->
+  <!-- Coffee roaster (101252) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Hacienda hot sauce factory -->
+  <!-- Hacienda hot sauce factory (25508) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Hacienda atole maker -->
+  <!-- Hacienda atole maker (25126) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Hacienda brewery -->
+  <!-- Hacienda schnapps distillery (25350) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
+
+  <!-- Hacienda brewery (25064) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Mezcal bar -->
+  <!-- Mezcal bar (6594) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Mines (NW) -->
-  <!-- Gold mine (NW) -->
+  <!-- Gold mine (1010311, NW) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 150 to 60.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Mineral mine -->
+  <!-- Mineral mine (1390) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Bauxite mine -->
-  <!-- Increase internal storage -->
+  <!-- Bauxite mine (1308) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase cycle time from 10 to 15.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Helium extractor -->
+  <!-- Helium extractor (1353) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Lategame (NW) -->
-  <!-- Aluminium smelter -->
+  <!-- Aluminium smelter (835) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Furnace (NW) -->
+  <!-- Furnace (6080, NW) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Sewing machine factory (NW) -->
+  <!-- Sewing machine factory (6083, NW) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Change building to OW variation.
+   -->
 
-  <!-- Chemical plant: Ethanol -->
+  <!-- Chemical plant: Ethanol (135134) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Perfume mixer -->
+  <!-- Perfume mixer (5657) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Cable factory -->
+  <!-- Cable factory (6279) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Chemical plant: Celluloid -->
+  <!-- Chemical plant: Celluloid (135224) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Motor assembly plant (NW electrical motors) -->
+  <!-- Motor assembly plant (5659, NW electrical motors) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Fan factory -->
+  <!-- Fan factory (5862) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Laboratory: Pigments -->
+  <!-- Laboratory: Pigments (5462) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Increase cycle time from 45 to 60.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Scooter factory -->
+  <!-- Scooter factory (5658) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 120 to 60.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Chemical plant: Film reels -->
+  <!-- Chemical plant: Film reels (5828) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Arsenal: Police equipment -->
+  <!-- Arsenal: Police equipment (6630) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Laboratory: Fire extinguishers -->
+  <!-- Laboratory: Fire extinguishers (6629) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Increase cycle time from 45 to 60.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
   
-  <!-- Laboratory: Medicine -->
+  <!-- Laboratory: Medicine (6631) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Increase cycle time from 45 to 60.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
   <!-- Enbesa buildings -->
   <!-- Farms (E) -->
-  <!-- Linseed farm -->
+  <!-- Linseed farm (114448) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Teff farm -->
+  <!-- Teff farm (114450) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Hibiscus farm -->
+  <!-- Hibiscus farm (114447) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Indigo farm -->
+  <!-- Indigo farm (114451) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Spice farm -->
+  <!-- Spice farm (114452) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Apiary -->
+  <!-- Apiary (114453) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce module required to 125.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Goat farm -->
+  <!-- Goat farm (114456) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Sanga farm -->
+  <!-- Sanga farm (114439) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Supplies (E) -->
-  <!-- Salt works -->
+  <!-- Salt works (114440) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Dry-house -->
+  <!-- Dry-house (114444) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Teff mill -->
+  <!-- Teff mill (114459) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Lobster fishery -->
+  <!-- Lobster fishery (118729) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Wat kitchen -->
+  <!-- Wat kitchen (114471) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
 
   <!-- Clothes (E) -->
-  <!-- Linen mill -->
+  <!-- Linen mill (114441) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Embroiderer -->
+  <!-- Embroiderer (114466) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Tapestry looms -->
+  <!-- Tapestry looms (114469) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
 
   <!-- Drinks (E) -->
-  <!-- Tea spicer -->
+  <!-- Tea spicer (114468) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
   <!-- Materials (E) -->
-  <!-- Wanza woodcutter -->
+  <!-- Wanza woodcutter (122963) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Increase area needed from 9 to 10.
+    - Reduce area needed percentage from 80 to 75.
+    - Add Industrializable.
+   -->
   
-  <!-- Clay collector -->
+  <!-- Clay collector (117743) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Brick dry-house -->
+  <!-- Brick dry-house (114467) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
   <!-- Lategame -->
-  <!-- Ceramics workshop -->
+  <!-- Ceramics workshop (118725) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Pipe maker -->
+  <!-- Pipe maker (114472) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Paper mill -->
+  <!-- Paper mill (117744) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Luminer -->
+  <!-- Luminer (114470) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Chandler -->
+  <!-- Chandler (114461) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
-  <!-- Lanternsmith -->
+  <!-- Lanternsmith (114464) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+    - Add Industrializable.
+   -->
   
   <!-- Arctic buildings -->
+  <!-- Heater (114751) -->
+  <!-- 
+    - Increase internal storage to 30.
+   -->
+
   <!-- Farms (A) -->
-  <!-- Goose farm -->
+  <!-- Goose farm (112676) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce cycle time from 120 to 60.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Husky farm -->
+  <!-- Husky farm (112682) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce cycle time from 120 to 60.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Supplies (A) -->
-  <!-- Caribou hunter -->
+  <!-- Caribou hunter (112667) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce area needed from 11 to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Whale hunter -->
+  <!-- Whale hunter (112666) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Pemmican factory -->
+  <!-- Pemmican factory (112668) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Oil lamp factory -->
+  <!-- Oil lamp factory (112679) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Clothes (A) -->
-  <!-- Seal hunter -->
+  <!-- Seal hunter (112674) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Sleeping bag factory -->
+  <!-- Sleeping bag factory (112675) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Bear hunter -->
+  <!-- Bear hunter (112673) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce cycle time from 90 to 60.
+    - Reduce area needed from 13 to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Parka factory -->
+  <!-- Parka factory (112672) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce cycle time from 90 to 60.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Prime hunting cabin -->
+  <!-- Prime hunting cabin (116034) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Increase cycle time from 15 to 30.
+    - Reduce area needed from 11 to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Mines (A) -->
-  <!-- Deep Gold mine (A) -->
+  <!-- Deep Gold mine (116029, A) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Gas mine -->
+  <!-- Arctic Gas mine (112690) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce cycle time from 270 to 180.
+    - Increase module building radius to 25.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Materials (A) -->
-  <!-- Lumberjack hut (A) -->
+  <!-- Lumberjack hut (114703, A) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Increase cycle time from 15 to 30.
+    - Increase area needed from 9 to 10.
+    - Reduce area needed percentage from 80 to 75.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Charcoal kiln (A) -->
+  <!-- Charcoal kiln (114705, A) -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce area needed from 11 to 10.
+    - Reduce transport range to 80.
+   -->
   
-  <!-- Sawmill (A) -->
+  <!-- Sawmill (114704, A) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Lategame (A) -->
-  <!-- Sled frame factory -->
+  <!-- Sled frame factory (112681) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
-  <!-- Husky sled factory -->
+  <!-- Husky sled factory (112680) -->
+  <!-- 
+    - Increase internal storage to 10.
+    - Reduce transport range to 80.
+   -->
 
   <!-- Drop factories -->
   <!-- Bomb factory -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
   <!-- Sea Mine factory -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
   <!-- Pamphlet printer -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
   <!-- Care package factory -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 
   <!-- Water drop factory -->
+  <!-- 
+    - Increase internal storage to 30.
+    - Increase production per cycle from 1 to 3.
+    - Reduce transport range to 80.
+    - Add industrializable.
+   -->
 </ModOps>

@@ -3412,11 +3412,6 @@
           <ItemLink>190665</ItemLink>
           <Weight>10</Weight>
         </Item>
-        <!-- Ship plans -->
-        <Item>
-          <ItemLink>192465</ItemLink>
-          <Weight>10</Weight>
-        </Item>
         <!-- Defenses -->
         <Item>
           <ItemLink>191432</ItemLink>
