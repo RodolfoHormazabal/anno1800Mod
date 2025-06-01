@@ -17,7 +17,7 @@
   <Include File = 'assets_ships.xml' />
   <Include File = 'assets_buildings.xml' />
   <Include File = 'assets_npc.xml' />
-  
+
   <!-- Harbour blocking space mod -->
   <ModOp Type = 'remove' GUID = '1010520,1010521,100783,101403,101404,119259' Path = 'Values/Blocking/HarbourAreaExpand'/>
   <ModOp Type = 'remove' GUID = '100429,102284,100519,125028,125191,125192,125193' Path = 'Values/Blocking/HarbourAreaExpand'/>
@@ -211,13 +211,13 @@
     GUID = '269492,269493,269494,269495,269496,269497,269498,269499,269500,269501,269701,269702,269703,269704,269705,269706,269707,269708,269709,269710,269711,269712,269713,269714,269715' 
     Path = '/Values/ItemEffect/EffectTargets'
   >
-    <Item>
-      <GUID>2001000000</GUID>
-    </Item>
-  </ModOp>
+<Item>
+<GUID>2001000000</GUID>
+</Item>
+</ModOp>
 
-  <!-- New World Grand Trade Union -->
-  <ModOp Type = 'addNextSibling' GUID = '101284'>
+<!-- New World Grand Trade Union -->
+<ModOp Type = 'addNextSibling' GUID = '101284'>
     <Asset>
       <BaseAssetGUID>2001000000</BaseAssetGUID>
       <Values>

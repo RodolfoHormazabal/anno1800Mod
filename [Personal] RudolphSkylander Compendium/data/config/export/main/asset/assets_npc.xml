@@ -1,5 +1,5 @@
 <ModOps>
-  <!-- 
+  <!--
     This file contains all NPC changes.
 
     Sections: 
@@ -18,16 +18,20 @@
   -->
 
   <!-- NPCs -->
-  <!-- NPCs storage amount -->
+  <!--
+    - Increase storage amount for each product.
+  -->
+
   <ModOp 
     Type = 'replace' 
     GUID = '100680,100681,100682,100683,100685,100686,101117,116035,119409,5921,5924' 
-    Path = '/Values/Warehouse/WarehouseStorage/StorageMax'>
-    <StorageMax>500</StorageMax>
-  </ModOp>
+    Path = '/Values/Warehouse/WarehouseStorage/StorageMax'
+  >
+<StorageMax>500</StorageMax>
+</ModOp>
 
-  <!-- Sir Archibald Blake -->
-  <ModOp Type = 'replace' GUID = '45' Path = '/Values/Trader/Progression'>
+<!-- Sir Archibald Blake -->
+<ModOp Type = 'replace' GUID = '45' Path = '/Values/Trader/Progression'>
     <Progression>
       <EarlyGame>
         <GoodsProduction>
@@ -551,20 +555,29 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000043</ItemLink>
+          <ItemLink>2001000100</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000045</ItemLink>
+          <ItemLink>2001000102</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000047</ItemLink>
+          <ItemLink>2001000104</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Town hall -->
+        <!-- Incidents -->
         <Item>
-          <ItemLink>192468</ItemLink>
+          <ItemLink>191747</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191753</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191750</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -584,24 +597,20 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>125143</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
           <ItemLink>125072</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Residences -->
         <Item>
-          <ItemLink>191579</ItemLink>
+          <ItemLink>191815</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190724</ItemLink>
+          <ItemLink>191803</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190193</ItemLink>
+          <ItemLink>191800</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Hotels -->
@@ -828,15 +837,19 @@
         </Item>
         <!-- Books -->
         <Item>
+          <ItemLink>136831</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
           <ItemLink>136833</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>136827</ItemLink>
+          <ItemLink>137631</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>137631</ItemLink>
+          <ItemLink>136827</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -1280,15 +1293,15 @@
       <ItemsPool>
         <!-- All production -->
         <Item>
-          <ItemLink>2001000055</ItemLink>
+          <ItemLink>2001000112</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000057</ItemLink>
+          <ItemLink>2001000114</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000059</ItemLink>
+          <ItemLink>2001000116</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -3412,11 +3425,6 @@
           <ItemLink>190665</ItemLink>
           <Weight>10</Weight>
         </Item>
-        <!-- Ship plans -->
-        <Item>
-          <ItemLink>192465</ItemLink>
-          <Weight>10</Weight>
-        </Item>
         <!-- Defenses -->
         <Item>
           <ItemLink>191432</ItemLink>
@@ -3430,6 +3438,18 @@
           <ItemLink>121022</ItemLink>
           <Weight>10</Weight>
         </Item>
+        <Item>
+          <ItemLink>2001000129</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000131</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000133</ItemLink>
+          <Weight>10</Weight>
+        </Item>
         <!-- Warships -->
         <Item>
           <ItemLink>191596</ItemLink>
@@ -3441,6 +3461,10 @@
         </Item>
         <Item>
           <ItemLink>191601</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000125</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Airships -->
@@ -3458,6 +3482,10 @@
         </Item>
         <Item>
           <ItemLink>2232</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000127</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -4205,6 +4233,7 @@
   <ModOp Type = 'replace' GUID = '6239' Path = '/Values/RewardPool'>
     <RewardPool>
       <ItemsPool>
+        <!-- New World exclusive items -->
         <Item>
           <ItemLink>4277</ItemLink>
           <Weight>10</Weight>
@@ -4219,20 +4248,28 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000043</ItemLink>
+          <ItemLink>2001000100</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000045</ItemLink>
+          <ItemLink>2001000102</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000047</ItemLink>
+          <ItemLink>2001000104</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Town hall -->
         <Item>
-          <ItemLink>192468</ItemLink>
+          <ItemLink>191747</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191753</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191750</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -4253,15 +4290,15 @@
         </Item>
         <!-- Residences -->
         <Item>
-          <ItemLink>191579</ItemLink>
+          <ItemLink>192482</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190724</ItemLink>
+          <ItemLink>191797</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>190193</ItemLink>
+          <ItemLink>191794</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Harbour -->
@@ -4913,15 +4950,15 @@
       <ItemsPool>
         <!-- All production -->
         <Item>
-          <ItemLink>2001000055</ItemLink>
+          <ItemLink>2001000112</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000057</ItemLink>
+          <ItemLink>2001000114</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000059</ItemLink>
+          <ItemLink>2001000116</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5631,15 +5668,15 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000054</ItemLink>
+          <ItemLink>2001000111</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000052</ItemLink>
+          <ItemLink>2001000109</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000053</ItemLink>
+          <ItemLink>2001000110</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5688,10 +5725,6 @@
         </Item>
         <!-- Airships -->
         <Item>
-          <ItemLink>116174</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
           <ItemLink>4117</ItemLink>
           <Weight>10</Weight>
         </Item>
@@ -5701,6 +5734,10 @@
         </Item>
         <Item>
           <ItemLink>4133</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>2001000124</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Maps -->
@@ -5719,6 +5756,10 @@
         </Item>
         <Item>
           <ItemLink>112373</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>112376</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -5768,15 +5809,15 @@
         </Item>
         <!-- Salvager -->
         <Item>
-          <ItemLink>113364</ItemLink>
+          <ItemLink>113359</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>112553</ItemLink>
+          <ItemLink>113356</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>112550</ItemLink>
+          <ItemLink>113353</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Town Hall -->
@@ -5987,11 +6028,11 @@
       <ItemsPool>
         <!-- New items -->
         <Item>
-          <ItemLink>2001000049</ItemLink>
+          <ItemLink>2001000106</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000045</ItemLink>
+          <ItemLink>2001000102</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- All Woodworking -->
@@ -6106,6 +6147,19 @@
         </Item>
         <Item>
           <ItemLink>1772</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <!-- Arctic residences -->
+        <Item>
+          <ItemLink>191738</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191759</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191756</ItemLink>
           <Weight>10</Weight>
         </Item>
       </ItemsPool>
@@ -6546,20 +6600,40 @@
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000043</ItemLink>
+          <ItemLink>2001000100</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000045</ItemLink>
+          <ItemLink>2001000102</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
-          <ItemLink>2001000047</ItemLink>
+          <ItemLink>2001000104</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- Town hall -->
         <Item>
-          <ItemLink>192468</ItemLink>
+          <ItemLink>191821</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191791</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>191788</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125144</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125142</ItemLink>
+          <Weight>10</Weight>
+        </Item>
+        <Item>
+          <ItemLink>125140</ItemLink>
           <Weight>10</Weight>
         </Item>
         <Item>
@@ -6568,31 +6642,6 @@
         </Item>
         <Item>
           <ItemLink>191692</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <!-- Residences -->
-        <Item>
-          <ItemLink>125114</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125125</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125144</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>121004</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125134</ItemLink>
-          <Weight>10</Weight>
-        </Item>
-        <Item>
-          <ItemLink>125132</ItemLink>
           <Weight>10</Weight>
         </Item>
         <!-- All Enbesan Farms -->

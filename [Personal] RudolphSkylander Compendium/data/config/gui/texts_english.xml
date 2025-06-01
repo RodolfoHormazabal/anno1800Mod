@@ -1,5 +1,6 @@
 <ModOps>
   <ModOp Type="add" Path="/TextExport/Texts">
+    <!-- Buildings -->
     <Text>
       <GUID>2001000000</GUID>
       <Text>Grand Trade Union</Text>
@@ -100,226 +101,330 @@
       <GUID>2001000024</GUID>
       <Text>Land Big Betty</Text>
     </Text>
+    <!-- Target Pools -->
     <Text>
-      <GUID>2001000025</GUID>
+      <GUID>2001000050</GUID>
       <Text>All Trade Unions</Text>
     </Text>
     <Text>
-      <GUID>2001000026</GUID>
+      <GUID>2001000051</GUID>
       <Text>All Arctic Lodges</Text>
     </Text>
     <Text>
-      <GUID>2001000027</GUID>
+      <GUID>2001000052</GUID>
       <Text>All Old World Fisheries</Text>
     </Text>
     <Text>
-      <GUID>2001000028</GUID>
+      <GUID>2001000053</GUID>
       <Text>All New World Fisheries</Text>
     </Text>
     <Text>
-      <GUID>2001000029</GUID>
+      <GUID>2001000054</GUID>
       <Text>All Enbesan Fisheries</Text>
     </Text>
     <Text>
-      <GUID>2001000030</GUID>
+      <GUID>2001000055</GUID>
       <Text>All New World Animal Farms</Text>
     </Text>
     <Text>
-      <GUID>2001000080</GUID>
+      <GUID>2001000056</GUID>
       <Text>All Enbesan Animal Farms</Text>
     </Text>
     <Text>
-      <GUID>2001000031</GUID>
+      <GUID>2001000057</GUID>
       <Text>All Open Pits And Coastal Mines</Text>
     </Text>
     <Text>
-      <GUID>2001000032</GUID>
+      <GUID>2001000058</GUID>
       <Text>All Enbesan Food Production</Text>
     </Text>
     <Text>
-      <GUID>2001000033</GUID>
+      <GUID>2001000059</GUID>
       <Text>All Old World Distilleries and Mezcal Bar</Text>
     </Text>
     <Text>
-      <GUID>2001000034</GUID>
+      <GUID>2001000060</GUID>
       <Text>All New World Distilleries and Champagne Cellar</Text>
     </Text>
     <Text>
-      <GUID>2001000035</GUID>
+      <GUID>2001000061</GUID>
       <Text>All Old World Clothiers</Text>
     </Text>
     <Text>
-      <GUID>2001000036</GUID>
+      <GUID>2001000062</GUID>
       <Text>All New World Clothiers</Text>
     </Text>
     <Text>
-      <GUID>2001000037</GUID>
+      <GUID>2001000063</GUID>
       <Text>All Enbesan Clothiers</Text>
     </Text>
     <Text>
-      <GUID>2001000038</GUID>
+      <GUID>2001000064</GUID>
       <Text>All Oil Refineries</Text>
     </Text>
     <Text>
-      <GUID>2001000039</GUID>
+      <GUID>2001000065</GUID>
       <Text>All Power Plants</Text>
     </Text>
     <Text>
-      <GUID>2001000040</GUID>
+      <GUID>2001000066</GUID>
       <Text>All Assembly Factories</Text>
     </Text>
     <Text>
-      <GUID>2001000041</GUID>
+      <GUID>2001000067</GUID>
       <Text>All Electronics Production</Text>
     </Text>
     <Text>
-      <GUID>2001000042</GUID>
+      <GUID>2001000068</GUID>
       <Text>All Enbesan Workshops</Text>
     </Text>
     <Text>
-      <GUID>2001000043</GUID>
+      <GUID>2001000069</GUID>
+      <Text>All New World Residences</Text>
+    </Text>
+    <Text>
+      <GUID>2001000070</GUID>
+      <Text>All Arctic Residences</Text>
+    </Text>
+    <!-- Items -->
+    <Text>
+      <GUID>2001000100</GUID>
       <Text>Union Subsidies Act</Text>
     </Text>
     <Text>
-      <GUID>2001000044</GUID>
+      <GUID>2001000101</GUID>
       <Text>Allows the allocation of more specialists on trade unions.</Text>
     </Text>
     <Text>
-      <GUID>2001000045</GUID>
+      <GUID>2001000102</GUID>
       <Text>Harbour Stewardship Act</Text>
     </Text>
     <Text>
-      <GUID>2001000046</GUID>
+      <GUID>2001000103</GUID>
       <Text>Allows the allocation of more specialists on harbourmaster offices.</Text>
     </Text>
     <Text>
-      <GUID>2001000047</GUID>
+      <GUID>2001000104</GUID>
       <Text>Open Minds Act</Text>
     </Text>
     <Text>
-      <GUID>2001000048</GUID>
+      <GUID>2001000105</GUID>
       <Text>Allows the allocation of more specialists on town halls.</Text>
     </Text>
     <Text>
-      <GUID>2001000049</GUID>
+      <GUID>2001000106</GUID>
       <Text>Lodge Subsidies Act</Text>
     </Text>
     <Text>
-      <GUID>2001000050</GUID>
+      <GUID>2001000107</GUID>
       <Text>Allows the allocation of more specialists on arctic lodges.</Text>
     </Text>
     <Text>
-      <GUID>2001000051</GUID>
+      <GUID>2001000108</GUID>
       <Text>Iron and Glass Grillwork</Text>
     </Text>
     <Text>
-      <GUID>2001000052</GUID>
+      <GUID>2001000109</GUID>
       <Text>CTC Extinguisher</Text>
     </Text>
     <Text>
-      <GUID>2001000053</GUID>
+      <GUID>2001000110</GUID>
       <Text>CTC Grenade</Text>
     </Text>
     <Text>
-      <GUID>2001000054</GUID>
+      <GUID>2001000111</GUID>
       <Text>Smoke Detector</Text>
     </Text>
     <Text>
-      <GUID>2001000055</GUID>
-      <Text>Rudolph "The Completionist" Skylander, Perfectionist Engineer</Text>
+      <GUID>2001000112</GUID>
+      <Text>Rudolph Skylander, The Ceaseless Completionist</Text>
     </Text>
     <Text>
-      <GUID>2001000056</GUID>
-      <Text>Founder leader of the Skylander Engineers Company. In his constant search of completion develops its own version of every product, always looking for a way of improving its work. After his company outgrew his home island he setted his looked at the bigger picture and started gathering awesome talents far and wide giving them silly titles and the Skylander surname.</Text>
+      <GUID>2001000113</GUID>
+      <Text>Founder leader of the Skylander Engineers Company. While Rudolph's original objective was to create a place to allow himself to do personal projects the company quickly outgrew its objective, now a multinational that gathers talent far and wide to supply it ever increasing needs involved in all sorts of endeavours. Still he can still be found on his office designing and discarding mostly fully functional prototypes.</Text>
     </Text>
     <Text>
-      <GUID>2001000057</GUID>
-      <Text>Romeo "The Brain" Skylander, Ingenious Schematics Designer</Text>
+      <GUID>2001000114</GUID>
+      <Text>Romeo Skylander, The Thorough Technician</Text>
     </Text>
     <Text>
-      <GUID>2001000058</GUID>
-      <Text>Brain of the Skylander Engineers. Romeo's ingenious designs cover all the possibilities leaving no margin for error making him the ideal partner for Roman. Prefers problem solving tasks over physical work.</Text>
+      <GUID>2001000115</GUID>
+      <Text>S.E.C Technicians Department Leader. Romeo's ingenious and efficient designs are universally adaptable, covering all variables and leaving no margin for errors. His department provides all the necessary blueprints for a high maintainable and scalable company.</Text>
     </Text>
     <Text>
-      <GUID>2001000059</GUID>
-      <Text>Roman "The Brawn" Skylander, Resilient Overtime Worker</Text>
+      <GUID>2001000116</GUID>
+      <Text>Roman Skylander, The Willing Worker</Text>
     </Text>
     <Text>
-      <GUID>2001000060</GUID>
-      <Text>Brawn of the Skylander Engineers. Roman's ability to work all day long with great precision and little rest makes him the ideal partner for Romeo. Prefers repetitive tasks over complicated stuff.</Text>
+      <GUID>2001000117</GUID>
+      <Text>S.E.C Craftsmans Department Leader. Roman's skill, experience and charisma ensures the workers stay productive and the products high quality. His department provides all the necessary products for a high reliable and functional company.</Text>
     </Text>
     <Text>
-      <GUID>191596</GUID>
-      <Text>Raynor "The Raider" Skylander, Fleet Heroic Admiral</Text>
+      <GUID>2001000118</GUID>
+      <Text>Raymond Skylander, Endearing Explorer</Text>
     </Text>
     <Text>
-      <GUID>19961</GUID>
-      <Text>Admiral of the Skylander Engineers Fleet. Named after a faraway freedom fighter Raynor is known for turning against corruption and fighting for true justice. Was contracted by the Skylander Engineers after the company encountered some heavy resistance on their way to new seas.</Text>
+      <GUID>2001000119</GUID>
+      <Text>S.E.C Arctic Explorer. Despite having worked all his life in the cold arctic Raymond's heart hasn't frozen. Offers a warm welcome and always has the right words to start a conversation. With ancient advice and oceanic experience pierces through the hardships and the ice with ease.</Text>
     </Text>
     <Text>
-      <GUID>191598</GUID>
-      <Text>Rowan "The Peacemaker" Skylander, Fleet Orderly Vice-Admiral</Text>
+      <GUID>2001000120</GUID>
+      <Text>Romulus Skylander, The Stalwart Storm Breaker</Text>
     </Text>
     <Text>
-      <GUID>19963</GUID>
-      <Text>Vice-Admiral of the Skylander Engineers Fleet. Rowan will achieve peace and order at all costs, be it by reason or force, specially force. Always at odds with Ronan even when their ways are usually the same.</Text>
+      <GUID>2001000121</GUID>
+      <Text>S.E.C Storm Breaker and Remus brother. No matter how hard the wind blows Romulus can push through any storm. His vast knowledge on arctic tools and techniques allows him to break out of the tempestous winds this frozen landscape has to offer. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he didn't kill his brother.</Text>
     </Text>
     <Text>
-      <GUID>191601</GUID>
-      <Text>Ronan "The Troublemaker" Skylander, Fleet Chaotic Vice-Admiral</Text>
+      <GUID>2001000122</GUID>
+      <Text>Remus Skylander, The Steadfast Storm Trooper</Text>
     </Text>
     <Text>
-      <GUID>19966</GUID>
-      <Text>Vice-Admiral of the Skylander Engineers Fleet. Ronan will achieve chaos and revolt at all costs, be it by force or... force, specially force. Always at odds with Rowan even if their ways are usually the same.</Text>
+      <GUID>2001000123</GUID>
+      <Text>S.E.C Storm Trooper and Romulus brother. No matter how hard the wind blows Remus can withstand any storm. His vast knowledge on arctic survival tactics allows him to endure the bitter temperatures this frozen landscape has to offer. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he wasn't killed by his brother.</Text>
     </Text>
     <Text>
-      <GUID>191616</GUID>
-      <Text>Rafferty "The Captain" Skylander, Fleet Customs Officer</Text>
+      <GUID>2001000124</GUID>
+      <Text>Aerial White Flag</Text>
     </Text>
     <Text>
-      <GUID>20019</GUID>
-      <Text>Captain of the Skylander Engineers Fleet. On high seas he is master of his vessel and its cargo, on port he has memorized and optimized all the necessary procedures to ensure no problems arise when trading. When the company went global his talents were greatly appreciated. Is great friends with "The Harbourmaster".</Text>
+      <GUID>2001000125</GUID>
+      <Text>Grand Howitzer Gun</Text>
     </Text>
     <Text>
-      <GUID>191615</GUID>
-      <Text>Rosemary "The Wise" Skylander, Fleet Master of all Trades</Text>
+      <GUID>2001000126</GUID>
+      <Text>Battleship variant of the same one used on land defenses. The S.E.C soon realized this gun was as good defensive weapon as an offensive one so they quickly adapted some for its battleships, proving the versatility of the S.E.C designs.</Text>
     </Text>
     <Text>
-      <GUID>20018</GUID>
-      <Text>Wise Trader of the Skylander Engineers Fleet. Not to be confused with her twin sister Roselle. Rosemary engaged in market trades and diplomatic relations all her life drives a hard bargain, assists her sister in order to get everything the company needs or wants. Has long hair.</Text>
+      <GUID>2001000127</GUID>
+      <Text>Grand Gattling Gun</Text>
     </Text>
     <Text>
-      <GUID>191445</GUID>
-      <Text>Roselle "The Expert" Skylander, Fleet Walking Encyclopedia</Text>
+      <GUID>2001000128</GUID>
+      <Text>Airship variant of the same one used on land defenses. Fast moving aerial targets are more difficult to hit wich meant less firepower at a higher rate and precision was needed, the gattling guns used in land proved the perfect match to the challenge, proving once again the versatility of S.E.C designs.</Text>
     </Text>
     <Text>
-      <GUID>19816</GUID>
-      <Text>Expert Trader of the Skylander Engineers Fleet. Not to be confused with her twin sister Rosemary. Roselle studied all her life has acquired knowledge of all the market products natural and man-made, assists her sister in order to get everything the company needs or wants. Has short hair.</Text>
+      <GUID>2001000129</GUID>
+      <Text>Grand Howitzer Gun</Text>
     </Text>
     <Text>
-      <GUID>2001000061</GUID>
-      <Text>Raymond "The Icebreaker" Skylander, Warm Arctic Conqueror</Text>
+      <GUID>2001000130</GUID>
+      <Text>This state of the art howitzer model was designed by the S.E.C to upgrade the defenses of its vast network of islands, keep up with the more belligerent rival advances and to deal with the usual troublemaker too.</Text>
     </Text>
     <Text>
-      <GUID>2001000062</GUID>
-      <Text>Icebreaker of the Skylander Engineers. Despite having worked all his life in the cold Raymond's heart hasn't frozen. Always has the right words to start a conversation, offers a warm welcome and his vast knowledge to all who dares to defy the icy peaks and the dark depths of the arctic. It pierces through the hardships and the ice.</Text>
+      <GUID>2001000131</GUID>
+      <Text>Grand Gattling Gun</Text>
     </Text>
     <Text>
-      <GUID>2001000063</GUID>
-      <Text>Romulus "The Unstoppable" Skylander, Brown Bear of the Arctic</Text>
+      <GUID>2001000132</GUID>
+      <Text>When the S.E.C company took air they knew this also opened a new front for its enemies, they designed this fully automatic defense turret not just to delivery quantity but also quality to its flying guests.</Text>
     </Text>
     <Text>
-      <GUID>2001000064</GUID>
-      <Text>The Unstoppable of the Skylander Engineers and Remus brother. No matter how hard the wind blows Romulus can push through any storm thanks to his knowledge on arctic tools and techniques. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he didn't kill his brother.</Text>
+      <GUID>2001000133</GUID>
+      <Text>Grand Mortar Gun</Text>
     </Text>
     <Text>
-      <GUID>2001000065</GUID>
-      <Text>Remus "The Unmoveable" Skylander, Polar Bear of the Arctic</Text>
+      <GUID>2001000134</GUID>
+      <Text>When bigger and more resilient ships started to roam the seas it was obvious the usual cannon fire was far too ineffective, thats when this monstrosity was created and its fame as the most fearsome weapon consolidated.</Text>
+    </Text>
+    <!-- Ships -->
+    <Text>
+      <GUID>2001000200</GUID>
+      <Text>Flak Ironclad</Text>
     </Text>
     <Text>
-      <GUID>2001000066</GUID>
-      <Text>The Unmoveable of the Skylander Engineers and Romulus brother. No matter how hard the wind blows Remus can withstand any storm thanks to his knowledge on arctic survival tactics. Legend has it he and his brother where raised by an arctic wolf, but unlike the legend he wasn't killed by his brother.</Text>
+      <GUID>2001000201</GUID>
+      <Text>The Flak Ironclad is an upgraded version of the flak monitor, sturdier and carrying three times the firepower.</Text>
     </Text>
+    <Text>
+      <GUID>2001000202</GUID>
+      <Text>Small Battle Cruiser</Text>
+    </Text>
+    <Text>
+      <GUID>2001000203</GUID>
+      <Text>This compact version of the battle cruiser is more versatile and cheaper at the cost of some firepower.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000204</GUID>
+      <Text>Small Battle Cruiser Skin 01</Text>
+    </Text>
+    <Text>
+      <GUID>2001000205</GUID>
+      <Text>Small Battle Cruiser Skin 02</Text>
+    </Text>
+    <Text>
+      <GUID>2001000206</GUID>
+      <Text>Small Battle Cruiser Skin 03</Text>
+    </Text>
+    <Text>
+      <GUID>2001000207</GUID>
+      <Text>Small Battle Cruiser Skin 04</Text>
+    </Text>
+    <Text>
+      <GUID>2001000208</GUID>
+      <Text>Small Battle Cruiser Skin 05</Text>
+    </Text>
+    <Text>
+      <GUID>2001000209</GUID>
+      <Text>Heavy Battle Cruiser</Text>
+    </Text>
+    <Text>
+      <GUID>2001000210</GUID>
+      <Text>A heavily upscaled version of the battle cruiser, devastating in every sense but slow, pricier and difficult to mantain.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000211</GUID>
+      <Text>Heavy Battle Cruiser Skin 01</Text>
+    </Text>
+    <Text>
+      <GUID>2001000212</GUID>
+      <Text>Heavy Battle Cruiser Skin 02</Text>
+    </Text>
+    <Text>
+      <GUID>2001000213</GUID>
+      <Text>Heavy Battle Cruiser Skin 03</Text>
+    </Text>
+    <Text>
+      <GUID>2001000214</GUID>
+      <Text>Heavy Battle Cruiser Skin 04</Text>
+    </Text>
+    <Text>
+      <GUID>2001000215</GUID>
+      <Text>Heavy Battle Cruiser Skin 05</Text>
+    </Text>
+    <Text>
+      <GUID>2001000216</GUID>
+      <Text>Small Cargo Ship.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000217</GUID>
+      <Text>A smaller version of the cargo ship, the same reliability for smaller errands.</Text>
+    </Text>
+    <Text>
+      <GUID>2001000218</GUID>
+      <Text>Small Cargo Ship Skin 01</Text>
+    </Text>
+    <Text>
+      <GUID>2001000219</GUID>
+      <Text>Small Cargo Ship Skin 02</Text>
+    </Text>
+    <Text>
+      <GUID>2001000220</GUID>
+      <Text>Small Cargo Ship Skin 03</Text>
+    </Text>
+    <Text>
+      <GUID>2001000221</GUID>
+      <Text>Small Cargo Ship Skin 04</Text>
+    </Text>
+    <Text>
+      <GUID>2001000222</GUID>
+      <Text>Small Reefer</Text>
+    </Text>
+    <Text>
+      <GUID>2001000223</GUID>
+      <Text>An smaller version of the White Shark provided by Capitain Tobias intended for smaller intercontinental deliveries.</Text>
+    </Text>
+    <!-- Vanilla -->
     <Text>
       <GUID>111129</GUID>
       <Text>Wild Anarchist Vanzetti</Text>
@@ -329,56 +434,36 @@
       <Text>CTC Grenade</Text>
     </Text>
     <Text>
-      <GUID>190619</GUID>
-      <Text>William the Veteran Whaler</Text>
-    </Text>
-    <Text>
-      <GUID>190615</GUID>
-      <Text>Whitney the Veteran Angler</Text>
-    </Text>
-    <Text>
-      <GUID>190621</GUID>
-      <Text>Megan the Mother of Pearls</Text>
-    </Text>
-    <Text>
-      <GUID>190617</GUID>
-      <Text>Dylan the Deep Sea Diver</Text>
-    </Text>
-    <Text>
-      <GUID>125136</GUID>
-      <Text>Diric Sheekh, Fearless Lobsterman</Text>
-    </Text>
-    <Text>
-      <GUID>125135</GUID>
-      <Text>Safwaan the Seasoned Salter</Text>
-    </Text>
-    <Text>
-      <GUID>190618</GUID>
-      <Text>Mahir the Meticulous Trapper</Text>
-    </Text>
-    <Text>
-      <GUID>190738</GUID>
-      <Text>Miss Rodriguez the Conservationist</Text>
-    </Text>
-    <Text>
       <GUID>11657</GUID>
-      <Text>Aldea the Forest Warden</Text>
+      <Text>Flora the Frondescent Forester</Text>
     </Text>
     <Text>
       <GUID>190733</GUID>
-      <Text>Andrea the Forest Restorator</Text>
+      <Text>Fauna the Fostering Forester</Text>
     </Text>
     <Text>
-      <GUID>190742</GUID>
-      <Text>Percival the Park Protector</Text>
+      <GUID>190760</GUID>
+      <Text>Micaela Montague, The Mining Engineer</Text>
     </Text>
     <Text>
-      <GUID>190740</GUID>
-      <Text>Keith the Kiln Keeper</Text>
+      <GUID>190757</GUID>
+      <Text>Montgomery the Mettlesome Miner</Text>
     </Text>
     <Text>
-      <GUID>191431</GUID>
-      <Text>Seraphim Papadikas the Window Dresser</Text>
+      <GUID>190755</GUID>
+      <Text>Emmerich the Explosives Expert</Text>
+    </Text>
+    <Text>
+      <GUID>12630</GUID>
+      <Text>Certified explosives full and claustrophobia free.</Text>
+    </Text>
+    <Text>
+      <GUID>1948</GUID>
+      <Text>Mad Mary, The Dynamite Enthusiast</Text>
+    </Text>
+    <Text>
+      <GUID>2223</GUID>
+      <Text>Helia Hagar, The Helium Expert</Text>
     </Text>
     <Text>
       <GUID>191589</GUID>
@@ -390,27 +475,43 @@
     </Text>
     <Text>
       <GUID>19937</GUID>
-      <Text>Leaves many large puddles and hills in the wake of his exhaustive quarrying.</Text>
+      <Text>Leaves large puddles and hills in the wake of his exhaustive quarrying.</Text>
+    </Text>
+    <Text>
+      <GUID>190738</GUID>
+      <Text>Miss Rodriguez, The Campaigning Conservationist</Text>
+    </Text>
+    <Text>
+      <GUID>190742</GUID>
+      <Text>Riley the Respondent Ranger</Text>
+    </Text>
+    <Text>
+      <GUID>190740</GUID>
+      <Text>Keith the Kiln Keeper</Text>
+    </Text>
+    <Text>
+      <GUID>190743</GUID>
+      <Text>Silvester Steen, The Wild Frontiersman</Text>
+    </Text>
+    <Text>
+      <GUID>190736</GUID>
+      <Text>Tenacious Trapper Spencer</Text>
+    </Text>
+    <Text>
+      <GUID>190734</GUID>
+      <Text>Persistent Poacher Sterling</Text>
+    </Text>
+    <Text>
+      <GUID>1956</GUID>
+      <Text>Thalia the Temperate Pedologist</Text>
+    </Text>
+    <Text>
+      <GUID>1961</GUID>
+      <Text>Tamara the Tropical Pedologist</Text>
     </Text>
     <Text>
       <GUID>191429</GUID>
       <Text>Master Craftsman Marlow</Text>
-    </Text>
-    <Text>
-      <GUID>190757</GUID>
-      <Text>Montgomery the Mountain Miner</Text>
-    </Text>
-    <Text>
-      <GUID>190755</GUID>
-      <Text>Eisenhart the Explosives Expert</Text>
-    </Text>
-    <Text>
-      <GUID>12630</GUID>
-      <Text>Certified explosives full and claustrophobia free.</Text>
-    </Text>
-    <Text>
-      <GUID>2223</GUID>
-      <Text>Helia the Helium Expert</Text>
     </Text>
     <Text>
       <GUID>191464</GUID>
@@ -421,196 +522,16 @@
       <Text>Fergus the Forthcoming Foreman</Text>
     </Text>
     <Text>
-      <GUID>190736</GUID>
-      <Text>Wise Trapper Spencer</Text>
-    </Text>
-    <Text>
-      <GUID>190734</GUID>
-      <Text>Wily Poacher Sterling</Text>
-    </Text>
-    <Text>
-      <GUID>191580</GUID>
-      <Text>Sigurd the Shepherd</Text>
-    </Text>
-    <Text>
-      <GUID>8348</GUID>
-      <Text>Valentina Alvarez, Cattle Caretaker</Text>
-    </Text>
-    <Text>
-      <GUID>191581</GUID>
-      <Text>Atuf Alrai, Hale Herdsman</Text>
-    </Text>
-    <Text>
-      <GUID>19929</GUID>
-      <Text>He is the greatest of all time.</Text>
-    </Text>
-    <Text>
-      <GUID>125113</GUID>
-      <Text>Cigaal the Caring Cattleherd</Text>
-    </Text>
-    <Text>
-      <GUID>125112</GUID>
-      <Text>Gawdat the Gentle Grazer</Text>
-    </Text>
-    <Text>
-      <GUID>1966</GUID>
-      <Text>Esmat the Enbesan Animal Nutricionist</Text>
-    </Text>
-    <Text>
-      <GUID>125131</GUID>
-      <Text>Shula the Spice Master</Text>
-    </Text>
-    <Text>
-      <GUID>125115</GUID>
-      <Text>Farah the Flower Girl</Text>
-    </Text>
-    <Text>
-      <GUID>1964</GUID>
-      <Text>Adriel the Animal Nutricionist</Text>
-    </Text>
-    <Text>
-      <GUID>191379</GUID>
-      <Text>Yvette the Moonshiner</Text>
-    </Text>
-    <Text>
-      <GUID>190751</GUID>
-      <Text>Patrick the Medal-Winning Producer</Text>
-    </Text>
-    <Text>
-      <GUID>190749</GUID>
-      <Text>Percival the Expert Planter</Text>
-    </Text>
-    <Text>
-      <GUID>190690</GUID>
-      <Text>Horticulturalist Hannah</Text>
-    </Text>
-    <Text>
-      <GUID>190688</GUID>
-      <Text>Ephraim Tomer the Tree Surgeon</Text>
-    </Text>
-    <Text>
-      <GUID>190691</GUID>
-      <Text>Mrs. Bethany Brown the Cultivator</Text>
-    </Text>
-    <Text>
-      <GUID>190687</GUID>
-      <Text>Mrs. Gardenia Green the Cultivator</Text>
-    </Text>
-    <Text>
-      <GUID>190689</GUID>
-      <Text>Passionate Pedologist Pradel</Text>
-    </Text>
-    <Text>
-      <GUID>191328</GUID>
-      <Text>Lily the Lovely Designer</Text>
-    </Text>
-    <Text>
-      <GUID>191327</GUID>
-      <Text>Frida the Fine Couturier</Text>
-    </Text>
-    <Text>
-      <GUID>191345</GUID>
-      <Text>Magnolia the Magnificent Modiste</Text>
-    </Text>
-    <Text>
-      <GUID>191349</GUID>
-      <Text>Millicent the Modest Milliner</Text>
-    </Text>
-    <Text>
-      <GUID>191380</GUID>
-      <Text>Brewmaster Bruce</Text>
-    </Text>
-    <Text>
-      <GUID>190644</GUID>
-      <Text>Sommelier Rochelle</Text>
-    </Text>
-    <Text>
-      <GUID>191367</GUID>
-      <Text>Catalina the Coffessieur</Text>
-    </Text>
-    <Text>
-      <GUID>190630</GUID>
-      <Text>Pâtissier Priscilla</Text>
-    </Text>
-    <Text>
-      <GUID>191403</GUID>
-      <Text>Chayanne the Charcutier</Text>
-    </Text>
-    <Text>
-      <GUID>191316</GUID>
-      <Text>Perfumier Phoebe</Text>
-    </Text>
-    <Text>
-      <GUID>191400</GUID>
-      <Text>Ramsey the Recipe Archivist</Text>
-    </Text>
-    <Text>
-      <GUID>191404</GUID>
-      <Text>Chef Minerva</Text>
-    </Text>
-    <Text>
-      <GUID>191333</GUID>
-      <Text>Charlotte the Chocolatier</Text>
-    </Text>
-    <Text>
-      <GUID>191330</GUID>
-      <Text>Caroline the Chocolatier</Text>
-    </Text>
-    <Text>
-      <GUID>191356</GUID>
-      <Text>Charles the Chocolatier</Text>
-    </Text>
-    <Text>
-      <GUID>191332</GUID>
-      <Text>Carmine the Chocolatier</Text>
-    </Text>
-    <Text>
-      <GUID>191331</GUID>
-      <Text>Casper the Chocolatier</Text>
-    </Text>
-    <Text>
-      <GUID>191387</GUID>
-      <Text>Keila, Kantyi of the Quinoa</Text>
-    </Text>
-    <Text>
-      <GUID>191386</GUID>
-      <Text>Manuel the Mole Master</Text>
-    </Text>
-    <Text>
-      <GUID>190640</GUID>
-      <Text>Benicio the Beguiling Blender</Text>
-    </Text>
-    <Text>
-      <GUID>190639</GUID>
-      <Text>Luiz the Loquacious Lector</Text>
-    </Text>
-    <Text>
-      <GUID>191377</GUID>
-      <Text>Iloaina, Former Pyrphorian Whizz</Text>
-    </Text>
-    <Text>
-      <GUID>191373</GUID>
-      <Text>Melchior, Metropolis Galvanic Electrician</Text>
-    </Text>
-    <Text>
-      <GUID>191376</GUID>
-      <Text>Emmerich the Electrical Engineer</Text>
-    </Text>
-    <Text>
-      <GUID>191375</GUID>
-      <Text>Maxwell the Master Magnetician</Text>
-    </Text>
-    <Text>
       <GUID>190704</GUID>
-      <Text>Fflamddwyn the Forge Master</Text>
+      <Text>Flamdwyn the Forge Master</Text>
     </Text>
     <Text>
       <GUID>190703</GUID>
-      <Text>Smidr the Steely-Eyed Steelsmith</Text>
+      <Text>Smidr the Steely Steelsmith</Text>
     </Text>
     <Text>
       <GUID>1895</GUID>
-      <Text>Viggo the Military Logistician</Text>
+      <Text>Lazarus the Logical Logistician</Text>
     </Text>
     <Text>
       <GUID>958</GUID>
@@ -621,12 +542,260 @@
       <Text>Annona Arcadia, Synthetic Chemist</Text>
     </Text>
     <Text>
+      <GUID>191377</GUID>
+      <Text>Iloaina Ignatova, Former Pyrphorian Whizz</Text>
+    </Text>
+    <Text>
+      <GUID>191373</GUID>
+      <Text>Melchior Meyer, The Galvanic Electrician</Text>
+    </Text>
+    <Text>
+      <GUID>191376</GUID>
+      <Text>Edward the Electrical Engineer</Text>
+    </Text>
+    <Text>
+      <GUID>191375</GUID>
+      <Text>Maxwell the Master Magnetician</Text>
+    </Text>
+    <Text>
+      <GUID>190752</GUID>
+      <Text>Cosmo Castelli, The Agronomic Trailblazer</Text>
+    </Text>
+    <Text>
+      <GUID>190750</GUID>
+      <Text>Yvette The Moonshiner</Text>
+    </Text>
+    <Text>
+      <GUID>191379</GUID>
+      <Text>Maeve The Moonshiner</Text>
+    </Text>
+    <Text>
+      <GUID>190751</GUID>
+      <Text>Patrick the Phenomenal Producer</Text>
+    </Text>
+    <Text>
+      <GUID>190749</GUID>
+      <Text>Percival the Precise Planter</Text>
+    </Text>
+    <Text>
+      <GUID>190693</GUID>
+      <Text>Dr. Ali Al-Zahir, The Botanical Director</Text>
+    </Text>
+    <Text>
+      <GUID>190690</GUID>
+      <Text>Horticulturalist Hannah</Text>
+    </Text>
+    <Text>
+      <GUID>190688</GUID>
+      <Text>Ephraim Tomer, The Tree Surgeon</Text>
+    </Text>
+    <Text>
+      <GUID>190691</GUID>
+      <Text>Mrs. Chloe the Cultivator</Text>
+    </Text>
+    <Text>
+      <GUID>190687</GUID>
+      <Text>Mrs. Camellia the Cultivator</Text>
+    </Text>
+    <Text>
+      <GUID>190689</GUID>
+      <Text>Paul Pradel, The Passionate Pedologist</Text>
+    </Text>
+    <Text>
+      <GUID>125131</GUID>
+      <Text>Shula the Spice Master</Text>
+    </Text>
+    <Text>
+      <GUID>125115</GUID>
+      <Text>Farah the Flower Girl</Text>
+    </Text>
+    <Text>
+      <GUID>8908</GUID>
+      <Text>Efrem the Enbesan Envoy</Text>
+    </Text>
+    <Text>
+      <GUID>191380</GUID>
+      <Text>Brewmaster Bruce</Text>
+    </Text>
+    <Text>
+      <GUID>190644</GUID>
+      <Text>Sommelier Rochelle</Text>
+    </Text>
+    <Text>
+      <GUID>191370</GUID>
+      <Text>Cecilia The Coffessieur</Text>
+    </Text>
+    <Text>
+      <GUID>191367</GUID>
+      <Text>Catalina The Coffessieur</Text>
+    </Text>
+    <Text>
+      <GUID>125118</GUID>
+      <Text>Tasneem the Tea Taste Tester</Text>
+    </Text>
+    <Text>
+      <GUID>125117</GUID>
+      <Text>Thamina the Tea Trader</Text>
+    </Text>
+    <Text>
+      <GUID>191583</GUID>
+      <Text>Rodrigo The Ranchero</Text>
+    </Text>
+    <Text>
+      <GUID>191580</GUID>
+      <Text>Sigurd The Shepherd</Text>
+    </Text>
+    <Text>
+      <GUID>8348</GUID>
+      <Text>Valentina Alvarez, The Cattle Caretaker</Text>
+    </Text>
+    <Text>
+      <GUID>1964</GUID>
+      <Text>Adriel Agresta, The Animal Nutricionist</Text>
+    </Text>
+    <Text>
+      <GUID>191581</GUID>
+      <Text>Atuuf Alrai, The Hale Herdsman</Text>
+    </Text>
+    <Text>
+      <GUID>19929</GUID>
+      <Text>He is the greatest of all time.</Text>
+    </Text>
+    <Text>
+      <GUID>125113</GUID>
+      <Text>Cigaal The Caring Cattleherd</Text>
+    </Text>
+    <Text>
+      <GUID>125112</GUID>
+      <Text>Gawdat The Gentle Grazer</Text>
+    </Text>
+    <Text>
+      <GUID>1966</GUID>
+      <Text>Arwaa Atiya, The Animal Nutricionist</Text>
+    </Text>
+    <Text>
+      <GUID>191328</GUID>
+      <Text>Danica The Dapper Designer</Text>
+    </Text>
+    <Text>
+      <GUID>191327</GUID>
+      <Text>Clarabelle The Classy Couturier</Text>
+    </Text>
+    <Text>
+      <GUID>191345</GUID>
+      <Text>Susanna The Sartorial Stylist</Text>
+    </Text>
+    <Text>
+      <GUID>191345</GUID>
+      <Text>Magnolia The Magnificent Modiste</Text>
+    </Text>
+    <Text>
+      <GUID>191349</GUID>
+      <Text>Millicent The Modest Milliner</Text>
+    </Text>
+    <Text>
+      <GUID>125137</GUID>
+      <Text>Talaat the Talented Tailor</Text>
+    </Text>
+    <Text>
+      <GUID>129022</GUID>
+      <Text>Diyaah the Dazzling Designer</Text>
+    </Text>
+    <Text>
+      <GUID>125127</GUID>
+      <Text>Etimaad the Exceptional Embroidress</Text>
+    </Text>
+    <Text>
+      <GUID>191325</GUID>
+      <Text>Ezdihaar the Eccentric Embroidress</Text>
+    </Text>
+    <Text>
+      <GUID>17084</GUID>
+      <Text>Produces intricate colorful patterns using dyes produced from local grown flowers and vegetables.</Text>
+    </Text>
+    <Text>
+      <GUID>191403</GUID>
+      <Text>Chayanne the Charcutier</Text>
+    </Text>
+    <Text>
+      <GUID>190630</GUID>
+      <Text>Pâtissier Priscilla</Text>
+    </Text>
+    <Text>
+      <GUID>191316</GUID>
+      <Text>Perfumier Phoebe</Text>
+    </Text>
+    <Text>
+      <GUID>191405</GUID>
+      <Text>Tatiana The Taste Tester</Text>
+    </Text>
+    <Text>
+      <GUID>191400</GUID>
+      <Text>Amanda The Authentic Archivist</Text>
+    </Text>
+    <Text>
+      <GUID>191404</GUID>
+      <Text>Chef Minerva</Text>
+    </Text>
+    <Text>
+      <GUID>191333</GUID>
+      <Text>Charlotte The Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191330</GUID>
+      <Text>Caroline The Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191356</GUID>
+      <Text>Charles The Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191332</GUID>
+      <Text>Carmine The Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191331</GUID>
+      <Text>Casper The Chocolatier</Text>
+    </Text>
+    <Text>
+      <GUID>191387</GUID>
+      <Text>Kantyi Quinoa, True Tortillera</Text>
+    </Text>
+    <Text>
+      <GUID>191386</GUID>
+      <Text>Manuel the Mole Master</Text>
+    </Text>
+    <Text>
+      <GUID>191402</GUID>
+      <Text>Carlos The Corn Cultivator</Text>
+    </Text>
+    <Text>
+      <GUID>190640</GUID>
+      <Text>Benicio the Beguiling Blender</Text>
+    </Text>
+    <Text>
+      <GUID>190639</GUID>
+      <Text>Luis the Loquacious Lector</Text>
+    </Text>
+    <Text>
+      <GUID>125121</GUID>
+      <Text>Cabaas The Ceremonial Chef</Text>
+    </Text>
+    <Text>
+      <GUID>125120</GUID>
+      <Text>Cilmii The Cherishing Cook</Text>
+    </Text>
+    <Text>
       <GUID>191424</GUID>
-      <Text>Dario the Dynamic Engineer</Text>
+      <Text>Dario the Dynamic Designer</Text>
     </Text>
     <Text>
       <GUID>191417</GUID>
-      <Text>Derek the Dependable Repairman</Text>
+      <Text>Derek the Dependable Designer</Text>
+    </Text>
+    <Text>
+      <GUID>191310</GUID>
+      <Text>Gerhard Fuchs, The Patent Eyeglass</Text>
     </Text>
     <Text>
       <GUID>191309</GUID>
@@ -634,23 +803,31 @@
     </Text>
     <Text>
       <GUID>191308</GUID>
-      <Text>Observant Optician Odilia</Text>
+      <Text>Observant Optometrist Odilia</Text>
     </Text>
     <Text>
-      <GUID>191418</GUID>
-      <Text>Isambard Wayne, Mechanical Giant</Text>
+      <GUID>191353</GUID>
+      <Text>Stella The Sparky Scientist</Text>
     </Text>
     <Text>
-      <GUID>191419</GUID>
-      <Text>Dorothea the Diligent Draughtswoman</Text>
+      <GUID>191352</GUID>
+      <Text>Pandora The Passionate Physicist</Text>
     </Text>
     <Text>
-      <GUID>8351</GUID>
-      <Text>Maria Maravilla, Electrical Mechanic</Text>
+      <GUID>19524</GUID>
+      <Text>Wants to unleash all her research knowledge into the world.</Text>
+    </Text>
+    <Text>
+      <GUID>191354</GUID>
+      <Text>Isaac Ingesson, The Innovative Inventor</Text>
     </Text>
     <Text>
       <GUID>191323</GUID>
       <Text>Ceaseless Chronometrist Chiara</Text>
+    </Text>
+    <Text>
+      <GUID>191322</GUID>
+      <Text>Hardworking Horologist Clara</Text>
     </Text>
     <Text>
       <GUID>190626</GUID>
@@ -661,116 +838,328 @@
       <Text>Gleaming Gemologist Goldstan</Text>
     </Text>
     <Text>
-      <GUID>191322</GUID>
-      <Text>Handy Horologist Clara</Text>
+      <GUID>191418</GUID>
+      <Text>Isambard Wayne, The Mechanical Giant</Text>
     </Text>
     <Text>
-      <GUID>191354</GUID>
-      <Text>Johan the Jovial Inventor</Text>
+      <GUID>191419</GUID>
+      <Text>Dorothea The Diligent Drafter</Text>
     </Text>
     <Text>
-      <GUID>191353</GUID>
-      <Text>Stella the Science Whizz</Text>
+      <GUID>8351</GUID>
+      <Text>Maria Maravilla, The Electrical Mechanic</Text>
     </Text>
     <Text>
-      <GUID>191352</GUID>
-      <Text>Pandora the Passionate Physicist</Text>
+      <GUID>125128</GUID>
+      <Text>Maxaamed Magan, The Master Craftsman</Text>
     </Text>
     <Text>
-      <GUID>19524</GUID>
-      <Text>Wants to unleash all her research knowledge into the world.</Text>
+      <GUID>125126</GUID>
+      <Text>Cadnaan The Careful Craftsman</Text>
     </Text>
     <Text>
-      <GUID>136648</GUID>
-      <Text>Seth the Sous Chef</Text>
+      <GUID>191459</GUID>
+      <Text>Cimiil The Curious Craftsman</Text>
     </Text>
     <Text>
-      <GUID>136649</GUID>
-      <Text>Eleder the Eloquent Entremetier</Text>
+      <GUID>125129</GUID>
+      <Text>Wahenoor Wajeeb, The Masterful Miller</Text>
     </Text>
     <Text>
-      <GUID>136699</GUID>
-      <Text>Madame Curtis, Concierge d'hotel</Text>
+      <GUID>125133</GUID>
+      <Text>Giorgis Gabir, The Eminent Hymnodist</Text>
     </Text>
     <Text>
-      <GUID>136697</GUID>
-      <Text>Madame Meinwen, Maitre d'hotel</Text>
+      <GUID>118103</GUID>
+      <Text>Elder Rahim The Passionate Polyglot</Text>
     </Text>
     <Text>
-      <GUID>137799</GUID>
-      <Text>Blue Skies Clerk</Text>
-    </Text>
-    <Text>
-      <GUID>136886</GUID>
-      <Text>Wilbur the Window-Dresser</Text>
-    </Text>
-    <Text>
-      <GUID>136887</GUID>
-      <Text>Spencer the Store Greeter</Text>
-    </Text>
-    <Text>
-      <GUID>125121</GUID>
-      <Text>Idil the Banquet Chef</Text>
-    </Text>
-    <Text>
-      <GUID>125120</GUID>
-      <Text>Ifrah the Enthusiast Cook</Text>
-    </Text>
-    <Text>
-      <GUID>125118</GUID>
-      <Text>Tasnim the Tea Selector</Text>
-    </Text>
-    <Text>
-      <GUID>125117</GUID>
-      <Text>Sahra the Soft Drink Seller</Text>
-    </Text>
-    <Text>
-      <GUID>125137</GUID>
-      <Text>Basim the Bespoke Tailor</Text>
-    </Text>
-    <Text>
-      <GUID>129022</GUID>
-      <Text>Ismaacil the Ingenious designer</Text>
-    </Text>
-    <Text>
-      <GUID>125127</GUID>
-      <Text>Inara the Industrious Embroidress</Text>
-    </Text>
-    <Text>
-      <GUID>191325</GUID>
-      <Text>Izara the Colorful Embroidress</Text>
-    </Text>
-    <Text>
-      <GUID>17084</GUID>
-      <Text>Produces intricate colorful patterns using dyes produced from local grown flowers and vegetables.</Text>
+      <GUID>125123</GUID>
+      <Text>Elder Dekama The Popular Patriarch</Text>
     </Text>
     <Text>
       <GUID>125124</GUID>
       <Text>Abune Siraj, The Enbesan Bishop</Text>
     </Text>
     <Text>
-      <GUID>125128</GUID>
-      <Text>Maxamed Magan, The Master Craftsman</Text>
+      <GUID>8355</GUID>
+      <Text>Salvador Sergio, The Stalwart Supporter</Text>
     </Text>
     <Text>
-      <GUID>125126</GUID>
-      <Text>Cadnaan the Careful Craftsman</Text>
+      <GUID>136886</GUID>
+      <Text>Dagobert The Display Dresser</Text>
     </Text>
     <Text>
-      <GUID>191459</GUID>
-      <Text>Cimil the Curious Craftsman</Text>
+      <GUID>136887</GUID>
+      <Text>Spencer The Store Saluter</Text>
+    </Text>
+    <Text>
+      <GUID>136648</GUID>
+      <Text>Seachnall The Sous Chef</Text>
+    </Text>
+    <Text>
+      <GUID>136649</GUID>
+      <Text>Eleder The Eloquent Entremetier</Text>
+    </Text>
+    <Text>
+      <GUID>190667</GUID>
+      <Text>Rembrandt Skylander, Eager Empire Builder</Text>
+    </Text>
+    <Text>
+      <GUID>12550</GUID>
+      <Text>S.E.C Harbourmaster. Whennever there's a new venture for the company Rembrandt is the first one to volunteer, be it kickstarting new settlements or managing the capital harbours he finds great joy providing insight on needs and procedures. Is great friends with Captain Rafferty, after all he is the one he encounters the most on his everyday work.</Text>
+    </Text>
+    <Text>
+      <GUID>190666</GUID>
+      <Text>Reynard Skylander, Alluring Arms Dealer</Text>
+    </Text>
+    <Text>
+      <GUID>12549</GUID>
+      <Text>S.E.C Harbour Inspector. Reynard knows that in every trading company is bound to have a contraband problem, wich is easy to find if you know where to look. Instead of trying to eradicate it why not make use of it? after all negotiations are bound to go well when the alternative is a cold cell. For some reasons the freed contacts are always in jail at the start of his next shift.</Text>
+    </Text>
+    <Text>
+      <GUID>190665</GUID>
+      <Text>Reynold Skylander, Incorruptible Inspector</Text>
+    </Text>
+    <Text>
+      <GUID>12548</GUID>
+      <Text>S.E.C Harbour Inspector. Reynold knows that in every trading company is bound to have a contraband problem, wich is easy to spot if you are thorough. Instead of wasting it why not put it to good use? after all the smugglers wont be needing it anymore and the company is always in need of weapons. For some reason the captured smugglers are always free at the start of his next shift.</Text>
+    </Text>
+    <Text>
+      <GUID>191432</GUID>
+      <Text>Roderick Skylander, Dauntless Defender</Text>
+    </Text>
+    <Text>
+      <GUID>19799</GUID>
+      <Text>S.E.C Army General. The longer Roderick fights the fiercer he becomes, having triumphed over endless holdouts and dire situations his fame precedes him, when he takes command the soldiers recover their will to fight and the people feels reassured.</Text>
+    </Text>
+    <Text>
+      <GUID>191442</GUID>
+      <Text>Rostislav Skylander, Skilled Sharp Shooter</Text>
+    </Text>
+    <Text>
+      <GUID>19804</GUID>
+      <Text>S.E.C Offense Colonel. With courage and bravery, will fight to the very end. Rostislav will deliver maximum damage with force and precision. Works great in conjunction with Radivoje.</Text>
+    </Text>
+    <Text>
+      <GUID>191436</GUID>
+      <Text>Radivoje Skylander, Steady Sharp Spotter</Text>
+    </Text>
+    <Text>
+      <GUID>19803</GUID>
+      <Text>S.E.C Defense Colonel. With vigilance and intelligence, will never be caught of guard. Radivoje will provide maximum strategic advantage. Works great in conjunction with Rostislav.</Text>
+    </Text>
+    <Text>
+      <GUID>190697</GUID>
+      <Text>Mr. Swell, Heuristic Hydrodynamist</Text>
+    </Text>
+    <Text>
+      <GUID>190696</GUID>
+      <Text>Mr. Sevard, Seaworthy Shipwright</Text>
+    </Text>
+    <Text>
+      <GUID>190683</GUID>
+      <Text>Theodore The Thriving Traveller</Text>
+    </Text>
+    <Text>
+      <GUID>190682</GUID>
+      <Text>Pleasance The Panoramic Promoter</Text>
+    </Text>
+    <Text>
+      <GUID>190619</GUID>
+      <Text>William the Watchful Whaler</Text>
+    </Text>
+    <Text>
+      <GUID>190615</GUID>
+      <Text>Agatha the Admirable Angler</Text>
+    </Text>
+    <Text>
+      <GUID>190621</GUID>
+      <Text>Megan the Mother of Pearls</Text>
+    </Text>
+    <Text>
+      <GUID>190617</GUID>
+      <Text>David the Dauntless Diver</Text>
+    </Text>
+    <Text>
+      <GUID>190616</GUID>
+      <Text>Dylan the Dedicated Diver</Text>
+    </Text>
+    <Text>
+      <GUID>125136</GUID>
+      <Text>Diric Sheekh, The Fearless Lobsterman</Text>
+    </Text>
+    <Text>
+      <GUID>125135</GUID>
+      <Text>Safwaan The Seasoned Salter</Text>
+    </Text>
+    <Text>
+      <GUID>190618</GUID>
+      <Text>Taliib The Teeming Trapper</Text>
+    </Text>
+    <Text>
+      <GUID>191747</GUID>
+      <Text>Reginald Skylander, Salutary Security Engineer</Text>
+    </Text>
+    <Text>
+      <GUID>19447</GUID>
+      <Text>S.E.C Security Engineer. Chief of the city security department, Reginald was contracted by de S.E.C. to oversee city planning and construction, with the sole objective to minimize incidents and malcontent on the population.</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Renault Skylander, Paradigmatic Planner</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>S.E.C Security Planner. Tactician of the city security department, Renault preventive and proactive plans ensure the city does not fall by fire, illness or destructive rage. When they do happen though he also has a corrective plan for it.</Text>
+    </Text>
+    <Text>
+      <GUID>191753</GUID>
+      <Text>Reinhardt Skylander, Temeritous Technician</Text>
+    </Text>
+    <Text>
+      <GUID>19453</GUID>
+      <Text>S.E.C Security Technician. Troubleshooter of the city security department, Reinhardt is a resourceful problem solver, his technical skills and charisma makes him the perfect responder when trouble arise. Though thanks to the department efforts he is rarely seen in action.</Text>
+    </Text>
+    <Text>
+      <GUID>191815</GUID>
+      <Text>Roderick Skylander, Auspicious Administrator</Text>
+    </Text>
+    <Text>
+      <GUID>19512</GUID>
+      <Text>S.E.C City Administrator. A company is as strong as the amount of people working for it and a well supplied population can really work wonders. Roderick makes sure the populace has everything they need and more, after all we need at least double the usual workforce for its recurrent world changing endeavours.</Text>
+    </Text>
+    <Text>
+      <GUID>191803</GUID>
+      <Text>Revaz Skylander, Thrifty Treasurer</Text>
+    </Text>
+    <Text>
+      <GUID>19503</GUID>
+      <Text>S.E.C City Treasurer. A company is as capable as the amount of money people spend on it and well invested money can really work wonders. Revaz makes sure the populace pay the correct price for the company products, after all the company needs every bit of money it can get for its usually expensive endeavours.</Text>
+    </Text>
+    <Text>
+      <GUID>191800</GUID>
+      <Text>Renat Skylander, Sensible Spokesman</Text>
+    </Text>
+    <Text>
+      <GUID>19500</GUID>
+      <Text>S.E.C City Spokesman. A company is as stable as the mood of the people and happy workers can really work wonders. Renat makes sure the people are happy with the products the company provides, after all the company needs an stable foundation for its equally stressful endeavours.</Text>
+    </Text>
+    <Text>
+      <GUID>136697</GUID>
+      <Text>Madame Meinwen, Maitre d'hotel</Text>
+    </Text>
+    <Text>
+      <GUID>136699</GUID>
+      <Text>Madame Curtis, Concierge d'hotel</Text>
+    </Text>
+    <Text>
+      <GUID>137799</GUID>
+      <Text>Blue Skies Clerk</Text>
+    </Text>
+    <Text>
+      <GUID>192482</GUID>
+      <Text>Reina Skylander, Prosperous Patroness</Text>
+    </Text>
+    <Text>
+      <GUID>19515</GUID>
+      <Text>S.E.C Hacienda Patroness. In this brand new world people dont have the same needs as in the old one. Reina was assigned this region for her deep understanding on the needs and traditions of its people, after all who better to lead than someone born and raised on these lands.</Text>
+    </Text>
+    <Text>
+      <GUID>191797</GUID>
+      <Text>Rivaldo Skylander, Authentic Appraiser</Text>
+    </Text>
+    <Text>
+      <GUID>19497</GUID>
+      <Text>S.E.C Exports Appraiser. In this brand new world products are not the same as the ones in the old one. Rivaldo makes sure the company is not robbed of the real value of the marvels these lands have to offer and in doing so, secures the financial future of the region and its people.</Text>
+    </Text>
+    <Text>
+      <GUID>191794</GUID>
+      <Text>Roberto Skylander, Carnival Coordinator</Text>
+    </Text>
+    <Text>
+      <GUID>19494</GUID>
+      <Text>S.E.C Carnival Coordinator. In this brand new world life is not the same as in the old one. Roberto knows how to lift people spirits and that means to celebrate big time, loud music and tasy foods thats the way life is enjoyed on these lands. After all who can revolt when the biggest worry is a hangover.</Text>
+    </Text>
+    <Text>
+      <GUID>191821</GUID>
+      <Text>Raghad Skylander, Assuring Ambassador</Text>
+    </Text>
+    <Text>
+      <GUID>19518</GUID>
+      <Text>S.E.C Ambassador. The land of lions is characterized by its unique people. Raghad was appointed to act as a bridge that connects our cultures and mediates the delicate balance of the region of Enbesa. The company is not here to appropiate, profit or destroy, but to help its people to thrive and progress in its own ways.</Text>
+    </Text>
+    <Text>
+      <GUID>191791</GUID>
+      <Text>Rayyan Skylander, Ancestral Artisan</Text>
+    </Text>
+    <Text>
+      <GUID>19491</GUID>
+      <Text>S.E.C Craftsman. The land of lions is characterized by its unique products. Rayyan is not only talented at the intricate production methods involved but also knowledgable on the relevance and value of each item produced. The company must show the world that in every little detail there is more than meets the eye.</Text>
+    </Text>
+    <Text>
+      <GUID>191788</GUID>
+      <Text>Ridwan Skylander, Principled Preserver</Text>
+    </Text>
+    <Text>
+      <GUID>19488</GUID>
+      <Text>S.E.C Preserver. The land of lions is characterized by its unique traditions. Ridwan has deep connection to the historic richness of these lands and its people, their stories and traditions are to be preserved, recorded and perpetuated. The company must show the world the cultural importance of the blessed lands of Enbesa.</Text>
+    </Text>
+    <Text>
+      <GUID>125144</GUID>
+      <Text>Djimon Dalal, The Elegiacal Expatriate</Text>
+    </Text>
+    <Text>
+      <GUID>125142</GUID>
+      <Text>Idris The Passionate Professor</Text>
+    </Text>
+    <Text>
+      <GUID>125140</GUID>
+      <Text>Pendo The Pioneering Professor</Text>
+    </Text>
+    <Text>
+      <GUID>4277</GUID>
+      <Text>Rambert Skylander, Lively Logistician</Text>
+    </Text>
+    <Text>
+      <GUID>191738</GUID>
+      <Text>Roxanne Skylander, Mirthful Meteorologist</Text>
+    </Text>
+    <Text>
+      <GUID>19248</GUID>
+      <Text>S.E.C Meteorologist. The arctic region is inhospitable and with a blizzard on top even worse, thats why the S.E.C was so quick on recruiting a meteorologist when the arctic expeditions started and Roxanne accurate predictions of the region climate were vital on the company first steps on the snow.</Text>
+    </Text>
+    <Text>
+      <GUID>191759</GUID>
+      <Text>IkKanattuk The Insightful Inuit</Text>
+    </Text>
+    <Text>
+      <GUID>19459</GUID>
+      <Text>Contracted by the S.E.C, IkKanattuk is in charge of providing practical information about survival on the arctic, ensuring the company uses the correct tool and people for the challenge ahead.</Text>
+    </Text>
+    <Text>
+      <GUID>191756</GUID>
+      <Text>Iggettuk The Inspiring Inuit</Text>
+    </Text>
+    <Text>
+      <GUID>19456</GUID>
+      <Text>Contracted by the S.E.C, Iggettuk is in charge of providing counsel in regards of the every day life on the arctic, ensuring the company pays close attention to the wellbeing of the people.</Text>
+    </Text>
+    <Text>
+      <GUID>1772</GUID>
+      <Text>Aether Aldebrand The Arctic Gas Expert</Text>
+    </Text>
+    <Text>
+      <GUID>116153</GUID>
+      <Text>Naaqtuuq The Sagacious Sled-Builder</Text>
     </Text>
     <Text>
       <GUID>116147</GUID>
       <Text>Savvy Sled Builder</Text>
     </Text>
     <Text>
-      <GUID>116148</GUID>
-      <Text>Oceanic Outdoor Cook</Text>
-    </Text>
-    <Text>
-      <GUID>116151</GUID>
-      <Text>Observative Outdoor Cook</Text>
+      <GUID>116152</GUID>
+      <Text>Toklo the Tactical Trapper</Text>
     </Text>
     <Text>
       <GUID>116149</GUID>
@@ -781,12 +1170,24 @@
       <Text>Impressive Inuit Hunter</Text>
     </Text>
     <Text>
-      <GUID>116132</GUID>
-      <Text>Industrious Inuit Seamster</Text>
+      <GUID>7225</GUID>
+      <Text>Bjorn Blanchard The Bait Specialist</Text>
     </Text>
     <Text>
-      <GUID>116130</GUID>
-      <Text>Insightful Inuit Seamster</Text>
+      <GUID>116154</GUID>
+      <Text>Sandro the Consummate Chef</Text>
+    </Text>
+    <Text>
+      <GUID>116148</GUID>
+      <Text>Oceanic Outdoor Cook</Text>
+    </Text>
+    <Text>
+      <GUID>116151</GUID>
+      <Text>Observant Outdoor Cook</Text>
+    </Text>
+    <Text>
+      <GUID>116144</GUID>
+      <Text>Taliriktug the Husky Herder</Text>
     </Text>
     <Text>
       <GUID>116143</GUID>
@@ -797,150 +1198,140 @@
       <Text>Devoted Dog-Breeder</Text>
     </Text>
     <Text>
-      <GUID>7225</GUID>
-      <Text>Bjorn the Bait Specialist</Text>
+      <GUID>116133</GUID>
+      <Text>Arnarunn The Seamless Seamster</Text>
     </Text>
     <Text>
-      <GUID>190697</GUID>
-      <Text>Mr. Swell, Heuristic Hydrodynamist</Text>
+      <GUID>116132</GUID>
+      <Text>Incisive Inuit Seamster</Text>
     </Text>
     <Text>
-      <GUID>190696</GUID>
-      <Text>Mr. Sevard, Seaworthy Ship Builder</Text>
+      <GUID>116130</GUID>
+      <Text>Industrious Inuit Seamster</Text>
     </Text>
     <Text>
-      <GUID>190683</GUID>
-      <Text>Caius the Cruise Impresario</Text>
+      <GUID>191596</GUID>
+      <Text>Raynor Skylander, The Heroic Admiral</Text>
     </Text>
     <Text>
-      <GUID>190682</GUID>
-      <Text>Thalia the Travel Agent</Text>
+      <GUID>19961</GUID>
+      <Text>S.E.C Fleet Admiral. Named after a faraway freedom fighter, Raynor is known for having its heart and mind in the right place. His skills were severely needed after the S.E.C met its rivals on their way to new regions.</Text>
     </Text>
     <Text>
-      <GUID>4135</GUID>
-      <Text>Willa Cochran, Highfleet Ace Pilot</Text>
+      <GUID>191598</GUID>
+      <Text>Rowan Skylander, The Orderly Vice-Admiral</Text>
+    </Text>
+    <Text>
+      <GUID>19963</GUID>
+      <Text>S.E.C Fleet Vice-Admiral. Rowan will achieve peace and order at all costs, be it by reason or force, specially force. Always at odds with Ronan even when their ways are usually the same.</Text>
+    </Text>
+    <Text>
+      <GUID>191601</GUID>
+      <Text>Ronan Skylander, The Chaotic Vice-Admiral</Text>
+    </Text>
+    <Text>
+      <GUID>19966</GUID>
+      <Text>S.E.C Fleet Vice-Admiral. Ronan will achieve chaos and revolt at all costs, be it by force or... force, specially force. Always at odds with Rowan even if their ways are usually the same.</Text>
+    </Text>
+    <Text>
+      <GUID>191616</GUID>
+      <Text>Rafferty Skylander, The Comprehensive Capitan</Text>
+    </Text>
+    <Text>
+      <GUID>20019</GUID>
+      <Text>S.E.C Trade Fleet Captain. On high seas he is master of his vessel and its cargo, on port he has memorized and optimized all the necessary procedures to ensure no problems arise when trading. When the company went global his talents were greatly appreciated. Is great friends with Rembrandt.</Text>
+    </Text>
+    <Text>
+      <GUID>191615</GUID>
+      <Text>Rosemary Skylander, The Mannered Merchant</Text>
+    </Text>
+    <Text>
+      <GUID>20018</GUID>
+      <Text>S.E.C Trade Fleet Merchant. Not to be confused with her twin sister Roselle. While her sister studied Rosemary travelled all across the world experiencing trade historic relevance, culture diversity, diplomatic exhanges. Has experience, controls the conversation flow and drives a hard bargain. With the help of her sister no deal is out of reach and the company is always on the winning side. Has long hair.</Text>
+    </Text>
+    <Text>
+      <GUID>191445</GUID>
+      <Text>Roselle Skylander, The Bursarial Businesswoman</Text>
+    </Text>
+    <Text>
+      <GUID>19816</GUID>
+      <Text>S.E.C Trade Fleet Expert. Not to be confused with her twin sister Rosemary. While her sister travelled Roselle dedicated her whole life to the study of mathemathics, statistics, finances and international trade. Has knowledge, gives accurate information about any product both natural or man-made. With the help of her sister no deal is out of reach and the company is always on the winning side. Has short hair.</Text>
+    </Text>
+    <Text>
+      <GUID>191991</GUID>
+      <Text>Oceanic White Flag</Text>
+    </Text>
+    <Text>
+      <GUID>113359</GUID>
+      <Text>Ryszard Skylander, Obstinate Oceanographer</Text>
+    </Text>
+    <Text>
+      <GUID>113305</GUID>
+      <Text>S.E.C Salvagers Oceanographer. Ryszard comes from an ancient family of oceaonographers and has found countless historical wrecks and treasures, now contracted by the S.E.C in collaboration with Old Nate to search the depths of the oceans old, new, frozen and far. Weirdly enough the under the sea was the place were science, history and treasure hunting were to join hands.</Text>
+    </Text>
+    <Text>
+      <GUID>113356</GUID>
+      <Text>Rutger Skylander, Receptive Radar Operator</Text>
+    </Text>
+    <Text>
+      <GUID>113302</GUID>
+      <Text>S.E.C Salvagers Radar Operator. Second in command Rutger is to tell Rostam what every blip and blop means, the sunken depths of the ocean are endlessly vast and pitch dark, to search and detect, to see the unseen, thats the radar operator job.</Text>
+    </Text>
+    <Text>
+      <GUID>113353</GUID>
+      <Text>Rostam Skylander, Dauntless Diver</Text>
+    </Text>
+    <Text>
+      <GUID>113299</GUID>
+      <Text>S.E.C Salvagers Bell Diver. Third in command Rostam is to follow Rutger directions and dive into the sea, the sunken depths of the ocean are full of valuables, monetary and historically, to dive into the unknown and resurface what has been lost, thats the diver job.</Text>
     </Text>
     <Text>
       <GUID>4134</GUID>
-      <Text>Amelia Coleman, Highfleet Expert Aviator</Text>
+      <Text>Rex Skylander, Aerial Admiral</Text>
+    </Text>
+    <Text>
+      <GUID>113299</GUID>
+      <Text>S.E.C Highfleet Admiral. When the highfleet was assigned there was not many that could be chosen to fill it ranks, just a bunch of technicians and 'crazy enough to drive flying torpedos' pilots, so naturally Rex the craziest among them all got the admiralty.</Text>
     </Text>
     <Text>
       <GUID>2226</GUID>
-      <Text>Mark Sayadi, Highfleet Elite Gunner</Text>
+      <Text>Reuben Skylander, Gutsy Gunner</Text>
+    </Text>
+    <Text>
+      <GUID>113299</GUID>
+      <Text>S.E.C Highfleet Gunner. The battleskies proved the most challenging shooting gallery and Reuben proved an even better sharpshooter, his field of vision 360 degrees, his accurate predictions prophetic like, no enemy will escape his sights.</Text>
     </Text>
     <Text>
       <GUID>2232</GUID>
-      <Text>Pyotr Sahin, Highfleet Munitions Loader</Text>
+      <Text>Rebecca Skylander, Limitless Loader</Text>
     </Text>
     <Text>
-      <GUID>190667</GUID>
-      <Text>Rembrandt "The Harbourmaster" Skylander, Eager Empire builder</Text>
+      <GUID>113299</GUID>
+      <Text>S.E.C Highfleet Loader. Dexterious and efficient Rebecca keeps the gunner weapon well fed, round and round it goes until theres no more because what else is a munition loader to do.</Text>
     </Text>
     <Text>
-      <GUID>12550</GUID>
-      <Text>The Harbourmaster of the Skylander Engineers. Rembrandt has experienced the humble beginings of newly settled islands and the bustling chaos of gigantic metropolis he knows every procedure and has the priorities clear, every empire new or old needs a whole lot of construction materials. Is great friends with "The Captain".</Text>
+      <GUID>4117</GUID>
+      <Text>Roger Skylander, Airship Technician</Text>
     </Text>
     <Text>
-      <GUID>190666</GUID>
-      <Text>Reynard "The Negotiator" Skylander, Alluring Arms Dealer</Text>
+      <GUID>4136</GUID>
+      <Text>S.E.C Airship Technician, Practical skills really make miracles when facing problems mid air, a thorough technician Roger makes sure his machine runs smooth and it shows, with him at command sets new records with each delivery.</Text>
     </Text>
     <Text>
-      <GUID>12549</GUID>
-      <Text>The Negotiator of the Skylanders Engineers. Reynards knows that where there is competition there will be conflict, where there is conflict there will be weapon trafficking. On Reynards watch no weapon contraband will enter his port... unless bought of course, the company is always in need of weapons supply.</Text>
+      <GUID>4132</GUID>
+      <Text>Ruzgar Skylander, Airship Mechanic</Text>
     </Text>
     <Text>
-      <GUID>190665</GUID>
-      <Text>Reynold "The Confiscator" Skylander, Incorruptible Inspector</Text>
+      <GUID>4137</GUID>
+      <Text>S.E.C Airship Mechanic, In charge of the ship engines Ruzgar makes sure they are well mantained, he knows its limits and makes good use of them, and when the ship is docked works on the most insane upgrades and designs.</Text>
     </Text>
     <Text>
-      <GUID>12548</GUID>
-      <Text>The Confiscator of the Skylander Engineers. Reynold rigorously searches ships, opens every cargo crate, looks in every nook and cranny and no bribe nor intimidation will work. On Reynolds watch no weapon contraband will enter his port... unless confiscated of course, the company will put those weapons to good use.</Text>
+      <GUID>4133</GUID>
+      <Text>Ryder Skylander, Airship Loader</Text>
     </Text>
     <Text>
-      <GUID>191432</GUID>
-      <Text>Roderick "The Fortress" Skylander, Dauntless Defender</Text>
-    </Text>
-    <Text>
-      <GUID>19799</GUID>
-      <Text>The Fortress of the Skylander Engineers. Strong-willed and reassuring he will keep everyone safe and sound. Roderick can fend off any invader and in dire situations the longer the fight goes on the fiercer he becomes.</Text>
-    </Text>
-    <Text>
-      <GUID>191442</GUID>
-      <Text>Rostislav "The Bullet" Skylander, Skilled Sharp Shooter</Text>
-    </Text>
-    <Text>
-      <GUID>19804</GUID>
-      <Text>The Bullet of the Skylander Engineers. Locked and loaded, Rotislav can shoot every ship weakness with utmost precision and speed, such is his effectiveness that enemy fleets will never know what hit them, wich is why he earned his place as "The Bullet". Works in great conjunction with his comrade "The Scope".</Text>
-    </Text>
-    <Text>
-      <GUID>191436</GUID>
-      <Text>Radivoje "The Scope" Skylander, Steady Sharp Spotter</Text>
-    </Text>
-    <Text>
-      <GUID>19803</GUID>
-      <Text>The Scope of the Skylander Engineers. Always vigilant, Radivoje can see beyond the horizons, ships on other regions and can look into your very soul. Legends aside he has really good sight and can lock on enemies far away, wich is why he earned his place as "The Scope". Works in great conjunction with his comrade "The Bullet".</Text>
-    </Text>
-    <!-- hier0nimus ships -->
-    <Text>
-      <GUID>2001000084</GUID>
-      <Text>Small Cargo Ship Skin 01</Text>
-    </Text>
-    <Text>
-      <GUID>2001000085</GUID>
-      <Text>Small Cargo Ship Skin 02</Text>
-    </Text>
-    <Text>
-      <GUID>2001000086</GUID>
-      <Text>Small Cargo Ship Skin 03</Text>
-    </Text>
-    <Text>
-      <GUID>2001000087</GUID>
-      <Text>Small Cargo Ship Skin 04</Text>
-    </Text>
-    <Text>
-      <GUID>2001000083</GUID>
-      <Text>Flak Ironclad</Text>
-    </Text>
-    <Text>
-      <GUID>2001000090</GUID>
-      <Text>Defending your ships against airships was never easier with this Flak Ironclad.</Text>
-    </Text>
-    <Text>
-      <GUID>2001000082</GUID>
-      <Text>Small Reefer</Text>
-    </Text>
-    <Text>
-      <GUID>2001000089</GUID>
-      <Text>Fast, easy! small deliveries to other regions is never been easier with this small reefer.</Text>
-    </Text>
-    <Text>
-      <GUID>2001000067</GUID>
-      <Text>Heavy Battle Cruiser</Text>
-    </Text>
-    <Text>
-      <GUID>2001000077</GUID>
-      <Text>Heavy Battle Cruiser that can only be stopped by heavy firepower.</Text>
-    </Text>
-    <Text>
-      <GUID>2001000068</GUID>
-      <Text>Heavy Battle Cruiser Skin 01</Text>
-    </Text>
-    <Text>
-      <GUID>2001000069</GUID>
-      <Text>Heavy Battle Cruiser Skin 02</Text>
-    </Text>
-    <Text>
-      <GUID>2001000070</GUID>
-      <Text>Heavy Battle Cruiser Skin 03</Text>
-    </Text>
-    <Text>
-      <GUID>2001000071</GUID>
-      <Text>Heavy Battle Cruiser Skin 04</Text>
-    </Text>
-    <Text>
-      <GUID>2001000072</GUID>
-      <Text>Heavy Battle Cruiser Skin 05</Text>
+      <GUID>4138</GUID>
+      <Text>S.E.C Airship Loader, Fast and nimble Ryder ensures the cargo is tightly secured and well organized, manages the ships capacity to the most minuscule detail in order to make the most of every voyage.</Text>
     </Text>
   </ModOp>
 </ModOps>
-
