@@ -1368,7 +1368,7 @@
   </ModOp>
 
   <!-- Replace specialist Item legendary -->
-  <ModOp Type = 'replace' GUID = '191387,191432,190667,191581,191373,191377,191418,190738,125136,190743,190760,191376,125119,125138,125128,125129,125124,8355,136647,137797,125144,125146,1772' Path = '/Values/Item'>
+  <ModOp Type = 'replace' GUID = '191821,113359,191815,191387,191432,190667,191581,191373,191377,191418,190738,125136,190743,190760,191376,125119,125138,125128,125129,125124,8355,136647,137797,125144,125146,1772' Path = '/Values/Item'>
     <Item>
       <MaxStackSize>1</MaxStackSize>
       <Rarity>Legendary</Rarity>
@@ -1391,7 +1391,7 @@
   </ModOp>
 
   <!-- Replace specialist Item legendary with allocation lodge -->
-  <ModOp Type = 'replace' GUID = '4277,116133,116153,116154,116152,116144' Path = '/Values/Item'>
+  <ModOp Type = 'replace' GUID = '191738,4277,116133,116153,116154,116152,116144' Path = '/Values/Item'>
     <Item>
       <Allocation>Lodge</Allocation>
       <MaxStackSize>1</MaxStackSize>
@@ -1412,7 +1412,7 @@
   </ModOp>
 
   <!-- Replace specialist Item epic -->
-  <ModOp Type = 'replace' GUID = '191402,191442,191436,191352,191580,125137,1897,958,2223,190690,190688,190687,191417,190618,190617,190619,190615,191325,190640,190639,191331,191330,191316,191367,190644,191380,190749,191379,190736,190734,190757,190755,190733,190697,190696,190625,191322,191459,125120,190703,129022,118103,125123,125117,191369,1948,2224,191589,11657,190742,190740,1956,1961,191429,191463,1895,191376,191375,190690,190689,8347,125131,8908,125115,125118,8348,1964,1966,125112,125113,191327,191345,191349,125127,191403,190630,191400,191404,191356,191332,191386,191419,191308,191353,8351,125126,136886,136887,136648,136649' Path = '/Values/Item'>
+  <ModOp Type = 'replace' GUID = '191797,191794,191750,191791,191788,125142,113353,113356,191803,191747,191800,191402,191442,191436,191352,191580,125137,1897,958,2223,190690,190688,190687,191417,190618,190617,190619,190615,191325,190640,190639,191331,191330,191316,191367,190644,191380,190749,191379,190736,190734,190757,190755,190733,190697,190696,190625,191322,191459,125120,190703,129022,118103,125123,125117,191369,1948,2224,191589,11657,190742,190740,1956,1961,191429,191463,1895,191376,191375,190690,190689,8347,125131,8908,125115,125118,8348,1964,1966,125112,125113,191327,191345,191349,125127,191403,190630,191400,191404,191356,191332,191386,191419,191308,191353,8351,125126,136886,136887,136648,136649' Path = '/Values/Item'>
     <Item>
       <MaxStackSize>1</MaxStackSize>
       <Rarity>Epic</Rarity>
@@ -1467,7 +1467,7 @@
   </ModOp>
 
   <!-- Replace specialist Item epic with Lodge allocation -->
-  <ModOp Type = 'replace' GUID = '116142,116151,116146,116132,116130,116147,116150,116148,116149,116143' Path = '/Values/Item'>
+  <ModOp Type = 'replace' GUID = '191759,191756,116142,116151,116146,116132,116130,116147,116150,116148,116149,116143' Path = '/Values/Item'>
     <Item>
       <Allocation>Lodge</Allocation>
       <MaxStackSize>1</MaxStackSize>
@@ -4628,12 +4628,14 @@
   <!-- All Animal Farms -->
   <!-- Change target pool to all old & new world animal farms -->
   <ModOp Type = 'replace' GUID = '1964,191584,191583,191580' Path = '/Values/ItemEffect/EffectTargets'>
-    <Item>
-      <GUID>1965</GUID>
-    </Item>
-    <Item>
-      <GUID>2001000055</GUID>
-    </Item>
+    <EffectTargets>
+      <Item>
+        <GUID>1965</GUID>
+      </Item>
+      <Item>
+        <GUID>2001000055</GUID>
+      </Item>
+    </EffectTargets>
   </ModOp>
 
   <!-- Change target pool to all enbesan farms -->
@@ -8290,7 +8292,7 @@
   </ModOp>
 
   <!-- Old World Residences -->
-  <!-- Roderick Skylander, Auspicious Administrator (191815, Former The Withdrawal Amendment) -->
+  <!-- Rhydderch Skylander, Auspicious Administrator (191815, Former The Withdrawal Amendment) -->
   <!-- 
     - Change portrait.
     - Change item type to specialist.
@@ -9696,7 +9698,7 @@
   -->
 
   <ModOp Type = 'replace' GUID = '191759' Path = '/Values/Standard/IconFilename'>
-    <IconFilename>data/graphics/icons/icon_fellow_variation.png</IconFilename>
+    <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_inuit_specialist_1005_b.png</IconFilename>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191759' Path = '/Values/PopulationUpgrade'>
@@ -9745,7 +9747,7 @@
   -->
 
   <ModOp Type = 'replace' GUID = '191756' Path = '/Values/Standard/IconFilename'>
-    <IconFilename>data/graphics/icons/icon_fellow_variation.png</IconFilename>
+    <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_inuit_specialist_1004.png</IconFilename>
   </ModOp>
 
   <ModOp Type = 'replace' GUID = '191756' Path = '/Values/PopulationUpgrade'>

@@ -74,8 +74,8 @@
       <HarbourAreaFree>-432562515</HarbourAreaFree>
       <HarbourAreaOccupied>-1595180997</HarbourAreaOccupied>
       <HarbourAreaBuildable>551665809</HarbourAreaBuildable>
-      <HarbourConstructionAreaRadius>60</HarbourConstructionAreaRadius>
-      <HarbourConstructionAreaRadiusCreativeMode>60</HarbourConstructionAreaRadiusCreativeMode>
+      <HarbourConstructionAreaRadius>90</HarbourConstructionAreaRadius>
+      <HarbourConstructionAreaRadiusCreativeMode>90</HarbourConstructionAreaRadiusCreativeMode>
       <HarbourConstructionAreaDistanceToEdge>0</HarbourConstructionAreaDistanceToEdge>
       <HarbourAreaFreeTexture>data/graphics/effects/feedback/section_lining_diff.psd</HarbourAreaFreeTexture>
       <MinimumRailHeight>0.1</MinimumRailHeight>
